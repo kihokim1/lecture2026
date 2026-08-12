@@ -1,0 +1,14 @@
+# 지능형 IoT를 위한 온디바이스 AI
+
+* [1주차. 온디바이스 AI와 지능형 IoT 개론](pages/w01-0-overview.md)
+  * [1주차 1교시. AIoT의 패러다임 시프트](pages/w01-1-intro.md)
+  * [1주차 2교시. 기술적 도전과 생태계](pages/w01-2-advanced.md)
+  * [1주차 3교시. 첫 온디바이스 추론 관찰](pages/w01-3-lab.md)
+* [2주차. 온디바이스 AI 하드웨어 아키텍처](pages/w02-0-overview.md)
+  * [2주차 1교시. 하드웨어 가속기 아키텍처](pages/w02-1-intro.md)
+  * [2주차 2교시. 임베디드 리소스 제약과 설계 전략](pages/w02-2-advanced.md)
+  * [2주차 3교시. 내 하드웨어가 추론에 미치는 영향 관찰](pages/w02-3-lab.md)
+* [3주차. 온디바이스 AI 프레임워크 및 추론 엔진](pages/w03-0-overview.md)
+  * [3주차 1교시. 추론 엔진과 모델 표현](pages/w03-1-intro.md)
+  * [3주차 2교시. 주요 온디바이스 프레임워크 심층 분석](pages/w03-2-advanced.md)
+  * [3주차 3교시. 그래프 최적화를 눈과 숫자로 확인하기](pages/w03-3-lab.md)
