@@ -1,4 +1,6 @@
 # AGENTS.md — 교재 저장소 작성 규칙
+# date 2026. 8.12. 
+# Author: Kim Kiho
 
 위키독스 깃허브 연동 문서 저장소. push하면 자동 발행됩니다.
 
