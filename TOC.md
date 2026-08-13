@@ -24,3 +24,7 @@
   * [6주차 1교시. 지식 증류의 기본 원리](pages/w06-1-intro.md)
   * [6주차 2교시. 최신 KD 기법 및 AIoT 응용](pages/w06-2-advanced.md)
   * [6주차 3교시. 지식 증류 구현과 효과 확인](pages/w06-3-lab.md)
+* [7주차. Neural Architecture Search & Hardware-aware Design](pages/w07-0-overview.md)
+  * [7주차 1교시. NAS의 기본 원리와 탐색 전략](pages/w07-1-intro.md)
+  * [7주차 2교시. Hardware-aware NAS & 최신 트렌드](pages/w07-2-advanced.md)
+  * [7주차 3교시. 탐색 공간 정의와 NAS 체험](pages/w07-3-lab.md)
