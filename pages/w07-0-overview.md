@@ -1,4 +1,4 @@
-# 7주차. Neural Architecture Search & Hardware-aware Design
+# 07주차. Neural Architecture Search & Hardware-aware Design
 
 > NAS & 하드웨어 인지형 설계
 > 주당 3시간 · 이론 70% / 실습 30% · 교시당 약 50~60분

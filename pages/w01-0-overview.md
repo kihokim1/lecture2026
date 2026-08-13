@@ -1,4 +1,4 @@
-# 1주차. 온디바이스 AI와 지능형 IoT 개론
+# 01주차. 온디바이스 AI와 지능형 IoT 개론
 
 > Introduction to On-Device AI & AIoT
 > 주당 3시간 · 이론 70% / 실습 30% · 교시당 약 50~60분
