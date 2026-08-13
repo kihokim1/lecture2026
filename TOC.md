@@ -33,3 +33,7 @@
   * [9주차 1교시. TinyML의 정의와 기술적 제약](pages/w09-1-intro.md)
   * [9주차 2교시. 에너지 효율적 추론과 최적화](pages/w09-2-advanced.md)
   * [9주차 3교시. MCU 배포 파이프라인과 Peak Memory](pages/w09-3-lab.md)
+* [10주차. 엣지 기반 시각 지능 구현 (Computer Vision on the Edge)](pages/w10-0-overview.md)
+  * [10주차 1교시. 경량 비전 아키텍처와 객체 탐지](pages/w10-1-intro.md)
+  * [10주차 2교시. 세그멘테이션 및 비전 가속화 실무](pages/w10-2-advanced.md)
+  * [10주차 3교시. 실시간 비전 파이프라인](pages/w10-3-lab.md)
