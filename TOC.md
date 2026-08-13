@@ -49,3 +49,7 @@
   * [13주차 1교시. 연합 학습의 메커니즘과 통신 최적화](pages/w13-1-intro.md)
   * [13주차 2교시. 온디바이스 파인튜닝과 시스템 보안](pages/w13-2-advanced.md)
   * [13주차 3교시. FedAvg 시뮬레이션](pages/w13-3-lab.md)
+* [14주차. 최신 연구 동향 및 AIoT 학술 세미나](pages/w14-0-overview.md)
+  * [14주차 1교시. 온디바이스 AI 최신 연구 패러다임](pages/w14-1-intro.md)
+  * [14주차 2교시. 논문 리뷰 방법과 융합 연구](pages/w14-2-advanced.md)
+  * [14주차 3교시. 논문 세미나와 수치 현실성 검증](pages/w14-3-lab.md)
