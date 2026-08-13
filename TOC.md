@@ -28,3 +28,8 @@
   * [7주차 1교시. NAS의 기본 원리와 탐색 전략](pages/w07-1-intro.md)
   * [7주차 2교시. Hardware-aware NAS & 최신 트렌드](pages/w07-2-advanced.md)
   * [7주차 3교시. 탐색 공간 정의와 NAS 체험](pages/w07-3-lab.md)
+* 8주차. 중간고사 (범위 1~7주차)
+* [9주차. TinyML 및 초저전력 온디바이스 AI](pages/w09-0-overview.md)
+  * [9주차 1교시. TinyML의 정의와 기술적 제약](pages/w09-1-intro.md)
+  * [9주차 2교시. 에너지 효율적 추론과 최적화](pages/w09-2-advanced.md)
+  * [9주차 3교시. MCU 배포 파이프라인과 Peak Memory](pages/w09-3-lab.md)
