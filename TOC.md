@@ -41,3 +41,7 @@
   * [11주차 1교시. 트랜스포머 경량화와 음성 인식](pages/w11-1-intro.md)
   * [11주차 2교시. On-Device LLM 최적화와 런타임](pages/w11-2-advanced.md)
   * [11주차 3교시. LLM 메모리·속도 추정](pages/w11-3-lab.md)
+* [12주차. 실무 하드웨어 가속기 프로그래밍](pages/w12-0-overview.md)
+  * [12주차 1교시. 컴파일러 툴체인과 하드웨어 매핑](pages/w12-1-intro.md)
+  * [12주차 2교시. 산업 표준 하드웨어 가속 SDK 실무](pages/w12-2-advanced.md)
+  * [12주차 3교시. 연산자별 프로파일링](pages/w12-3-lab.md)
