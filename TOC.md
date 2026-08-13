@@ -37,3 +37,7 @@
   * [10주차 1교시. 경량 비전 아키텍처와 객체 탐지](pages/w10-1-intro.md)
   * [10주차 2교시. 세그멘테이션 및 비전 가속화 실무](pages/w10-2-advanced.md)
   * [10주차 3교시. 실시간 비전 파이프라인](pages/w10-3-lab.md)
+* [11주차. 엣지 기반 언어 지능 및 On-Device LLM](pages/w11-0-overview.md)
+  * [11주차 1교시. 트랜스포머 경량화와 음성 인식](pages/w11-1-intro.md)
+  * [11주차 2교시. On-Device LLM 최적화와 런타임](pages/w11-2-advanced.md)
+  * [11주차 3교시. LLM 메모리·속도 추정](pages/w11-3-lab.md)
