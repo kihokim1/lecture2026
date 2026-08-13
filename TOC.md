@@ -45,3 +45,7 @@
   * [12주차 1교시. 컴파일러 툴체인과 하드웨어 매핑](pages/w12-1-intro.md)
   * [12주차 2교시. 산업 표준 하드웨어 가속 SDK 실무](pages/w12-2-advanced.md)
   * [12주차 3교시. 연산자별 프로파일링](pages/w12-3-lab.md)
+* [13주차. 연합 학습 및 프라이버시 보호형 AIoT](pages/w13-0-overview.md)
+  * [13주차 1교시. 연합 학습의 메커니즘과 통신 최적화](pages/w13-1-intro.md)
+  * [13주차 2교시. 온디바이스 파인튜닝과 시스템 보안](pages/w13-2-advanced.md)
+  * [13주차 3교시. FedAvg 시뮬레이션](pages/w13-3-lab.md)
