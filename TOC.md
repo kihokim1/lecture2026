@@ -1,9 +1,9 @@
 # 지능형 IoT를 위한 온디바이스 AI
 
 * [01주차. 온디바이스 AI와 지능형 IoT 개론](pages/w01-0-overview.md)
-  * [01주차 1교시. AIoT의 패러다임 시프트](pages/w01-1-intro.md)
-  * [01주차 2교시. 기술적 도전과 생태계](pages/w01-2-advanced.md)
-  * [01주차 3교시. 실험: 온디바이스 추론 지연의 실증적 관찰](pages/w01-3-lab.md)
+  * [01주차 1교시. 왜 내 폰은 인터넷 없이도 내 얼굴을 알아볼까?](pages/w01-1-intro.md)
+  * [01주차 2교시. 작게 만드는 게 왜 어려울까](pages/w01-2-advanced.md)
+  * [01주차 3교시. 내 노트북에서 AI 직접 돌려보기](pages/w01-3-lab.md)
 * [02주차. 온디바이스 AI 하드웨어 아키텍처](pages/w02-0-overview.md)
   * [02주차 1교시. 하드웨어 가속기 아키텍처](pages/w02-1-intro.md)
   * [02주차 2교시. 임베디드 리소스 제약과 설계 전략](pages/w02-2-advanced.md)
