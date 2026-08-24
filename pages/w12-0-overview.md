@@ -1,32 +1,32 @@
-# 12주차. 실무 하드웨어 가속기 프로그래밍
+# 12주차. 연합 학습 및 프라이버시 보호형 AIoT
 
-> Hardware Acceleration & Heterogeneous Programming
-> 주당 3시간 · 이론 70% / 실습 30% · 교시당 약 50~60분
+> Federated Learning & Privacy-Preserving AI
+> 주당 3시간 · 3교시 × 약 50분 · 이론 70% / 실습 30%
 
 ## 학습 목표
-- AI 컴파일러의 계층(High-level IR / Low-level IR)과 하드웨어 매핑 원리를 설명할 수 있다.
-- 이기종 컴퓨팅의 Host-to-Device 병목과 비동기 실행(Async)의 개념을 이해한다.
-- Scratchpad/Local SRAM 재사용과 커스텀 오퍼레이터의 필요성을 설명할 수 있다.
-- TensorRT의 엔진 빌드·커널 튜닝·INT8 보정 과정을 이해한다.
-- 프로파일링으로 병목 레이어를 찾아 성능을 개선하는 방법을 실습할 수 있다.
+- 중앙 집중식 학습의 프라이버시 한계와 연합 학습(FL)의 동기를 설명할 수 있다.
+- FedAvg 알고리즘(Local SGD + 가중치 평균화)과 Non-IID 데이터 문제를 이해한다.
+- 통신 오버헤드와 그 효율화(Gradient 압축·클라이언트 선택)를 설명할 수 있다.
+- 온디바이스 파인튜닝(Memory-efficient, LoRA/PEFT)의 원리를 이해한다.
+- Differential Privacy·Secure Aggregation·TEE 등 프라이버시·보안 기법을 비교할 수 있다.
 
 ## 교시 구성
 
 | 교시 | 성격 | 하위 목차 | 배정(분) |
 |:---:|------|-----------|:---:|
-| **1교시** | 개론 | 1.1 AI 컴파일러 아키텍처 / 1.2 이기종 컴퓨팅과 런타임 제어 / 1.3 메모리 재사용과 커스텀 오퍼레이터 | 55 |
-| **2교시** | 심화 | 2.1 NVIDIA TensorRT 심층 / 2.2 모바일·임베디드 NPU SDK / 2.3 하드웨어 프로파일링 / 2.4 기말 프로젝트 점검 | 60 |
-| **3교시** | 실습 | 3.1 그래프 최적화·공급자 재확인 / 3.2 연산자별 프로파일링 / 3.3 과제 | 50 |
+| **1교시** | 개론 | 1.1 왜 연합 학습인가 / 1.2 핵심 알고리즘 FedAvg / 1.3 통신 오버헤드와 효율화 | 55 |
+| **2교시** | 심화 | 2.1 온디바이스 파인튜닝(LoRA/PEFT) / 2.2 Differential Privacy / 2.3 Secure Aggregation과 하드웨어 보안 / 2.4 정리 | 60 |
+| **3교시** | 실습 | 3.1 FedAvg 시뮬레이션 / 3.2 Non-IID 영향 관찰 / 3.3 과제 | 50 |
 
 ## 그림 목록
-- `w12_p1_ai_compiler_01.png` — AI 컴파일러 아키텍처(High/Low IR)
-- `w12_p1_host_device_02.png` — Host-to-Device 병목과 비동기 실행
-- `w12_p1_scratchpad_03.png` — Scratchpad/SRAM 재사용과 커스텀 오퍼레이터
-- `w12_p2_tensorrt_04.png` — TensorRT 엔진 빌드 파이프라인
-- `w12_p2_npu_sdk_05.png` — 모바일·임베디드 NPU SDK 비교
-- `w12_p3_profiling_06.png` — 프로파일링으로 병목 찾기
+- `w12_p1_centralized_vs_fl_01.png` — 중앙 집중 vs 연합 학습
+- `w12_p1_fedavg_02.png` — FedAvg 순환(모델 배포→로컬 학습→가중치 취합)
+- `w12_p1_noniid_03.png` — Non-IID 데이터 문제
+- `w12_p2_lora_peft_04.png` — 온디바이스 파인튜닝(LoRA/PEFT)
+- `w12_p2_privacy_05.png` — Differential Privacy·Secure Aggregation·TEE
+- `w12_p3_fedavg_sim_06.png` — FedAvg 시뮬레이션 수렴(실습, 예시)
 
 ## 선수 연결
-- 3주차 그래프 최적화가 여기서 '컴파일러'로 심화된다.
-- 2주차 이기종 컴퓨팅·10주차 TensorRT/SNPE가 실무 프로그래밍으로 종합된다.
-- 15주차 기말 프로젝트에서 배포·프로파일링의 실무 기반이 된다.
+- 1주차 4대 동인 중 Privacy가 학습 단계로 확장된다.
+- 10주차 On-device LoRA가 온디바이스 파인튜닝으로 심화된다.
+- 온디바이스 AI의 종착지: 추론(Inference)을 넘어 현장 학습(Training)으로.

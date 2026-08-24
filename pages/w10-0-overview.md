@@ -1,31 +1,32 @@
-# 10주차. 엣지 기반 시각 지능 구현 (Computer Vision on the Edge)
+# 10주차. 엣지 기반 언어 지능 및 On-Device LLM
 
-> Computer Vision on the Edge
-> 주당 3시간 · 이론 70% / 실습 30% · 교시당 약 50~60분
+> NLP on the Edge
+> 주당 3시간 · 3교시 × 약 50분 · 이론 70% / 실습 30%
 
 ## 학습 목표
-- 모바일·엣지에 최적화된 경량 백본(MobileNet, EfficientNet-Edge)의 구조를 설명할 수 있다.
-- 실시간 객체 탐지(YOLO, SSD)의 경량화와 후처리(NMS) 병목을 이해한다.
-- 경량 시맨틱 세그멘테이션(DeepLabV3+, Atrous Convolution)의 원리를 설명할 수 있다.
-- 엣지 가속 SDK(TensorRT, SNPE)의 역할과 선택 기준을 비교할 수 있다.
-- 실시간 비전 파이프라인(전처리→추론→후처리)과 Zero-copy·FPS 측정을 설계할 수 있다.
+- Transformer의 온디바이스 병목(Attention의 $O(N^2)$, KV Cache)을 설명할 수 있다.
+- 경량 언어 모델(DistilBERT·TinyBERT·MobileBERT)과 온디바이스 음성 인식(Whisper)을 이해한다.
+- 소형 거대 언어 모델(sLLM)과 4비트 양자화(AWQ·GPTQ)의 필요성을 설명할 수 있다.
+- Speculative Decoding 등 생성 가속 기법의 원리를 이해한다.
+- On-Device LLM 추론 엔진(llama.cpp·MLC LLM)과 토큰 생성 속도의 메모리 대역폭 종속성을 설명할 수 있다.
 
 ## 교시 구성
 
 | 교시 | 성격 | 하위 목차 | 배정(분) |
 |:---:|------|-----------|:---:|
-| **1교시** | 개론 | 1.1 경량 백본 네트워크 / 1.2 실시간 객체 탐지 / 1.3 Anchor-free와 NMS | 55 |
-| **2교시** | 심화 | 2.1 경량 시맨틱 세그멘테이션 / 2.2 엣지 가속 SDK(TensorRT·SNPE) / 2.3 Vision Transformer on Edge / 2.4 정리 | 60 |
-| **3교시** | 실습 | 3.1 실시간 비전 파이프라인 / 3.2 FPS·병목 측정 / 3.3 과제 | 50 |
+| **1교시** | 개론 | 1.1 Transformer의 온디바이스 병목 / 1.2 경량 BERT / 1.3 온디바이스 음성 인식 | 55 |
+| **2교시** | 심화 | 2.1 sLLM 트렌드 / 2.2 극단적 양자화(AWQ·GPTQ) / 2.3 Speculative Decoding / 2.4 추론 엔진과 On-device LoRA | 60 |
+| **3교시** | 실습 | 3.1 KV Cache 메모리 추정 / 3.2 토큰 생성 속도 관찰 / 3.3 과제 | 50 |
 
 ## 그림 목록
-- `w10_p1_backbones_01.png` — 경량 백본(MobileNet 진화·EfficientNet-Edge)
-- `w10_p1_detection_02.png` — 실시간 객체 탐지(YOLO·SSD)
-- `w10_p1_nms_03.png` — NMS 후처리와 Anchor-free
-- `w10_p2_segmentation_04.png` — 경량 세그멘테이션(DeepLabV3+·Atrous)
-- `w10_p2_accel_sdk_05.png` — 엣지 가속 SDK 비교
-- `w10_p3_pipeline_06.png` — 실시간 비전 파이프라인(Zero-copy·FPS)
+- `w10_p1_attention_bottleneck_01.png` — Attention의 $O(N^2)$ 병목
+- `w10_p1_kv_cache_02.png` — KV Cache 메모리 증가
+- `w10_p1_compact_bert_03.png` — 경량 BERT(DistilBERT·TinyBERT·MobileBERT)
+- `w10_p2_quant_4bit_04.png` — 4비트 양자화(AWQ·GPTQ) 메모리 절감
+- `w10_p2_speculative_05.png` — Speculative Decoding
+- `w10_p3_bench_06.png` — 토큰 생성 속도와 메모리 대역폭
 
 ## 선수 연결
-- 9주차 Depthwise Separable Convolution이 MobileNet 백본의 핵심으로 재등장.
-- 3주차 추론 엔진·12주차 하드웨어 가속기 프로그래밍으로 이어지는 TensorRT·SNPE 실무.
+- 5주차 양자화가 여기서 4비트(INT4)·FP8로 극단화된다.
+- 9주차의 Transformer(ViT) 병목이 언어 모델에서 본격적으로 다뤄진다.
+- 12주차 On-device 파인튜닝(LoRA)로 이어진다.

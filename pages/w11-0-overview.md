@@ -1,32 +1,32 @@
-# 11주차. 엣지 기반 언어 지능 및 On-Device LLM
+# 11주차. 실무 하드웨어 가속기 프로그래밍
 
-> NLP on the Edge
-> 주당 3시간 · 이론 70% / 실습 30% · 교시당 약 50~60분
+> Hardware Acceleration & Heterogeneous Programming
+> 주당 3시간 · 3교시 × 약 50분 · 이론 70% / 실습 30%
 
 ## 학습 목표
-- Transformer의 온디바이스 병목(Attention의 $O(N^2)$, KV Cache)을 설명할 수 있다.
-- 경량 언어 모델(DistilBERT·TinyBERT·MobileBERT)과 온디바이스 음성 인식(Whisper)을 이해한다.
-- 소형 거대 언어 모델(sLLM)과 4비트 양자화(AWQ·GPTQ)의 필요성을 설명할 수 있다.
-- Speculative Decoding 등 생성 가속 기법의 원리를 이해한다.
-- On-Device LLM 추론 엔진(llama.cpp·MLC LLM)과 토큰 생성 속도의 메모리 대역폭 종속성을 설명할 수 있다.
+- AI 컴파일러의 계층(High-level IR / Low-level IR)과 하드웨어 매핑 원리를 설명할 수 있다.
+- 이기종 컴퓨팅의 Host-to-Device 병목과 비동기 실행(Async)의 개념을 이해한다.
+- Scratchpad/Local SRAM 재사용과 커스텀 오퍼레이터의 필요성을 설명할 수 있다.
+- TensorRT의 엔진 빌드·커널 튜닝·INT8 보정 과정을 이해한다.
+- 프로파일링으로 병목 레이어를 찾아 성능을 개선하는 방법을 실습할 수 있다.
 
 ## 교시 구성
 
 | 교시 | 성격 | 하위 목차 | 배정(분) |
 |:---:|------|-----------|:---:|
-| **1교시** | 개론 | 1.1 Transformer의 온디바이스 병목 / 1.2 경량 BERT / 1.3 온디바이스 음성 인식 | 55 |
-| **2교시** | 심화 | 2.1 sLLM 트렌드 / 2.2 극단적 양자화(AWQ·GPTQ) / 2.3 Speculative Decoding / 2.4 추론 엔진과 On-device LoRA | 60 |
-| **3교시** | 실습 | 3.1 KV Cache 메모리 추정 / 3.2 토큰 생성 속도 관찰 / 3.3 과제 | 50 |
+| **1교시** | 개론 | 1.1 AI 컴파일러 아키텍처 / 1.2 이기종 컴퓨팅과 런타임 제어 / 1.3 메모리 재사용과 커스텀 오퍼레이터 | 55 |
+| **2교시** | 심화 | 2.1 NVIDIA TensorRT 심층 / 2.2 모바일·임베디드 NPU SDK / 2.3 하드웨어 프로파일링 / 2.4 기말 프로젝트 점검 | 60 |
+| **3교시** | 실습 | 3.1 그래프 최적화·공급자 재확인 / 3.2 연산자별 프로파일링 / 3.3 과제 | 50 |
 
 ## 그림 목록
-- `w11_p1_attention_bottleneck_01.png` — Attention의 $O(N^2)$ 병목
-- `w11_p1_kv_cache_02.png` — KV Cache 메모리 증가
-- `w11_p1_compact_bert_03.png` — 경량 BERT(DistilBERT·TinyBERT·MobileBERT)
-- `w11_p2_quant_4bit_04.png` — 4비트 양자화(AWQ·GPTQ) 메모리 절감
-- `w11_p2_speculative_05.png` — Speculative Decoding
-- `w11_p3_bench_06.png` — 토큰 생성 속도와 메모리 대역폭
+- `w11_p1_ai_compiler_01.png` — AI 컴파일러 아키텍처(High/Low IR)
+- `w11_p1_host_device_02.png` — Host-to-Device 병목과 비동기 실행
+- `w11_p1_scratchpad_03.png` — Scratchpad/SRAM 재사용과 커스텀 오퍼레이터
+- `w11_p2_tensorrt_04.png` — TensorRT 엔진 빌드 파이프라인
+- `w11_p2_npu_sdk_05.png` — 모바일·임베디드 NPU SDK 비교
+- `w11_p3_profiling_06.png` — 프로파일링으로 병목 찾기
 
 ## 선수 연결
-- 5주차 양자화가 여기서 4비트(INT4)·FP8로 극단화된다.
-- 10주차의 Transformer(ViT) 병목이 언어 모델에서 본격적으로 다뤄진다.
-- 13주차 On-device 파인튜닝(LoRA)로 이어진다.
+- 3주차 그래프 최적화가 여기서 '컴파일러'로 심화된다.
+- 2주차 이기종 컴퓨팅·9주차 TensorRT/SNPE가 실무 프로그래밍으로 종합된다.
+- 14주차 기말 프로젝트에서 배포·프로파일링의 실무 기반이 된다.

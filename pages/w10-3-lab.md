@@ -1,81 +1,78 @@
-# 10주차 3교시. 실시간 비전 파이프라인
+# 10주차 3교시. LLM 메모리·속도 추정
 
-**실습 목표** — 카메라 프레임이 결과가 되기까지의 **전체 파이프라인**을 만들고, 단계별 시간을 측정해 **FPS**를 계산한다. "모델 추론만 빠르다고 실시간이 되는 게 아니다"를 직접 확인한다.
+**실습 목표** — On-Device LLM의 두 병목인 **모델 메모리**와 **KV Cache 메모리**를 직접 계산하고, 토큰 생성 속도가 왜 **메모리 대역폭**에 종속되는지 수치로 확인한다. 무거운 LLM 없이 순수 파이썬으로 원리를 체감한다.
 
-> 준비물: 1주차 환경(`odai`) + `onnxruntime`, `numpy`, `pillow` + `mobilenetv2.onnx`(1주차 3.1에서 내보낸 파일; 없으면 그 단계의 `torch.onnx.export`를 먼저 실행). 카메라가 없어도 더미 프레임으로 원리를 확인한다.
-
----
-
-## 3.1 실시간 비전 파이프라인 (20분)
-
-비전 파이프라인은 `입력 → 전처리 → 추론 → 후처리 → 시각화`로 이어진다. 여기서는 분류 모델로 **전처리·추론·후처리 3단계**를 만들고 각 시간을 잰다.
-
-![실시간 비전 파이프라인 — 카메라 입력→전처리(Resize·Normalize)→NPU 추론→후처리(NMS·디코딩)→시각화. Zero-copy로 단계 간 메모리 복사를 줄이고, FPS로 전체 처리량을 측정한다](../assets/w10_p3_pipeline_06.png)
-
-```python
-import time, numpy as np, onnxruntime as ort
-from PIL import Image
-
-sess = ort.InferenceSession("mobilenetv2.onnx", providers=["CPUExecutionProvider"])
-name = sess.get_inputs()[0].name
-
-def preprocess(img):                      # 카메라 프레임 → 모델 입력
-    img = img.resize((224, 224))
-    x = np.asarray(img, dtype=np.float32) / 255.0
-    x = (x - 0.485) / 0.229               # 간단 정규화(예시)
-    #  ※ 실제로는 채널별 평균/표준편차(mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])를 쓴다.
-    x = x.transpose(2, 0, 1)[None]        # HWC → NCHW
-    return np.ascontiguousarray(x, dtype=np.float32)
-
-def postprocess(logits):                  # 모델 출력 → 최종 결과
-    return int(logits[0].argmax())        # top-1 클래스
-
-frame = Image.new("RGB", (640, 480), (120, 160, 200))   # 더미 프레임(카메라 대용)
-```
+> 준비물: 파이썬만 있으면 된다(라이브러리 불필요). 실제 sLLM을 돌려보고 싶으면 `llama.cpp`로 4비트 모델을 별도 구동(선택).
 
 ---
 
-## 3.2 FPS·병목 측정 (20분)
+## 3.1 모델·KV Cache 메모리 추정 (20분)
 
-각 단계 시간을 나눠 재고, 프레임당 총 시간과 FPS를 계산한다.
+먼저 정밀도(비트)에 따른 **모델 가중치 메모리**와, 문맥 길이에 따른 **KV Cache 메모리**를 계산한다.
 
 ```python
-N = 50; tp = ti = to = 0.0
-sess.run(None, {name: preprocess(frame)})          # 워밍업
+def model_mem_gb(params_billion, bits):
+    # 파라미터 수 × (비트/8) 바이트
+    return params_billion * 1e9 * (bits / 8) / 1e9
 
-for _ in range(N):
-    t0 = time.perf_counter(); x = preprocess(frame); t1 = time.perf_counter()
-    y = sess.run(None, {name: x});                  t2 = time.perf_counter()
-    _ = postprocess(y[0]);                          t3 = time.perf_counter()
-    tp += t1 - t0; ti += t2 - t1; to += t3 - t2
+def kv_cache_gb(layers, hidden, seq_len, bytes_per=2, batch=1):
+    # 2 = Key와 Value 두 벌, 저장은 보통 FP16(2바이트)
+    return 2 * layers * hidden * seq_len * bytes_per * batch / 1e9
 
-total_ms = (tp + ti + to) / N * 1000
-print(f"전처리 {tp/N*1000:5.2f} ms | 추론 {ti/N*1000:5.2f} ms | 후처리 {to/N*1000:5.2f} ms")
-print(f"프레임당 {total_ms:.2f} ms  →  {1000/total_ms:.1f} FPS")
+print("[모델 가중치 메모리 — 7B 기준]")
+for bits in [32, 16, 8, 4]:
+    print(f"  {bits:>2}-bit : {model_mem_gb(7, bits):5.1f} GB")
+
+print("\n[KV Cache — 32층, hidden=4096, FP16]")
+for seq in [512, 2048, 8192]:
+    print(f"  seq={seq:>4} : {kv_cache_gb(32, 4096, seq):.2f} GB")
 ```
+
+예상 출력(개략): 7B는 FP16 14GB → INT4 **3.5GB**(1/4~1/8), KV Cache는 문맥이 길수록 선형 증가.
+
+> 관찰 포인트: "모델 메모리"와 "KV Cache 메모리"는 **다른 예산**이다. 모델을 4비트로 줄여 올렸어도, 문맥이 아주 길면 KV Cache가 RAM을 잠식한다.
+
+---
+
+## 3.2 토큰 생성 속도 관찰 (20분)
+
+생성은 **토큰 하나를 만들 때마다 모델의 모든 가중치를 메모리에서 한 번 읽는** 작업에 가깝다(메모리-바운드). 그래서 속도는 대략 **메모리 대역폭 ÷ 모델 크기**로 근사된다.
+
+```python
+def tokens_per_sec(model_gb, bandwidth_gbps):
+    # 메모리-바운드 근사: 초당 대역폭으로 모델을 몇 번 읽을 수 있나
+    return bandwidth_gbps / model_gb
+
+BW = 50   # 예: 노트북 메모리 대역폭 ~50 GB/s (기기마다 다름)
+print(f"[토큰 생성 속도 근사 @ {BW} GB/s]")
+for bits, gb in [(16, 14.0), (8, 7.0), (4, 3.5)]:
+    print(f"  {bits:>2}-bit ({gb:>4} GB): ~{tokens_per_sec(gb, BW):4.1f} tokens/sec")
+```
+
+![토큰 생성 속도는 메모리 대역폭에 종속(예시) — 양자화로 옮길 데이터가 줄면 tokens/sec가 오른다. 생성은 매 토큰마다 가중치를 읽는 작업이라 대역폭이 상한이 된다](../assets/w10_p3_bench_06.png)
 
 관찰의 핵심:
 
-1. **FPS = 1000 / (프레임당 총 ms)**. 30 FPS 이상이면 대체로 실시간으로 느껴진다.
-2. 추론만이 아니라 **전처리(Resize·Normalize)** 도 무시 못 할 시간을 차지한다. 실제 탐지 모델이라면 후처리(NMS)도 커진다.
-3. 그래서 **Zero-copy**(단계 간 메모리 복사 제거)와 병목 단계 프로파일링이 중요하다 — 2주차의 "데이터 이동이 병목"이 파이프라인 전체에서 재현된다.
+1. 양자화로 모델이 작아지면 **읽을 데이터가 줄어** 토큰 속도가 오른다(그래서 4비트가 빠르다).
+2. 속도의 상한은 **연산 능력이 아니라 메모리 대역폭**이다 — 2주차 Memory Wall이 LLM 생성에서 극명하게 나타난다.
+3. 그래서 같은 모델도 대역폭이 높은 기기(예: 통합 메모리 노트북)에서 더 빠르다.
 
-> 관찰 포인트: 추론 시간이 아무리 짧아도, 전처리·후처리·데이터 이동이 크면 실제 FPS는 오르지 않는다. **최적화 대상은 '모델'이 아니라 '파이프라인 전체'** 다.
+> 관찰 포인트: `BW`(대역폭)와 `gb`(모델 크기)를 본인 기기 값으로 바꿔 보라. tokens/sec가 두 값의 비율로 근사됨을 확인하면, "왜 4비트가 빠른가"를 시스템 관점에서 이해하게 된다. (주의: 이 값은 **이론적 상한**이다. 실제로는 KV Cache 읽기 트래픽·오버헤드로 대략 50~80% 수준에 그친다. KV 공식도 표준 멀티헤드 기준이며, GQA 같은 기법은 캐시를 더 줄인다.)
 
 ---
 
 ## 3.3 과제 (10분 안내)
 
-1. **단계별 프로파일 표** — 본인 기기에서 전처리/추론/후처리 시간과 FPS를 측정해 제출한다. 어느 단계가 병목인지 표시한다.
-2. **해상도 실험** — `preprocess`의 resize 목표를 224×224 → 160×160으로 바꿔 **전처리 시간**의 변화를 측정한다. (주의: 이 모델은 입력이 224×224로 고정이라, *추론* 해상도까지 바꾸려면 모델을 **dynamic axes**로 다시 내보내야 한다.) 해상도-속도-정확도 트레이드오프를 논한다.
-3. **개념 연결** — Zero-copy가 왜 파이프라인 속도에 중요한지 2주차 Memory Wall과 연결해 3~4문장으로 설명한다.
-4. **다음 주 예습** — 11주차(엣지 언어·On-Device LLM)에서는 Transformer가 주인공이다. "긴 문장을 처리할 때 Attention의 메모리가 왜 급증하는가?"를 미리 생각해 온다.
+1. **메모리 예산표** — 3B·7B·13B 모델에 대해 FP16/INT8/INT4 메모리를 계산하고, 본인 기기 RAM(예: 16GB)에 올릴 수 있는 조합을 표시한다.
+2. **KV Cache 실험** — 문맥 길이를 512→8192로 늘리며 KV Cache를 계산하고, 언제 KV Cache가 모델 메모리에 필적하게 되는지 논한다.
+3. **속도 해석** — 같은 4비트 모델이 대역폭 25GB/s와 100GB/s 기기에서 각각 몇 tokens/sec인지 계산하고, 그 차이를 Memory Wall로 설명한다.
+4. **다음 주 예습** — 11주차(하드웨어 가속기 프로그래밍)에서는 이 모델들을 실제 하드웨어에서 최대 성능으로 돌리는 컴파일러·SDK를 다룬다. TensorRT가 무엇을 하는지 미리 찾아온다.
 
-> 교수님을 위한 Tip: 카메라(웹캠)를 쓸 수 있으면 `opencv`로 실시간 프레임을 넣어 FPS를 화면에 오버레이하면 몰입도가 크게 오른다. 없어도 더미 프레임의 단계별 시간만으로 "파이프라인 관점"을 충분히 전달할 수 있다.
+> 교수님을 위한 Tip: `llama.cpp`로 4비트 sLLM을 실제 구동해 tokens/sec를 보여주면 최고의 데모다. 여의치 않으면 위 근사 계산만으로도 "메모리 대역폭이 토큰 속도를 좌우한다"는 핵심을 충분히 전달할 수 있다.
 
 ---
 
 ### 3교시 정리
-- 전처리·추론·후처리 파이프라인을 만들고 단계별 시간·FPS를 측정했다.
-- 실시간성은 모델만이 아니라 파이프라인 전체(특히 데이터 이동)에서 결정됨을 확인했다.
-- 다음 주부터는 시각 지능을 넘어 언어 지능(NLP·On-Device LLM)으로 넘어간다.
+- 모델 메모리와 KV Cache 메모리를 계산해 On-Device LLM의 두 예산을 구분했다.
+- 토큰 생성 속도가 메모리 대역폭에 종속됨을 수치로 확인했다(양자화가 빠른 이유).
+- 다음 주부터는 이 모델들을 실제 하드웨어에서 최적 실행하는 가속기 프로그래밍으로 넘어간다.

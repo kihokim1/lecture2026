@@ -1,93 +1,81 @@
-# 09주차 3교시. MCU 배포 파이프라인과 Peak Memory
+# 09주차 3교시. 실시간 비전 파이프라인
 
-**실습 목표** — 학습된 모델을 MCU에 올리는 **배포 파이프라인**을 이해하고, 모델을 펌웨어에 넣는 `xxd` 변환과 **Peak Memory 추정**을 직접 해 본다. 실제 보드가 없어도 노트북에서 원리를 확인한다.
+**실습 목표** — 카메라 프레임이 결과가 되기까지의 **전체 파이프라인**을 만들고, 단계별 시간을 측정해 **FPS**를 계산한다. "모델 추론만 빠르다고 실시간이 되는 게 아니다"를 직접 확인한다.
 
-> 준비물: 노트북(리눅스/맥은 `xxd` 기본 포함, Windows는 Git Bash 등). 모델 파일은 5주차에서 만든 양자화 `.tflite`(또는 조교 배포본)를 사용.
-
----
-
-## 3.1 배포 파이프라인 (15분)
-
-TinyML 배포는 정해진 단계를 거친다.
-
-![MCU 배포 파이프라인 — 학습 → 양자화(INT8) → 변환(.tflite/TFLM) → xxd(C 배열) → 펌웨어 빌드·플래시. 각 단계에서 Flash·RAM(Peak Memory) 예산을 확인한다](../assets/w09_p3_deploy_06.png)
-
-`학습(서버)` → `양자화(INT8, 5주차)` → `변환(.tflite, TFLM용)` → `xxd로 C 배열화` → `펌웨어 빌드·플래시`.
-
-각 단계에서 **두 예산**을 계속 확인한다: 모델이 **Flash**에 들어가는가, 실행 중 **Peak Memory**가 **RAM**을 넘지 않는가. 하나라도 넘으면 보드에 아예 안 올라가거나 실행 중 죽는다.
-
-> 관찰 포인트: 양자화가 파이프라인 앞단에 있는 이유 — INT8이라야 크기(Flash)와 정수 연산(FPU 부재)을 모두 감당할 수 있기 때문이다(1교시).
+> 준비물: 1주차 환경(`odai`) + `onnxruntime`, `numpy`, `pillow` + `mobilenetv2.onnx`(1주차 3.1에서 내보낸 파일; 없으면 그 단계의 `torch.onnx.export`를 먼저 실행). 카메라가 없어도 더미 프레임으로 원리를 확인한다.
 
 ---
 
-## 3.2 모델을 펌웨어로 — xxd (15분)
+## 3.1 실시간 비전 파이프라인 (20분)
 
-MCU에는 파일 시스템이 없는 경우가 많다. 그래서 모델을 **C 소스의 바이트 배열**로 바꿔 펌웨어에 **직접 포함**시킨다. 표준 도구가 `xxd`다.
+비전 파이프라인은 `입력 → 전처리 → 추론 → 후처리 → 시각화`로 이어진다. 여기서는 분류 모델로 **전처리·추론·후처리 3단계**를 만들고 각 시간을 잰다.
 
-```bash
-# .tflite 모델 → C 헤더(바이트 배열)로 변환
-xxd -i mobilenet_int8.tflite > model_data.h
-
-# 생성된 헤더 확인(앞부분만)
-head -n 5 model_data.h
-```
-
-생성되는 헤더는 대략 이런 형태다.
-
-```c
-unsigned char mobilenet_int8_tflite[] = {
-  0x1c, 0x00, 0x00, 0x00, 0x54, 0x46, 0x4c, 0x33, /* ... */
-};
-unsigned int mobilenet_int8_tflite_len = 98765;   // ← 모델 크기(Flash 소요)
-```
-
-이 배열을 펌웨어에 넣고, TFLM 인터프리터가 이 바이트를 읽어 실행한다. `..._len` 값이 곧 모델이 차지하는 **Flash 용량**이다.
-
-> 관찰 포인트: `xxd -i`로 나온 `_len`을 보드의 Flash 용량과 비교하라. 이 숫자가 배포 가능 여부의 1차 관문이다.
-
----
-
-## 3.3 Peak Memory 추정과 과제 (20분)
-
-RAM 예산은 **연산 중 동시에 살아있는 버퍼의 합**으로 정해진다. 간단한 층 구성에서 이를 추정해 본다(순수 파이썬, 라이브러리 불필요).
+![실시간 비전 파이프라인 — 카메라 입력→전처리(Resize·Normalize)→NPU 추론→후처리(NMS·디코딩)→시각화. Zero-copy로 단계 간 메모리 복사를 줄이고, FPS로 전체 처리량을 측정한다](../assets/w09_p3_pipeline_06.png)
 
 ```python
-# 각 레이어의 출력 Feature Map 크기(원소 수, INT8=1바이트 가정)
-#  (예시: 채널 x 높이 x 너비)
-fmaps = [
-    ("input",  3*96*96),     # 27,648
-    ("conv1", 16*48*48),     # 36,864
-    ("conv2", 32*24*24),     # 18,432
-    ("conv3", 64*12*12),     #  9,216
-    ("pool",  64*1*1),       #     64
-]
+import time, numpy as np, onnxruntime as ort
+from PIL import Image
 
-# 단순 추정: 한 레이어를 계산할 때 '입력 버퍼 + 출력 버퍼'가 동시에 필요
-peak = 0
-for i in range(1, len(fmaps)):
-    live = fmaps[i-1][1] + fmaps[i][1]      # 이전(입력) + 현재(출력)
-    peak = max(peak, live)
-    print(f"{fmaps[i][0]:>6}: live={live:,} bytes")
-print(f"\nPeak Memory ≈ {peak:,} bytes  (RAM 예산과 비교!)")
+sess = ort.InferenceSession("mobilenetv2.onnx", providers=["CPUExecutionProvider"])
+name = sess.get_inputs()[0].name
+
+def preprocess(img):                      # 카메라 프레임 → 모델 입력
+    img = img.resize((224, 224))
+    x = np.asarray(img, dtype=np.float32) / 255.0
+    x = (x - 0.485) / 0.229               # 간단 정규화(예시)
+    #  ※ 실제로는 채널별 평균/표준편차(mean=[0.485,0.456,0.406], std=[0.229,0.224,0.225])를 쓴다.
+    x = x.transpose(2, 0, 1)[None]        # HWC → NCHW
+    return np.ascontiguousarray(x, dtype=np.float32)
+
+def postprocess(logits):                  # 모델 출력 → 최종 결과
+    return int(logits[0].argmax())        # top-1 클래스
+
+frame = Image.new("RGB", (640, 480), (120, 160, 200))   # 더미 프레임(카메라 대용)
+```
+
+---
+
+## 3.2 FPS·병목 측정 (20분)
+
+각 단계 시간을 나눠 재고, 프레임당 총 시간과 FPS를 계산한다.
+
+```python
+N = 50; tp = ti = to = 0.0
+sess.run(None, {name: preprocess(frame)})          # 워밍업
+
+for _ in range(N):
+    t0 = time.perf_counter(); x = preprocess(frame); t1 = time.perf_counter()
+    y = sess.run(None, {name: x});                  t2 = time.perf_counter()
+    _ = postprocess(y[0]);                          t3 = time.perf_counter()
+    tp += t1 - t0; ti += t2 - t1; to += t3 - t2
+
+total_ms = (tp + ti + to) / N * 1000
+print(f"전처리 {tp/N*1000:5.2f} ms | 추론 {ti/N*1000:5.2f} ms | 후처리 {to/N*1000:5.2f} ms")
+print(f"프레임당 {total_ms:.2f} ms  →  {1000/total_ms:.1f} FPS")
 ```
 
 관찰의 핵심:
 
-1. Peak는 대개 **초반 레이어**(Feature Map이 가장 클 때)에서 발생한다.
-2. 이 값이 기기 RAM(예: 256KB)을 넘으면 배포 불가 → In-place 재활용, 타일링, 더 작은 입력 해상도로 낮춰야 한다.
-3. "모델 크기(Flash)"와 "실행 메모리(RAM/Peak)"는 **다른 예산**이다 — 둘 다 통과해야 한다.
+1. **FPS = 1000 / (프레임당 총 ms)**. 30 FPS 이상이면 대체로 실시간으로 느껴진다.
+2. 추론만이 아니라 **전처리(Resize·Normalize)** 도 무시 못 할 시간을 차지한다. 실제 탐지 모델이라면 후처리(NMS)도 커진다.
+3. 그래서 **Zero-copy**(단계 간 메모리 복사 제거)와 병목 단계 프로파일링이 중요하다 — 2주차의 "데이터 이동이 병목"이 파이프라인 전체에서 재현된다.
 
-### 과제
-1. **예산 점검표** — 위 코드의 `fmaps`를 본인 관심 모델 구조로 바꿔 Peak Memory를 추정하고, 가상의 RAM 예산(예: 256KB)과 비교해 배포 가능 여부를 판정한다.
-2. **입력 해상도 실험** — 입력을 96×96 → 48×48로 줄이면 Peak가 어떻게 변하는지 계산하고, 정확도-메모리 트레이드오프를 3~4문장으로 논한다.
-3. **개념 연결** — Duty Cycling과 Depthwise Separable이 각각 '전력'과 '연산량'의 어느 문제를 푸는지 구분해 설명한다.
-4. **다음 주 예습** — 10주차(엣지 비전)에서는 MobileNet·YOLO 등 경량 비전 모델을 다룬다. Depthwise Separable이 어디에 쓰이는지 미리 찾아온다.
+> 관찰 포인트: 추론 시간이 아무리 짧아도, 전처리·후처리·데이터 이동이 크면 실제 FPS는 오르지 않는다. **최적화 대상은 '모델'이 아니라 '파이프라인 전체'** 다.
 
-> 교수님을 위한 Tip: 실제 보드(Arduino Nano 33 BLE Sense, ESP32-S3)가 있으면 `xxd`로 만든 헤더를 넣어 빌드 크기를 보여주면 좋다. 없더라도 Peak Memory 계산만으로 "왜 큰 모델이 안 올라가는가"를 수치로 이해시킬 수 있다.
+---
+
+## 3.3 과제 (10분 안내)
+
+1. **단계별 프로파일 표** — 본인 기기에서 전처리/추론/후처리 시간과 FPS를 측정해 제출한다. 어느 단계가 병목인지 표시한다.
+2. **해상도 실험** — `preprocess`의 resize 목표를 224×224 → 160×160으로 바꿔 **전처리 시간**의 변화를 측정한다. (주의: 이 모델은 입력이 224×224로 고정이라, *추론* 해상도까지 바꾸려면 모델을 **dynamic axes**로 다시 내보내야 한다.) 해상도-속도-정확도 트레이드오프를 논한다.
+3. **개념 연결** — Zero-copy가 왜 파이프라인 속도에 중요한지 2주차 Memory Wall과 연결해 3~4문장으로 설명한다.
+4. **다음 주 예습** — 10주차(엣지 언어·On-Device LLM)에서는 Transformer가 주인공이다. "긴 문장을 처리할 때 Attention의 메모리가 왜 급증하는가?"를 미리 생각해 온다.
+
+> 교수님을 위한 Tip: 카메라(웹캠)를 쓸 수 있으면 `opencv`로 실시간 프레임을 넣어 FPS를 화면에 오버레이하면 몰입도가 크게 오른다. 없어도 더미 프레임의 단계별 시간만으로 "파이프라인 관점"을 충분히 전달할 수 있다.
 
 ---
 
 ### 3교시 정리
-- MCU 배포 파이프라인(양자화→변환→xxd→플래시)을 이해했다.
-- `xxd`로 모델을 C 배열화하고, Peak Memory를 추정해 Flash·RAM 두 예산을 구분했다.
-- 다음 주부터는 이 기반 위에서 비전·언어 등 실제 응용으로 넘어간다.
+- 전처리·추론·후처리 파이프라인을 만들고 단계별 시간·FPS를 측정했다.
+- 실시간성은 모델만이 아니라 파이프라인 전체(특히 데이터 이동)에서 결정됨을 확인했다.
+- 다음 주부터는 시각 지능을 넘어 언어 지능(NLP·On-Device LLM)으로 넘어간다.
