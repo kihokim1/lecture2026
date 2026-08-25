@@ -33,7 +33,7 @@
 
 **범위 세부**
 
-- 1주차: 온디바이스 AI와 지능형 IoT 개론 — 지연 분해 모델, 4대 동인, 기술 스택 4계층, 제약 최적화 정식화
+- 1주차: 온디바이스AI와 지능형 IoT 개론 — 지연 분해 모델, 4대 동인, 기술 스택 4계층, 제약 최적화 정식화
 - 2주차: 하드웨어 아키텍처 — Memory Wall, NPU·Systolic Array, 메모리 계층, 전성비·DVFS
 - 3주차: 프레임워크·추론 엔진 — ONNX, 그래프 최적화(Operator Fusion·Constant Folding 등), TFLite Delegate, TVM
 - 4주차: 모델 경량화 I — 프루닝(비구조적·구조적, 희소성과 실제 속도의 괴리)

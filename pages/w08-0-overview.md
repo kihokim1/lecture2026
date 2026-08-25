@@ -1,4 +1,4 @@
-# 08주차. TinyML 및 초저전력 온디바이스 AI
+# 08주차. TinyML 및 초저전력 온디바이스AI
 
 > TinyML & Ultra-low Power AI
 > 주당 3시간 · 3교시 × 약 50분 · 이론 70% / 실습 30%

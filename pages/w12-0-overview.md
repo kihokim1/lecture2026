@@ -29,4 +29,4 @@
 ## 선수 연결
 - 1주차 4대 동인 중 Privacy가 학습 단계로 확장된다.
 - 10주차 On-device LoRA가 온디바이스 파인튜닝으로 심화된다.
-- 온디바이스 AI의 종착지: 추론(Inference)을 넘어 현장 학습(Training)으로.
+- 온디바이스AI의 종착지: 추론(Inference)을 넘어 현장 학습(Training)으로.
