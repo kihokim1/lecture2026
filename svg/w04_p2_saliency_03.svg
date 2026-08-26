@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="760" height="300" fill="#f8fafc"/>
+  <text x="380" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">중요도 산출 기준 (Saliency Criteria)</text>
+  <text x="380" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">"어떤 파라미터를 지울 것인가"를 정하는 세 가지 관점</text>
+
+  <g>
+    <rect x="30" y="72" width="230" height="200" rx="12" fill="#eff6ff" stroke="#2563eb"/>
+    <text x="145" y="100" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1e40af">Magnitude</text>
+    <text x="145" y="120" text-anchor="middle" font-size="13" fill="#475569">크기 기반</text>
+    <text x="145" y="150" text-anchor="middle" font-size="14.5" fill="#0f172a">|w| 가 작은 것부터 제거</text>
+    <text x="50" y="185" font-size="13.5" fill="#334155">· 가장 단순·빠름</text>
+    <text x="50" y="208" font-size="13.5" fill="#334155">· 계산 비용 거의 없음</text>
+    <text x="50" y="231" font-size="13.5" fill="#334155">· 널리 쓰이는 기본선</text>
+    <text x="50" y="256" font-size="13" fill="#64748b">가정: 작은 가중치 = 덜 중요</text>
+  </g>
+  <g>
+    <rect x="270" y="72" width="230" height="200" rx="12" fill="#ede9fe" stroke="#7c3aed"/>
+    <text x="385" y="100" text-anchor="middle" font-size="15.5" font-weight="700" fill="#6d28d9">Taylor</text>
+    <text x="385" y="120" text-anchor="middle" font-size="13" fill="#475569">손실 영향 기반</text>
+    <text x="385" y="150" text-anchor="middle" font-size="14.5" fill="#0f172a">제거 시 손실 변화를</text>
+    <text x="385" y="168" text-anchor="middle" font-size="14.5" fill="#0f172a">미분(기울기)으로 근사</text>
+    <text x="290" y="200" font-size="13.5" fill="#334155">· 손실 함수에 미치는 영향 추정</text>
+    <text x="290" y="223" font-size="13.5" fill="#334155">· 크기 기준보다 정밀</text>
+    <text x="290" y="246" font-size="13.5" fill="#334155">· 그래디언트 계산 필요</text>
+  </g>
+  <g>
+    <rect x="510" y="72" width="220" height="200" rx="12" fill="#ecfdf5" stroke="#10b981"/>
+    <text x="620" y="100" text-anchor="middle" font-size="15.5" font-weight="700" fill="#047857">Sensitivity</text>
+    <text x="620" y="120" text-anchor="middle" font-size="13" fill="#475569">민감도 분석</text>
+    <text x="620" y="150" text-anchor="middle" font-size="14.5" fill="#0f172a">레이어 제거 시</text>
+    <text x="620" y="168" text-anchor="middle" font-size="14.5" fill="#0f172a">성능 하락폭 측정</text>
+    <text x="525" y="200" font-size="13.5" fill="#334155">· 레이어별 민감도 파악</text>
+    <text x="525" y="223" font-size="13.5" fill="#334155">· 어디를 얼마나 자를지 배분</text>
+    <text x="525" y="246" font-size="13.5" fill="#334155">· 측정 비용 큼</text>
+  </g>
+</svg>

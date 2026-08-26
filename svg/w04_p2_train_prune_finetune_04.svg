@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="760" height="300" fill="#f8fafc"/>
+  <text x="380" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">프루닝 프로세스: Train → Prune → Fine-tuning (반복)</text>
+
+  <!-- three stages -->
+  <rect x="70" y="90" width="160" height="80" rx="12" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="150" y="126" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1e40af">① Train</text>
+  <text x="150" y="148" text-anchor="middle" font-size="13" fill="#334155">기본 모델 학습</text>
+
+  <rect x="300" y="90" width="160" height="80" rx="12" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="380" y="126" text-anchor="middle" font-size="15.5" font-weight="700" fill="#6d28d9">② Prune</text>
+  <text x="380" y="148" text-anchor="middle" font-size="13" fill="#334155">중요도 낮은 가중치 제거</text>
+
+  <rect x="530" y="90" width="160" height="80" rx="12" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="610" y="126" text-anchor="middle" font-size="15.5" font-weight="700" fill="#15803d">③ Fine-tuning</text>
+  <text x="610" y="148" text-anchor="middle" font-size="13" fill="#334155">정확도 회복 재학습</text>
+
+  <path d="M230 130 H298" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+  <path d="M460 130 H528" stroke="#64748b" stroke-width="2.5" marker-end="url(#a)"/>
+  <!-- loop back -->
+  <path d="M610 170 V225 H150 V172" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="6 4" marker-end="url(#b)"/>
+  <text x="380" y="245" text-anchor="middle" font-size="14" font-weight="700" fill="#b45309">반복(Iterative): 목표 압축률까지 조금씩 자르고 회복</text>
+
+  <text x="380" y="278" text-anchor="middle" font-size="13.5" fill="#334155">한 번에 많이 자르면 회복 불가 — '조금 자르고 재학습'을 반복하는 것이 핵심</text>
+  <defs>
+    <marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#64748b"/></marker>
+    <marker id="b" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#f59e0b"/></marker>
+  </defs>
+</svg>

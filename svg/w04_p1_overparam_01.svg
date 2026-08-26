@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="760" height="320" fill="#f8fafc"/>
+  <text x="380" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">과잉 파라미터화와 프루닝</text>
+  <text x="380" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">불필요한 연결(가중치)을 제거해도 성능을 유지할 수 있다</text>
+
+  <!-- before dense net -->
+  <text x="185" y="86" text-anchor="middle" font-size="14.5" font-weight="700" fill="#b45309">Before — Dense (과잉 파라미터)</text>
+  <g stroke="#cbd5e1" stroke-width="1.2">
+    <!-- edges fully connected 3x3 -->
+    <line x1="90" y1="130" x2="200" y2="120"/><line x1="90" y1="130" x2="200" y2="180"/><line x1="90" y1="130" x2="200" y2="240"/>
+    <line x1="90" y1="185" x2="200" y2="120"/><line x1="90" y1="185" x2="200" y2="180"/><line x1="90" y1="185" x2="200" y2="240"/>
+    <line x1="90" y1="240" x2="200" y2="120"/><line x1="90" y1="240" x2="200" y2="180"/><line x1="90" y1="240" x2="200" y2="240"/>
+    <line x1="200" y1="120" x2="300" y2="150"/><line x1="200" y1="120" x2="300" y2="210"/>
+    <line x1="200" y1="180" x2="300" y2="150"/><line x1="200" y1="180" x2="300" y2="210"/>
+    <line x1="200" y1="240" x2="300" y2="150"/><line x1="200" y1="240" x2="300" y2="210"/>
+  </g>
+  <g fill="#94a3b8">
+    <circle cx="90" cy="130" r="9"/><circle cx="90" cy="185" r="9"/><circle cx="90" cy="240" r="9"/>
+    <circle cx="200" cy="120" r="9"/><circle cx="200" cy="180" r="9"/><circle cx="200" cy="240" r="9"/>
+    <circle cx="300" cy="150" r="9"/><circle cx="300" cy="210" r="9"/>
+  </g>
+
+  <!-- arrow -->
+  <path d="M340 185 H420" stroke="#16a34a" stroke-width="3" marker-end="url(#a)"/>
+  <text x="380" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#16a34a">Prune</text>
+
+  <!-- after sparse net -->
+  <text x="575" y="86" text-anchor="middle" font-size="14.5" font-weight="700" fill="#047857">After — Pruned (희소)</text>
+  <g stroke="#16a34a" stroke-width="1.8">
+    <line x1="460" y1="130" x2="570" y2="120"/><line x1="460" y1="185" x2="570" y2="180"/>
+    <line x1="460" y1="240" x2="570" y2="240"/><line x1="460" y1="130" x2="570" y2="180"/>
+    <line x1="570" y1="120" x2="670" y2="150"/><line x1="570" y1="180" x2="670" y2="210"/>
+    <line x1="570" y1="240" x2="670" y2="210"/>
+  </g>
+  <g fill="#10b981">
+    <circle cx="460" cy="130" r="9"/><circle cx="460" cy="185" r="9"/><circle cx="460" cy="240" r="9"/>
+    <circle cx="570" cy="120" r="9"/><circle cx="570" cy="180" r="9"/><circle cx="570" cy="240" r="9"/>
+    <circle cx="670" cy="150" r="9"/><circle cx="670" cy="210" r="9"/>
+  </g>
+
+  <text x="380" y="298" text-anchor="middle" font-size="13.5" fill="#334155">생물학적 뇌의 시냅스 가지치기처럼 — 기여가 적은 파라미터를 제거해 크기·연산을 줄인다</text>
+  <defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#16a34a"/></marker></defs>
+</svg>

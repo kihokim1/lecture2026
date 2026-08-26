@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="340" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">덜 지운 쪽이 모든 항목에서 이겼다</text>
+  <text x="400" y="50" text-anchor="middle" font-size="13" fill="#64748b">비구조적 99% vs 구조적 50% — 같은 모델, 같은 기기의 실측값</text>
+
+  <rect x="60" y="70" width="340" height="196" rx="10" fill="#ffffff" stroke="#fdba74"/>
+  <text x="230" y="98" text-anchor="middle" font-size="15.5" font-weight="700" fill="#b45309">비구조적 99% 제거</text>
+
+  <text x="88" y="130" font-size="13" fill="#64748b">지운 비율</text>
+  <text x="372" y="130" text-anchor="end" font-size="15" font-weight="700" fill="#b45309">99%</text>
+  <line x1="88" y1="142" x2="372" y2="142" stroke="#f1f5f9"/>
+  <text x="88" y="164" font-size="13" fill="#64748b">파일 크기</text>
+  <text x="372" y="164" text-anchor="end" font-size="15" font-weight="700" fill="#94a3b8">그대로</text>
+  <line x1="88" y1="176" x2="372" y2="176" stroke="#f1f5f9"/>
+  <text x="88" y="198" font-size="13" fill="#64748b">속도</text>
+  <text x="372" y="198" text-anchor="end" font-size="15" font-weight="700" fill="#94a3b8">1.02배</text>
+  <line x1="88" y1="210" x2="372" y2="210" stroke="#f1f5f9"/>
+  <text x="88" y="232" font-size="13" fill="#64748b">정확도</text>
+  <text x="372" y="232" text-anchor="end" font-size="15" font-weight="700" fill="#dc2626">51.78%</text>
+
+  <rect x="420" y="70" width="340" height="196" rx="10" fill="#ffffff" stroke="#6ee7b7"/>
+  <text x="590" y="98" text-anchor="middle" font-size="15.5" font-weight="700" fill="#047857">구조적 50% 제거</text>
+
+  <text x="448" y="130" font-size="13" fill="#64748b">지운 비율</text>
+  <text x="732" y="130" text-anchor="end" font-size="15" font-weight="700" fill="#64748b">50%</text>
+  <line x1="448" y1="142" x2="732" y2="142" stroke="#f1f5f9"/>
+  <text x="448" y="164" font-size="13" fill="#64748b">파일 크기</text>
+  <text x="732" y="164" text-anchor="end" font-size="15" font-weight="700" fill="#047857">절반</text>
+  <line x1="448" y1="176" x2="732" y2="176" stroke="#f1f5f9"/>
+  <text x="448" y="198" font-size="13" fill="#64748b">속도</text>
+  <text x="732" y="198" text-anchor="end" font-size="15" font-weight="700" fill="#047857">1.22배</text>
+  <line x1="448" y1="210" x2="732" y2="210" stroke="#f1f5f9"/>
+  <text x="448" y="232" font-size="13" fill="#64748b">정확도</text>
+  <text x="732" y="232" text-anchor="end" font-size="15" font-weight="700" fill="#047857">97.33%</text>
+  <text x="732" y="250" text-anchor="end" font-size="13" fill="#64748b">(미세조정 후, 원본과 동일)</text>
+
+  <rect x="60" y="286" width="700" height="40" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+  <text x="410" y="311" text-anchor="middle" font-size="14.5" font-weight="700" fill="#065f46">압축률이라는 숫자 하나만 봤다면 정반대의 결론을 내렸을 것이다</text>
+</svg>

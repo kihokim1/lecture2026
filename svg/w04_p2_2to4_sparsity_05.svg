@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 300" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="760" height="300" fill="#f8fafc"/>
+  <text x="380" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">2:4 구조적 희소성 (Structured Sparsity)</text>
+  <text x="380" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">연속된 4개 중 적어도 2개를 0으로 — 하드웨어가 이해하는 '규칙적' 희소성</text>
+
+  <!-- pattern rows -->
+  <text x="120" y="100" text-anchor="end" font-size="14" fill="#334155">가중치 행</text>
+  <!-- group of 4 repeated -->
+  <g font-size="14" text-anchor="middle">
+    <!-- group1 -->
+    <rect x="140" y="82" width="34" height="34" fill="#2563eb"/><text x="157" y="104" fill="#fff">w</text>
+    <rect x="176" y="82" width="34" height="34" fill="#e2e8f0"/><text x="193" y="104" fill="#94a3b8">0</text>
+    <rect x="212" y="82" width="34" height="34" fill="#2563eb"/><text x="229" y="104" fill="#fff">w</text>
+    <rect x="248" y="82" width="34" height="34" fill="#e2e8f0"/><text x="265" y="104" fill="#94a3b8">0</text>
+    <!-- group2 -->
+    <rect x="292" y="82" width="34" height="34" fill="#e2e8f0"/><text x="309" y="104" fill="#94a3b8">0</text>
+    <rect x="328" y="82" width="34" height="34" fill="#2563eb"/><text x="345" y="104" fill="#fff">w</text>
+    <rect x="364" y="82" width="34" height="34" fill="#2563eb"/><text x="381" y="104" fill="#fff">w</text>
+    <rect x="400" y="82" width="34" height="34" fill="#e2e8f0"/><text x="417" y="104" fill="#94a3b8">0</text>
+    <!-- group3 -->
+    <rect x="444" y="82" width="34" height="34" fill="#2563eb"/><text x="461" y="104" fill="#fff">w</text>
+    <rect x="480" y="82" width="34" height="34" fill="#e2e8f0"/><text x="497" y="104" fill="#94a3b8">0</text>
+    <rect x="516" y="82" width="34" height="34" fill="#e2e8f0"/><text x="533" y="104" fill="#94a3b8">0</text>
+    <rect x="552" y="82" width="34" height="34" fill="#2563eb"/><text x="569" y="104" fill="#fff">w</text>
+  </g>
+  <!-- brackets showing groups of 4 -->
+  <path d="M140 124 V132 H282 V124" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="211" y="148" text-anchor="middle" font-size="13" fill="#6d28d9">4개 중 2개만 남김</text>
+  <path d="M292 124 V132 H434 V124" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="363" y="148" text-anchor="middle" font-size="13" fill="#6d28d9">4개 중 2개</text>
+  <path d="M444 124 V132 H586 V124" fill="none" stroke="#7c3aed" stroke-width="1.5"/>
+  <text x="515" y="148" text-anchor="middle" font-size="13" fill="#6d28d9">4개 중 2개</text>
+
+  <rect x="110" y="174" width="540" height="106" rx="10" fill="#ecfdf5" stroke="#10b981"/>
+  <text x="132" y="200" font-size="14.5" font-weight="700" fill="#047857">왜 중요한가</text>
+  <text x="132" y="228" font-size="14" fill="#064e3b">· NVIDIA Ampere 이후 GPU는 이 2:4 패턴을 하드웨어로 직접 가속한다.</text>
+  <text x="132" y="250" font-size="14" fill="#064e3b">· 규칙적이므로 인덱싱 오버헤드 없이 곧바로 연산량을 절반으로.</text>
+  <text x="132" y="270" font-size="13" fill="#475569">→ '아무렇게나 희소'가 아니라 '하드웨어가 정한 규칙대로 희소'해야 빨라진다.</text>
+</svg>

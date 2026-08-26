@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="330" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">희소성을 99%까지 올려도 — 지연은 완전히 평평하다</text>
+  <text x="400" y="50" text-anchor="middle" font-size="13" fill="#64748b">CNN 42만 파라미터 · 배치 32 · 1스레드 고정 · 라운드로빈 5회 반복의 중앙값</text>
+
+  <line x1="118" y1="82" x2="118" y2="228" stroke="#94a3b8"/>
+  <line x1="118" y1="228" x2="740" y2="228" stroke="#94a3b8"/>
+  <text x="110" y="88" text-anchor="end" font-size="12.5" fill="#94a3b8">12</text>
+  <text x="110" y="160" text-anchor="end" font-size="12.5" fill="#94a3b8">6</text>
+  <text x="110" y="232" text-anchor="end" font-size="12.5" fill="#94a3b8">0</text>
+  <text x="64" y="74" font-size="13.5" fill="#334155">지연(ms)</text>
+
+  <rect x="146" y="105" width="66" height="123" rx="4" fill="#cbd5e1"/>
+  <text x="179" y="98" text-anchor="middle" font-size="14" font-weight="700" fill="#475569">10.11</text>
+  <text x="179" y="248" text-anchor="middle" font-size="13.5" fill="#334155">0%</text>
+  <text x="179" y="266" text-anchor="middle" font-size="12" fill="#94a3b8">1.00배</text>
+
+  <rect x="230" y="105" width="66" height="123" rx="4" fill="#cbd5e1"/>
+  <text x="263" y="98" text-anchor="middle" font-size="14" font-weight="700" fill="#475569">10.10</text>
+  <text x="263" y="248" text-anchor="middle" font-size="13.5" fill="#334155">30%</text>
+  <text x="263" y="266" text-anchor="middle" font-size="12" fill="#94a3b8">1.00배</text>
+
+  <rect x="314" y="104" width="66" height="124" rx="4" fill="#cbd5e1"/>
+  <text x="347" y="98" text-anchor="middle" font-size="14" font-weight="700" fill="#475569">10.16</text>
+  <text x="347" y="248" text-anchor="middle" font-size="13.5" fill="#334155">50%</text>
+  <text x="347" y="266" text-anchor="middle" font-size="12" fill="#94a3b8">1.00배</text>
+
+  <rect x="398" y="105" width="66" height="123" rx="4" fill="#cbd5e1"/>
+  <text x="431" y="98" text-anchor="middle" font-size="14" font-weight="700" fill="#475569">10.11</text>
+  <text x="431" y="248" text-anchor="middle" font-size="13.5" fill="#334155">70%</text>
+  <text x="431" y="266" text-anchor="middle" font-size="12" fill="#94a3b8">1.00배</text>
+
+  <rect x="482" y="104" width="66" height="124" rx="4" fill="#cbd5e1"/>
+  <text x="515" y="98" text-anchor="middle" font-size="14" font-weight="700" fill="#475569">10.18</text>
+  <text x="515" y="248" text-anchor="middle" font-size="13.5" fill="#334155">90%</text>
+  <text x="515" y="266" text-anchor="middle" font-size="12" fill="#94a3b8">0.99배</text>
+
+  <rect x="566" y="106" width="66" height="122" rx="4" fill="#cbd5e1"/>
+  <text x="599" y="98" text-anchor="middle" font-size="14" font-weight="700" fill="#475569">10.06</text>
+  <text x="599" y="248" text-anchor="middle" font-size="13.5" fill="#334155">95%</text>
+  <text x="599" y="266" text-anchor="middle" font-size="12" fill="#94a3b8">1.00배</text>
+
+  <rect x="650" y="108" width="66" height="120" rx="4" fill="#f59e0b"/>
+  <text x="683" y="98" text-anchor="middle" font-size="14" font-weight="700" fill="#b45309">9.92</text>
+  <text x="683" y="248" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b45309">99%</text>
+  <text x="683" y="266" text-anchor="middle" font-size="12" font-weight="700" fill="#b45309">1.02배</text>
+
+  <line x1="146" y1="106" x2="716" y2="106" stroke="#dc2626" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="726" y="110" font-size="13" font-weight="700" fill="#dc2626">평평</text>
+
+  <text x="400" y="300" text-anchor="middle" font-size="14.5" font-weight="700" fill="#0f172a">가중치의 99%가 0인데 1.02배 — 밀집 커널은 0인지 확인하지 않고 그냥 곱한다</text>
+</svg>

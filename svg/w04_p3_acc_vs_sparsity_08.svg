@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="330" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">70%를 지워도 정확도는 그대로 — 그러다 절벽을 만난다</text>
+  <text x="400" y="50" text-anchor="middle" font-size="13" fill="#64748b">전역 Magnitude 프루닝 · 테스트 450장 · 미세조정 없이 자른 직후</text>
+
+  <line x1="118" y1="80" x2="118" y2="238" stroke="#94a3b8"/>
+  <line x1="118" y1="238" x2="740" y2="238" stroke="#94a3b8"/>
+  <text x="110" y="86" text-anchor="end" font-size="12.5" fill="#94a3b8">100</text>
+  <text x="110" y="159" text-anchor="end" font-size="12.5" fill="#94a3b8">50</text>
+  <text x="110" y="242" text-anchor="end" font-size="12.5" fill="#94a3b8">0</text>
+  <text x="60" y="72" font-size="13.5" fill="#334155">정확도(%)</text>
+
+  <polyline points="164,84 248,84 332,84 416,83 500,86 584,96 668,157"
+            fill="none" stroke="#0ea5e9" stroke-width="3.5"/>
+  <circle cx="164" cy="84" r="6" fill="#0ea5e9"/>
+  <circle cx="248" cy="84" r="6" fill="#0ea5e9"/>
+  <circle cx="332" cy="84" r="6" fill="#0ea5e9"/>
+  <circle cx="416" cy="83" r="6" fill="#0ea5e9"/>
+  <circle cx="500" cy="86" r="6" fill="#0ea5e9"/>
+  <circle cx="584" cy="96" r="7" fill="#f59e0b"/>
+  <circle cx="668" cy="157" r="8" fill="#dc2626"/>
+
+  <text x="164" y="72" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0369a1">97.33</text>
+  <text x="248" y="72" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0369a1">97.33</text>
+  <text x="332" y="72" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0369a1">97.33</text>
+  <text x="416" y="71" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0369a1">97.56</text>
+  <text x="500" y="74" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0369a1">96.44</text>
+  <text x="584" y="84" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">90.22</text>
+  <text x="668" y="145" text-anchor="middle" font-size="13.5" font-weight="700" fill="#dc2626">51.78</text>
+
+  <text x="164" y="258" text-anchor="middle" font-size="13" fill="#334155">0%</text>
+  <text x="248" y="258" text-anchor="middle" font-size="13" fill="#334155">30%</text>
+  <text x="332" y="258" text-anchor="middle" font-size="13" fill="#334155">50%</text>
+  <text x="416" y="258" text-anchor="middle" font-size="13" fill="#334155">70%</text>
+  <text x="500" y="258" text-anchor="middle" font-size="13" fill="#334155">90%</text>
+  <text x="584" y="258" text-anchor="middle" font-size="13" fill="#334155">95%</text>
+  <text x="668" y="258" text-anchor="middle" font-size="13" fill="#334155">99%</text>
+  <text x="416" y="278" text-anchor="middle" font-size="12.5" fill="#94a3b8">제거율 (희소성)</text>
+
+  <rect x="140" y="176" width="290" height="30" rx="6" fill="#e0f2fe" stroke="#7dd3fc"/>
+  <text x="285" y="196" text-anchor="middle" font-size="13" font-weight="700" fill="#075985">여기까지는 거의 손해가 없다</text>
+
+  <rect x="612" y="176" width="150" height="30" rx="6" fill="#fee2e2" stroke="#fca5a5"/>
+  <text x="687" y="196" text-anchor="middle" font-size="13" font-weight="700" fill="#b91c1c">절벽</text>
+
+  <text x="400" y="306" text-anchor="middle" font-size="14.5" font-weight="700" fill="#0f172a">과잉 파라미터화의 증거 — 대부분의 가중치는 추론에 거의 쓰이지 않고 있었다</text>
+</svg>

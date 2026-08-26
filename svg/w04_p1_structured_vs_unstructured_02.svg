@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 360" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="760" height="360" fill="#f8fafc"/>
+  <text x="380" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">비구조적 vs 구조적 프루닝</text>
+
+  <!-- Unstructured -->
+  <text x="200" y="66" text-anchor="middle" font-size="15" font-weight="700" fill="#7c3aed">Unstructured (비구조적)</text>
+  <text x="200" y="86" text-anchor="middle" font-size="13" fill="#64748b">개별 가중치를 흩어지게 제거</text>
+  <g>
+    <!-- 6x6 weight grid, random zeros -->
+    <!-- draw grid -->
+  </g>
+  <g font-size="0">
+    <!-- generated cells row by row -->
+  </g>
+  <!-- Unstructured grid -->
+  <g>
+    <!-- row1 --><rect x="80" y="100" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="110" y="100" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="140" y="100" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="170" y="100" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="200" y="100" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="230" y="100" width="30" height="30" fill="#ddd6fe" stroke="#fff"/>
+    <!-- row2 --><rect x="80" y="130" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="110" y="130" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="140" y="130" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="170" y="130" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="200" y="130" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="230" y="130" width="30" height="30" fill="#f1f5f9" stroke="#fff"/>
+    <!-- row3 --><rect x="80" y="160" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="110" y="160" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="140" y="160" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="170" y="160" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="200" y="160" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="230" y="160" width="30" height="30" fill="#ddd6fe" stroke="#fff"/>
+    <!-- row4 --><rect x="80" y="190" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="110" y="190" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="140" y="190" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="170" y="190" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="200" y="190" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="230" y="190" width="30" height="30" fill="#ddd6fe" stroke="#fff"/>
+    <!-- row5 --><rect x="80" y="220" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="110" y="220" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="140" y="220" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="170" y="220" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="200" y="220" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="230" y="220" width="30" height="30" fill="#ddd6fe" stroke="#fff"/>
+    <!-- row6 --><rect x="80" y="250" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="110" y="250" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="140" y="250" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="170" y="250" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="200" y="250" width="30" height="30" fill="#ddd6fe" stroke="#fff"/><rect x="230" y="250" width="30" height="30" fill="#f1f5f9" stroke="#fff"/>
+  </g>
+  <text x="200" y="302" text-anchor="middle" font-size="13" fill="#334155">높은 압축률 가능</text>
+  <text x="200" y="320" text-anchor="middle" font-size="13" fill="#dc2626">하드웨어 가속 어려움 (인덱싱 필요)</text>
+
+  <!-- Structured -->
+  <text x="555" y="66" text-anchor="middle" font-size="15" font-weight="700" fill="#0d9488">Structured (구조적)</text>
+  <text x="555" y="86" text-anchor="middle" font-size="13" fill="#64748b">채널·필터 단위로 통째 제거</text>
+  <g>
+    <!-- 6x6 grid, whole columns removed (cols 2 and 5) -->
+    <!-- row generator: columns x=435..615 -->
+    <!-- We'll gray out columns index 1 and 4 (0-based) -->
+    <!-- row1 -->
+    <rect x="435" y="100" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="465" y="100" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="495" y="100" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="525" y="100" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="555" y="100" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="585" y="100" width="30" height="30" fill="#99f6e4" stroke="#fff"/>
+    <rect x="435" y="130" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="465" y="130" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="495" y="130" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="525" y="130" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="555" y="130" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="585" y="130" width="30" height="30" fill="#99f6e4" stroke="#fff"/>
+    <rect x="435" y="160" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="465" y="160" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="495" y="160" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="525" y="160" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="555" y="160" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="585" y="160" width="30" height="30" fill="#99f6e4" stroke="#fff"/>
+    <rect x="435" y="190" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="465" y="190" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="495" y="190" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="525" y="190" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="555" y="190" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="585" y="190" width="30" height="30" fill="#99f6e4" stroke="#fff"/>
+    <rect x="435" y="220" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="465" y="220" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="495" y="220" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="525" y="220" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="555" y="220" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="585" y="220" width="30" height="30" fill="#99f6e4" stroke="#fff"/>
+    <rect x="435" y="250" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="465" y="250" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="495" y="250" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="525" y="250" width="30" height="30" fill="#99f6e4" stroke="#fff"/><rect x="555" y="250" width="30" height="30" fill="#f1f5f9" stroke="#fff"/><rect x="585" y="250" width="30" height="30" fill="#99f6e4" stroke="#fff"/>
+  </g>
+  <text x="555" y="302" text-anchor="middle" font-size="13" fill="#334155">제거된 열=계산 자체를 건너뜀</text>
+  <text x="555" y="320" text-anchor="middle" font-size="13" fill="#047857">가속기에서 즉시 속도 향상</text>
+
+  <text x="335" y="120" font-size="13" fill="#94a3b8">회색 = 제거(0)</text>
+</svg>

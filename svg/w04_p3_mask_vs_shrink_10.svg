@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="340" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">스티커를 붙였나, 책을 빼냈나</text>
+  <text x="400" y="50" text-anchor="middle" font-size="13" fill="#64748b">마스킹은 값만 0으로 바꾼다 — 텐서의 모양은 그대로다</text>
+
+  <rect x="30" y="70" width="360" height="212" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="52" y="96" font-size="14.5" font-weight="700" fill="#b45309">마스킹 (prune.l1_unstructured)</text>
+  <text x="52" y="118" font-size="12.5" fill="#64748b">"안 읽음" 스티커를 붙였다</text>
+
+  <g>
+    <rect x="52" y="132" width="150" height="96" rx="5" fill="#e2e8f0" stroke="#94a3b8"/>
+    <g fill="#f8fafc">
+      <rect x="60" y="140" width="26" height="18"/><rect x="120" y="140" width="26" height="18"/>
+      <rect x="90" y="164" width="26" height="18"/><rect x="150" y="164" width="26" height="18"/>
+      <rect x="60" y="188" width="26" height="18"/><rect x="120" y="188" width="26" height="18"/><rect x="150" y="188" width="26" height="18"/>
+    </g>
+    <text x="127" y="248" text-anchor="middle" font-size="13" fill="#334155">모양 그대로</text>
+  </g>
+  <text x="222" y="152" font-size="12.5" fill="#64748b">fc1.weight</text>
+  <text x="222" y="172" font-size="13.5" font-weight="700" fill="#334155">(128, 3136)</text>
+  <text x="222" y="196" font-size="12.5" fill="#64748b">파일 크기</text>
+  <text x="222" y="216" font-size="13.5" font-weight="700" fill="#b45309">1,689,557 B</text>
+  <text x="222" y="240" font-size="13" font-weight="700" fill="#b45309">속도 1.02배</text>
+
+  <rect x="410" y="70" width="360" height="212" rx="10" fill="#ffffff" stroke="#6ee7b7"/>
+  <text x="432" y="96" font-size="14.5" font-weight="700" fill="#047857">물리적 축소 (채널을 실제로 제거)</text>
+  <text x="432" y="118" font-size="12.5" fill="#64748b">책을 빼내고 책장을 줄였다</text>
+
+  <g>
+    <rect x="432" y="132" width="78" height="96" rx="5" fill="#d1fae5" stroke="#10b981"/>
+    <text x="471" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">실제로 작아짐</text>
+  </g>
+  <text x="530" y="152" font-size="12.5" fill="#64748b">fc1.weight</text>
+  <text x="530" y="172" font-size="13.5" font-weight="700" fill="#047857">(128, 1568)</text>
+  <text x="530" y="196" font-size="12.5" fill="#64748b">파일 크기</text>
+  <text x="530" y="216" font-size="13.5" font-weight="700" fill="#047857">850,267 B</text>
+  <text x="530" y="240" font-size="13" font-weight="700" fill="#047857">속도 1.22배</text>
+
+  <rect x="30" y="296" width="740" height="34" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+  <text x="400" y="318" text-anchor="middle" font-size="14" font-weight="700" fill="#065f46">텐서의 모양이 바뀌어야 비로소 파일도 속도도 움직인다</text>
+</svg>
