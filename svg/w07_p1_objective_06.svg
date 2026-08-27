@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="390" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">목적 함수에 넣지 않은 것은 최적화되지 않는다</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">같은 후보 48개, 같은 실측값 — 무엇을 기준으로 고르느냐만 다르다</text>
+  <rect x="22" y="76" width="206" height="40" fill="#0e4a44"/>
+  <text x="125.0" y="102" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">무엇을 기준으로 골랐나</text>
+  <rect x="228" y="76" width="244" height="40" fill="#0e4a44"/>
+  <text x="350.0" y="102" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">고른 구조</text>
+  <rect x="472" y="76" width="104" height="40" fill="#0e4a44"/>
+  <text x="524.0" y="102" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">정확도</text>
+  <rect x="576" y="76" width="106" height="40" fill="#0e4a44"/>
+  <text x="629.0" y="102" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">지연</text>
+  <rect x="682" y="76" width="100" height="40" fill="#0e4a44"/>
+  <text x="732.0" y="102" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">판정</text>
+  <rect x="22" y="116" width="206" height="58" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="125.0" y="152" text-anchor="middle" font-size="13" font-weight="700" fill="#13282b">정확도만 본다</text>
+  <rect x="228" y="116" width="244" height="58" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="350.0" y="152" text-anchor="middle" font-size="13" font-weight="400" fill="#334155">w32·d2·k5·std·e2.0·flatten</text>
+  <rect x="472" y="116" width="104" height="58" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="524.0" y="152" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">89.57 %</text>
+  <rect x="576" y="116" width="106" height="58" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="629.0" y="152" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">0.426 ms</text>
+  <rect x="682" y="116" width="100" height="58" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="732.0" y="152" text-anchor="middle" font-size="15" font-weight="700" fill="#e4711b">예산 초과</text>
+  <rect x="22" y="174" width="206" height="58" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="125.0" y="210" text-anchor="middle" font-size="13" font-weight="700" fill="#13282b">연산량만 본다</text>
+  <rect x="228" y="174" width="244" height="58" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="350.0" y="210" text-anchor="middle" font-size="13" font-weight="400" fill="#334155">w8·d2·k3·sep·e2.0·gap</text>
+  <rect x="472" y="174" width="104" height="58" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="524.0" y="210" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">62.09 %</text>
+  <rect x="576" y="174" width="106" height="58" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="629.0" y="210" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">0.176 ms</text>
+  <rect x="682" y="174" width="100" height="58" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="732.0" y="210" text-anchor="middle" font-size="15" font-weight="700" fill="#dc2626">정확도 붕괴</text>
+  <rect x="22" y="232" width="206" height="58" fill="#edf6f4" stroke="#d3e5e2"/>
+  <text x="125.0" y="268" text-anchor="middle" font-size="13" font-weight="700" fill="#13282b">지연 예산 0.20 ms 아래에서 정확도</text>
+  <rect x="228" y="232" width="244" height="58" fill="#edf6f4" stroke="#d3e5e2"/>
+  <text x="350.0" y="268" text-anchor="middle" font-size="13" font-weight="700" fill="#334155">w16·d3·k3·std·e2.0·flatten</text>
+  <rect x="472" y="232" width="104" height="58" fill="#edf6f4" stroke="#d3e5e2"/>
+  <text x="524.0" y="268" text-anchor="middle" font-size="15" font-weight="700" fill="#334155">88.49 %</text>
+  <rect x="576" y="232" width="106" height="58" fill="#edf6f4" stroke="#d3e5e2"/>
+  <text x="629.0" y="268" text-anchor="middle" font-size="15" font-weight="700" fill="#334155">0.193 ms</text>
+  <rect x="682" y="232" width="100" height="58" fill="#edf6f4" stroke="#d3e5e2"/>
+  <text x="732.0" y="268" text-anchor="middle" font-size="15" font-weight="700" fill="#028090">채택</text>
+  <rect x="22" y="302" width="756" height="72" rx="12" fill="#07302e"/>
+  <text x="399" y="330" text-anchor="middle" font-size="15" font-weight="700" fill="#58d6bd">정확도만 고르면 예산의 2.21배를 쓰는 모델이 뽑힌다</text>
+  <text x="399" y="356" text-anchor="middle" font-size="13.5" fill="#c3deda">지연을 목적 함수에 넣으면 정확도 1.08%p 를 내주고 2.21배 빠른 구조를 얻는다</text>
+
+</svg>

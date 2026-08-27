@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 348" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="348" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">사람이 고르던 것을 알고리즘에게 맡기면</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">설계–학습–평가의 순환을 사람이 도느냐, 알고리즘이 도느냐</text>
+  <rect x="26" y="72" width="360" height="228" rx="12" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text x="206" y="100" text-anchor="middle" font-size="15.5" font-weight="700" fill="#b45309">수동 설계 (Manual Design)</text>
+  <rect x="48" y="122" width="316" height="30" rx="7" fill="#ffffff" stroke="#f59e0b" stroke-width="0.9"/>
+  <circle cx="66" cy="137" r="9" fill="#b45309"/>
+  <text x="66" y="142" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">1</text>
+  <text x="84" y="142" font-size="13" fill="#334155">직관으로 구조를 하나 그린다</text>
+  <rect x="48" y="160" width="316" height="30" rx="7" fill="#ffffff" stroke="#f59e0b" stroke-width="0.9"/>
+  <circle cx="66" cy="175" r="9" fill="#b45309"/>
+  <text x="66" y="180" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">2</text>
+  <text x="84" y="180" font-size="13" fill="#334155">학습시킨다 (며칠)</text>
+  <rect x="48" y="198" width="316" height="30" rx="7" fill="#ffffff" stroke="#f59e0b" stroke-width="0.9"/>
+  <circle cx="66" cy="213" r="9" fill="#b45309"/>
+  <text x="66" y="218" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">3</text>
+  <text x="84" y="218" font-size="13" fill="#334155">평가한다</text>
+  <rect x="48" y="236" width="316" height="30" rx="7" fill="#ffffff" stroke="#f59e0b" stroke-width="0.9"/>
+  <circle cx="66" cy="251" r="9" fill="#b45309"/>
+  <text x="66" y="256" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">4</text>
+  <text x="84" y="256" font-size="13" fill="#334155">마음에 안 들면 다시 그린다</text>
+  <text x="206" y="288" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">사람이 이 순환을 돈다 — 느리고 비싸다</text>
+  <rect x="414" y="72" width="360" height="228" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="594" y="100" text-anchor="middle" font-size="15.5" font-weight="700" fill="#047857">자동 탐색 (NAS)</text>
+  <rect x="436" y="122" width="316" height="30" rx="7" fill="#ffffff" stroke="#10b981" stroke-width="0.9"/>
+  <circle cx="454" cy="137" r="9" fill="#047857"/>
+  <text x="454" y="142" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">1</text>
+  <text x="472" y="142" font-size="13" fill="#334155">탐색 공간을 사람이 정의한다</text>
+  <rect x="436" y="160" width="316" height="30" rx="7" fill="#ffffff" stroke="#10b981" stroke-width="0.9"/>
+  <circle cx="454" cy="175" r="9" fill="#047857"/>
+  <text x="454" y="180" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">2</text>
+  <text x="472" y="180" font-size="13" fill="#334155">전략이 후보를 뽑는다</text>
+  <rect x="436" y="198" width="316" height="30" rx="7" fill="#ffffff" stroke="#10b981" stroke-width="0.9"/>
+  <circle cx="454" cy="213" r="9" fill="#047857"/>
+  <text x="454" y="218" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">3</text>
+  <text x="472" y="218" font-size="13" fill="#334155">성능을 추정한다</text>
+  <rect x="436" y="236" width="316" height="30" rx="7" fill="#ffffff" stroke="#10b981" stroke-width="0.9"/>
+  <circle cx="454" cy="251" r="9" fill="#047857"/>
+  <text x="454" y="256" text-anchor="middle" font-size="11.5" font-weight="700" fill="#ffffff">4</text>
+  <text x="472" y="256" font-size="13" fill="#334155">더 좋은 후보로 옮겨 간다</text>
+  <text x="594" y="288" text-anchor="middle" font-size="12.5" font-weight="700" fill="#047857">사람은 공간만 정하고, 순환은 알고리즘이 돈다</text>
+  <text x="400" y="330" text-anchor="middle" font-size="14.5" font-weight="700" fill="#0f172a">사람이 하던 일이 사라지는 게 아니다 — 「무엇을 고를 수 있게 할 것인가」를 정하는 일로 옮겨 간다</text>
+
+</svg>

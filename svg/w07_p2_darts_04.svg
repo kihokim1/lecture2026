@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 372" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="372" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">이산 선택을 연속으로 녹이기 — DARTS</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">「어떤 연산을 쓸까」라는 선택 자체를 미분 가능하게 만든다</text>
+  <rect x="26" y="76" width="228" height="216" rx="12" fill="#fff7ed" stroke="#f59e0b" stroke-width="2"/>
+  <text x="140" y="102" text-anchor="middle" font-size="15" font-weight="700" fill="#b45309">① 원래 문제</text>
+  <text x="140" y="126" text-anchor="middle" font-size="13" fill="#334155">이 자리에 무엇을 놓을까</text>
+  <rect x="48" y="146" width="184" height="28" rx="6" fill="#fed7aa" stroke="#f59e0b" stroke-width="0.9"/>
+  <text x="140" y="165" text-anchor="middle" font-size="12.5" fill="#7c2d12">Conv 3×3</text>
+  <rect x="48" y="180" width="184" height="28" rx="6" fill="#ffffff" stroke="#f59e0b" stroke-width="0.9"/>
+  <text x="140" y="199" text-anchor="middle" font-size="12.5" fill="#7c2d12">Conv 5×5</text>
+  <rect x="48" y="214" width="184" height="28" rx="6" fill="#ffffff" stroke="#f59e0b" stroke-width="0.9"/>
+  <text x="140" y="233" text-anchor="middle" font-size="12.5" fill="#7c2d12">MaxPool</text>
+  <rect x="48" y="248" width="184" height="28" rx="6" fill="#ffffff" stroke="#f59e0b" stroke-width="0.9"/>
+  <text x="140" y="267" text-anchor="middle" font-size="12.5" fill="#7c2d12">Skip</text>
+  <text x="140" y="286" text-anchor="middle" font-size="12" font-weight="700" fill="#b45309">하나만 골라야 한다 — 미분 불가</text>
+  <rect x="286" y="76" width="228" height="216" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="400" y="102" text-anchor="middle" font-size="15" font-weight="700" fill="#6d28d9">② 연속 완화</text>
+  <text x="400" y="126" text-anchor="middle" font-size="13" fill="#334155">전부 섞고 가중치를 학습</text>
+  <rect x="308" y="146" width="184" height="28" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="0.9"/>
+  <rect x="308" y="146" width="114" height="28" rx="6" fill="#c4b5fd"/>
+  <text x="318" y="165" font-size="12.5" fill="#4c1d95">Conv 3×3</text>
+  <text x="484" y="165" text-anchor="end" font-size="12" font-weight="700" fill="#6d28d9">α=0.62</text>
+  <rect x="308" y="180" width="184" height="28" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="0.9"/>
+  <rect x="308" y="180" width="39" height="28" rx="6" fill="#c4b5fd"/>
+  <text x="318" y="199" font-size="12.5" fill="#4c1d95">Conv 5×5</text>
+  <text x="484" y="199" text-anchor="end" font-size="12" font-weight="700" fill="#6d28d9">α=0.21</text>
+  <rect x="308" y="214" width="184" height="28" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="0.9"/>
+  <rect x="308" y="214" width="20" height="28" rx="6" fill="#c4b5fd"/>
+  <text x="318" y="233" font-size="12.5" fill="#4c1d95">MaxPool</text>
+  <text x="484" y="233" text-anchor="end" font-size="12" font-weight="700" fill="#6d28d9">α=0.11</text>
+  <rect x="308" y="248" width="184" height="28" rx="6" fill="#ffffff" stroke="#7c3aed" stroke-width="0.9"/>
+  <rect x="308" y="248" width="11" height="28" rx="6" fill="#c4b5fd"/>
+  <text x="318" y="267" font-size="12.5" fill="#4c1d95">Skip</text>
+  <text x="484" y="267" text-anchor="end" font-size="12" font-weight="700" fill="#6d28d9">α=0.06</text>
+  <text x="400" y="286" text-anchor="middle" font-size="12" font-weight="700" fill="#6d28d9">소프트맥스 가중합 — 미분 가능</text>
+  <rect x="546" y="76" width="228" height="216" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="660" y="102" text-anchor="middle" font-size="15" font-weight="700" fill="#047857">③ 다시 이산으로</text>
+  <text x="660" y="126" text-anchor="middle" font-size="13" fill="#334155">α가 가장 큰 것만 남긴다</text>
+  <rect x="568" y="146" width="184" height="28" rx="6" fill="#a7f3d0" stroke="#10b981" stroke-width="0.9"/>
+  <text x="660" y="165" text-anchor="middle" font-size="12.5" fill="#064e3b">Conv 3×3</text>
+  <rect x="568" y="180" width="184" height="28" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="0.9"/>
+  <text x="660" y="199" text-anchor="middle" font-size="12.5" fill="#cbd5e1">Conv 5×5</text>
+  <rect x="568" y="214" width="184" height="28" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="0.9"/>
+  <text x="660" y="233" text-anchor="middle" font-size="12.5" fill="#cbd5e1">MaxPool</text>
+  <rect x="568" y="248" width="184" height="28" rx="6" fill="#f1f5f9" stroke="#e2e8f0" stroke-width="0.9"/>
+  <text x="660" y="267" text-anchor="middle" font-size="12.5" fill="#cbd5e1">Skip</text>
+  <text x="660" y="286" text-anchor="middle" font-size="12" font-weight="700" fill="#047857">최종 구조가 결정된다</text>
+  <path d="M258 184 H282" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#g7)"/>
+  <path d="M518 184 H542" stroke="#94a3b8" stroke-width="2.2" marker-end="url(#g7)"/>
+  <rect x="26" y="306" width="748" height="52" rx="10" fill="#07302e"/>
+  <text x="400" y="328" text-anchor="middle" font-size="14.5" font-weight="700" fill="#58d6bd">5주차 STE와 같은 전략 — 이산적인 것을 잠시 연속인 척하게 만들고, 끝나면 되돌린다</text>
+  <text x="400" y="348" text-anchor="middle" font-size="13" fill="#c3deda">탐색 비용 3,150 GPU-days(진화) → 4 GPU-days(DARTS 2차)</text>
+  <defs><marker id="g7" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#94a3b8"/></marker></defs>
+
+</svg>
