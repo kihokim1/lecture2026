@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 396" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="396" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">교사를 키우면 학생도 좋아질까</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">같은 학생(2,954 파라미터)을 크기가 다른 교사 네 명에게 각각 배우게 했다</text>
+  <line x1="96" y1="286" x2="756" y2="286" stroke="#94a3b8" stroke-width="1.5"/>
+  <line x1="96" y1="88" x2="96" y2="292" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="150" y="308" text-anchor="middle" font-size="13.5" font-weight="700" fill="#334155">교사 w=8</text>
+  <text x="150" y="327" text-anchor="middle" font-size="12" fill="#64748b">8,778 파라미터</text>
+  <text x="350" y="308" text-anchor="middle" font-size="13.5" font-weight="700" fill="#334155">교사 w=16</text>
+  <text x="350" y="327" text-anchor="middle" font-size="12" fill="#64748b">29,066 파라미터</text>
+  <text x="550" y="308" text-anchor="middle" font-size="13.5" font-weight="700" fill="#334155">교사 w=32</text>
+  <text x="550" y="327" text-anchor="middle" font-size="12" fill="#64748b">104,202 파라미터</text>
+  <text x="750" y="308" text-anchor="middle" font-size="13.5" font-weight="700" fill="#334155">교사 w=64</text>
+  <text x="750" y="327" text-anchor="middle" font-size="12" fill="#64748b">392,714 파라미터</text>
+  <path d="M150 217.4 L350 158.3 L550 125.9 L750 116.9" fill="none" stroke="#2563eb" stroke-width="3.2"/>
+  <circle cx="150" cy="217.4" r="6" fill="#2563eb"/>
+  <text x="150" y="203.4" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">88.03</text>
+  <circle cx="350" cy="158.3" r="6" fill="#2563eb"/>
+  <text x="350" y="144.3" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">89.73</text>
+  <circle cx="550" cy="125.9" r="6" fill="#2563eb"/>
+  <text x="550" y="111.9" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">90.66</text>
+  <circle cx="750" cy="116.9" r="6" fill="#2563eb"/>
+  <text x="750" y="102.9" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">90.92</text>
+  <path d="M150 246.0 L350 226.1 L550 225.1 L750 227.2" fill="none" stroke="#e4711b" stroke-width="3.2"/>
+  <circle cx="150" cy="246.0" r="6" fill="#e4711b"/>
+  <text x="150" y="270.0" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">87.21</text>
+  <circle cx="350" cy="226.1" r="6" fill="#e4711b"/>
+  <text x="350" y="250.1" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">87.78</text>
+  <circle cx="550" cy="225.1" r="8" fill="#e4711b"/>
+  <text x="550" y="249.1" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">87.81</text>
+  <circle cx="750" cy="227.2" r="6" fill="#e4711b"/>
+  <text x="750" y="251.2" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">87.75</text>
+  <text x="150" y="185.4" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">교사 자신의 정확도</text>
+  <text x="450" y="210.1" text-anchor="middle" font-size="13" font-weight="700" fill="#9a3412">그 교사에게 배운 학생</text>
+  <path d="M324 215.1 H776" stroke="#dc2626" stroke-width="1.8" stroke-dasharray="5 3" fill="none"/>
+  <rect x="96" y="336" width="660" height="46" rx="10" fill="#fff7ed" stroke="#f59e0b"/>
+  <text x="426" y="356" text-anchor="middle" font-size="14.5" font-weight="700" fill="#b45309">파란 선은 계속 오르는데, 주황 선은 w=16부터 평평하다</text>
+  <text x="426" y="375" text-anchor="middle" font-size="13" fill="#334155">교사 정확도는 학생 성능의 지표가 아니다 — 2교시의 용량 격차</text>
+
+</svg>

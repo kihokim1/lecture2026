@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 326" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="326" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">Teacher–Student 구조</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">교사는 고정되고, 학생만 학습한다</text>
+  <rect x="30" y="140" width="106" height="56" rx="9" fill="#e2e8f0" stroke="#94a3b8"/>
+  <text x="83" y="165" text-anchor="middle" font-size="13.5" font-weight="700" fill="#334155">입력 데이터</text>
+  <text x="83" y="184" text-anchor="middle" font-size="12.5" fill="#475569">같은 배치</text>
+  <rect x="196" y="66" width="232" height="84" rx="12" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="312" y="94" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">Teacher (큰 모델)</text>
+  <text x="312" y="116" text-anchor="middle" font-size="13" fill="#334155">가중치 고정 · eval · no_grad</text>
+  <text x="312" y="137" text-anchor="middle" font-size="13" fill="#334155">역전파가 여기까지 오지 않는다</text>
+  <rect x="212" y="204" width="200" height="80" rx="12" fill="#dcfce7" stroke="#16a34a" stroke-width="2"/>
+  <text x="312" y="232" text-anchor="middle" font-size="15" font-weight="700" fill="#15803d">Student (작은 모델)</text>
+  <text x="312" y="254" text-anchor="middle" font-size="13" fill="#334155">이것만 학습된다</text>
+  <text x="312" y="274" text-anchor="middle" font-size="13" fill="#334155">배포되는 것도 이것</text>
+  <path d="M136 158 C 168 158, 172 110, 194 110" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#g)"/>
+  <path d="M136 180 C 172 205, 186 242, 210 242" fill="none" stroke="#64748b" stroke-width="2.2" marker-end="url(#g)"/>
+  <rect x="474" y="72" width="296" height="74" rx="10" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="622" y="97" text-anchor="middle" font-size="14" font-weight="700" fill="#1e40af">Soft Target (확률 분포)</text>
+  <text x="622" y="120" text-anchor="middle" font-size="13" fill="#334155">앵클부츠 0.79 · 스니커즈 0.11</text>
+  <text x="622" y="139" text-anchor="middle" font-size="13" fill="#334155">샌들 0.05 · 바지 0.00</text>
+  <path d="M428 108 H470" stroke="#2563eb" stroke-width="2.5" marker-end="url(#b)"/>
+  <rect x="474" y="212" width="296" height="64" rx="10" fill="#fef3c7" stroke="#f59e0b"/>
+  <text x="622" y="236" text-anchor="middle" font-size="14" font-weight="700" fill="#b45309">Hard Target (정답)</text>
+  <text x="622" y="259" text-anchor="middle" font-size="13" fill="#334155">앵클부츠 1 · 나머지 전부 0</text>
+  <path d="M622 150 C 622 176, 470 190, 414 236" fill="none" stroke="#7c3aed" stroke-width="2.6" stroke-dasharray="6 4" marker-end="url(#p)"/>
+  <text x="486" y="180" font-size="13.5" font-weight="700" fill="#6d28d9">증류 손실 (KL)</text>
+  <path d="M474 250 H418" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#o)"/>
+  <text x="400" y="310" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">학생은 두 스승에게 동시에 배운다 — 교사의 분포와 실제 정답</text>
+  <defs><marker id="g" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#64748b"/></marker><marker id="b" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#2563eb"/></marker><marker id="p" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#7c3aed"/></marker><marker id="o" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#f59e0b"/></marker></defs>
+
+</svg>

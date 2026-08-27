@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 322" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="322" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">큰 교사가 없어도 되는 변형들</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">전통적 증류의 전제 — '잘 학습된 큰 교사가 미리 있어야 한다' — 를 푸는 방법</text>
+  <rect x="26" y="72" width="244" height="204" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="148" y="100" text-anchor="middle" font-size="15.5" font-weight="700" fill="#1e40af">자기 증류</text>
+  <text x="148" y="121" text-anchor="middle" font-size="12.5" fill="#64748b">Self-Distillation</text>
+  <text x="44" y="152" font-size="12.5" fill="#334155">한 네트워크 안에서 깊은 층이</text>
+  <text x="44" y="175" font-size="12.5" fill="#334155">얕은 층을 가르친다. 교사를 따로</text>
+  <text x="44" y="198" font-size="12.5" fill="#334155">준비할 필요가 없다.</text>
+  <rect x="44" y="234" width="208" height="28" rx="7" fill="#ffffff" stroke="#2563eb"/>
+  <text x="148" y="253" text-anchor="middle" font-size="12" font-weight="700" fill="#1e40af">평균 +2.65%p (ICCV 2019)</text>
+  <rect x="278" y="72" width="244" height="204" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="400" y="100" text-anchor="middle" font-size="15.5" font-weight="700" fill="#6d28d9">상호 학습</text>
+  <text x="400" y="121" text-anchor="middle" font-size="12.5" fill="#64748b">Deep Mutual Learning</text>
+  <text x="296" y="152" font-size="12.5" fill="#334155">여러 학생이 처음부터 서로를</text>
+  <text x="296" y="175" font-size="12.5" fill="#334155">가르치며 함께 학습한다. 서로</text>
+  <text x="296" y="198" font-size="12.5" fill="#334155">크기가 비슷해 격차가 없다.</text>
+  <rect x="296" y="234" width="208" height="28" rx="7" fill="#ffffff" stroke="#7c3aed"/>
+  <text x="400" y="253" text-anchor="middle" font-size="12" font-weight="700" fill="#6d28d9">고정 교사보다 낫다 (CVPR 2018)</text>
+  <rect x="530" y="72" width="244" height="204" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="652" y="100" text-anchor="middle" font-size="15.5" font-weight="700" fill="#047857">교차 모달 증류</text>
+  <text x="652" y="121" text-anchor="middle" font-size="12.5" fill="#64748b">Cross-Modal</text>
+  <text x="548" y="152" font-size="12.5" fill="#334155">비싼 센서로 배운 교사가 값싼</text>
+  <text x="548" y="175" font-size="12.5" fill="#334155">센서 기반 학생을 가르친다.</text>
+  <text x="548" y="198" font-size="12.5" fill="#334155">짝지어진 데이터가 전제.</text>
+  <rect x="548" y="234" width="208" height="28" rx="7" fill="#ffffff" stroke="#10b981"/>
+  <text x="652" y="253" text-anchor="middle" font-size="12" font-weight="700" fill="#047857">RGB → 깊이·광류 (CVPR 2016)</text>
+  <text x="400" y="302" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">지능형 IoT에 가장 가까운 것은 세 번째다 — 비싼 센서는 개발 때 한 번, 값싼 센서는 현장에 수만 대</text>
+
+</svg>

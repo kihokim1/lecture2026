@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 326" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="326" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">교사가 물려줄 수 있는 세 가지</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">무엇을 베끼게 하느냐 — 답안지 · 풀이 과정 · 답을 배열한 방식</text>
+  <rect x="26" y="72" width="244" height="208" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="2"/>
+  <text x="148" y="99" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">Response 기반</text>
+  <text x="148" y="123" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">답안지를 베낀다</text>
+  <text x="44" y="152" font-size="12.5" fill="#334155">· 교사의 최종 출력(소프트 타깃)</text>
+  <text x="44" y="176" font-size="12.5" fill="#334155">· 구조가 완전히 달라도 된다</text>
+  <text x="44" y="200" font-size="12.5" fill="#334155">· 출력 차원만 같으면 됨</text>
+  <rect x="44" y="236" width="208" height="28" rx="7" fill="#ffffff" stroke="#2563eb"/>
+  <text x="148" y="255" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e40af">기본 KD · 3교시 실습</text>
+  <rect x="278" y="72" width="244" height="208" rx="12" fill="#ede9fe" stroke="#7c3aed" stroke-width="2"/>
+  <text x="400" y="99" text-anchor="middle" font-size="15" font-weight="700" fill="#6d28d9">Feature 기반</text>
+  <text x="400" y="123" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">풀이 과정을 베낀다</text>
+  <text x="296" y="152" font-size="12.5" fill="#334155">· 교사 중간 층의 특징 맵</text>
+  <text x="296" y="176" font-size="12.5" fill="#334155">· 채널 수가 달라 회귀 층 필요</text>
+  <text x="296" y="200" font-size="12.5" fill="#334155">· 회귀 층은 합성곱으로</text>
+  <rect x="296" y="236" width="208" height="28" rx="7" fill="#ffffff" stroke="#7c3aed"/>
+  <text x="400" y="255" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6d28d9">FitNets (ICLR 2015)</text>
+  <rect x="530" y="72" width="244" height="208" rx="12" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="652" y="99" text-anchor="middle" font-size="15" font-weight="700" fill="#047857">Relation 기반</text>
+  <text x="652" y="123" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">답을 배열한 방식을 베낀다</text>
+  <text x="548" y="152" font-size="12.5" fill="#334155">· 샘플들 사이의 거리·각도</text>
+  <text x="548" y="176" font-size="12.5" fill="#334155">· 지도의 '모양'을 따라 그린다</text>
+  <text x="548" y="200" font-size="12.5" fill="#334155">· 학생이 교사를 넘기도 한다</text>
+  <rect x="548" y="236" width="208" height="28" rx="7" fill="#ffffff" stroke="#10b981"/>
+  <text x="652" y="255" text-anchor="middle" font-size="12.5" font-weight="700" fill="#047857">RKD (CVPR 2019)</text>
+  <text x="400" y="306" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">뒤로 갈수록 교사와 학생의 구조를 대응시키는 부담이 커진다</text>
+
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 376" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="376" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">전이 집합 — 교사의 진짜 선물</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">정답 라벨이 없는 데이터에도 교사는 답을 달아 줄 수 있다</text>
+  <rect x="34" y="76" width="220" height="120" rx="11" fill="#fef3c7" stroke="#f59e0b" stroke-width="2"/>
+  <text x="144" y="102" text-anchor="middle" font-size="14.5" font-weight="700" fill="#b45309">라벨 있는 데이터</text>
+  <text x="144" y="130" text-anchor="middle" font-size="24" font-weight="700" fill="#b45309">10,000장</text>
+  <text x="144" y="154" text-anchor="middle" font-size="12.5" fill="#334155">사람이 일일이 붙였다</text>
+  <text x="144" y="176" text-anchor="middle" font-size="12.5" fill="#334155">비싸고 느리다</text>
+  <rect x="34" y="212" width="220" height="120" rx="11" fill="#e2e8f0" stroke="#94a3b8" stroke-width="2"/>
+  <text x="144" y="238" text-anchor="middle" font-size="14.5" font-weight="700" fill="#475569">라벨 없는 데이터</text>
+  <text x="144" y="266" text-anchor="middle" font-size="24" font-weight="700" fill="#475569">30,000장</text>
+  <text x="144" y="290" text-anchor="middle" font-size="12.5" fill="#334155">엣지에서 그냥 쌓인다</text>
+  <text x="144" y="312" text-anchor="middle" font-size="12.5" fill="#334155">지금까지는 못 썼다</text>
+  <rect x="316" y="140" width="168" height="130" rx="11" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <text x="400" y="172" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">교사</text>
+  <text x="400" y="200" text-anchor="middle" font-size="13" fill="#334155">다른 데이터로</text>
+  <text x="400" y="220" text-anchor="middle" font-size="13" fill="#334155">이미 학습되어 있다</text>
+  <text x="400" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#1e40af">라벨을 달아 준다</text>
+  <path d="M254 268 C 286 268, 288 220, 312 210" fill="none" stroke="#2563eb" stroke-width="2.6" marker-end="url(#b)"/>
+  <rect x="546" y="140" width="220" height="130" rx="11" fill="#ecfdf5" stroke="#10b981" stroke-width="2"/>
+  <text x="656" y="170" text-anchor="middle" font-size="14.5" font-weight="700" fill="#047857">전이 집합</text>
+  <text x="656" y="200" text-anchor="middle" font-size="26" font-weight="700" fill="#047857">40,000장</text>
+  <text x="656" y="226" text-anchor="middle" font-size="12.5" fill="#334155">학생이 배울 수 있는 양이</text>
+  <text x="656" y="248" text-anchor="middle" font-size="12.5" font-weight="700" fill="#047857">4배가 되었다</text>
+  <path d="M484 205 H542" stroke="#10b981" stroke-width="2.6" marker-end="url(#e)"/>
+  <path d="M254 130 C 340 100, 456 112, 538 158" fill="none" stroke="#f59e0b" stroke-width="2.4" stroke-dasharray="6 4" marker-end="url(#o)"/>
+  <text x="410" y="98" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b45309">라벨 있는 것은 그대로 합류</text>
+  <text x="400" y="358" text-anchor="middle" font-size="14.5" font-weight="700" fill="#0f172a">Buciluǎ 등(2006)이 처음 쓴 방법이 바로 이것이다 — 온도도 암흑 지식도 없이, 앙상블이 붙인 라벨만으로</text>
+  <defs><marker id="b" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#2563eb"/></marker><marker id="e" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#10b981"/></marker><marker id="o" markerWidth="9" markerHeight="9" refX="7" refY="3.5" orient="auto"><path d="M0,0 L7,3.5 L0,7 Z" fill="#f59e0b"/></marker></defs>
+
+</svg>

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="350" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">온도 T — 암흑 지식을 보이게 만드는 확대경</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">같은 앵클부츠 한 장에 세 가지 온도를 적용한 실측값</text>
+  <rect x="26" y="70" width="246" height="238" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="149" y="96" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">T = 1</text>
+  <line x1="42" y1="250" x2="256" y2="250" stroke="#94a3b8"/>
+  <rect x="48" y="132.04719999999998" width="24" height="117.95280000000001" fill="#2563eb"/>
+  <rect x="83" y="248.5" width="24" height="1.5" fill="#60a5fa"/>
+  <rect x="118" y="248.5" width="24" height="1.5" fill="#60a5fa"/>
+  <rect x="153" y="248.5" width="24" height="1.5" fill="#cbd5e1"/>
+  <rect x="188" y="248.5" width="24" height="1.5" fill="#cbd5e1"/>
+  <rect x="223" y="248.5" width="24" height="1.5" fill="#cbd5e1"/>
+  <text x="60" y="267" text-anchor="middle" font-size="11.5" fill="#475569">부츠</text>
+  <text x="236" y="267" text-anchor="middle" font-size="11.5" fill="#475569">바지</text>
+  <text x="149" y="290" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">정답 하나만 보인다</text>
+  <text x="149" y="118" text-anchor="middle" font-size="12.5" fill="#64748b">부츠 0.9996 · 스니커즈 0.0003</text>
+  <rect x="284" y="70" width="246" height="238" rx="12" fill="#ffffff" stroke="#10b981" stroke-width="2.4"/>
+  <text x="407" y="96" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">T = 4</text>
+  <line x1="300" y1="250" x2="514" y2="250" stroke="#94a3b8"/>
+  <rect x="306" y="157.34640000000002" width="24" height="92.6536" fill="#2563eb"/>
+  <rect x="341" y="237.4212" width="24" height="12.5788" fill="#60a5fa"/>
+  <rect x="376" y="243.5572" width="24" height="6.4428" fill="#60a5fa"/>
+  <rect x="411" y="247.1444" width="24" height="2.8556" fill="#cbd5e1"/>
+  <rect x="446" y="248.5" width="24" height="1.5" fill="#cbd5e1"/>
+  <rect x="481" y="248.5" width="24" height="1.5" fill="#cbd5e1"/>
+  <text x="318" y="267" text-anchor="middle" font-size="11.5" fill="#475569">부츠</text>
+  <text x="494" y="267" text-anchor="middle" font-size="11.5" fill="#475569">바지</text>
+  <text x="407" y="290" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">관계가 가장 선명하다</text>
+  <text x="407" y="118" text-anchor="middle" font-size="12.5" fill="#64748b">부츠 0.7852 · 스니커즈 0.1066</text>
+  <rect x="542" y="70" width="246" height="238" rx="12" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.4"/>
+  <text x="665" y="96" text-anchor="middle" font-size="16" font-weight="700" fill="#0f172a">T = 20</text>
+  <line x1="558" y1="250" x2="772" y2="250" stroke="#94a3b8"/>
+  <rect x="564" y="225.0902" width="24" height="24.9098" fill="#2563eb"/>
+  <rect x="599" y="233.2912" width="24" height="16.7088" fill="#60a5fa"/>
+  <rect x="634" y="235.3916" width="24" height="14.6084" fill="#60a5fa"/>
+  <rect x="669" y="237.5746" width="24" height="12.4254" fill="#cbd5e1"/>
+  <rect x="704" y="239.7576" width="24" height="10.2424" fill="#cbd5e1"/>
+  <rect x="739" y="246.519" width="24" height="3.481" fill="#cbd5e1"/>
+  <text x="576" y="267" text-anchor="middle" font-size="11.5" fill="#475569">부츠</text>
+  <text x="752" y="267" text-anchor="middle" font-size="11.5" fill="#475569">바지</text>
+  <text x="665" y="290" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">정답까지 뭉개진다</text>
+  <text x="665" y="118" text-anchor="middle" font-size="12.5" fill="#64748b">부츠 0.2111 · 스니커즈 0.1416</text>
+  <text x="400" y="334" text-anchor="middle" font-size="14" font-weight="700" fill="#0f172a">크면 클수록 좋은 손잡이가 아니다 — 적정 지점이 있고, 그 지점은 학생의 크기에 달려 있다</text>
+
+</svg>

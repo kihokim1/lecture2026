@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 348" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="348" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">세 가지 경량화를 같은 자로 재면</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">4주차 프루닝 · 5주차 양자화 · 6주차 증류 (각 주차 실측)</text>
+  <rect x="28" y="76" width="122" height="44" fill="#0e4a44"/>
+  <text x="89.0" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">재는 것</text>
+  <rect x="150" y="76" width="172" height="44" fill="#0e4a44"/>
+  <text x="236.0" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">비구조적 프루닝 90%</text>
+  <rect x="322" y="76" width="166" height="44" fill="#0e4a44"/>
+  <text x="405.0" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">구조적 프루닝 50%</text>
+  <rect x="488" y="76" width="140" height="44" fill="#0e4a44"/>
+  <text x="558.0" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">INT8 양자화</text>
+  <rect x="628" y="76" width="140" height="44" fill="#07302e"/>
+  <text x="698.0" y="103" text-anchor="middle" font-size="13" font-weight="700" fill="#ffffff">지식 증류</text>
+  <rect x="28" y="120" width="122" height="46" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="89.0" y="149" text-anchor="middle" font-size="13.5" font-weight="700" fill="#13282b">파일 크기</text>
+  <rect x="150" y="120" width="172" height="46" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="236.0" y="149" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">1.00배</text>
+  <rect x="322" y="120" width="166" height="46" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="405.0" y="149" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">약 2배</text>
+  <rect x="488" y="120" width="140" height="46" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="558.0" y="149" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">3.91배</text>
+  <rect x="628" y="120" width="140" height="46" fill="#edf6f4" stroke="#d3e5e2"/>
+  <text x="698.0" y="149" text-anchor="middle" font-size="14" font-weight="700" fill="#028090">1.00배</text>
+  <rect x="28" y="166" width="122" height="46" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="89.0" y="195" text-anchor="middle" font-size="13.5" font-weight="700" fill="#13282b">추론 지연</text>
+  <rect x="150" y="166" width="172" height="46" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="236.0" y="195" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">1.02배</text>
+  <rect x="322" y="166" width="166" height="46" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="405.0" y="195" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">1.22배</text>
+  <rect x="488" y="166" width="140" height="46" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="558.0" y="195" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">1.94배</text>
+  <rect x="628" y="166" width="140" height="46" fill="#edf6f4" stroke="#d3e5e2"/>
+  <text x="698.0" y="195" text-anchor="middle" font-size="14" font-weight="700" fill="#028090">1.00배</text>
+  <rect x="28" y="212" width="122" height="46" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="89.0" y="241" text-anchor="middle" font-size="13.5" font-weight="700" fill="#13282b">정확도</text>
+  <rect x="150" y="212" width="172" height="46" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="236.0" y="241" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">96.44%</text>
+  <rect x="322" y="212" width="166" height="46" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="405.0" y="241" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">97.33%</text>
+  <rect x="488" y="212" width="140" height="46" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="558.0" y="241" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">97.33%</text>
+  <rect x="628" y="212" width="140" height="46" fill="#edf6f4" stroke="#d3e5e2"/>
+  <text x="698.0" y="241" text-anchor="middle" font-size="14" font-weight="700" fill="#028090">+2.14%p</text>
+  <rect x="28" y="258" width="122" height="46" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="89.0" y="287" text-anchor="middle" font-size="13.5" font-weight="700" fill="#13282b">재학습</text>
+  <rect x="150" y="258" width="172" height="46" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="236.0" y="287" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">필요</text>
+  <rect x="322" y="258" width="166" height="46" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="405.0" y="287" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">필요</text>
+  <rect x="488" y="258" width="140" height="46" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="558.0" y="287" text-anchor="middle" font-size="14" font-weight="400" fill="#334155">불필요</text>
+  <rect x="628" y="258" width="140" height="46" fill="#edf6f4" stroke="#d3e5e2"/>
+  <text x="698.0" y="287" text-anchor="middle" font-size="14" font-weight="700" fill="#028090">학습 그 자체</text>
+  <text x="400" y="330" text-anchor="middle" font-size="14.5" font-weight="700" fill="#0f172a">증류만 세로줄이 다르다 — 앞의 셋은 완성된 모델을 손질하고, 증류는 그 크기에서의 성적을 정한다</text>
+
+</svg>

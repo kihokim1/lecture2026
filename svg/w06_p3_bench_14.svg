@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 366" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="366" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">세 개의 숫자 — 1교시의 물음표를 채운다</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">학생 CE · 학생 증류 · 교사</text>
+  <rect x="22" y="76" width="128" height="40" fill="#0e4a44"/>
+  <text x="86.0" y="102" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">재는 것</text>
+  <rect x="150" y="76" width="168" height="40" fill="#0e4a44"/>
+  <text x="234.0" y="102" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">학생 — CE만</text>
+  <rect x="318" y="76" width="168" height="40" fill="#0e4a44"/>
+  <text x="402.0" y="102" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">학생 — 증류</text>
+  <rect x="486" y="76" width="168" height="40" fill="#0e4a44"/>
+  <text x="570.0" y="102" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">교사 (참고)</text>
+  <rect x="22" y="116" width="128" height="56" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="86.0" y="151" text-anchor="middle" font-size="14" font-weight="700" fill="#13282b">파일 크기</text>
+  <rect x="150" y="116" width="168" height="56" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="234.0" y="151" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">15,273 B</text>
+  <rect x="318" y="116" width="168" height="56" fill="#ecfdf5" stroke="#d3e5e2"/>
+  <text x="402.0" y="151" text-anchor="middle" font-size="15" font-weight="700" fill="#047857">15,273 B</text>
+  <rect x="486" y="116" width="168" height="56" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="570.0" y="151" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">119,253 B</text>
+  <text x="720" y="151" text-anchor="middle" font-size="16" font-weight="700" fill="#94a3b8">1.00배</text>
+  <rect x="22" y="172" width="128" height="56" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="86.0" y="207" text-anchor="middle" font-size="14" font-weight="700" fill="#13282b">추론 지연</text>
+  <rect x="150" y="172" width="168" height="56" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="234.0" y="207" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">0.097 ms</text>
+  <rect x="318" y="172" width="168" height="56" fill="#ecfdf5" stroke="#d3e5e2"/>
+  <text x="402.0" y="207" text-anchor="middle" font-size="15" font-weight="700" fill="#047857">0.099 ms</text>
+  <rect x="486" y="172" width="168" height="56" fill="#ffffff" stroke="#d3e5e2"/>
+  <text x="570.0" y="207" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">0.199 ms</text>
+  <text x="720" y="207" text-anchor="middle" font-size="16" font-weight="700" fill="#94a3b8">동일 구조</text>
+  <rect x="22" y="228" width="128" height="56" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="86.0" y="263" text-anchor="middle" font-size="14" font-weight="700" fill="#13282b">정확도</text>
+  <rect x="150" y="228" width="168" height="56" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="234.0" y="263" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">85.64%</text>
+  <rect x="318" y="228" width="168" height="56" fill="#ecfdf5" stroke="#d3e5e2"/>
+  <text x="402.0" y="263" text-anchor="middle" font-size="15" font-weight="700" fill="#047857">87.78%</text>
+  <rect x="486" y="228" width="168" height="56" fill="#f7fbfa" stroke="#d3e5e2"/>
+  <text x="570.0" y="263" text-anchor="middle" font-size="15" font-weight="400" fill="#334155">89.73%</text>
+  <text x="720" y="263" text-anchor="middle" font-size="16" font-weight="700" fill="#10b981">+2.14%p</text>
+  <text x="720" y="102" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">CE 대비</text>
+  <rect x="22" y="300" width="756" height="46" rx="10" fill="#07302e"/>
+  <text x="400" y="320" text-anchor="middle" font-size="15" font-weight="700" fill="#58d6bd">파일도 속도도 정확히 그대로 — 움직인 것은 정확도 하나뿐이다</text>
+  <text x="400" y="339" text-anchor="middle" font-size="13" fill="#c8e8e2">학생은 교사보다 9.8배 작고 2.1배 빠르다 — 그 크기는 증류가 아니라 우리가 골랐다</text>
+
+</svg>

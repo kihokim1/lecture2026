@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="330" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">하드 타깃과 소프트 타깃 — 같은 앵클부츠 한 장</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">교사(w=16) 실제 출력 · 온도 T=4 적용</text>
+  <text x="212" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#b45309">하드 타깃 (정답, one-hot)</text>
+  <line x1="52" y1="268" x2="372" y2="268" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="62" y="118.0" width="34" height="150.0" fill="#f59e0b" stroke="#d97706" stroke-width="0.6"/>
+  <text x="79" y="111.0" text-anchor="middle" font-size="12.5" font-weight="700" fill="#92400e">1</text>
+  <text x="79" y="286" text-anchor="middle" font-size="12" fill="#334155">앵클부츠</text>
+  <rect x="114" y="266" width="34" height="2" fill="#e2e8f0" stroke="#d97706" stroke-width="0.6"/>
+  <text x="131" y="259" text-anchor="middle" font-size="12.5" font-weight="700" fill="#92400e">0</text>
+  <text x="131" y="286" text-anchor="middle" font-size="12" fill="#334155">스니커즈</text>
+  <rect x="166" y="266" width="34" height="2" fill="#e2e8f0" stroke="#d97706" stroke-width="0.6"/>
+  <text x="183" y="259" text-anchor="middle" font-size="12.5" font-weight="700" fill="#92400e">0</text>
+  <text x="183" y="286" text-anchor="middle" font-size="12" fill="#334155">샌들</text>
+  <rect x="218" y="266" width="34" height="2" fill="#e2e8f0" stroke="#d97706" stroke-width="0.6"/>
+  <text x="235" y="259" text-anchor="middle" font-size="12.5" font-weight="700" fill="#92400e">0</text>
+  <text x="235" y="286" text-anchor="middle" font-size="12" fill="#334155">가방</text>
+  <rect x="270" y="266" width="34" height="2" fill="#e2e8f0" stroke="#d97706" stroke-width="0.6"/>
+  <text x="287" y="259" text-anchor="middle" font-size="12.5" font-weight="700" fill="#92400e">0</text>
+  <text x="287" y="286" text-anchor="middle" font-size="12" fill="#334155">셔츠</text>
+  <rect x="322" y="266" width="34" height="2" fill="#e2e8f0" stroke="#d97706" stroke-width="0.6"/>
+  <text x="339" y="259" text-anchor="middle" font-size="12.5" font-weight="700" fill="#92400e">0</text>
+  <text x="339" y="286" text-anchor="middle" font-size="12" fill="#334155">바지</text>
+  <text x="212" y="308" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b45309">스니커즈와 바지가 똑같이 0 — 둘 다 그냥 오답</text>
+  <text x="612" y="80" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">소프트 타깃 (교사의 확률 분포)</text>
+  <line x1="452" y1="268" x2="772" y2="268" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="462" y="150.22" width="34" height="117.78" fill="#2563eb" stroke="#1d4ed8" stroke-width="0.6"/>
+  <text x="479" y="143.22" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e40af">0.7852</text>
+  <text x="479" y="286" text-anchor="middle" font-size="12" fill="#334155">앵클부츠</text>
+  <rect x="514" y="252.01" width="34" height="15.99" fill="#3b82f6" stroke="#1d4ed8" stroke-width="0.6"/>
+  <text x="531" y="245.01" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e40af">0.1066</text>
+  <text x="531" y="286" text-anchor="middle" font-size="12" fill="#334155">스니커즈</text>
+  <rect x="566" y="259.81" width="34" height="8.190000000000001" fill="#60a5fa" stroke="#1d4ed8" stroke-width="0.6"/>
+  <text x="583" y="252.81" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e40af">0.0546</text>
+  <text x="583" y="286" text-anchor="middle" font-size="12" fill="#334155">샌들</text>
+  <rect x="618" y="264.37" width="34" height="3.63" fill="#93c5fd" stroke="#1d4ed8" stroke-width="0.6"/>
+  <text x="635" y="257.37" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e40af">0.0242</text>
+  <text x="635" y="286" text-anchor="middle" font-size="12" fill="#334155">가방</text>
+  <rect x="670" y="266" width="34" height="2" fill="#bfdbfe" stroke="#1d4ed8" stroke-width="0.6"/>
+  <text x="687" y="259" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e40af">0.0093</text>
+  <text x="687" y="286" text-anchor="middle" font-size="12" fill="#334155">셔츠</text>
+  <rect x="722" y="266" width="34" height="2" fill="#e2e8f0" stroke="#1d4ed8" stroke-width="0.6"/>
+  <text x="739" y="259" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1e40af">0.0000</text>
+  <text x="739" y="286" text-anchor="middle" font-size="12" fill="#334155">바지</text>
+  <path d="M514 226 V218 H602 V226" stroke="#dc2626" stroke-width="1.6" fill="none"/>
+  <text x="558" y="212" text-anchor="middle" font-size="12.5" font-weight="700" fill="#dc2626">같은 신발</text>
+  <text x="612" y="308" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1e40af">신발끼리는 헷갈리고 바지와는 안 헷갈린다 — 암흑 지식</text>
+
+</svg>

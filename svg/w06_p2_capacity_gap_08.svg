@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 362" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="362" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">용량 격차 — 더 좋은 교사가 더 좋은 학생을 만들까</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">교사가 커지면 두 가지가 동시에 일어난다</text>
+  <rect x="34" y="76" width="352" height="212" rx="12" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="210" y="102" text-anchor="middle" font-size="15" font-weight="700" fill="#1e40af">① 교사의 정확도는 오른다</text>
+  <line x1="70" y1="252" x2="356" y2="252" stroke="#94a3b8"/>
+  <line x1="70" y1="128" x2="70" y2="256" stroke="#94a3b8"/>
+  <path d="M92 236 C 160 214, 240 168, 340 152" fill="none" stroke="#2563eb" stroke-width="3.2"/>
+  <circle cx="92" cy="236" r="5" fill="#2563eb"/>
+  <circle cx="166" cy="208" r="5" fill="#2563eb"/>
+  <circle cx="248" cy="176" r="5" fill="#2563eb"/>
+  <circle cx="340" cy="152" r="5" fill="#2563eb"/>
+  <text x="210" y="272" text-anchor="middle" font-size="12.5" fill="#475569">교사 크기 →</text>
+  <text x="82" y="146" font-size="12.5" font-weight="700" fill="#1e40af">교사 정확도</text>
+  <rect x="414" y="76" width="352" height="212" rx="12" fill="#ffffff" stroke="#fdba74"/>
+  <text x="590" y="102" text-anchor="middle" font-size="15" font-weight="700" fill="#b45309">② 교사의 함수도 복잡해진다</text>
+  <line x1="450" y1="252" x2="736" y2="252" stroke="#94a3b8"/>
+  <line x1="450" y1="128" x2="450" y2="256" stroke="#94a3b8"/>
+  <path d="M450 196 H736" stroke="#dc2626" stroke-width="2.4" stroke-dasharray="6 4"/>
+  <text x="734" y="216" text-anchor="end" font-size="12.5" font-weight="700" fill="#dc2626">학생이 표현할 수 있는 한계</text>
+  <path d="M472 240 C 540 226, 610 186, 720 138" fill="none" stroke="#b45309" stroke-width="3.2"/>
+  <text x="462" y="146" font-size="12.5" font-weight="700" fill="#b45309">교사 함수의 복잡도</text>
+  <circle cx="604" cy="196" r="8" fill="#ffffff" stroke="#dc2626" stroke-width="2.6"/>
+  <text x="604" y="164" text-anchor="middle" font-size="12.5" font-weight="700" fill="#dc2626">여기서부터</text>
+  <text x="590" y="272" text-anchor="middle" font-size="12.5" fill="#475569">교사 크기 →</text>
+  <rect x="34" y="302" width="732" height="46" rx="10" fill="#fff7ed" stroke="#f59e0b"/>
+  <text x="400" y="322" text-anchor="middle" font-size="14.5" font-weight="700" fill="#b45309">빨간 선을 넘는 순간부터 ②가 ①을 잡아먹는다</text>
+  <text x="400" y="341" text-anchor="middle" font-size="13" fill="#334155">"작은 학생은 큰 교사를 흉내 낼 수 없다" — Cho &amp; Hariharan, ICCV 2019</text>
+
+</svg>
