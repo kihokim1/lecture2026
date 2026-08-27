@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="330" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">미분이 안 되는 반올림을 어떻게 학습시키나 — STE</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">순전파는 계단, 역전파는 직선 — 서로 다른 함수를 쓴다</text>
+
+  <rect x="40" y="72" width="350" height="212" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="62" y="98" font-size="15" font-weight="700" fill="#334155">순전파 — 반올림을 제대로 한다</text>
+  <line x1="80" y1="250" x2="360" y2="250" stroke="#94a3b8"/>
+  <line x1="90" y1="120" x2="90" y2="256" stroke="#94a3b8"/>
+  <g stroke="#0ea5e9" stroke-width="3" fill="none">
+    <path d="M 100 235 L 150 235"/><path d="M 150 205 L 200 205"/>
+    <path d="M 200 175 L 250 175"/><path d="M 250 145 L 300 145"/><path d="M 300 130 L 345 130"/>
+  </g>
+  <g stroke="#bae6fd" stroke-width="2" stroke-dasharray="3 3">
+    <path d="M 150 235 L 150 205"/><path d="M 200 205 L 200 175"/>
+    <path d="M 250 175 L 250 145"/><path d="M 300 145 L 300 130"/>
+  </g>
+  <text x="215" y="272" text-anchor="middle" font-size="13" fill="#64748b">round(x)</text>
+  <text x="98" y="228" font-size="12" font-weight="700" fill="#b45309">기울기 0</text>
+  <text x="200" y="168" font-size="12" font-weight="700" fill="#b45309">기울기 0</text>
+
+  <rect x="410" y="72" width="350" height="212" rx="10" fill="#ffffff" stroke="#6ee7b7"/>
+  <text x="432" y="98" font-size="15" font-weight="700" fill="#047857">역전파 — 없었던 척한다</text>
+  <line x1="450" y1="250" x2="730" y2="250" stroke="#94a3b8"/>
+  <line x1="460" y1="120" x2="460" y2="256" stroke="#94a3b8"/>
+  <g stroke="#cbd5e1" stroke-width="2" fill="none">
+    <path d="M 470 235 L 520 235"/><path d="M 520 205 L 570 205"/>
+    <path d="M 570 175 L 620 175"/><path d="M 620 145 L 670 145"/><path d="M 670 130 L 715 130"/>
+  </g>
+  <path d="M 470 240 L 715 128" stroke="#10b981" stroke-width="3.5" fill="none"/>
+  <text x="585" y="272" text-anchor="middle" font-size="13" fill="#64748b">기울기를 그대로 통과시킨다</text>
+  <text x="600" y="212" font-size="13" font-weight="700" fill="#047857">기울기 1</text>
+
+  <rect x="40" y="298" width="720" height="24" rx="6" fill="#ecfdf5" stroke="#6ee7b7"/>
+  <text x="400" y="315" text-anchor="middle" font-size="13.5" font-weight="700" fill="#065f46">엄밀한 근사는 아니다 — 그런데 잘 된다. 지금도 이론 연구가 이어지는 이유다</text>
+</svg>

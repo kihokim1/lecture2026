@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="330" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">이번엔 세 개가 전부 움직였다</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">FP32 vs INT8 완전 양자화 (.tflite) · 배치 1 · 1스레드 · 실측</text>
+
+  <g>
+    <rect x="60" y="80" width="210" height="180" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="165" y="106" text-anchor="middle" font-size="14.5" font-weight="700" fill="#334155">파일 크기</text>
+    <text x="165" y="140" text-anchor="middle" font-size="13" fill="#64748b">1,690,748 B</text>
+    <text x="165" y="164" text-anchor="middle" font-size="15" fill="#94a3b8">↓</text>
+    <text x="165" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">432,592 B</text>
+    <text x="165" y="230" text-anchor="middle" font-size="30" font-weight="700" fill="#047857">3.91배</text>
+    <text x="165" y="250" text-anchor="middle" font-size="12.5" fill="#64748b">작아짐</text>
+  </g>
+  <g>
+    <rect x="295" y="80" width="210" height="180" rx="10" fill="#ffffff" stroke="#cbd5e1"/>
+    <text x="400" y="106" text-anchor="middle" font-size="14.5" font-weight="700" fill="#334155">지연</text>
+    <text x="400" y="140" text-anchor="middle" font-size="13" fill="#64748b">0.110 ms</text>
+    <text x="400" y="164" text-anchor="middle" font-size="15" fill="#94a3b8">↓</text>
+    <text x="400" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">0.057 ms</text>
+    <text x="400" y="230" text-anchor="middle" font-size="30" font-weight="700" fill="#047857">1.94배</text>
+    <text x="400" y="250" text-anchor="middle" font-size="12.5" fill="#64748b">빨라짐</text>
+  </g>
+  <g>
+    <rect x="530" y="80" width="210" height="180" rx="10" fill="#ffffff" stroke="#6ee7b7"/>
+    <text x="635" y="106" text-anchor="middle" font-size="14.5" font-weight="700" fill="#334155">정확도</text>
+    <text x="635" y="140" text-anchor="middle" font-size="13" fill="#64748b">97.33%</text>
+    <text x="635" y="164" text-anchor="middle" font-size="15" fill="#94a3b8">↓</text>
+    <text x="635" y="190" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">97.33%</text>
+    <text x="635" y="230" text-anchor="middle" font-size="28" font-weight="700" fill="#047857">그대로</text>
+    <text x="635" y="250" text-anchor="middle" font-size="12.5" fill="#64748b">한 장도 안 틀림</text>
+  </g>
+
+  <rect x="60" y="280" width="680" height="34" rx="8" fill="#ecfdf5" stroke="#6ee7b7"/>
+  <text x="400" y="302" text-anchor="middle" font-size="14.5" font-weight="700" fill="#065f46">단, 전부 정수로 바꿔야 한다 — 완전연결층만 바꾸면 파일 3.5배에 속도는 1.03배</text>
+</svg>

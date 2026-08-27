@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="760" height="320" fill="#f8fafc"/>
+  <text x="380" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">PTQ vs QAT</text>
+
+  <!-- PTQ row -->
+  <text x="60" y="80" font-size="15" font-weight="700" fill="#2563eb">PTQ (Post-Training Quantization)</text>
+  <g font-size="13.5" fill="#334155">
+    <rect x="60" y="92" width="130" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/><text x="125" y="120" text-anchor="middle">학습 완료 모델</text>
+    <rect x="230" y="92" width="150" height="46" rx="8" fill="#dbeafe" stroke="#2563eb"/><text x="305" y="114" text-anchor="middle">보정(Calibration)</text><text x="305" y="130" text-anchor="middle" font-size="12.5">소량 데이터로 범위 측정</text>
+    <rect x="420" y="92" width="130" height="46" rx="8" fill="#bfdbfe" stroke="#2563eb"/><text x="485" y="120" text-anchor="middle" font-weight="700">INT8 모델</text>
+  </g>
+  <path d="M190 115 H228" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M380 115 H418" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <text x="575" y="112" font-size="13" fill="#047857">빠르고 간단</text>
+  <text x="575" y="130" font-size="13" fill="#dc2626">정확도 손실 클 수 있음</text>
+
+  <!-- QAT row -->
+  <text x="60" y="192" font-size="15" font-weight="700" fill="#7c3aed">QAT (Quantization-Aware Training)</text>
+  <g font-size="13.5" fill="#334155">
+    <rect x="60" y="204" width="130" height="46" rx="8" fill="#ede9fe" stroke="#7c3aed"/><text x="125" y="226" text-anchor="middle">학습 중</text><text x="125" y="242" text-anchor="middle" font-size="12.5">양자화 오차 시뮬레이션</text>
+    <rect x="230" y="204" width="150" height="46" rx="8" fill="#ede9fe" stroke="#7c3aed"/><text x="305" y="226" text-anchor="middle">재학습으로 오차 흡수</text><text x="305" y="242" text-anchor="middle" font-size="12.5">(STE로 미분)</text>
+    <rect x="420" y="204" width="130" height="46" rx="8" fill="#ddd6fe" stroke="#7c3aed"/><text x="485" y="232" text-anchor="middle" font-weight="700">INT8 모델</text>
+  </g>
+  <path d="M190 227 H228" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <path d="M380 227 H418" stroke="#64748b" stroke-width="2" marker-end="url(#a)"/>
+  <text x="575" y="224" font-size="13" fill="#047857">정확도 손실 최소</text>
+  <text x="575" y="242" font-size="13" fill="#dc2626">학습 비용·시간 큼</text>
+
+  <text x="380" y="298" text-anchor="middle" font-size="13.5" fill="#334155">빠르게: PTQ  ·  정확도가 중요하면: QAT (대학원 핵심 연구 주제)</text>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#64748b"/></marker></defs>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="760" height="320" fill="#f8fafc"/>
+  <text x="380" y="32" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">Affine 양자화 매핑 (Scale · Zero-point)</text>
+
+  <!-- real number line -->
+  <text x="60" y="92" font-size="13.5" font-weight="700" fill="#2563eb">실수 범위 (FP32)</text>
+  <line x1="70" y1="120" x2="690" y2="120" stroke="#2563eb" stroke-width="2.5"/>
+  <line x1="180" y1="112" x2="180" y2="128" stroke="#2563eb" stroke-width="2"/>
+  <line x1="580" y1="112" x2="580" y2="128" stroke="#2563eb" stroke-width="2"/>
+  <text x="180" y="150" text-anchor="middle" font-size="13" fill="#1e40af">x_min</text>
+  <text x="580" y="150" text-anchor="middle" font-size="13" fill="#1e40af">x_max</text>
+  <circle cx="360" cy="120" r="4" fill="#dc2626"/>
+  <text x="360" y="108" text-anchor="middle" font-size="13" fill="#dc2626">x</text>
+
+  <!-- mapping arrows -->
+  <path d="M360 132 V190" stroke="#7c3aed" stroke-width="2" stroke-dasharray="4 3" marker-end="url(#a)"/>
+
+  <!-- int number line -->
+  <text x="60" y="184" font-size="13.5" font-weight="700" fill="#047857">정수 범위 (INT8)</text>
+  <line x1="70" y1="210" x2="690" y2="210" stroke="#047857" stroke-width="2.5"/>
+  <line x1="180" y1="202" x2="180" y2="218" stroke="#047857" stroke-width="2"/>
+  <line x1="580" y1="202" x2="580" y2="218" stroke="#047857" stroke-width="2"/>
+  <text x="180" y="240" text-anchor="middle" font-size="13" fill="#065f46">0 (또는 -128)</text>
+  <text x="580" y="240" text-anchor="middle" font-size="13" fill="#065f46">255 (또는 127)</text>
+  <circle cx="360" cy="210" r="4" fill="#dc2626"/>
+  <text x="374" y="204" font-size="13" fill="#dc2626">x_q</text>
+
+  <!-- formula box -->
+  <rect x="150" y="262" width="460" height="46" rx="8" fill="#eef2ff" stroke="#6366f1"/>
+  <text x="380" y="283" text-anchor="middle" font-size="15" font-weight="700" fill="#4338ca">x_q = round( x / S + Z )</text>
+  <text x="380" y="301" text-anchor="middle" font-size="13" fill="#475569">S(Scale)=범위/단계수 ,  Z(Zero-point)=실수 0이 매핑되는 정수값</text>
+  <defs><marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6 Z" fill="#7c3aed"/></marker></defs>
+</svg>

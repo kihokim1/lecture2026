@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 320" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="760" height="320" fill="#f8fafc"/>
+  <text x="380" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">Calibration — 최적의 클리핑 범위 찾기</text>
+  <text x="380" y="50" text-anchor="middle" font-size="13.5" fill="#64748b">이상치(outlier)까지 담으면 해상도 낭비, 너무 좁히면 정보 손실</text>
+
+  <!-- distribution (bell) -->
+  <path d="M90 210 C 200 210, 210 90, 300 90 C 390 90, 400 210, 620 210" fill="#dbeafe" stroke="#2563eb" stroke-width="2"/>
+  <line x1="90" y1="210" x2="680" y2="210" stroke="#94a3b8"/>
+  <text x="300" y="230" text-anchor="middle" font-size="14" fill="#475569">활성값 분포</text>
+
+  <!-- outliers -->
+  <circle cx="650" cy="210" r="3" fill="#dc2626"/><circle cx="665" cy="210" r="3" fill="#dc2626"/>
+  <text x="655" y="200" text-anchor="middle" font-size="13.5" font-weight="700" fill="#dc2626">이상치</text>
+
+  <!-- clipping lines -->
+  <line x1="150" y1="80" x2="150" y2="215" stroke="#16a34a" stroke-width="2" stroke-dasharray="5 3"/>
+  <line x1="450" y1="80" x2="450" y2="215" stroke="#16a34a" stroke-width="2" stroke-dasharray="5 3"/>
+  <text x="300" y="72" text-anchor="middle" font-size="14" font-weight="700" fill="#16a34a">클리핑 범위 [min, max]</text>
+
+  <!-- strategies -->
+  <rect x="90" y="250" width="180" height="56" rx="8" fill="#eff6ff" stroke="#2563eb"/>
+  <text x="180" y="272" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1e40af">Min-Max</text>
+  <text x="180" y="292" text-anchor="middle" font-size="13" fill="#334155">최소·최대 그대로 사용</text>
+  <rect x="290" y="250" width="180" height="56" rx="8" fill="#ede9fe" stroke="#7c3aed"/>
+  <text x="380" y="272" text-anchor="middle" font-size="13.5" font-weight="700" fill="#6d28d9">Entropy (KL)</text>
+  <text x="380" y="292" text-anchor="middle" font-size="13" fill="#334155">정보손실 최소 범위 탐색</text>
+  <rect x="490" y="250" width="190" height="56" rx="8" fill="#ecfdf5" stroke="#10b981"/>
+  <text x="585" y="272" text-anchor="middle" font-size="13.5" font-weight="700" fill="#047857">Percentile</text>
+  <text x="585" y="292" text-anchor="middle" font-size="13" fill="#334155">상·하위 %를 잘라 낸다</text>
+
+  <text x="700" y="120" font-size="13.5" fill="#334155" text-anchor="end">Per-tensor: 텐서당 S,Z 하나</text>
+  <text x="700" y="140" font-size="13.5" fill="#047857" text-anchor="end">Per-channel: 채널마다 S,Z (더 정밀)</text>
+</svg>

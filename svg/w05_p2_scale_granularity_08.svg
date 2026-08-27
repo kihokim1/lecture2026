@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="340" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">같은 비트 수, 다른 결과 — 자를 몇 개 쓰느냐</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">8비트에서는 셋 다 같다가, 여유가 사라지는 순간 갈린다 (실측 · 원본 97.33%)</text>
+
+  <rect x="150" y="64" width="15" height="15" fill="#94a3b8"/><text x="172" y="77" font-size="13" fill="#334155">모델 전체에 하나</text>
+  <rect x="330" y="64" width="15" height="15" fill="#0ea5e9"/><text x="352" y="77" font-size="13" fill="#334155">층마다 하나</text>
+  <rect x="490" y="64" width="15" height="15" fill="#10b981"/><text x="512" y="77" font-size="13" fill="#334155">채널마다 하나</text>
+
+  <line x1="110" y1="102" x2="110" y2="252" stroke="#94a3b8"/>
+  <line x1="110" y1="252" x2="750" y2="252" stroke="#94a3b8"/>
+  <text x="102" y="108" text-anchor="end" font-size="12.5" fill="#94a3b8">100</text>
+  <text x="102" y="182" text-anchor="end" font-size="12.5" fill="#94a3b8">50</text>
+  <text x="102" y="256" text-anchor="end" font-size="12.5" fill="#94a3b8">0</text>
+  <text x="58" y="94" font-size="13.5" fill="#334155">정확도(%)</text>
+
+  <g>
+    <rect x="140" y="106" width="36" height="146" rx="3" fill="#94a3b8"/>
+    <rect x="180" y="106" width="36" height="146" rx="3" fill="#0ea5e9"/>
+    <rect x="220" y="106" width="36" height="146" rx="3" fill="#10b981"/>
+    <text x="198" y="272" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">8비트</text>
+    <text x="198" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">97.56 · 97.56 · 97.56</text>
+  </g>
+  <g>
+    <rect x="300" y="106" width="36" height="146" rx="3" fill="#94a3b8"/>
+    <rect x="340" y="105" width="36" height="147" rx="3" fill="#0ea5e9"/>
+    <rect x="380" y="107" width="36" height="145" rx="3" fill="#10b981"/>
+    <text x="358" y="272" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">4비트</text>
+    <text x="358" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#64748b">97.33 · 97.78 · 96.89</text>
+  </g>
+  <g>
+    <rect x="460" y="149" width="36" height="103" rx="3" fill="#94a3b8"/>
+    <text x="478" y="141" text-anchor="middle" font-size="14" font-weight="700" fill="#b45309">68.89</text>
+    <rect x="500" y="106" width="36" height="146" rx="3" fill="#0ea5e9"/>
+    <text x="518" y="98" text-anchor="middle" font-size="13" font-weight="700" fill="#0369a1">97.33</text>
+    <rect x="540" y="107" width="36" height="145" rx="3" fill="#10b981"/>
+    <text x="558" y="272" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">3비트</text>
+  </g>
+  <g>
+    <rect x="620" y="237" width="36" height="15" rx="3" fill="#dc2626"/>
+    <text x="638" y="229" text-anchor="middle" font-size="14" font-weight="700" fill="#dc2626">10.22</text>
+    <rect x="660" y="118" width="36" height="134" rx="3" fill="#0ea5e9"/>
+    <rect x="700" y="113" width="36" height="139" rx="3" fill="#10b981"/>
+    <text x="718" y="105" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">95.11</text>
+    <text x="678" y="272" text-anchor="middle" font-size="14" font-weight="700" fill="#334155">2비트</text>
+  </g>
+
+  <rect x="600" y="286" width="150" height="26" rx="6" fill="#fee2e2" stroke="#fca5a5"/>
+  <text x="675" y="304" text-anchor="middle" font-size="12.5" font-weight="700" fill="#b91c1c">10% = 찍는 것</text>
+  <text x="40" y="304" font-size="14.5" font-weight="700" fill="#0f172a">"몇 비트로 줄였다"는 말만으로는 아무것도 알 수 없다</text>
+</svg>

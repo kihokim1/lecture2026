@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 350" font-family="'Segoe UI',Arial,sans-serif">
+  <rect width="800" height="350" fill="#f8fafc"/>
+  <text x="400" y="30" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">이상치 하나가 자를 통째로 망친다</text>
+  <text x="400" y="52" text-anchor="middle" font-size="13.5" fill="#64748b">40만 개가 −0.12 ~ +0.13 에 몰려 있는데, 딱 하나가 3.0 이라면</text>
+
+  <rect x="30" y="72" width="740" height="96" rx="10" fill="#ffffff" stroke="#fdba74"/>
+  <text x="52" y="98" font-size="15" font-weight="700" fill="#b45309">min/max 를 그대로 쓰면</text>
+  <line x1="150" y1="130" x2="720" y2="130" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="150" y="120" width="20" height="20" fill="#b45309"/>
+  <text x="150" y="158" text-anchor="middle" font-size="13.5" fill="#64748b">−0.12</text>
+  <line x1="720" y1="120" x2="720" y2="140" stroke="#dc2626" stroke-width="3"/>
+  <text x="720" y="158" text-anchor="middle" font-size="13.5" font-weight="700" fill="#dc2626">3.0</text>
+  <text x="440" y="122" text-anchor="middle" font-size="13" fill="#94a3b8">· · · · · 텅 빈 구간 · · · · ·</text>
+  <text x="196" y="112" font-size="13.5" font-weight="700" fill="#b45309">40만 개가 전부 여기</text>
+  <text x="52" y="128" font-size="13.5" fill="#9a3412">눈금 하나</text>
+  <text x="52" y="148" font-size="15" font-weight="700" fill="#b45309">1.22e−2</text>
+
+  <path d="M 400 178 L 400 200" stroke="#028090" stroke-width="2.4" fill="none"/>
+  <path d="M 400 206 l -6 -9 l 12 0 z" fill="#028090"/>
+  <text x="416" y="198" font-size="14" font-weight="700" fill="#028090">백분위 99.9%로 꼬리를 자른다</text>
+
+  <rect x="30" y="216" width="740" height="96" rx="10" fill="#ffffff" stroke="#6ee7b7"/>
+  <text x="52" y="242" font-size="15" font-weight="700" fill="#047857">꼬리를 자르면</text>
+  <line x1="150" y1="274" x2="720" y2="274" stroke="#94a3b8" stroke-width="2"/>
+  <rect x="150" y="264" width="570" height="20" fill="#a7f3d0"/>
+  <text x="150" y="302" text-anchor="middle" font-size="13.5" fill="#64748b">−0.074</text>
+  <text x="720" y="302" text-anchor="middle" font-size="13.5" fill="#64748b">+0.078</text>
+  <text x="435" y="278" text-anchor="middle" font-size="13" font-weight="700" fill="#047857">40만 개가 자 전체를 쓴다</text>
+  <text x="52" y="272" font-size="13.5" fill="#065f46">눈금 하나</text>
+  <text x="52" y="292" font-size="15" font-weight="700" fill="#047857">7.65e−4</text>
+
+  <text x="400" y="336" text-anchor="middle" font-size="14.5" font-weight="700" fill="#0f172a">4비트에서 13.56% → 97.33% · 값 하나를 버려 40만 개를 살린다</text>
+</svg>
