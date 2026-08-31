@@ -1,0 +1,106 @@
+{
+ "grid": [
+  {
+   "hw": 224,
+   "bpe": 4,
+   "flash": 13900032,
+   "naive": 52617504,
+   "life": 9633792,
+   "inplace": 6021120,
+   "verdict": "둘 다 초과"
+  },
+  {
+   "hw": 224,
+   "bpe": 1,
+   "flash": 3475008,
+   "naive": 13154376,
+   "life": 2408448,
+   "inplace": 1505280,
+   "verdict": "둘 다 초과"
+  },
+  {
+   "hw": 160,
+   "bpe": 4,
+   "flash": 13900032,
+   "naive": 26852640,
+   "life": 4915200,
+   "inplace": 3072000,
+   "verdict": "둘 다 초과"
+  },
+  {
+   "hw": 160,
+   "bpe": 1,
+   "flash": 3475008,
+   "naive": 6713160,
+   "life": 1228800,
+   "inplace": 768000,
+   "verdict": "둘 다 초과"
+  },
+  {
+   "hw": 96,
+   "bpe": 4,
+   "flash": 13900032,
+   "naive": 9676064,
+   "life": 1769472,
+   "inplace": 1105920,
+   "verdict": "둘 다 초과"
+  },
+  {
+   "hw": 96,
+   "bpe": 1,
+   "flash": 3475008,
+   "naive": 2419016,
+   "life": 442368,
+   "inplace": 276480,
+   "verdict": "SRAM만 통과"
+  },
+  {
+   "hw": 64,
+   "bpe": 4,
+   "flash": 13900032,
+   "naive": 4308384,
+   "life": 786432,
+   "inplace": 491520,
+   "verdict": "둘 다 초과"
+  },
+  {
+   "hw": 64,
+   "bpe": 1,
+   "flash": 3475008,
+   "naive": 1077096,
+   "life": 196608,
+   "inplace": 122880,
+   "verdict": "SRAM만 통과"
+  }
+ ],
+ "tiny_budget": [
+  {
+   "name": "ResNet-8",
+   "flash": 77482,
+   "sram": 49152,
+   "flash_pct": 7.389259338378906,
+   "sram_pct": 15.0
+  },
+  {
+   "name": "DS-CNN",
+   "flash": 22092,
+   "sram": 16000,
+   "flash_pct": 2.1068572998046875,
+   "sram_pct": 4.8828125
+  },
+  {
+   "name": "MobileNetV1-0.25@96",
+   "flash": 208618,
+   "sram": 64512,
+   "flash_pct": 19.895362854003906,
+   "sram_pct": 19.6875
+  },
+  {
+   "name": "FC-AutoEncoder",
+   "flash": 266136,
+   "sram": 768,
+   "flash_pct": 25.380706787109375,
+   "sram_pct": 0.234375
+  }
+ ]
+}

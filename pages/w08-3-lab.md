@@ -1,161 +1,326 @@
-# 08주차 3교시. MCU 배포 파이프라인과 Peak Memory
+# 08주차 3교시. 내 모델이 이 MCU에 들어가는지 직접 재 보기
 
-**실습 목표** — 5주차에서 만든 INT8 모델을 MCU에 올리는 **배포 파이프라인**을 끝까지 따라가 본다. 모델을 펌웨어용 **C 배열로 바꿔 Flash 소요량을 확정**하고, **Peak Memory를 추정한 뒤 실제 파일로 검증**한다. 실제 보드가 없어도 노트북에서 두 예산을 모두 숫자로 확인할 수 있다.
-
-> 준비물: 노트북과 **5주차 3.3에서 만든 `tinycnn_int8.tflite`**(30KB). 그때 못 만들었거나 파일을 지웠다면 조교 배포본을 받아 쓴다. 별도 설치는 필요 없다 — C 배열 변환은 파이썬만으로 하고, Peak Memory 검증에만 `ai-edge-litert`(약 30MB)를 쓴다.
+> **오늘의 질문** — 1·2교시에서 나온 숫자들은 전부 계산해서 얻은 것이다. **그 계산을 직접 해 보자.** MCU 보드는 없어도 된다. 필요한 것은 ONNX 파일 하나와 파이썬뿐이며, 오늘 만들 40줄짜리 스크립트가 MCUNetV2 논문에 실린 값을 **킬로바이트까지** 재현한다.
 
 ---
 
-## 3.1 배포 파이프라인 (10분)
+## 실험 설계
 
-TinyML 배포는 정해진 단계를 거친다.
-
-![MCU 배포 파이프라인 — 학습 → 양자화(INT8) → 변환(.tflite/TFLM) → xxd(C 배열) → 펌웨어 빌드·플래시. 각 단계에서 Flash·RAM(Peak Memory) 예산을 확인한다](../assets/w08_p3_deploy_06.png)
-
-`학습(서버)` → `양자화(INT8, 5주차)` → `변환(.tflite, TFLM용)` → `xxd로 C 배열화` → `펌웨어 빌드·플래시`.
-
-각 단계에서 **두 예산**을 계속 확인한다: 모델이 **Flash**에 들어가는가, 실행 중 **Peak Memory**가 **RAM**을 넘지 않는가. 하나라도 넘으면 보드에 아예 안 올라가거나 실행 중 죽는다.
-
-> 관찰 포인트: 양자화가 파이프라인 앞단에 있는 이유 — INT8이라야 크기(Flash)와 정수 연산(FPU 부재)을 모두 감당할 수 있기 때문이다(1교시).
+| | 내용 |
+|---|---|
+| **가설** | MCU 배포를 막는 것은 모델 파일 크기가 아니라 **최대 활성값 메모리**이며, 그 값은 모델을 바꾸지 않고 **메모리 배치만 바꿔도** 크게 달라진다. |
+| **측정 대상** | ① 가중치 총량(Flash) ② 재사용 없는 활성값 합 ③ 수명 기반 최대 메모리 ④ in-place 적용 후 최대 메모리 |
+| **검증 방법** | 우리 ③④ 값을 MCUNet(5.3배 초과)과 MCUNetV2(1,372 kB)의 보고값과 대조한다. |
+| **필요한 것** | `torch`, `torchvision`, `onnx`. **MCU 보드 불필요.** |
+| **타당성 위협** | 우리는 순수 텐서 메모리만 센다. 실제 런타임은 여기에 스택·정렬 여백·연산자 임시 버퍼를 더한다. 그래서 우리 값은 **하한**이다. |
 
 ---
 
-## 3.2 모델을 펌웨어로 — C 배열화 (15분)
+## 3.1 ONNX 그래프를 열고 상수를 걸러내기 (12분)
 
-MCU에는 파일 시스템이 없는 경우가 많다. 그래서 모델을 **C 소스의 바이트 배열**로 바꿔 펌웨어에 **직접 포함**시킨다. 현장의 표준 도구는 `xxd`다.
+### 준비
 
 ```bash
-xxd -i tinycnn_int8.tflite > tinycnn_int8.h
+pip install torch torchvision onnx
 ```
 
-다만 `xxd`는 OS마다 있기도 하고 없기도 하다(맥·대부분의 리눅스에는 있고, Windows는 Git Bash가 필요하며, 최소 설치 리눅스에는 아예 빠져 있다). **결과가 같으니 파이썬으로 하자.** 어디서나 돌아가고, 무엇을 하는 도구인지도 훨씬 잘 보인다.
+### 1단계 — 모델을 ONNX 로 내보낸다
 
 ```python
-# to_c_array.py — xxd -i 와 같은 결과를 파이썬만으로
-import sys, pathlib
+import onnx, torch, torchvision
+from onnx import shape_inference
 
-src = pathlib.Path(sys.argv[1] if len(sys.argv) > 1 else "tinycnn_int8.tflite")
-name = src.name.replace(".", "_").replace("-", "_")
-data = src.read_bytes()
+HW = 224
+m = torchvision.models.mobilenet_v2(weights=None).eval()
+torch.onnx.export(m, torch.randn(1, 3, HW, HW), "mbv2.onnx",
+                  input_names=["input"], opset_version=13, dynamo=False)
 
-lines = [f"unsigned char {name}[] = {{"]
-for i in range(0, len(data), 12):
-    chunk = ", ".join(f"0x{b:02x}" for b in data[i:i+12])
-    lines.append(f"  {chunk},")
-lines.append("};")
-lines.append(f"unsigned int {name}_len = {len(data)};")
-
-out = src.with_suffix(".h")
-out.write_text("\n".join(lines) + "\n")
-print(f"{out} 생성 — 모델 {len(data):,} bytes = Flash 소요량")
+model = shape_inference.infer_shapes(onnx.load("mbv2.onnx"))
+g = model.graph
+print(f"노드 {len(g.node)}개, 가중치 {len(g.initializer)}개")
 ```
 
 ```
-$ python to_c_array.py tinycnn_int8.tflite
-tinycnn_int8.h 생성 — 모델 30,360 bytes = Flash 소요량
+노드 209개, 가중치 67개
 ```
 
-생성된 헤더의 앞뒤는 이렇다.
+`shape_inference` 가 핵심이다. ONNX 파일에는 **입력과 출력의 모양만** 적혀 있고 중간 텐서의 모양은 비어 있다. 이 함수가 그래프를 훑으며 모든 중간 텐서의 모양을 채워 준다. 이게 없으면 크기를 잴 수 없다.
 
-```c
-unsigned char tinycnn_int8_tflite[] = {
-  0x1c, 0x00, 0x00, 0x00, 0x54, 0x46, 0x4c, 0x33, 0x14, 0x00, 0x20, 0x00,
-  0x1c, 0x00, 0x18, 0x00, 0x14, 0x00, 0x10, 0x00, 0x0c, 0x00, 0x00, 0x00,
-  /* ... */
-};
-unsigned int tinycnn_int8_tflite_len = 30360;   // ← 모델 크기(Flash 소요)
+### 2단계 — 상수를 걸러낸다
+
+여기서 **함정 하나**를 먼저 넘어야 한다. 노드가 209개인데 우리가 아는 MobileNetV2의 연산 층은 100개 남짓이다. 나머지 109개는 무엇인가?
+
+`torch.onnx.export` 는 가중치 일부를 `Identity` 노드로 한 번 흘려보낸다. 이것들을 안 걸러내면 **가중치를 SRAM으로 잘못 세게 된다.**
+
+해법은 3주차에서 배운 **상수 접기(Constant Folding)** 다. 입력이 전부 상수인 노드의 출력도 상수다. 이 규칙을 더 이상 변하지 않을 때까지 반복한다.
+
+```python
+const  = {i.name for i in g.initializer}
+const |= {n.output[0] for n in g.node if n.op_type == "Constant"}
+
+changed = True
+while changed:                       # 변화가 없을 때까지 되풀이한다
+    changed = False
+    for n in g.node:
+        ins = [i for i in n.input if i]
+        if ins and all(i in const for i in ins):     # 입력이 전부 상수라면
+            for o in n.output:
+                if o and o not in const:
+                    const.add(o); changed = True     # 출력도 상수다
+print(f"상수로 판정된 텐서 {len(const)}개")
 ```
 
-이 배열을 펌웨어에 넣고, TFLM 인터프리터가 이 바이트를 읽어 실행한다. `..._len` 값이 곧 모델이 차지하는 **Flash 용량**이다.
+```
+상수로 판정된 텐서 176개
+```
 
-> 다섯 번째 바이트부터 `0x54 0x46 0x4c 0x33`, 즉 아스키로 **`TFL3`** 이 보인다. FlatBuffer 형식의 서명이다. 30KB짜리 파일이 정말 TFLite 모델이 맞다는 것을 눈으로 확인할 수 있다.
+> **왜 `while` 인가.** 한 번만 훑으면 안 된다. `A(상수) → B → C` 구조에서 B를 상수로 판정한 뒤에야 C를 판정할 수 있는데, 노드 순서가 그 반대일 수 있기 때문이다. 이런 **고정점(fixed point) 반복**은 컴파일러 최적화의 기본 패턴이며, 11주차 툴체인에서 다시 만난다.
 
-> 관찰 포인트: `_len`(30,360 B ≈ 30KB)을 보드의 Flash 용량과 비교하라. Arduino Nano 33 BLE Sense는 1MB, ESP32-S3는 보통 8MB다. 이 숫자가 배포 가능 여부의 1차 관문이다.
+### 3단계 — 텐서 크기를 잰다
+
+```python
+def nelem(vi):                       # value_info 에서 원소 개수를 뽑는다
+    n = 1
+    for x in vi.type.tensor_type.shape.dim:
+        n *= max(x.dim_value, 1)
+    return n
+
+# INT8 배포 가정 → 원소 하나 = 1바이트. FP32 라면 4를 곱한다.
+size = {vi.name: nelem(vi) for vi in
+        list(g.input) + list(g.value_info) + list(g.output)
+        if vi.name not in const}
+
+flash = sum(int(torch.tensor(list(i.dims)).prod()) for i in g.initializer)
+print(f"활성 텐서 {len(size)}개 | Flash(가중치) {flash/1024:.1f} KB")
+```
+
+```
+활성 텐서 101개 | Flash(가중치) 3393.6 KB
+```
+
+209개 노드에서 **활성 텐서 101개**만 남았다. 1교시에 인용한 3,394 KB가 여기서 나온 값이다.
+
+> 한 줄 정리: ONNX 그래프에서 활성값을 세려면 **모양 추론**과 **상수 접기**를 먼저 해야 한다. 이 두 단계를 빼먹으면 가중치를 SRAM으로 잘못 센다.
 
 ---
 
-## 3.3 Peak Memory 추정과 검증 (22분)
+## 3.2 텐서의 수명을 매기고 최대 메모리를 재기 (16분)
 
-RAM 예산은 **연산 중 동시에 살아있는 버퍼의 합**으로 정해진다. 간단한 층 구성에서 이를 추정해 본다(순수 파이썬, 라이브러리 불필요).
-
-```python
-# 각 레이어의 출력 Feature Map 크기(원소 수, INT8=1바이트 가정)
-#  (예시: 채널 x 높이 x 너비)
-fmaps = [
-    ("input",  3*96*96),     # 27,648
-    ("conv1", 16*48*48),     # 36,864
-    ("conv2", 32*24*24),     # 18,432
-    ("conv3", 64*12*12),     #  9,216
-    ("pool",  64*1*1),       #     64
-]
-
-# 단순 추정: 한 레이어를 계산할 때 '입력 버퍼 + 출력 버퍼'가 동시에 필요
-peak = 0
-for i in range(1, len(fmaps)):
-    live = fmaps[i-1][1] + fmaps[i][1]      # 이전(입력) + 현재(출력)
-    peak = max(peak, live)
-    print(f"{fmaps[i][0]:>6}: live={live:,} bytes")
-print(f"\nPeak Memory ≈ {peak:,} bytes  (RAM 예산과 비교!)")
-```
-
-관찰의 핵심:
-
-1. Peak는 대개 **초반 레이어**(Feature Map이 가장 클 때)에서 발생한다.
-2. 이 값이 기기 RAM(예: 256KB)을 넘으면 배포 불가 → In-place 재활용, 타일링, 더 작은 입력 해상도로 낮춰야 한다.
-3. "모델 크기(Flash)"와 "실행 메모리(RAM/Peak)"는 **다른 예산**이다 — 둘 다 통과해야 한다.
-
-**손으로 센 값이 맞는지 확인하자.** 위 `fmaps`는 추정이다. 실제 `.tflite` 안에 어떤 크기의 버퍼가 잡혀 있는지 직접 열어 보면 된다.
-
-```bash
-pip install ai-edge-litert
-```
+### 4단계 — 언제 태어나 언제 죽나
 
 ```python
-import numpy as np
-from ai_edge_litert.interpreter import Interpreter
+N = len(g.node)
+birth = {i.name: -1 for i in g.input if i.name not in const}   # 그래프 입력은 -1에 태어남
+death = {}
 
-itp = Interpreter(model_path="tinycnn_int8.tflite")
-itp.allocate_tensors()
+for k, n in enumerate(g.node):
+    for o in n.output:
+        if o in size:
+            birth.setdefault(o, k)      # 이 노드가 출력하면 여기서 태어난다
+    for i in n.input:
+        if i in size:
+            death[i] = k                # 덮어쓰므로 '마지막' 소비 노드가 남는다
 
-print("실제 .tflite의 활성 텐서 크기")
-for d in itp.get_tensor_details():
-    s = d["shape"]
-    if len(s) == 4 and s[0] == 1 and d["dtype"] == np.int8:   # 배치 1짜리 Feature Map만
-        print(f"  {int(np.prod(s)):>8,} bytes   {[int(v) for v in s]}")
+for o in g.output:
+    death[o.name] = N                   # 최종 출력은 끝까지 산다
+
+live = [t for t in birth if t in size and size[t] > 0]
+for t in live:
+    death.setdefault(t, birth[t])       # 아무도 안 쓰는 텐서는 즉시 죽는다
+```
+
+`death[i] = k` 한 줄이 이 실습에서 가장 영리한 부분이다. 노드를 순서대로 훑으며 **덮어쓰기** 때문에, 반복이 끝나면 자동으로 **마지막으로 소비한 노드**가 남는다.
+
+### 5단계 — 세 가지 방식으로 재기
+
+```python
+# ① 재사용 없음 — 전부 동시에 들고 있다
+naive = sum(size[t] for t in live)
+
+# ② 수명 기반 — 각 시점에 살아 있는 것만 더하고, 그 최댓값을 취한다
+peak_life, at = 0, -1
+for k in range(N + 1):
+    s = sum(size[t] for t in live if birth[t] <= k <= death[t])
+    if s > peak_life:
+        peak_life, at = s, k
+```
+
+②의 세 줄이 이번 주 전체의 핵심이다. **"각 시점에 살아 있는 것만 더한다"** — 이 한 문장이 12 MB를 2.3 MB로 만든다.
+
+```python
+# ③ in-place — 원소별 연산의 출력을 입력 자리에 덮어쓴다
+INPLACE = {"Relu", "Clip", "Add", "Mul", "Sigmoid", "Tanh", "BatchNormalization"}
+alias, gout = {}, {o.name for o in g.output}
+
+def root(t):                       # 별칭을 따라가 최종 주인을 찾는다
+    while t in alias:
+        t = alias[t]
+    return t
+
+for k, n in enumerate(g.node):
+    if n.op_type not in INPLACE or len(n.output) != 1:
+        continue
+    o = n.output[0]
+    if o not in size or o in gout:
+        continue
+    # 조건: 모양(크기)이 같고, 그 입력이 바로 이 노드에서 죽고, 그래프 입력이 아니다
+    c = [i for i in n.input if i in size and size[i] == size[o]
+         and death.get(i) == k and birth.get(i, -1) >= 0]
+    if c:
+        r = root(c[0]); alias[o] = r
+        death[r] = max(death[r], death.get(o, k))    # 수명을 합친다
+
+live2 = [t for t in live if t not in alias]
+peak_ip = max(sum(size[t] for t in live2 if birth[t] <= k <= death[t])
+              for k in range(N + 1))
+```
+
+세 조건을 하나씩 확인하자. 하나라도 빠지면 **틀린 결과가 나오는데 오류는 안 난다.**
+
+| 조건 | 왜 필요한가 |
+|---|---|
+| `size[i] == size[o]` | 크기가 다르면 덮어쓸 수 없다 |
+| `death.get(i) == k` | 입력이 이 노드 뒤에도 쓰인다면(잔차 연결!) 덮어쓰면 **값이 깨진다** |
+| `birth.get(i,-1) >= 0` | 그래프 입력 버퍼는 호출자 소유라 우리가 못 건드린다 |
+
+### 결과
+
+```python
+print(f"① 재사용 없음      {naive/1024:9.1f} KB")
+print(f"② 수명 기반        {peak_life/1024:9.1f} KB   ({naive/peak_life:.2f}배 감소, 노드 {at})")
+print(f"③ ② + in-place     {peak_ip/1024:9.1f} KB   ({naive/peak_ip:.2f}배 감소, 별칭 {len(alias)}개)")
 ```
 
 ```
-실제 .tflite의 활성 텐서 크기
-    27,648 bytes   [1, 96, 96, 3]
-    36,864 bytes   [1, 48, 48, 16]
-    18,432 bytes   [1, 24, 24, 32]
-     9,216 bytes   [1, 12, 12, 64]
+① 재사용 없음        12846.1 KB
+② 수명 기반           2352.0 KB   (5.46배 감소, 노드 51)
+③ ② + in-place        1470.0 KB   (8.74배 감소, 별칭 45개)
 ```
 
-위 `fmaps`에 손으로 적은 숫자와 **하나도 틀리지 않고 일치한다.** 그리고 Peak가 잡히는 지점도 그대로다 — 입력 27,648 + conv1 출력 36,864 = **64,512 bytes**. 이 모델은 RAM 256KB 보드에는 올라가고, 64KB 보드에는 못 올라간다.
+**모델은 한 글자도 안 바꿨다.** 배치 방식만 바꿔 8.74배가 줄었다.
 
-> 관찰 포인트: 종이에서 센 값과 파일에서 읽은 값이 맞아떨어지는 경험이 중요하다. 이 다음부터는 모델 구조만 보고도 "이건 그 보드에 안 들어간다"를 회의 자리에서 즉석으로 판단할 수 있다.
-
-### 과제 (3분 안내)
-1. **예산 점검표** — 위 코드의 `fmaps`를 본인 관심 모델 구조로 바꿔 Peak Memory를 추정하고, 가상의 RAM 예산(예: 256KB)과 비교해 배포 가능 여부를 판정한다.
-2. **입력 해상도 실험** — 입력을 96×96 → 48×48로 줄이면 Peak가 어떻게 변하는지 계산하고, 정확도-메모리 트레이드오프를 3~4문장으로 논한다.
-3. **개념 연결** — Duty Cycling과 Depthwise Separable이 각각 '전력'과 '연산량'의 어느 문제를 푸는지 구분해 설명한다.
-4. **두 예산 판정표** — `tinycnn_int8.tflite`를 아래 세 보드에 올릴 수 있는지 Flash·RAM 두 축으로 판정하고, 안 되는 칸은 무엇을 줄여야 하는지 한 줄씩 적는다.
-   | 보드 | Flash | RAM |
-   |---|--:|--:|
-   | Arduino Nano 33 BLE Sense | 1 MB | 256 KB |
-   | ESP32-S3 (일반 모듈) | 8 MB | 512 KB |
-   | STM32F103 "Blue Pill" | 128 KB | 20 KB |
-5. **다음 주 예습** — 9주차(엣지 비전)에서는 MobileNet·YOLO 등 경량 비전 모델을 다룬다. Depthwise Separable이 어디에 쓰이는지 미리 찾아온다.
-
-> 교수님을 위한 Tip: 이 실습의 승부처는 **3.3의 검증 단계**입니다. 손으로 센 27,648과 파일에서 읽은 27,648이 일치하는 순간, 학생들은 "추정이 아니라 계산이었구나"를 체감합니다. 그 전까지는 숫자를 미리 보여주지 마시고, 각자 세어 본 뒤에 파일을 열게 하세요.
->
-> 실제 보드(Arduino Nano 33 BLE Sense, ESP32-S3)가 있으면 만들어진 헤더를 펌웨어에 넣어 빌드 크기를 보여주면 좋습니다. **없어도 실습은 완결됩니다.** 한 걸음 더 나가고 싶으시면 **Renode**(무료 오픈소스 시뮬레이터)에서 TFLM을 실제로 구동할 수 있고, 실행 명령 수·메모리 접근 횟수까지 뽑아 줍니다 — 1주차부터 깔아 온 "진짜 병목은 메모리"를 숫자로 다시 확인시키기에 좋은 도구입니다.
+> 한 줄 정리: 수명을 매기는 데 12줄, 최대 메모리를 재는 데 5줄이면 된다. 그 17줄이 **모델을 안 바꾸고 8.74배**를 만든다.
 
 ---
 
-### 3교시 정리
-- MCU 배포 파이프라인(양자화→변환→C 배열화→플래시)을 이해했다.
-- 5주차에서 만든 `.tflite`를 C 배열로 바꿔 **Flash 소요량 30,360 B**를 확정했다.
-- Peak Memory를 손으로 추정하고 **실제 파일로 검증**해 **64,512 B**를 얻었다. Flash와 RAM이 별개의 예산임을 수치로 구분했다.
-- 다음 주부터는 이 기반 위에서 비전·언어 등 실제 응용으로 넘어간다.
+## 3.3 판정하고, 논문과 대조하기 (12분)
+
+### 6단계 — 예산 판정
+
+```python
+SRAM_KB, FLASH_KB = 320, 1024        # STM32F746
+print(f"[STM32F746 판정] Flash {flash/1024:.0f}/{FLASH_KB} KB "
+      f"({flash/1024/FLASH_KB:.1f}배)  |  SRAM {peak_ip/1024:.0f}/{SRAM_KB} KB "
+      f"({peak_ip/1024/SRAM_KB:.1f}배)")
+```
+
+```
+[STM32F746 판정] Flash 3394/1024 KB (3.3배)  |  SRAM 1470/320 KB (4.6배)
+```
+
+### 논문과 맞춰 보기 — 여기가 오늘의 정점이다
+
+우리가 40줄로 얻은 값과, 논문에 실린 값을 나란히 놓자.
+
+| | 우리 측정 | 논문 보고 | 차이 |
+|---|---:|---:|---|
+| int8 MobileNetV2 의 SRAM 초과 배수 | **4.6배** | **5.3배** (MCUNet [1]) | 논문이 14 % 크다 |
+| MobileNetV2 앞쪽 최대 메모리 | **1,372.0 KB** (6번 노드) | **1,372 kB** (MCUNetV2 [2]) | **완전 일치** |
+
+두 번째 줄을 다시 보라. **킬로바이트 단위까지 같다.** 우리 전체 최댓값 1,470 KB와 논문 값이 다른 것은 재는 **경계**가 다르기 때문이다 — 논문은 블록 단위로, 우리는 노드 단위로 쟀다.
+
+첫 번째 줄의 14 % 차이는 **설명할 수 있는 차이**다. 우리는 텐서만 셌고, 실제 런타임은 여기에 다음을 더한다.
+
+- 연산자 임시 버퍼(합성곱의 im2col 버퍼가 대표적이다)
+- 메모리 정렬을 위한 여백
+- 인터프리터 자료구조와 스택
+
+그래서 **우리 값은 항상 하한**이다. 실무에서 "우리 계산으로는 300 KB니까 320 KB에 들어간다"고 말하면 위험하다.
+
+> **재현 검증이 무엇인지 보여 주는 대목이다.** 숫자가 맞았다는 것보다 **차이가 설명된다**는 것이 중요하다. 완전히 일치하는 값 하나(1,372)와, 방향과 크기가 설명되는 차이 하나(4.6 대 5.3). 이 두 가지가 함께 있을 때 비로소 "재현했다"고 말할 수 있다.
+
+### 7단계 — 배터리 계산기
+
+```python
+def life_years(period_s, t_inf=0.1, i_a=3.3e-3, i_s=3.16e-6, cap_mah=225.0):
+    """period_s 마다 t_inf 동안 추론할 때의 배터리 수명(년).
+    i_a : nRF52840 CoreMark @64MHz, 플래시 실행, DC/DC, 3V  → 3.3 mA
+    i_s : System ON, 256kB RAM 유지, RTC 기상               → 3.16 uA
+    cap : Panasonic CR2032 공칭 225 mAh, 자기방전 연 1.0%
+    """
+    self_a = cap_mah * 0.01 / 8766.0 * 1e-3
+    i = (i_a * t_inf + i_s * (period_s - t_inf)) / period_s + self_a
+    return (cap_mah / 1000) / i / 24 / 365
+
+for T in [1, 60, 3600]:
+    a, b = life_years(T), life_years(T, t_inf=0.05)
+    print(f"주기 {T:>5}초 : {a:6.2f}년 → 추론 절반이면 {b:6.2f}년  ({b/a:.3f}배)")
+```
+
+```
+주기     1초 :   0.08년 → 추론 절반이면   0.15년  (1.980배)
+주기    60초 :   2.88년 → 추론 절반이면   4.17년  (1.446배)
+주기  3600초 :   7.32년 → 추론 절반이면   7.42년  (1.013배)
+```
+
+2교시의 손잡이 역전이 세 줄로 확인된다. **1초 주기에서 1.98배, 1시간 주기에서 1.013배.**
+
+![실습 파이프라인 — ONNX 내보내기부터 예산 판정까지 일곱 단계와 각 단계의 산출물](../assets/w08_p3_pipeline_12.png)
+
+> 한 줄 정리: 40줄짜리 스크립트가 MCUNetV2의 1,372 kB를 **킬로바이트까지 재현**했고, MCUNet의 5.3배와는 설명 가능한 14 % 차이를 보였다. **차이가 설명되는 것이 일치보다 중요하다.**
+
+---
+
+## 3.4 과제 (5분 안내)
+
+### 필수 과제 — 「내 모델의 세 개의 숫자」
+
+**IMRaD 형식 2~3쪽.** 실행 로그와 코드를 부록에 붙일 것.
+
+1. **모델 세 개를 고른다.** 하나는 반드시 오늘 안 다룬 모델이어야 한다(예: `resnet18`, `squeezenet1_1`, `shufflenet_v2_x0_5`, 또는 여러분 연구 주제의 모델).
+2. 각 모델에 대해 **Flash / ② 수명 기반 SRAM / ③ in-place 후 SRAM** 세 숫자를 재고, STM32F746(320 KB / 1 MB) 예산에 대해 판정하라.
+3. **in-place 이득이 모델마다 다른 이유를 설명하라.** 이득이 1.00배인 모델이 있다면, 그 모델의 최대 지점에 어떤 연산이 있는지 밝히고 그것으로 설명할 것. (힌트: 최대가 발생한 노드 번호를 출력해 `g.node[at].op_type` 을 확인하라.)
+4. **입력 해상도를 절반으로 낮춰** 다시 재라. Flash와 SRAM 중 어느 쪽이 얼마나 변했는지 표로 제시하고, 그 결과가 2.3의 주장과 맞는지 판정하라.
+5. **타당성 위협**을 최소 두 개 적어라. 우리 계산이 실제 기기 값보다 작게 나오는 이유를 항목별로 쓸 것.
+
+### 선택 과제 A — 「단편화를 만들어 보기」
+
+우리 ②는 각 시점의 **합**을 구했다. 실제 할당기는 텐서를 **오프셋에 배치**하므로, 수명이 겹치지 않아도 조각난 빈틈 때문에 합보다 더 쓸 수 있다(**단편화**). TFLM은 크기 큰 순으로 정렬해 빈틈에 끼워 넣는 탐욕 방식을 쓴다.
+
+탐욕 오프셋 할당기를 구현하고, ②의 하한과 실제 배치 결과를 비교하라. **MobileNetV2에서는 둘이 같게 나올 것이다.** 왜 그런지 설명하고, **둘이 달라지는 그래프 구조**를 하나 만들어 보라(힌트: 수명이 서로 엇갈리게 겹치는 텐서 세 개면 충분하다).
+
+### 선택 과제 B — 「문지기를 설계하라」
+
+2.5의 캐스케이드에서 문지기 모델을 실제로 골라 보자.
+
+1. 1교시의 DS-CNN을 문지기로 쓸 때, 그 모델의 SRAM과 연산량을 재라.
+2. 문지기 추론 시간을 연산량에 비례한다고 가정하고(2.6의 MicroNets 근거를 인용할 것) 본 모델 대비 몇 배 빠를지 추정하라.
+3. 그 추정값으로 손익분기 통과율 $p^\*$ 를 다시 계산하라.
+4. **2.6의 네 가지 조건 중 여러분의 추정이 위반한 것이 있는가?** 있다면 그것이 결론을 얼마나 흔드는지 논하라.
+
+### 평가 기준
+
+| 항목 | 배점 |
+|---|---:|
+| 세 숫자를 정확히 재고 판정했는가 | 30 |
+| in-place 이득 차이를 **최대 지점의 연산자**로 설명했는가 | 25 |
+| 해상도 실험의 결과 해석 (Flash 불변을 짚었는가) | 20 |
+| 타당성 위협을 구체적으로 적었는가 | 15 |
+| 재현 가능성 (코드·환경·로그) | 10 |
+
+---
+
+## 3교시 정리
+- ONNX 그래프에서 활성값을 세려면 **모양 추론 → 상수 접기 → 수명 → 배치** 네 단계를 거친다. 상수 접기를 빼면 가중치를 SRAM으로 잘못 센다.
+- 최대 메모리를 재는 핵심은 세 줄이다 — **각 시점에 살아 있는 텐서만 더하고, 그 최댓값을 취한다.**
+- in-place 별칭에는 조건이 셋 있고, **`death[i] == k` 를 빼먹으면 잔차 연결이 있는 모델에서 값이 조용히 깨진다.**
+- 우리 40줄이 MCUNetV2의 1,372 kB를 재현했고, MCUNet의 5.3배와는 14 % 차이가 났다. **그 차이는 런타임 버퍼로 설명된다.**
+- 우리 계산은 언제나 **하한**이다. 실무 판정에는 여유를 두어야 한다.
+
+> **교수님을 위한 Tip** — 3.2의 in-place 조건 세 개 중 **`death.get(i) == k` 를 일부러 빼고 돌려 보이십시오.** 값은 더 작게(더 좋아 보이게) 나오고 오류는 안 납니다. "이 코드의 어디가 틀렸는가"를 찾게 하면, 잔차 연결이 있는 모델에서 왜 값이 깨지는지를 학생들이 스스로 도달합니다. 이번 학기에서 **틀린 최적화가 좋아 보이는** 사례를 직접 만들어 볼 수 있는 몇 안 되는 지점입니다.
+
+### 더 읽어보기
+- [1] J. Lin, W.-M. Chen, Y. Lin, J. Cohn, C. Gan, and S. Han, "MCUNet: Tiny deep learning on IoT devices," in *Advances in Neural Information Processing Systems (NeurIPS)*, vol. 33, 2020.
+- [2] J. Lin, W.-M. Chen, H. Cai, C. Gan, and S. Han, "Memory-efficient patch-based inference for tiny deep learning," in *Advances in Neural Information Processing Systems (NeurIPS)*, vol. 34, 2021.
+- [4] R. David *et al.*, "TensorFlow Lite Micro: Embedded machine learning for TinyML systems," in *Proc. Machine Learning and Systems (MLSys)*, vol. 3, 2021, pp. 800–811. — **§4.4.2 의 메모리 플래너가 선택 과제 A의 정답지다.**
+- [8] L. Lai, N. Suda, and V. Chandra, "CMSIS-NN: Efficient neural network kernels for Arm Cortex-M CPUs," *arXiv:1801.06601*, 2018.
