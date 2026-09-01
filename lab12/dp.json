@@ -1,0 +1,175 @@
+{
+ "cfg": {
+  "model": "MLP(784-32-10)",
+  "params": 25450,
+  "clients": 10,
+  "rounds": 20,
+  "batch": 64,
+  "lr": 0.25,
+  "alpha": 1.0,
+  "clip": 1.0,
+  "delta": 1e-05,
+  "note": "표본 단위 클리핑(torch.func.vmap) · ε 은 클라이언트 로컬 DP 기준"
+ },
+ "rows": [
+  {
+   "sigma": 0.0,
+   "acc": 0.894,
+   "hist": [
+    {
+     "round": 5,
+     "acc": 0.789
+    },
+    {
+     "round": 10,
+     "acc": 0.8555
+    },
+    {
+     "round": 15,
+     "acc": 0.88
+    },
+    {
+     "round": 20,
+     "acc": 0.894
+    }
+   ],
+   "eps": null,
+   "acc_drop": 0.0,
+   "leak_psnr": 158.0,
+   "sec": 175.5
+  },
+  {
+   "sigma": 0.01,
+   "acc": 0.895,
+   "hist": [
+    {
+     "round": 5,
+     "acc": 0.7975
+    },
+    {
+     "round": 10,
+     "acc": 0.853
+    },
+    {
+     "round": 15,
+     "acc": 0.884
+    },
+    {
+     "round": 20,
+     "acc": 0.895
+    }
+   ],
+   "eps": 1422866.82,
+   "acc_drop": -0.001,
+   "leak_psnr": 10.68,
+   "sec": 148.7
+  },
+  {
+   "sigma": 0.1,
+   "acc": 0.8955,
+   "hist": [
+    {
+     "round": 5,
+     "acc": 0.7965
+    },
+    {
+     "round": 10,
+     "acc": 0.8525
+    },
+    {
+     "round": 15,
+     "acc": 0.883
+    },
+    {
+     "round": 20,
+     "acc": 0.8955
+    }
+   ],
+   "eps": 7319.64,
+   "acc_drop": -0.0015,
+   "leak_psnr": 8.52,
+   "sec": 150.5
+  },
+  {
+   "sigma": 0.5,
+   "acc": 0.891,
+   "hist": [
+    {
+     "round": 5,
+     "acc": 0.7925
+    },
+    {
+     "round": 10,
+     "acc": 0.849
+    },
+    {
+     "round": 15,
+     "acc": 0.8795
+    },
+    {
+     "round": 20,
+     "acc": 0.891
+    }
+   ],
+   "eps": 47.01,
+   "acc_drop": 0.003,
+   "leak_psnr": 8.33,
+   "sec": 141.9
+  },
+  {
+   "sigma": 1.0,
+   "acc": 0.8835,
+   "hist": [
+    {
+     "round": 5,
+     "acc": 0.784
+    },
+    {
+     "round": 10,
+     "acc": 0.8445
+    },
+    {
+     "round": 15,
+     "acc": 0.873
+    },
+    {
+     "round": 20,
+     "acc": 0.8835
+    }
+   ],
+   "eps": 9.83,
+   "acc_drop": 0.0105,
+   "leak_psnr": 8.35,
+   "sec": 84.7
+  },
+  {
+   "sigma": 2.0,
+   "acc": 0.859,
+   "hist": [
+    {
+     "round": 5,
+     "acc": 0.7585
+    },
+    {
+     "round": 10,
+     "acc": 0.834
+    },
+    {
+     "round": 15,
+     "acc": 0.8595
+    },
+    {
+     "round": 20,
+     "acc": 0.859
+    }
+   ],
+   "eps": 3.27,
+   "acc_drop": 0.035,
+   "leak_psnr": 8.37,
+   "sec": 100.9
+  }
+ ],
+ "clip_only_acc": 0.894,
+ "steps_per_client": 260,
+ "sample_rate": 0.0794044665012407
+}
