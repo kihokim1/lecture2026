@@ -1,0 +1,59 @@
+{
+ "영어": {
+  "tokens": 71,
+  "words": 62,
+  "wpt": 0.8732394366197183,
+  "tpw": 1.1451612903225807
+ },
+ "한국어": {
+  "tokens": 363,
+  "words": 42,
+  "wpt": 0.11570247933884298,
+  "tpw": 8.642857142857142
+ },
+ "budget": [
+  {
+   "mode": "묵독 · 비소설",
+   "wpm": 238,
+   "lang": "영어",
+   "need_tps": 4.54247311827957,
+   "ratio_vs_measured": 4.8534250005453625
+  },
+  {
+   "mode": "묵독 · 비소설",
+   "wpm": 238,
+   "lang": "한국어",
+   "need_tps": 34.28333333333333,
+   "ratio_vs_measured": 0.6430691083100628
+  },
+  {
+   "mode": "묵독 · 소설",
+   "wpm": 260,
+   "lang": "영어",
+   "need_tps": 4.962365591397849
+  },
+  {
+   "mode": "묵독 · 소설",
+   "wpm": 260,
+   "lang": "한국어",
+   "need_tps": 37.45238095238095
+  },
+  {
+   "mode": "소리 내어 읽기",
+   "wpm": 183,
+   "lang": "영어",
+   "need_tps": 3.492741935483871
+  },
+  {
+   "mode": "소리 내어 읽기",
+   "wpm": 183,
+   "lang": "한국어",
+   "need_tps": 26.360714285714284
+  }
+ ],
+ "sample": {
+  "prompt_tokens": 42,
+  "text": "On-device AI is a type of AI that uses on-screen displays, such as smartphones, tablets, or smartwatches, to provide personalized recommendations, reminders, and alerts."
+ },
+ "measured_decode_tps": 22.04655259656332
+}
