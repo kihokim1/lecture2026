@@ -1,0 +1,2744 @@
+{
+ "cfg": {
+  "n_pages": 53,
+  "scope": "1~13주차 + 부록 (14주차 자신은 제외)"
+ },
+ "rows": [
+  {
+   "week": 1,
+   "claims": 15,
+   "cond": 4,
+   "pct": 26.7,
+   "figs": 8,
+   "figs_real": 0,
+   "cites": 0,
+   "cites_ok": 0,
+   "repro": false,
+   "code": true
+  },
+  {
+   "week": 2,
+   "claims": 24,
+   "cond": 10,
+   "pct": 41.7,
+   "figs": 10,
+   "figs_real": 0,
+   "cites": 0,
+   "cites_ok": 0,
+   "repro": false,
+   "code": false
+  },
+  {
+   "week": 3,
+   "claims": 17,
+   "cond": 5,
+   "pct": 29.4,
+   "figs": 11,
+   "figs_real": 0,
+   "cites": 0,
+   "cites_ok": 0,
+   "repro": false,
+   "code": false
+  },
+  {
+   "week": 4,
+   "claims": 45,
+   "cond": 12,
+   "pct": 26.7,
+   "figs": 11,
+   "figs_real": 3,
+   "cites": 0,
+   "cites_ok": 0,
+   "repro": false,
+   "code": false
+  },
+  {
+   "week": 5,
+   "claims": 62,
+   "cond": 17,
+   "pct": 27.4,
+   "figs": 12,
+   "figs_real": 3,
+   "cites": 0,
+   "cites_ok": 0,
+   "repro": false,
+   "code": false
+  },
+  {
+   "week": 6,
+   "claims": 52,
+   "cond": 17,
+   "pct": 32.7,
+   "figs": 15,
+   "figs_real": 0,
+   "cites": 15,
+   "cites_ok": 14,
+   "repro": false,
+   "code": false
+  },
+  {
+   "week": 7,
+   "claims": 40,
+   "cond": 11,
+   "pct": 27.5,
+   "figs": 9,
+   "figs_real": 0,
+   "cites": 14,
+   "cites_ok": 11,
+   "repro": false,
+   "code": false
+  },
+  {
+   "week": 8,
+   "claims": 64,
+   "cond": 26,
+   "pct": 40.6,
+   "figs": 11,
+   "figs_real": 0,
+   "cites": 14,
+   "cites_ok": 12,
+   "repro": true,
+   "code": true
+  },
+  {
+   "week": 9,
+   "claims": 83,
+   "cond": 30,
+   "pct": 36.1,
+   "figs": 12,
+   "figs_real": 0,
+   "cites": 17,
+   "cites_ok": 14,
+   "repro": true,
+   "code": true
+  },
+  {
+   "week": 10,
+   "claims": 52,
+   "cond": 24,
+   "pct": 46.2,
+   "figs": 12,
+   "figs_real": 0,
+   "cites": 20,
+   "cites_ok": 15,
+   "repro": true,
+   "code": true
+  },
+  {
+   "week": 11,
+   "claims": 66,
+   "cond": 12,
+   "pct": 18.2,
+   "figs": 12,
+   "figs_real": 2,
+   "cites": 17,
+   "cites_ok": 9,
+   "repro": true,
+   "code": true
+  },
+  {
+   "week": 12,
+   "claims": 52,
+   "cond": 20,
+   "pct": 38.5,
+   "figs": 14,
+   "figs_real": 0,
+   "cites": 20,
+   "cites_ok": 18,
+   "repro": true,
+   "code": true
+  },
+  {
+   "week": 13,
+   "claims": 62,
+   "cond": 23,
+   "pct": 37.1,
+   "figs": 12,
+   "figs_real": 0,
+   "cites": 6,
+   "cites_ok": 3,
+   "repro": true,
+   "code": true
+  }
+ ],
+ "appendix": {
+  "claims": 2,
+  "cond": 1,
+  "figs": 1,
+  "figs_real": 0,
+  "cites": 0,
+  "cites_ok": 0
+ },
+ "summary": {
+  "claims": 636,
+  "raw_claims": 1339,
+  "cond": 212,
+  "cond_pct": 33.3,
+  "cites": 123,
+  "cites_ok": 96,
+  "cites_pct": 78.0,
+  "figs": 150,
+  "figs_real": 8,
+  "figs_pct": 5.3,
+  "repro_weeks": 6,
+  "code_weeks": 7,
+  "n_weeks": 13
+ },
+ "samples": [
+  {
+   "week": 0,
+   "file": "appendix-a-phone-profiling.md",
+   "cond": false,
+   "sent": "**상위 3개가 전체의 몇 %를 차지하는지**를 세어 보라"
+  },
+  {
+   "week": 0,
+   "file": "appendix-a-phone-profiling.md",
+   "cond": true,
+   "sent": "(2026년 7월에 무료 한도가 2 OCPU / 12GB로 축소됐지만 이 과목에는 충분하다"
+  },
+  {
+   "week": 1,
+   "file": "w01-0-overview.md",
+   "cond": false,
+   "sent": "- **90ms** — 서울–미국 서부 왕복의 물리적 하한"
+  },
+  {
+   "week": 1,
+   "file": "w01-0-overview.md",
+   "cond": false,
+   "sent": "- **하루 54GB** — 1080p 카메라 한 대의 압축 후 업로드량"
+  },
+  {
+   "week": 1,
+   "file": "w01-0-overview.md",
+   "cond": false,
+   "sent": "월 100GB 요금제를 **이틀도 안 돼** 소진."
+  },
+  {
+   "week": 1,
+   "file": "w01-0-overview.md",
+   "cond": true,
+   "sent": "- **170배 이상** — 숫자를 곱하는 에너지 대비 메모리에서 가져오는 에너지(정밀값 약 173배)."
+  },
+  {
+   "week": 1,
+   "file": "w01-1-intro.md",
+   "cond": true,
+   "sent": "서울에서 미국 서부까지 직선으로 약 9,000km니까, **신호가 갔다 오기만 해도 최소 90ms**가 걸린다"
+  },
+  {
+   "week": 1,
+   "file": "w01-1-intro.md",
+   "cond": false,
+   "sent": "실제 해저 케이블은 직선이 아니라 돌아가므로 측정값은 보통 130ms를 넘는다"
+  },
+  {
+   "week": 1,
+   "file": "w01-1-intro.md",
+   "cond": false,
+   "sent": "90ms가 얼마나 될까? 사람이 \"즉각적\"이라고 느끼는 한계가 대략 100ms니 아슬아슬하다"
+  },
+  {
+   "week": 1,
+   "file": "w01-1-intro.md",
+   "cond": false,
+   "sent": "1080p 30fps 영상을 압축 없이 보내면 초당 약 1.5기가비트다"
+  },
+  {
+   "week": 1,
+   "file": "w01-1-intro.md",
+   "cond": false,
+   "sent": "잘 압축해서 5Mb/s로 줄여도 **하루에 약 54GB**"
+  },
+  {
+   "week": 1,
+   "file": "w01-1-intro.md",
+   "cond": false,
+   "sent": "월 100GB 요금제라면 카메라 한 대가 **이틀도 안 돼 다 쓴다"
+  },
+  {
+   "week": 1,
+   "file": "w01-1-intro.md",
+   "cond": true,
+   "sent": "숫자 하나를 곱하는 데 드는 에너지보다, 그 숫자를 메모리에서 **가져오는** 데 드는 에너지가 **170배 넘게** 크다"
+  },
+  {
+   "week": 1,
+   "file": "w01-2-advanced.md",
+   "cond": false,
+   "sent": "이론 70% / 실습 30%."
+  },
+  {
+   "week": 1,
+   "file": "w01-3-lab.md",
+   "cond": false,
+   "sent": "✅` 표시가 몇 줄 지나가고 **14MB 정도의 `mobilenetv2.onnx` 한 개**가 생기면 준비 끝이다"
+  },
+  {
+   "week": 1,
+   "file": "w01-3-lab.md",
+   "cond": false,
+   "sent": "앞 15회와 뒤 15회 평균을 비교해 보면 보인다"
+  },
+  {
+   "week": 1,
+   "file": "w01-3-lab.md",
+   "cond": true,
+   "sent": "- **다른 프로그램이 CPU를 쓰고 있어서** — 브라우저에 탭이 30개 열려 있으면 측정값이 튄다"
+  },
+  {
+   "week": 2,
+   "file": "w02-0-overview.md",
+   "cond": true,
+   "sent": "- **6,400배** — 정수 덧셈 한 번의 에너지 대비, DRAM에서 값 **하나** 읽는 에너지."
+  },
+  {
+   "week": 2,
+   "file": "w02-0-overview.md",
+   "cond": true,
+   "sent": "- **128배** — 같은 값을 DRAM 대신 SRAM에서 읽을 때 아끼는 에너지"
+  },
+  {
+   "week": 2,
+   "file": "w02-0-overview.md",
+   "cond": true,
+   "sent": "- **2배** — MobileNetV2 추론 1회에서, 가중치를 DRAM에서 **한 번씩만** 읽어도 곱셈 전체보다 2배 더 드는 에너지."
+  },
+  {
+   "week": 2,
+   "file": "w02-0-overview.md",
+   "cond": false,
+   "sent": "- `w02_p1_energy_ladder_07.png` — 32비트 하나를 다루는 에너지 사다리 *(1교시)*"
+  },
+  {
+   "week": 2,
+   "file": "w02-1-intro.md",
+   "cond": false,
+   "sent": "**오늘의 질문** — 새로 나온 폰이 \"AI 성능 2배\"라고 광고한다"
+  },
+  {
+   "week": 2,
+   "file": "w02-1-intro.md",
+   "cond": false,
+   "sent": "그런데 막상 써 보면 사진 보정이 2배 빨라지지는 않는다"
+  },
+  {
+   "week": 2,
+   "file": "w02-1-intro.md",
+   "cond": false,
+   "sent": "**정수 덧셈 0.1 pJ 대 부동소수점 곱셈 3.7 pJ — 37배 차이다"
+  },
+  {
+   "week": 2,
+   "file": "w02-1-intro.md",
+   "cond": false,
+   "sent": "** 연산 종류가 달라서 생긴 차이도 섞여 있지만(덧셈 vs 곱셈), 같은 곱셈끼리 비교해도 **8비트 정수 0.2 pJ 대 부동소수점 3.7 pJ로 18.5배**다"
+  },
+  {
+   "week": 2,
+   "file": "w02-1-intro.md",
+   "cond": false,
+   "sent": "에너지는 **128배**가 든다"
+  },
+  {
+   "week": 2,
+   "file": "w02-1-intro.md",
+   "cond": false,
+   "sent": "**데이터를 가져오기만 해도 곱셈 전체의 2배**가 든다"
+  },
+  {
+   "week": 2,
+   "file": "w02-1-intro.md",
+   "cond": false,
+   "sent": "MAC은 곱셈과 덧셈이 한 쌍이므로 덧셈 0.9 pJ까지 넣으면 연산 쪽이 1.38 mJ가 되어 비율은 **1.6배**로 낮아지지만, 결론은 달라지지 않는다"
+  },
+  {
+   "week": 2,
+   "file": "w02-1-intro.md",
+   "cond": false,
+   "sent": "- 그 격차가 해마다 벌어지는 현상이 **Memory Wall**이고, \"성능 2배\"가 체감 2배로 이어지지 않는 이유다"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": false,
+   "sent": "하이퍼스레딩이 켜져 있으면 물리 코어의 2배로 나온다"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": true,
+   "sent": "**실제로 돌린 결과 하나를 보자.** 아래는 논리 코어가 **2개**인 리눅스 서버에서 이 코드를 그대로 실행한 값이다"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": true,
+   "sent": "**① 코어 수까지는 거의 그대로 빨라진다** — 2개 코어에 2스레드를 주니 1.89배"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": false,
+   "sent": "이론상 최대인 2배에 거의 닿았다"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": true,
+   "sent": "**② 코어 수를 넘기면 오히려 느려진다** — 4스레드에서 **1스레드보다도 느려졌다**(0.80배)"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": true,
+   "sent": "8스레드에서는 1스레드의 **4분의 1 속도**다"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": false,
+   "sent": "코어는 2개뿐인데 8명이 달려들어 서로 자리를 뺏느라 일을 못 한 것이다"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": true,
+   "sent": "코어 8개짜리 노트북에서 8스레드를 줬는데 8배가 아니라 4~5배쯤에서 그치는 경험을 하게 될 텐데, 그 차이가 대역폭 몫이다"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": true,
+   "sent": "**가장 낙관적인 가정에서도 데이터를 나르는 쪽이 2배 비싸다"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": false,
+   "sent": "4.8 ms 안에 추론을 끝내려면 가중치만으로도 초당 **2.9 GB**를 실어 날라야 한다"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": false,
+   "sent": "**코어를 늘리면 곱셈은 나눠 지지만 이 14 MB는 그대로다"
+  },
+  {
+   "week": 2,
+   "file": "w02-3-lab.md",
+   "cond": true,
+   "sent": "- 에너지로는 **데이터 이동이 계산의 2배**, 시간으로는 **가중치만 초당 2.9 GB**가 필요하다는 것을 내 모델에서 계산했다"
+  },
+  {
+   "week": 3,
+   "file": "w03-0-overview.md",
+   "cond": false,
+   "sent": "**Clip 35개가 통째로 사라진다"
+  },
+  {
+   "week": 3,
+   "file": "w03-0-overview.md",
+   "cond": false,
+   "sent": "- **2.3배** — 정확도를 하나도 안 내주고 얻은 속도(실측)."
+  },
+  {
+   "week": 3,
+   "file": "w03-0-overview.md",
+   "cond": true,
+   "sent": "- **25 → 10** — 프레임워크 5개·런타임 5개를 잇는 데 필요한 변환기 수(ONNX 유무)."
+  },
+  {
+   "week": 3,
+   "file": "w03-2-advanced.md",
+   "cond": true,
+   "sent": "ONNX Runtime의 경우 3층이다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": false,
+   "sent": "Netron(https://netron.app)으로 열어 봐도 좋지만, MobileNetV2는 노드가 100개라 **눈으로는 세기 어렵다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": false,
+   "sent": "**Clip 35개와 Add 10개가 통째로 사라졌다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": false,
+   "sent": "궁금하면 `do_constant_folding=False`로 다시 내보내 보라 — `BatchNormalization` 노드 52개가 그대로 남는다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": false,
+   "sent": "예전 방식으로 내보내면 `Constant`·`Identity` 같은 잔가지가 209개까지 붙어 나오고, 그때는 BASIC이 그걸 100개로 싹 정리한다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": true,
+   "sent": "여기에 잔차 `Add` 10개까지 그 안으로 흡수되고, 배치를 되돌리는 `ReorderOutput` 1개가 새로 생겨 `−10 + 1 = −9`가 되었다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": false,
+   "sent": "EXTENDED는 노드를 **35개나** 줄였다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": false,
+   "sent": "ALL은 노드를 **9개만** 더 줄였다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": false,
+   "sent": "그런데 **2.3배 빨라졌다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": true,
+   "sent": "이 \"한 삽의 크기\"를 **SIMD 폭**이라 하고, 요즘 데스크톱 CPU에서는 대개 float 8개(AVX2)나 16개(AVX-512)다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": true,
+   "sent": "** 그러면 함께 쓰일 8개 채널 값이 메모리에서 딱 붙어 있게 되어, 한 삽에 그대로 퍼 담긴다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": false,
+   "sent": "그런데 2.3배 빨라졌다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": false,
+   "sent": "** (앞서 본 대로 잔차 `Add` 10개를 함께 흡수하는 추가 융합도 일어나지만, 그것만으로 2.3배가 나오지는 않는다 — EXTENDED가 35개를 줄이고도 0.99배였던 것이 그 증거다"
+  },
+  {
+   "week": 3,
+   "file": "w03-3-lab.md",
+   "cond": false,
+   "sent": "- 실측: 노드 **100 → 100 → 65 → 56**, 지연 **16.2 → 16.4 → 16.3 → 7.0 ms**."
+  },
+  {
+   "week": 4,
+   "file": "w04-0-overview.md",
+   "cond": false,
+   "sent": "- **99% → 1.02배** — 가중치의 99%를 0으로 만들어도 지연은 그대로다(실측)."
+  },
+  {
+   "week": 4,
+   "file": "w04-0-overview.md",
+   "cond": false,
+   "sent": "** 단, 압축하면 15.2배 작아진다"
+  },
+  {
+   "week": 4,
+   "file": "w04-0-overview.md",
+   "cond": false,
+   "sent": "- **1.22배 · 97.33%** — 채널을 **실제로 들어내면** 빨라지고, 미세조정으로 정확도는 원본으로 되돌아온다"
+  },
+  {
+   "week": 4,
+   "file": "w04-0-overview.md",
+   "cond": false,
+   "sent": "- `w04_p3_filesize_11.png` — 파일 크기는 그대로, 압축은 15.2배 *(3교시)*"
+  },
+  {
+   "week": 4,
+   "file": "w04-1-intro.md",
+   "cond": true,
+   "sent": "** 3교시에서 90%를 지워도 정확도가 거의 그대로인 것을 직접 보게 된다"
+  },
+  {
+   "week": 4,
+   "file": "w04-1-intro.md",
+   "cond": true,
+   "sent": "3교시에서 쓸 모델도 전체 42만 개 파라미터 중 **95%가 완전연결층 하나**에 몰려 있다 — 지울 여지가 어디에 있는지가 눈에 보인다"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": true,
+   "sent": "3주차에서 배운 **SIMD** — 한 삽에 8개씩 퍼 담아 한꺼번에 곱하는 방식 — 을 떠올려 보자"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": false,
+   "sent": "그런데 \"이 값이 0이면 건너뛴다\"는 분기를 원소마다 넣으면, **8개를 한 삽에 담을 수가 없다"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": true,
+   "sent": "- **범용 희소 라이브러리**를 그냥 쓰면 손익분기점이 아주 높다 — 흔히 **99% 근처**라고 이야기된다"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": true,
+   "sent": "Elsen 등의 *Fast Sparse ConvNets*(CVPR 2020)는 모바일 ARM CPU에서 **70~90% 희소성 구간에서 밀집 대비 1.1~2.2배**를 보고했다"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": false,
+   "sent": "**연속된 4개 중 적어도 2개를 0으로 만든다"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": false,
+   "sent": "** 바꿔 말하면 **0이 아닌 값이 4개 중 최대 2개**다(3개나 4개가 0인 것도 규칙 위반이 아니다)"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": true,
+   "sent": "하드웨어가 활용하는 희소성은 이 **50%가 상한**이 된다"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": false,
+   "sent": "- 하드웨어가 **\"4개 중 살아남는 건 많아야 둘\"** 이라는 사실을 **이미 알고 있다"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": false,
+   "sent": "** 그러니 \"어디가 0인지\"를 일반적인 인덱스로 적을 필요가 없다 — 살아남은 값이 4자리 중 어디였는지만 알면 되고, 그건 **값 하나당 2비트**면 충분하다"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": false,
+   "sent": "** \"이 4개 중에는 셋 다 중요한데\" 싶어도 규칙상 둘은 0으로 만들어야 한다"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": false,
+   "sent": "**정확도가 90% 아래로 떨어진 모델이 미세조정 몇 번으로 원본 수준까지 돌아온다"
+  },
+  {
+   "week": 4,
+   "file": "w04-2-advanced.md",
+   "cond": true,
+   "sent": "- **2:4 희소성** — 연속 4개 중 2개를 0으로 만드는 규칙적 패턴"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "** 전체 42만 개 중 **`fc1` 하나가 40만 개, 95.2%** 다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "합성곱층 둘을 합쳐 봐야 18,720개, 전체의 **4.4%** 다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "**놀랍지 않은가?** 가중치의 **70%를 지웠는데 정확도가 오히려 올랐다**(97.33% → 97.56%)"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "90%를 지워도 96.44%다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "그러다 **95%를 넘으면 절벽처럼 무너진다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "** 90.22% → 51.78%"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": true,
+   "sent": "90% 프루닝된 모델을 층별로 들여다보면 이렇다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "여기서도 `fc1`이 92% 잘렸다는 점을 보자"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": true,
+   "sent": "**전체 희소성 90%의 거의 전부가 그 한 층에서 나왔다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "**장부상으로는 100배까지 줄었다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "** 논문에 \"연산량을 100배 줄였다\"고 쓸 수 있는 숫자다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "정확도를 거의 안 잃고 90%를 지웠다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "** *\"가중치의 90%를 0으로 만들면 정말 10배 빨라질까?\"* 적어 왔을 테니, 숫자를 보기 전에 옆 사람과 맞춰 보자."
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "가중치의 **99%가 0**인데 **1.02배**다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "오차 범위(±0.1~0.2 ms) 안이니 사실상 **차이 없음**이다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "90%의 `0.99배`도 마찬가지다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": true,
+   "sent": "**바로 앞에서 장부상 100배 감소를 확인했다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "**그런데 오른쪽 열은 15배 작아졌다"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "- **속도** 1.00 → **1.22배**"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "- **정확도** 자른 직후 88.22% → 미세조정 후 **97.33%** (원본과 동일)"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": true,
+   "sent": "- **정확도**: 70%까지 그대로, 90%에서 96.4%, **95%를 넘으면 절벽**(90.2% → 51.8%)"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": true,
+   "sent": "- **장부상 연산량**: 99%에서 **100배 감소**"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "- **지연**: 0%부터 99%까지 **완전히 평평**(10 ms)"
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "99%를 지워도 **1.02배**."
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "- **파일**: `.pt`는 **1바이트도 안 줄고**, 압축하면 **15.2배** 작아진다 — 전송에는 이득, 실행에는 무이득."
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "- **구조적으로 채널을 실제로 들어내면** 파일 절반 · 속도 **1.22배** · 정확도는 미세조정으로 원본 복귀."
+  },
+  {
+   "week": 4,
+   "file": "w04-3-lab.md",
+   "cond": false,
+   "sent": "- **장부는 100배, 시계는 1.02배.** 1교시 표의 ②와 ③은 서로 다른 것이었다"
+  },
+  {
+   "week": 5,
+   "file": "w05-0-overview.md",
+   "cond": false,
+   "sent": "가중치의 99%를 0으로 만들었는데 파일은 1바이트도 안 줄고 속도는 1.02배였다"
+  },
+  {
+   "week": 5,
+   "file": "w05-0-overview.md",
+   "cond": false,
+   "sent": "- **3.91배 · 1.94배 · 그대로** — 파일·속도·정확도"
+  },
+  {
+   "week": 5,
+   "file": "w05-0-overview.md",
+   "cond": false,
+   "sent": "- **13.56% vs 97.33%** — 같은 4비트, 같은 압축률"
+  },
+  {
+   "week": 5,
+   "file": "w05-0-overview.md",
+   "cond": false,
+   "sent": "- **68.89% vs 97.33%** — 같은 3비트"
+  },
+  {
+   "week": 5,
+   "file": "w05-0-overview.md",
+   "cond": true,
+   "sent": "- **2주차에서 이어짐** — \"8비트 정수 곱셈 0.2 pJ vs 32비트 부동소수점 곱셈 3.7 pJ = 18.5배\"가 양자화가 실제로 빠른 하드웨어적 근거다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": false,
+   "sent": "**오늘의 질문** — 신경망의 가중치 하나는 `0.12773849...` 같은 값이고, 이걸 32비트로 적는다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": false,
+   "sent": "가중치의 99%를 0으로 만들었는데 **파일은 1바이트도 안 줄었다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": false,
+   "sent": "**같은 곱셈끼리 비교하면 18.5배**, 같은 덧셈끼리 비교하면 9배다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": true,
+   "sent": "** 3주차에서는 데스크톱의 256비트(AVX2)로 세어 float 8개라고 했다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": true,
+   "sent": "폰에 흔한 **128비트(ARM NEON)** 로 세면 FP32 4개, INT8 16개다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": false,
+   "sent": "**폭이 얼마든 비율은 늘 4배**라는 것이 요점이다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": false,
+   "sent": "눈금이 300개 있으면 1mm까지 잴 수 있다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": false,
+   "sent": "눈금이 30개뿐이면 1cm까지만 잴 수 있다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": true,
+   "sent": "눈금 8개짜리 자라도 **0에서 1까지**에 펼치면 0.125 단위로 잴 수 있다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": false,
+   "sent": "**자는 똑같은데 정밀도가 100배 차이 난다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": false,
+   "sent": "그 좁은 범위에만 256개 눈금을 펼치면, 8비트로도 충분히 정밀하다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": false,
+   "sent": "8비트면 값이 256가지지만 **칸은 255개**라 255로 나눈다"
+  },
+  {
+   "week": 5,
+   "file": "w05-1-intro.md",
+   "cond": true,
+   "sent": "** 3교시 실측에서 확인할 텐데, 8비트로 바꿨을 때 평균 오차가 **가중치 표준편차의 1.34%** 정도다"
+  },
+  {
+   "week": 5,
+   "file": "w05-2-advanced.md",
+   "cond": false,
+   "sent": "**가장 넓은 층이 가장 좁은 층의 3.2배**다"
+  },
+  {
+   "week": 5,
+   "file": "w05-2-advanced.md",
+   "cond": false,
+   "sent": "** `fc1`은 자기 몫의 3분의 1도 못 쓰는 셈이다"
+  },
+  {
+   "week": 5,
+   "file": "w05-2-advanced.md",
+   "cond": false,
+   "sent": "**백분위 99.9%로 자른다**는 말은, 값들을 크기순으로 줄 세워 **위아래 0.1%씩을 버리고** 남은 구간만 자의 범위로 삼는다는 뜻이다"
+  },
+  {
+   "week": 5,
+   "file": "w05-2-advanced.md",
+   "cond": false,
+   "sent": "**눈금이 20배 굵어지고 오차가 18배 커졌다"
+  },
+  {
+   "week": 5,
+   "file": "w05-2-advanced.md",
+   "cond": true,
+   "sent": "**8비트에서는 이래도 정확도가 거의 안 떨어진다"
+  },
+  {
+   "week": 5,
+   "file": "w05-2-advanced.md",
+   "cond": false,
+   "sent": "** 눈금이 256개나 되니 20배 굵어져도 아직 견딜 만하기 때문이다"
+  },
+  {
+   "week": 5,
+   "file": "w05-2-advanced.md",
+   "cond": true,
+   "sent": "** 3교시에서 8비트부터 4비트까지 내려가며 재 볼 텐데, **어느 지점에서 무너지는지**를 직접 보게 된다"
+  },
+  {
+   "week": 5,
+   "file": "w05-2-advanced.md",
+   "cond": true,
+   "sent": "4주차 3.3에서 \"채널을 절반 줄였는데 왜 1.22배지?\"를 물었던 그 자리와 정확히 같다"
+  },
+  {
+   "week": 5,
+   "file": "w05-2-advanced.md",
+   "cond": false,
+   "sent": "8비트는 견디지만 비트를 줄이면 무너진다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "1교시의 \"범위 폭 ÷ 칸 수\"가 그대로 나온 것이다 — 값은 256가지지만 **칸은 255개**다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "**③ 오차가 표준편차의 1.34%** — 40만 개 값을 256칸에 욱여넣었는데 오차가 이 정도다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "**범위만 제대로 잡으면 8비트로 충분하다**는 1교시의 주장이 숫자로 확인된다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "**가장 넓은 층이 가장 좁은 층의 3.2배**다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "자를 하나만 쓰면 `conv1`에 맞춰지고, `fc1`은 자기 몫의 3분의 1도 못 쓴다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "**표를 읽기 전에 4주차의 잣대를 다시 꺼내자.** 테스트가 450장이므로 **1장이 0.22%p**다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "97.78%와 97.33%는 **두 장 차이**이니 \"층별이 채널별보다 낫다\"고 읽으면 안 된다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "**8비트 줄은 셋 다 97.56%로 똑같다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "그런데 **3비트로 내려가면 68.89% vs 97.33%** 로 갈린다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": true,
+   "sent": "2비트에서는 **10.22%** — 열 개 중 하나를 고르는 문제에서 10%면 **찍는 것**이다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": true,
+   "sent": "2비트에서는 **채널별이 층별을 이긴다**(95.11% vs 89.33%)"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": true,
+   "sent": "**4비트에서 13.56% vs 97.33%.** 값 **하나**를 잘라 냈느냐 아니냐의 차이다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "여기서도 8비트는 멀쩡한데(97.33%) 비트를 줄이자 무너진다 — **여유가 사라지는 순간 전략이 드러난다**는 같은 이야기다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "- **파일** 1,690,748 → 432,592 B = **3.91배 작음**"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "- **속도** 0.110 → 0.057 ms = **1.94배 빠름**"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "- **정확도** 97.33% → **97.33%** (450장 중 **예측이 한 장도 바뀌지 않았다**)"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "지난주에는 99%를 지우고도 아무것도 안 움직였다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": true,
+   "sent": "** 이 모델은 **곱셈-누산(MAC — 2주차의 그 '곱하고 더하기'다)의 90.5%를 합성곱이 쓰는데**(424만 번 중 384만 번), 동적 양자화는 완전연결층만 바꿨기 때문이다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": true,
+   "sent": "** 4주차 3.3에서 \"채널을 절반 줄였는데 왜 1.22배지?\"를 물었던 그 자리와 같다 — **전체 중 일부만 개선하면 전체는 그 비율만큼만 좋아진다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "**\"4배가 아니라 3.3배네요?\"** — 가장 많이 나오는 질문이고, 따져 보면 배울 것이 있다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "이 모델의 파라미터는 24,234개다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "**가중치는 거의 4배로 준다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "** 딱 4배가 아닌 이유가 둘이다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "** int8 × int8을 **수천 번 더하면** 8비트 범위(−128~127)를 금방 넘는다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "**가중치는 곱해지는 쪽이라 8비트로 충분하고, 편향은 더해지는 쪽이라 그렇지 않다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "** 이 모델은 파라미터 24,234개 중 122개가 편향인데, 가중치는 24,112 B로 줄어든 반면 편향은 488 B를 차지해 합이 24,600 B가 된다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "모델이 작을수록 이 고정 비용의 비중이 커져 4배에 못 미치고, 모델이 커질수록 4배에 수렴한다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "앞의 digits 모델이 **3.91배**로 4배에 더 가까웠던 이유가 이것이다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "- 1교시의 두 식을 **직접 구현**했다 — `S = 9.63×10⁻⁴`, `Z = -6`, 오차는 표준편차의 **1.34%**."
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": true,
+   "sent": "- 자를 어디에 두느냐: 8비트는 셋 다 같지만 **3비트에서 68.89% vs 97.33%**"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": true,
+   "sent": "2비트에서는 채널별이 이긴다 — **조건에 따라 뒤집힌다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": true,
+   "sent": "- 이상치 하나: 8비트는 멀쩡하지만 **4비트에서 13.56% vs 97.33%**."
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": true,
+   "sent": "- **INT8 완전 양자화는 파일 3.91배·속도 1.94배·정확도 그대로.** 4주차와 정반대다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "- 파일이 딱 4배가 아닌 이유 — **편향은 int32**로 저장되고, **채널별 스케일**이 부대 정보로 붙는다"
+  },
+  {
+   "week": 5,
+   "file": "w05-3-lab.md",
+   "cond": false,
+   "sent": "- 단 **전부 바꿔야** 한다 — 완전연결층만 바꾸면 파일은 3.5배 줄어도 속도는 1.03배(암달)."
+  },
+  {
+   "week": 6,
+   "file": "w06-0-overview.md",
+   "cond": false,
+   "sent": "- **1.00배 · 1.00배 · +2.14%p** — 파일·지연·정확도"
+  },
+  {
+   "week": 6,
+   "file": "w06-0-overview.md",
+   "cond": false,
+   "sent": "- **+0.25%p vs +1.88%p** — 소프트 타깃이 준 몫과 라벨 없는 데이터가 준 몫"
+  },
+  {
+   "week": 6,
+   "file": "w06-0-overview.md",
+   "cond": false,
+   "sent": "- **95.33% → 94.81%** — 4·5주차의 digits 데이터로 그대로 증류하면 **오히려 깎인다"
+  },
+  {
+   "week": 6,
+   "file": "w06-0-overview.md",
+   "cond": false,
+   "sent": "** 교사가 그 데이터를 99.93% 외웠기 때문이다"
+  },
+  {
+   "week": 6,
+   "file": "w06-1-intro.md",
+   "cond": true,
+   "sent": "** Hinton 등의 MNIST 실험에서, 층당 300개 이상의 유닛을 가진 학생은 $T > 8$ 에서 결과가 대체로 비슷했지만, 층당 **30개**짜리 아주 작은 학생은 $T = 2.5 \\sim 4$ 가 뚜렷이 좋았다"
+  },
+  {
+   "week": 6,
+   "file": "w06-2-advanced.md",
+   "cond": true,
+   "sent": "논문이 보고한 평균 향상은 **2.65%p**(VGG19에서 최대 4.07%p, ResNeXt에서 최소 0.61%p)다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "sklearn `digits`(8×8 손글씨, 학습 1,347장 / 테스트 450장) 위의 작은 CNN이다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "교사는 폭을 네 배로 키운 같은 구조(9,930 파라미터), 학생은 4·5주차와 같은 작은 모델(1,626 파라미터)"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "각각 3개의 시드로 학습해 평균을 낸다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "**증류가 0.52%p를 깎아 먹었다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "교사는 그 1,347장을 **거의 통째로 외웠다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "교사는 학생보다 **9.8배** 크다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "학생(2,954 파라미터)을 두 가지로 학습시킨다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "기준선** — 라벨 있는 10,000장, 교차 엔트로피만"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "증류** — 같은 10,000장, 교사(w=16)의 소프트 타깃까지"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "시드 3개의 평균이다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "그런데 정확도 상승분이 **+0.25%p**다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "시드 간 표준편차가 ±0.5%p인데, 그보다도 작다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "1교시에서 본 Hinton의 MNIST 결과(오류 146개 → 74개, 거의 절반)와는 거리가 멀다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "지금까지 교사가 한 일은 **학생이 이미 정답을 알고 있는 10,000장에 대해** 확률 분포를 하나 더 얹어 준 것뿐이다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "**라벨 없는 30,000장.** 정답이 없으니 지금까지는 쓸 방법이 없었다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "전이 집합 증류** — 라벨 있는 10,000장 + 교사가 답을 단 30,000장 = **40,000장**으로 학습"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "**+2.14%p.** 크기는 1바이트도 안 늘었는데, 교사(89.73%)와의 격차를 **절반 넘게** 좁혔다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "+2.14%p를 얻었다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "② 교사가 답을 단 데이터 **30,000장을 더** 썼다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "** B(같은 10,000장에 소프트 타깃만 추가)가 바로 그것이고, 결과는 **+0.25%p**였다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "의사 라벨(pseudo-label) 학습** — 전이 집합 40,000장, 교사의 **하드 라벨**, 교차 엔트로피만"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "**소프트 타깃을 쓴 C(87.78%)가 하드 라벨만 쓴 D(87.95%)보다 오히려 낮다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "교사가 붙인 30,000장의 라벨은 **사람이 직접 붙인 라벨**에 비해 얼마나 쓸 만한가? 답을 알려면 상한선을 재면 된다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "상한선** — 40,000장 전부에 **진짜 정답 라벨**을 주고 평범하게 학습"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "**교사가 붙인 라벨이 사람 라벨이 주는 이득의 92%를 가져왔다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "** 교사가 10장에 1장꼴로 틀리는데도 그렇다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "같은 10,000장, 80 에폭."
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "** 즉 B의 +0.25%p는 \"분포를 흐린 효과\"가 아니라 **교사가 어느 방향으로 흐렸는지**에서 온 것이다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "그런데 실제로 재어 보니, 성적을 올린 것은 조언이 아니라 **선생이 문제를 3배 더 풀어 준 것**이었다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "폭이 다른 교사 **네 명**을 각각 학습시키고(전부 같은 20,000장), 그 네 명에게 **똑같은 학생**(2,954 파라미터)을 각각 배우게 한다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "전이 집합 프로토콜, $T=4$, $\\alpha=0.7$, 시드 2개."
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "교사를 8,778에서 392,714 파라미터로 **44.7배** 키우는 동안, 교사 자신은 **2.89%p** 좋아졌다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "그런데 그 교사에게 배운 학생은 **0.54%p** 오르는 데 그쳤고, **마지막 교사에서는 오히려 내려갔다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "정직하게 덧붙이면, w=16 · w=32 · w=64 세 값(87.78 / 87.81 / 87.75)의 차이는 시드 간 표준편차(±0.2~0.4%p) 안이다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "** 하지만 **\"평평해졌다\"는 것만은 분명하다** — 교사가 3.8배 커지고 자신은 1.19%p 좋아지는 동안 학생은 한 발짝도 못 나갔다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "시드 간 편차가 ±0.2%p 수준이므로 앞의 세 점은 사실상 구분되지 않는다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "** 세 점이 0.04%p 안에 붙어 있다 — 편차 안이다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "** 16에서는 0.64%p 손해다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "우리 학생은 2,954 파라미터로, 그 30-유닛 학생보다도 훨씬 작다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "3개 시드로 다시 잰 두 지점은 이렇다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "$T=1$ 증류가 **사람이 40,000장 전부에 라벨을 붙인 상한선의 코앞**(−0.12%p)까지 왔다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "** INT8에서는 둘 다 멀쩡하지만(5주차에서 배운 대로), 비트를 줄일수록 격차가 벌어져 **INT3에서는 19.17%p**까지 벌어진다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": true,
+   "sent": "digits에서는 오히려 **0.52%p 깎였다**(교사가 그 데이터를 99.93% 외웠다)."
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "- 증류는 파일과 지연을 **정확히 1.00배**로 둔 채 정확도만 움직인다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "- 전이 집합 증류로 **+2.14%p**를 얻었다"
+  },
+  {
+   "week": 6,
+   "file": "w06-3-lab.md",
+   "cond": false,
+   "sent": "그러나 그 중 소프트 타깃의 몫은 **약 12%**뿐이었다"
+  },
+  {
+   "week": 7,
+   "file": "w07-0-overview.md",
+   "cond": true,
+   "sent": "- Once-for-All이 \"학습 1회, 배포 다수\"를 가능하게 한 원리를 성능 추정 비용의 관점에서 설명할 수 있다"
+  },
+  {
+   "week": 7,
+   "file": "w07-0-overview.md",
+   "cond": false,
+   "sent": "거의 따로 논다(실측 48개)."
+  },
+  {
+   "week": 7,
+   "file": "w07-0-overview.md",
+   "cond": false,
+   "sent": "- **3.9배 적은데 3.16배 느리다** — 실측 후보 두 개"
+  },
+  {
+   "week": 7,
+   "file": "w07-0-overview.md",
+   "cond": false,
+   "sent": "원인은 **MAC 하나당 7.6배 비싼** 깊이별 분리 합성곱."
+  },
+  {
+   "week": 7,
+   "file": "w07-0-overview.md",
+   "cond": false,
+   "sent": "- **89.57% / 0.426ms vs 88.49% / 0.193ms** — 정확도만 고르면 예산의 2.21배를 쓴다"
+  },
+  {
+   "week": 7,
+   "file": "w07-0-overview.md",
+   "cond": false,
+   "sent": "지연을 목적 함수에 넣으면 **1.08%p 내주고 2.21배** 빨라진다"
+  },
+  {
+   "week": 7,
+   "file": "w07-0-overview.md",
+   "cond": true,
+   "sent": "- **3주차** — ONNX(N×M→N+M), 그래프 최적화 3층(Basic·Extended·**Layout**), Operator Fusion과 메모리 왕복, TFLite의 FlatBuffer·Delegate, **노드 수 ≠ 속도**"
+  },
+  {
+   "week": 7,
+   "file": "w07-0-overview.md",
+   "cond": true,
+   "sent": "비구조적·구조적의 차이, **희소성과 실제 속도의 괴리**, 2:4 희소성(4개 중 **최소 2개**가 0), 마스킹과 물리적 축소"
+  },
+  {
+   "week": 7,
+   "file": "w07-0-overview.md",
+   "cond": false,
+   "sent": "- `w07_p1_flops_vs_latency_03.png` — 연산량과 지연의 산점도(실측 48개) *(1교시)*"
+  },
+  {
+   "week": 7,
+   "file": "w07-0-overview.md",
+   "cond": false,
+   "sent": "- `w07_p1_inversion_04.png` — 연산량 3.9배 적은데 3.16배 느린 쌍(실측) *(1교시)*"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "폭·깊이·커널 크기·합성곱 종류·채널 증가율·헤드 방식 — 여섯 축의 조합으로 **240개** 구조가 나온다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "여기서 **48개를 무작위로 뽑아** 세 가지를 각각 쟀다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "- 두 후보를 아무렇게나 뽑으면 **19.5%**, 즉 **다섯 쌍 중 한 쌍**은 \"연산량이 적은 쪽이 오히려 더 느리다\"."
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "- **가장 빠른 모델**(0.157 ms)은 연산량 순위가 **48개 중 34위**였다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "- **연산량이 가장 적은 모델**(52,688 MACs, 1위)은 지연이 4위였고 정확도는 **62.09%** 로 거의 꼴찌였다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "**같은 연산량을 처리하는 데 깊이별 분리 합성곱이 7.6배 오래 걸린다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "** 그래서 연산량이 7.2배 적은데도 지연은 오히려 1.16배 크다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "**연산량은 2% 차이인데 지연은 62% 차이다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": true,
+   "sent": "우리 48개 후보에서 경계 위에 오른 것은 **셋뿐**이었다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "경계의 양 끝을 비교하면 **정확도 1.61%p를 내주는 대신 지연이 2.72배 줄어든다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": true,
+   "sent": "** 실시간 30fps가 필요한 카메라 파이프라인이라면 왼쪽 끝을, 배치로 돌리는 서버라면 오른쪽 끝을 고른다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": true,
+   "sent": "같은 후보 48개, 같은 실측값을 놓고 **고르는 기준만** 바꿔 보자."
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "- 정확도만 보면 **예산의 2.21배**를 쓰는 모델이 뽑힌다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "- 연산량만 보면 **정확도 62%짜리**가 뽑힌다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "- 지연을 목적 함수에 넣으면 정확도 **1.08%p**만 내주고 **2.21배 빠른** 구조를 얻는다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "배포 시나리오가 40개면 탐색도 40번이다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": true,
+   "sent": "배포 시나리오 40개 기준으로 총 GPU 시간이 MnasNet의 **1,600,000시간에서 1,200시간**으로 줄어든다(CO₂ 배출 기준 약 1,300배)."
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": true,
+   "sent": "이것이 1주차 2교시에서 말한 **\"학습 1회, 배포 다수(train once, deploy many)\"** 의 구현이다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": true,
+   "sent": "- **연산량은 지연의 대리 지표가 될 수 없다** — 순위 상관 0.301, 역전 쌍 19.5%, 최악의 경우 연산량 3.9배 적은 모델이 3.16배 느렸다"
+  },
+  {
+   "week": 7,
+   "file": "w07-1-intro.md",
+   "cond": false,
+   "sent": "- 원인은 2주차 그대로 — 깊이별 분리 합성곱은 **MAC 하나당 7.6배 비싸다"
+  },
+  {
+   "week": 7,
+   "file": "w07-2-advanced.md",
+   "cond": false,
+   "sent": "정확도는 셋이 거의 같은데(74.6~75.3 %) 지연은 최대 **1.5배**까지 갈린다"
+  },
+  {
+   "week": 7,
+   "file": "w07-2-advanced.md",
+   "cond": true,
+   "sent": "**랜덤 서치 기준선이 3.29 %**, DARTS 2차가 2.76 %다"
+  },
+  {
+   "week": 7,
+   "file": "w07-2-advanced.md",
+   "cond": false,
+   "sent": "차이는 **0.53 %p**다"
+  },
+  {
+   "week": 7,
+   "file": "w07-2-advanced.md",
+   "cond": false,
+   "sent": "배포 시나리오 40개(기기·지연 제약 조합)를 만족시키는 데 드는 총비용이다"
+  },
+  {
+   "week": 7,
+   "file": "w07-3-lab.md",
+   "cond": false,
+   "sent": "240개는 전수 조사도 가능한 크기다"
+  },
+  {
+   "week": 7,
+   "file": "w07-3-lab.md",
+   "cond": false,
+   "sent": "실제 NAS 논문의 탐색 공간은 $10^{18}$ 을 넘지만, **원리를 보는 데는 240개면 충분하다"
+  },
+  {
+   "week": 7,
+   "file": "w07-3-lab.md",
+   "cond": false,
+   "sent": "이 점이 중요하다 — 48개를 다 학습시키는 데는 25분이 걸리지만, 앞의 둘만 재는 데는 **1초**면 된다"
+  },
+  {
+   "week": 7,
+   "file": "w07-3-lab.md",
+   "cond": false,
+   "sent": "48개 중 경계에 오른 것은 **셋뿐**이었다"
+  },
+  {
+   "week": 7,
+   "file": "w07-3-lab.md",
+   "cond": true,
+   "sent": "나머지 45개는 **누군가에게 모든 면에서 지는** 후보들이다"
+  },
+  {
+   "week": 7,
+   "file": "w07-3-lab.md",
+   "cond": false,
+   "sent": "- (c) 지연 ≤ 0.20 ms 제약 아래 정확도 최대"
+  },
+  {
+   "week": 8,
+   "file": "w08-0-overview.md",
+   "cond": false,
+   "sent": "- **84배** — 파라미터가 1.25배 **많은** FC-AutoEncoder가 MobileNetV1보다 SRAM을 84분의 1만 쓴다"
+  },
+  {
+   "week": 8,
+   "file": "w08-0-overview.md",
+   "cond": true,
+   "sent": "- **8.74배** — 모델을 한 글자도 안 바꾸고 **메모리 배치만** 바꿔 12,846 KB → 1,470 KB(실측)"
+  },
+  {
+   "week": 8,
+   "file": "w08-0-overview.md",
+   "cond": false,
+   "sent": "단, in-place 이득은 모델마다 1.00~1.60배로 갈린다"
+  },
+  {
+   "week": 8,
+   "file": "w08-0-overview.md",
+   "cond": false,
+   "sent": "- **1.98배 vs 1.013배** — 추론을 절반으로 줄였을 때 배터리 수명 증가"
+  },
+  {
+   "week": 8,
+   "file": "w08-0-overview.md",
+   "cond": false,
+   "sent": "앞은 1초 주기, 뒤는 1시간 주기"
+  },
+  {
+   "week": 8,
+   "file": "w08-0-overview.md",
+   "cond": false,
+   "sent": "- `w08_p2_breakeven_08.png` — 듀티 사이클 손익분기 1.74분 *(2교시)*"
+  },
+  {
+   "week": 8,
+   "file": "w08-0-overview.md",
+   "cond": true,
+   "sent": "- **예산 기준** — STM32F746: Cortex-M7 216 MHz / SRAM 320 KB / Flash 1 MB (MCUNet이 기준 기기로 삼은 칩)."
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": false,
+   "sent": "램 8 GB, 저장 공간 128 GB, 배터리 4,000 mAh"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": true,
+   "sent": "1주차에서 노트북으로 잰 3.5 ms 라는 숫자도 이 세계의 것이다"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": false,
+   "sent": "TinyML을 정의할 때 거의 언제나 **1 mW**가 등장한다"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": false,
+   "sent": "Warden과 Situnayake의 『TinyML』(O'Reilly, 2019) 1장이다"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": false,
+   "sent": "우리가 1주차부터 계속 써 온 MobileNetV2를 STM32F746(320 KB SRAM / 1 MB Flash) 예산에 대 보자"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": true,
+   "sent": "그런데 MCUNet 논문이 같은 모델에 대해 적은 숫자와 비교해 보자 — *\"ResNet-50은 저장 한계를 100배 초과하고, MobileNetV2는 **최대 메모리 한계를 22배** 초과한다"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": true,
+   "sent": "int8로 양자화한 MobileNetV2조차 여전히 메모리 한계를 **5.3배** 초과한다"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": false,
+   "sent": "우리가 잰 **4.6배**와 논문의 **5.3배**"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": false,
+   "sent": "84배다"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": false,
+   "sent": "그리고 이유는 단순하다 — 완전연결층은 **640개짜리 벡터** 하나를 다음 층으로 넘기고, 합성곱층은 **채널 × 높이 × 너비**짜리 3차원 덩어리를 넘긴다"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": true,
+   "sent": "- TinyML의 \"1 mW\"는 표준이 아니라 **코인 배터리 1년**에서 역산된 어림 규칙이다(Warden & Situnayake)"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": true,
+   "sent": "** 실측에서 파라미터 1위가 SRAM 4위였고 차이는 84배였다"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": true,
+   "sent": "- MCU용으로 설계된 모델(MLPerf Tiny 4종)은 두 예산을 모두 25 % 이하로 쓴다"
+  },
+  {
+   "week": 8,
+   "file": "w08-1-intro.md",
+   "cond": true,
+   "sent": "MobileNetV2는 INT8로도 SRAM을 4.6배 초과한다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "MobileNetV2를 실행할 때 만들어지는 중간 결과를 **전부 합치면** 얼마나 될까? 직접 세어 보면 **12,846 KB**다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "12 MB가 넘는다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "그런데 우리가 1교시에서 인용한 값은 1,470 KB였다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "8.7배 차이다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "3층짜리 신경망을 생각해 보자"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "** 메모리를 **어떻게 배치하느냐**만 바꿨는데 8.7배가 줄었다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "MobileNetV2의 연산 노드 100개 각각에서 필요한 메모리를 순서대로 그리면 이렇게 된다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "**100개 중 세 개가 전체 예산을 결정한다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "** 나머지 97개를 아무리 최적화해도 필요한 SRAM은 1 KB도 안 줄어든다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "우리 프로파일에서 6번 노드의 값이 **정확히 1,372.0 KB** 다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "우리 전체 최댓값 1,470 KB와 다른 이유는 재는 경계가 다르기 때문이다 — 논문은 블록 단위로, 우리는 노드 단위로 쟀다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "예산은 STM32F746(320 KB SRAM / 1 MB Flash)."
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "** 224²/FP32/재사용없음의 51,384 KB에서 96²/INT8/in-place의 270 KB까지, **190배**가 줄었다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "각각은 4배·5.4배·8.7배인데 합쳐지면 이렇게 된다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "224²에서 32²까지 내려가도 INT8 기준 **3,394 KB로 완전히 고정**이다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "** 해상도를 32²까지 낮추고 INT8로 만들어도 Flash 3,394 KB는 1 MB 예산을 **3.3배 초과**한 그대로다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "**활성 전류가 수면 전류의 1,044배인데도, 1.74분에 한 번보다 드물게 깨우면 에너지의 절반 이상을 자면서 쓴다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "** 1,044배라는 큰 비율이 듀티 사이클 앞에서 무력해지는 것이다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "**추론을 두 배 빠르게 만들었는데 배터리 수명은 1.3 % 늘었다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "** 1초 주기에서는 모델 최적화가 198배 더 효과적이고(1.98 대 1.004), 1시간 주기에서는 수면 전류 쪽이 반대로 효과적이다(1.82 대 1.013)."
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "\"헤이 시리\"는 1시간에 한 번 듣는 게 아니라 **항상** 듣는다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "1초에 한 번, 10 ms"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "문지기가 통과시킬 때만, 100 ms"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "**통과율이 90 %를 넘으면 문지기를 붙이는 게 오히려 손해다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "Spearman 상관 0.301, 역전 쌍 19.5 %"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "배치만 바꿔 12,846 → 1,470 KB(8.7배)를 줄였고, in-place 이득은 모델마다 1.00~1.60배로 갈렸다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "- 최대 지점은 **앞쪽 소수 레이어**에 몰린다 — 100개 중 3개, 최대/중앙값 16배"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "우리 값 1,372.0 KB가 MCUNetV2가 보고한 1,372 kB와 일치했다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": true,
+   "sent": "- 정밀도·해상도·재사용은 **곱해져** 190배까지 가지만, 해상도는 **Flash를 전혀 안 건드린다**"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "- 손익분기 주기 $T^\\* = t(1 + I_a/I_s) = $ **1.74분**"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "이보다 드물게 깨우면 추론을 절반으로 줄여도 수명은 **1.3 %** 밖에 안 는다"
+  },
+  {
+   "week": 8,
+   "file": "w08-2-advanced.md",
+   "cond": false,
+   "sent": "최대 9.15배, 통과율 **90 %** 를 넘으면 손해."
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": false,
+   "sent": "노드가 209개인데 우리가 아는 MobileNetV2의 연산 층은 100개 남짓이다"
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": false,
+   "sent": "나머지 109개는 무엇인가?"
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": true,
+   "sent": "209개 노드에서 **활성 텐서 101개**만 남았다"
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": false,
+   "sent": "1교시에 인용한 3,394 KB가 여기서 나온 값이다"
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": false,
+   "sent": "**\"각 시점에 살아 있는 것만 더한다\"** — 이 한 문장이 12 MB를 2.3 MB로 만든다"
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": true,
+   "sent": "** 배치 방식만 바꿔 8.74배가 줄었다"
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": false,
+   "sent": "** 우리 전체 최댓값 1,470 KB와 논문 값이 다른 것은 재는 **경계**가 다르기 때문이다 — 논문은 블록 단위로, 우리는 노드 단위로 쟀다"
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": false,
+   "sent": "첫 번째 줄의 14 % 차이는 **설명할 수 있는 차이**다"
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": true,
+   "sent": "실무에서 \"우리 계산으로는 300 KB니까 320 KB에 들어간다\"고 말하면 위험하다"
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": true,
+   "sent": "**1초 주기에서 1.98배, 1시간 주기에서 1.013배.**"
+  },
+  {
+   "week": 8,
+   "file": "w08-3-lab.md",
+   "cond": true,
+   "sent": "- 우리 40줄이 MCUNetV2의 1,372 kB를 재현했고, MCUNet의 5.3배와는 14 % 차이가 났다"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "지연 3.5 ms, 파레토 경계 2.72배, 메모리 8.74배, 배터리 1.74분"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "- 여러 변경이 섞인 성능 주장(예: \"34% 빨라졌다\")을 **개별 기여로 분해**할 수 있다"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "- **분모가 바뀌면 주인공이 바뀐다** — NMS 가 0.2%이기도 70%이기도 한 이유"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "- **한 문장에 세 가지가 섞여 있다** — \"34% 빨라졌다\"의 분해"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": true,
+   "sent": "- **0.2 % vs 70 %** — 같은 NMS 가 우리 CPU 파이프라인에서 차지한 비중과, TensorRT GPU 에서 차지한 비중(YOLOv10 보고값)"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "- **3.71배** — 추론을 **0초로 만들어도** 파이프라인이 넘을 수 없는 상한(실측)"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "추론을 두 배 빠르게 하면 전체는 1.58배."
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "- **4,742 ms vs 66 ms** — 「드롭 0 · 30 fps」인 시스템과 「96장을 버린」 시스템의 프레임 나이(실측 지연 기반 시뮬레이션)."
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "- `w09_p1_amdahl_05.png` — 암달의 벽, 상한 3.71배(실측) *(1교시)*"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "- `w09_p2_seg_11.png` — \"34% 빨라졌다\"의 분해 *(2교시)*"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": true,
+   "sent": "- **5주차와 대비됨** — 동적 INT8 양자화가 이 모델에서 **크기 3.5배 감소 · 속도 1.5배 악화**로 실패한다"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": true,
+   "sent": "- **8주차에서 이어짐** — 8주차의 손익분기(1.74분)와 이번 주의 암달 상한(3.71배)은 **같은 계산의 두 얼굴**이다"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": true,
+   "sent": "공식 표 기준 파라미터 2.6 M · 640² 에서 6.5 GFLOPs · COCO val2017 mAP50-95 39.5."
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "- **이미지** — 공개 테스트 이미지 3장(`bus.jpg`, `zidane.jpg`, `grace_hopper`)"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": true,
+   "sent": "워밍업 6회 후 30프레임의 p50/p95."
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "- **주의** — 절대값은 기기와 부하에 따라 ±10% 흔들린다"
+  },
+  {
+   "week": 9,
+   "file": "w09-0-overview.md",
+   "cond": false,
+   "sent": "이 주차가 재현을 요구하는 것은 **구조**(추론 70% 남짓 · 상한 3.5배 근처 · 큐 발산)이지 소수점이 아니다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "\"우리 모델은 30 FPS입니다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": true,
+   "sent": "200 ms 전 장면을 보고 브레이크를 밟는다면, 시속 60 km에서 차는 그 사이 **3.3 m**를 더 갔다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "**같은 모델, 같은 데이터인데 AP가 6분의 1이 되었다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": true,
+   "sent": "우리가 쓴 것은 **YOLO11n**(2,616,248 파라미터 · 640² 에서 6.5 GFLOPs)을 ONNX 로 내보낸 것이고, **디코딩과 NMS 는 라이브러리를 안 쓰고 직접 짰다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "**첫째, 추론이 73%다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "그런데 나머지 27%, 즉 **13.2 ms**는 그냥 무시할 수 있는 값이 아니다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "**둘째, NMS 가 0.10 ms 다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "** 전체의 **0.2%**"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "**추론은 5.6배 빨라졌는데 나머지는 1.6배밖에 안 줄었다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": true,
+   "sent": "그래서 256² 에서는 **모델이 소수파가 된다** — 43% 대 57%."
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": true,
+   "sent": "우리 파이프라인(640², 49.0 ms)에서 **추론만** 빨라진다면 전체는 얼마나 빨라지는가?"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "**추론을 두 배 빠르게 만들어도 파이프라인은 1.58배다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "** 그리고 모델을 완전히 없애도 **3.71배**를 못 넘는다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": true,
+   "sent": "그 다섯 주가 이 파이프라인에서 살 수 있는 최댓값이 3.71배다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "**13.2 ms 를 손대지 않는 한.**"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": false,
+   "sent": "- **\"30 FPS\"는 처리량이지 프레임 나이가 아니다"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": true,
+   "sent": "640² 실측에서 추론 **73%**, 나머지 여섯 **27%(13.2 ms)**, **NMS 는 0.2%**."
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": true,
+   "sent": "- 논문의 FPS 는 **배치 크기와 하드웨어**를 확인하고 옮겨야 한다 — SSD 의 유명한 59 FPS 는 배치 8, 배치 1 은 46 FPS."
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": true,
+   "sent": "- 해상도를 낮추면 추론 비중이 **73% → 43%**"
+  },
+  {
+   "week": 9,
+   "file": "w09-1-intro.md",
+   "cond": true,
+   "sent": "640² 에서 추론을 **0초로 만들어도 3.71배**가 상한이다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "**후보가 17.3배 늘자 NMS 는 16.6배 늘었다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "**NMS 가 4.8배 늘어도 전체는 4% 늘었다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "**우리는 0.2%, 저들은 70%.** 둘 다 맞다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "세 줄의 **NMS 절대 시간은 0.1 / 1.7 / 4.35 ms** — 같은 자릿수 안에 있다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "GPU 에 TensorRT 를 얹어 순전파를 1.84 ms 로 줄여 놓으면, 그 순간 밀리초짜리 NMS 가 지배자가 된다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "798개에서 **19.9 ms**"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "이 값이면 이제 우리 파이프라인에서도 무시할 수 없다(전체의 29%)"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "1교시에서 나머지 여섯 단계가 13.2 ms 라고 했다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "그중 전처리(①②③)가 12.2 ms 다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "**단계는 1.96배 빨라졌다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "전처리는 전체의 23%였으므로 그것을 절반으로 줄인 이득도 그만큼이다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "다만 이번엔 방향이 반대다 — **모델 쪽 천장이 3.71배였는데, 전처리 쪽에서 1.13배를 공짜로 가져왔다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "**크기는 3.5배 줄었는데 속도는 1.5배 나빠졌다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "**처리량 1.24배를 얻는 데 지연 6.5배를 지불했다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "서버에서는 이것이 좋은 거래일 수 있다 — Clipper(NSDI 2017)는 배치로 처리량을 **최대 26배**까지 올리면서 20 ms 지연 목표를 지킨 사례를 보고한다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "** 배치 8 을 채우려면 프레임 여덟 장이 모여야 하고, 30 fps 카메라에서 그것은 **233 ms** 다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "처리량을 24% 올리려고 프레임 나이에 233 ms 를 얹는 셈이다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "30 fps 카메라가 33.3 ms 마다 프레임을 밀어 넣는다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "우리 파이프라인은 640² 에서 49.0 ms 가 걸린다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "**처리 능력은 20.4 fps, 입력은 30 fps.** 매초 9.6 장이 남는다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "실측 지연 분포(p50 49.0 ms, p95 56.6 ms)를 그대로 넣고 10초를 시뮬레이션했다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "**「다 쌓는다」는 모든 지표가 완벽해 보인다** — 30.0 fps 로 처리했고, 한 장도 안 버렸다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "처리량이 20.4 fps 로 떨어지고 96장을 버렸다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "그런데 **프레임 나이가 66 ms 로 일정하게 유지된다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "** 처리 능력(55 fps)이 입력(30 fps)을 넘으면 큐가 안 쌓이므로 정책 자체가 의미를 잃는다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "**이 문장을 \"LR-ASPP 헤드가 34% 빠르다\"로 옮기면 틀린다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "** 34%는 세 가지가 함께 바뀐 결과다 — 백본 V2→V3, 마지막 블록 채널 반감(RF2), 그리고 헤드 교체"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "- NMS 의 절대 비용은 어디서나 밀리초 규모인데, **우리 CPU 에서 0.2%, TensorRT GPU 에서 70%** 다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "- 같은 알고리즘의 두 구현이 **11.3배** 갈렸고(결과는 동일), 전처리 구현 교체로 파이프라인이 **1.13배** 빨라졌다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "- 동적 INT8 양자화는 이 모델에서 **크기 3.5배 감소 · 속도 1.5배 악화**였다"
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": false,
+   "sent": "처리량 1.24배에 지연 6.5배."
+  },
+  {
+   "week": 9,
+   "file": "w09-2-advanced.md",
+   "cond": true,
+   "sent": "** 실측에서 드롭 0 인 시스템의 프레임 나이가 4,742 ms, 96장을 버린 시스템이 66 ms 였다"
+  },
+  {
+   "week": 9,
+   "file": "w09-3-lab.md",
+   "cond": false,
+   "sent": "모델은 8,400개를 전부 내놓고, **어느 것을 남길지는 우리가 정한다"
+  },
+  {
+   "week": 9,
+   "file": "w09-3-lab.md",
+   "cond": false,
+   "sent": "**후보 8,400개 중 46개가 문턱을 넘었고, NMS 가 그중 5개를 남겼다"
+  },
+  {
+   "week": 9,
+   "file": "w09-3-lab.md",
+   "cond": false,
+   "sent": "** 그 5개를 고르는 데 걸린 시간이 0.12 ms — 전체의 0.2%다"
+  },
+  {
+   "week": 9,
+   "file": "w09-3-lab.md",
+   "cond": true,
+   "sent": "워밍업 6회를 빼먹으면 어떻게 되는지 직접 확인해 보라"
+  },
+  {
+   "week": 9,
+   "file": "w09-3-lab.md",
+   "cond": true,
+   "sent": "1주차에서 잰 4.7배가 여기서도 나온다"
+  },
+  {
+   "week": 9,
+   "file": "w09-3-lab.md",
+   "cond": true,
+   "sent": "** 이 파이프라인에서 모델 최적화로 살 수 있는 것은 최대 3.43배다"
+  },
+  {
+   "week": 9,
+   "file": "w09-3-lab.md",
+   "cond": false,
+   "sent": "- **첫 줄** — 300장 다 처리, 한 장도 안 버림, 30 fps"
+  },
+  {
+   "week": 9,
+   "file": "w09-3-lab.md",
+   "cond": false,
+   "sent": "- **둘째 줄** — 115장을 버렸다"
+  },
+  {
+   "week": 9,
+   "file": "w09-3-lab.md",
+   "cond": false,
+   "sent": "그런데 나이가 **71 ms 로 일정**하다"
+  },
+  {
+   "week": 9,
+   "file": "w09-3-lab.md",
+   "cond": true,
+   "sent": "2교시에서 같은 NMS 가 0.2%이기도 70%이기도 했다"
+  }
+ ],
+ "hand": {
+  "n": 28,
+  "unmatched": [],
+  "n_claims": 18,
+  "n_notclaim": 10,
+  "notclaim_pct": 35.7,
+  "agree": 15,
+  "fp": 2,
+  "fn": 1,
+  "accuracy": 83.3,
+  "error_rate": 16.7,
+  "hand_cond_pct": 44.4,
+  "rows": [
+   {
+    "sent": "** 그러면 함께 쓰일 8개 채널 값이 메모리에서 딱 붙어 있게 되어, 한 삽에 그대로 퍼 담긴다",
+    "auto": true,
+    "hand": "NOTCLAIM"
+   },
+   {
+    "sent": "** 배치 방식만 바꿔 8.74배가 줄었다",
+    "auto": true,
+    "hand": "CLAIM_X"
+   },
+   {
+    "sent": "**NMS 가 4.8배 늘어도 전체는 4% 늘었다",
+    "auto": false,
+    "hand": "CLAIM_X"
+   },
+   {
+    "sent": "- 같은 알고리즘의 두 구현이 **11.3배** 갈렸고(결과는 동일), 전처리 구현 교체로 파이프라인이 **1.13배** 빨라졌다",
+    "auto": false,
+    "hand": "CLAIM_X"
+   },
+   {
+    "sent": "공식 표 기준 파라미터 2.6 M · 640² 에서 6.5 GFLOPs · COCO val2017 mAP50-95 39.5.",
+    "auto": true,
+    "hand": "CLAIM_O"
+   },
+   {
+    "sent": "그런데 MCUNet 논문이 같은 모델에 대해 적은 숫자와 비교해 보자 — *\"ResNet-50은 저장 한계를 100배 초과하고, MobileNetV2는 **최대 메모리 한계를 22배** 초과한다",
+    "auto": true,
+    "hand": "CLAIM_O"
+   },
+   {
+    "sent": "** 눈금이 256개나 되니 20배 굵어져도 아직 견딜 만하기 때문이다",
+    "auto": false,
+    "hand": "NOTCLAIM"
+   },
+   {
+    "sent": "그런데 **3비트로 내려가면 68.89% vs 97.33%** 로 갈린다",
+    "auto": false,
+    "hand": "CLAIM_O"
+   },
+   {
+    "sent": "우리 파이프라인은 640² 에서 49.0 ms 가 걸린다",
+    "auto": true,
+    "hand": "CLAIM_O"
+   },
+   {
+    "sent": "1교시의 \"범위 폭 ÷ 칸 수\"가 그대로 나온 것이다 — 값은 256가지지만 **칸은 255개**다",
+    "auto": false,
+    "hand": "NOTCLAIM"
+   },
+   {
+    "sent": "**\"4배가 아니라 3.3배네요?\"** — 가장 많이 나오는 질문이고, 따져 보면 배울 것이 있다",
+    "auto": false,
+    "hand": "NOTCLAIM"
+   },
+   {
+    "sent": "30 fps 카메라가 33.3 ms 마다 프레임을 밀어 넣는다",
+    "auto": false,
+    "hand": "NOTCLAIM"
+   },
+   {
+    "sent": "**가장 낙관적인 가정에서도 데이터를 나르는 쪽이 2배 비싸다",
+    "auto": true,
+    "hand": "CLAIM_O"
+   },
+   {
+    "sent": "이 주차가 재현을 요구하는 것은 **구조**(추론 70% 남짓 · 상한 3.5배 근처 · 큐 발산)이지 소수점이 아니다",
+    "auto": false,
+    "hand": "NOTCLAIM"
+   },
+   {
+    "sent": "- **가장 빠른 모델**(0.157 ms)은 연산량 순위가 **48개 중 34위**였다",
+    "auto": false,
+    "hand": "CLAIM_X"
+   },
+   {
+    "sent": "** 이 모델은 파라미터 24,234개 중 122개가 편향인데, 가중치는 24,112 B로 줄어든 반면 편향은 488 B를 차지해 합이 24,600 B가 된다",
+    "auto": false,
+    "hand": "CLAIM_X"
+   },
+   {
+    "sent": "같은 후보 48개, 같은 실측값을 놓고 **고르는 기준만** 바꿔 보자.",
+    "auto": true,
+    "hand": "NOTCLAIM"
+   },
+   {
+    "sent": "** 그리고 모델을 완전히 없애도 **3.71배**를 못 넘는다",
+    "auto": false,
+    "hand": "CLAIM_X"
+   },
+   {
+    "sent": "그런데 그 교사에게 배운 학생은 **0.54%p** 오르는 데 그쳤고, **마지막 교사에서는 오히려 내려갔다",
+    "auto": true,
+    "hand": "CLAIM_X"
+   },
+   {
+    "sent": "전이 집합 프로토콜, $T=4$, $\\alpha=0.7$, 시드 2개.",
+    "auto": true,
+    "hand": "CLAIM_O"
+   },
+   {
+    "sent": "그런데 나이가 **71 ms 로 일정**하다",
+    "auto": false,
+    "hand": "CLAIM_X"
+   },
+   {
+    "sent": "- **1.22배 · 97.33%** — 채널을 **실제로 들어내면** 빨라지고, 미세조정으로 정확도는 원본으로 되돌아온다",
+    "auto": false,
+    "hand": "CLAIM_X"
+   },
+   {
+    "sent": "자를 하나만 쓰면 `conv1`에 맞춰지고, `fc1`은 자기 몫의 3분의 1도 못 쓴다",
+    "auto": false,
+    "hand": "NOTCLAIM"
+   },
+   {
+    "sent": "눈금이 300개 있으면 1mm까지 잴 수 있다",
+    "auto": false,
+    "hand": "NOTCLAIM"
+   },
+   {
+    "sent": "- 이상치 하나: 8비트는 멀쩡하지만 **4비트에서 13.56% vs 97.33%**.",
+    "auto": true,
+    "hand": "CLAIM_O"
+   },
+   {
+    "sent": "1교시에서 본 Hinton의 MNIST 결과(오류 146개 → 74개, 거의 절반)와는 거리가 멀다",
+    "auto": true,
+    "hand": "CLAIM_O"
+   },
+   {
+    "sent": "**가장 넓은 층이 가장 좁은 층의 3.2배**다",
+    "auto": false,
+    "hand": "CLAIM_X"
+   },
+   {
+    "sent": "지금까지 교사가 한 일은 **학생이 이미 정답을 알고 있는 10,000장에 대해** 확률 분포를 하나 더 얹어 준 것뿐이다",
+    "auto": false,
+    "hand": "NOTCLAIM"
+   }
+  ]
+ }
+}
