@@ -1,0 +1,5066 @@
+{
+ "papers": [
+  {
+   "week": 4,
+   "short": "Han 2015 (연결 학습)",
+   "query": "Learning both Weights and Connections for Efficient Neural Networks",
+   "author": "Han",
+   "loose_best": {
+    "title": "Learning both Weights and Connections for Efficient Neural Networks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/HanPTD15",
+    "authors": [
+     "Song Han",
+     "Jeff Pool",
+     "John Tran",
+     "William J. Dally"
+    ]
+   },
+   "strict_best": {
+    "title": "Learning both Weights and Connections for Efficient Neural Networks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/HanPTD15",
+    "authors": [
+     "Song Han",
+     "Jeff Pool",
+     "John Tran",
+     "William J. Dally"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Learning both Weights and Connections for Efficient Neural Networks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/HanPTD15",
+    "authors": [
+     "Song Han",
+     "Jeff Pool",
+     "John Tran",
+     "William J. Dally"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 4,
+   "short": "Deep Compression",
+   "query": "Deep Compression: Compressing Deep Neural Networks with Pruning, Trained Quantization and Huffman Coding",
+   "author": "Han",
+   "loose_best": null,
+   "strict_best": null,
+   "n_loose": 0,
+   "n_strict": 0,
+   "published": null,
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": true,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 4,
+   "short": "Lottery Ticket",
+   "query": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
+   "author": "Frankle",
+   "loose_best": {
+    "title": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/FrankleC19",
+    "authors": [
+     "Jonathan Frankle",
+     "Michael Carbin"
+    ]
+   },
+   "strict_best": {
+    "title": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/FrankleC19",
+    "authors": [
+     "Jonathan Frankle",
+     "Michael Carbin"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": {
+    "title": "The Lottery Ticket Hypothesis: Finding Sparse, Trainable Neural Networks",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/FrankleC19",
+    "authors": [
+     "Jonathan Frankle",
+     "Michael Carbin"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 4,
+   "short": "Li 2017 (필터 프루닝)",
+   "query": "Pruning Filters for Efficient ConvNets",
+   "author": "Li",
+   "loose_best": {
+    "title": "Pruning Filters for Efficient ConvNets",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/0022KDSG17",
+    "authors": [
+     "Hao Li",
+     "Asim Kadav",
+     "Igor Durdanovic",
+     "Hanan Samet"
+    ]
+   },
+   "strict_best": {
+    "title": "Pruning Filters for Efficient ConvNets",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/0022KDSG17",
+    "authors": [
+     "Hao Li",
+     "Asim Kadav",
+     "Igor Durdanovic",
+     "Hanan Samet"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Pruning Filters for Efficient ConvNets",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/0022KDSG17",
+    "authors": [
+     "Hao Li",
+     "Asim Kadav",
+     "Igor Durdanovic",
+     "Hanan Samet"
+    ]
+   },
+   "preprint": {
+    "title": "Pruning Filters for Efficient ConvNets",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/LiKDSG16",
+    "authors": [
+     "Hao Li",
+     "Asim Kadav",
+     "Igor Durdanovic",
+     "Hanan Samet"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 5,
+   "short": "Jacob 2018 (정수 추론)",
+   "query": "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference",
+   "author": "Jacob",
+   "loose_best": {
+    "title": "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2018.00286",
+    "url": "https://dblp.org/rec/conf/cvpr/JacobKCZTHAK18",
+    "authors": [
+     "Benoit Jacob",
+     "Skirmantas Kligys",
+     "Bo Chen",
+     "Menglong Zhu"
+    ]
+   },
+   "strict_best": {
+    "title": "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2018.00286",
+    "url": "https://dblp.org/rec/conf/cvpr/JacobKCZTHAK18",
+    "authors": [
+     "Benoit Jacob",
+     "Skirmantas Kligys",
+     "Bo Chen",
+     "Menglong Zhu"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2018.00286",
+    "url": "https://dblp.org/rec/conf/cvpr/JacobKCZTHAK18",
+    "authors": [
+     "Benoit Jacob",
+     "Skirmantas Kligys",
+     "Bo Chen",
+     "Menglong Zhu"
+    ]
+   },
+   "preprint": {
+    "title": "Quantization and Training of Neural Networks for Efficient Integer-Arithmetic-Only Inference",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1712-05877",
+    "authors": [
+     "Benoit Jacob",
+     "Skirmantas Kligys",
+     "Bo Chen",
+     "Menglong Zhu"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 5,
+   "short": "Krishnamoorthi 백서",
+   "query": "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+   "author": "Krishnamoorthi",
+   "loose_best": {
+    "title": "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1806-08342",
+    "authors": [
+     "Raghuraman Krishnamoorthi"
+    ]
+   },
+   "strict_best": {
+    "title": "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1806-08342",
+    "authors": [
+     "Raghuraman Krishnamoorthi"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Quantizing deep convolutional networks for efficient inference: A whitepaper",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1806-08342",
+    "authors": [
+     "Raghuraman Krishnamoorthi"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 5,
+   "short": "Nagel 백서",
+   "query": "A White Paper on Neural Network Quantization",
+   "author": "Nagel",
+   "loose_best": {
+    "title": "A White Paper on Neural Network Quantization",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2106-08295",
+    "authors": [
+     "Markus Nagel",
+     "Marios Fournarakis",
+     "Rana Ali Amjad",
+     "Yelysei Bondarenko"
+    ]
+   },
+   "strict_best": {
+    "title": "A White Paper on Neural Network Quantization",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2106-08295",
+    "authors": [
+     "Markus Nagel",
+     "Marios Fournarakis",
+     "Rana Ali Amjad",
+     "Yelysei Bondarenko"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "A White Paper on Neural Network Quantization",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2106-08295",
+    "authors": [
+     "Markus Nagel",
+     "Marios Fournarakis",
+     "Rana Ali Amjad",
+     "Yelysei Bondarenko"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 5,
+   "short": "Banner 2019 (사후 4비트)",
+   "query": "Post training 4-bit quantization of convolutional networks for rapid-deployment",
+   "author": "Banner",
+   "loose_best": {
+    "title": "Post training 4-bit quantization of convolutional networks for rapid-deployment",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/BannerNS19",
+    "authors": [
+     "Ron Banner",
+     "Yury Nahshan",
+     "Daniel Soudry"
+    ]
+   },
+   "strict_best": {
+    "title": "Post training 4-bit quantization of convolutional networks for rapid-deployment",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/BannerNS19",
+    "authors": [
+     "Ron Banner",
+     "Yury Nahshan",
+     "Daniel Soudry"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": {
+    "title": "Post training 4-bit quantization of convolutional networks for rapid-deployment",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/BannerNS19",
+    "authors": [
+     "Ron Banner",
+     "Yury Nahshan",
+     "Daniel Soudry"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 6,
+   "short": "Hinton 증류",
+   "query": "Distilling the Knowledge in a Neural Network",
+   "author": "Hinton",
+   "loose_best": {
+    "title": "An efficient framework for counting pedestrians crossing a line using low-cost devices: the benefits of distilling the knowledge in a neural network",
+    "kind": "journal",
+    "venue": "Multim. Tools Appl.",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1007/S11042-020-09276-9",
+    "url": "https://dblp.org/rec/journals/mta/LinWCS21",
+    "authors": [
+     "Yih-Kai Lin",
+     "Chu-Fu Wang",
+     "Ching-Yu Chang",
+     "Hao-Lun Sun"
+    ]
+   },
+   "strict_best": {
+    "title": "Distilling the Knowledge in a Neural Network",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/HintonVD15",
+    "authors": [
+     "Geoffrey E. Hinton",
+     "Oriol Vinyals",
+     "Jeffrey Dean"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Distilling the Knowledge in a Neural Network",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/HintonVD15",
+    "authors": [
+     "Geoffrey E. Hinton",
+     "Oriol Vinyals",
+     "Jeffrey Dean"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": true,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 6,
+   "short": "Model Compression",
+   "query": "Model compression",
+   "author": "Bucilua",
+   "loose_best": {
+    "title": "Smart Network Maintenance in an Edge Cloud Computing Environment: An Adaptive Model Compression Algorithm Based on Model Pruning and Model Clustering",
+    "kind": "journal",
+    "venue": "IEEE Trans. Netw. Serv. Manag.",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.1109/TNSM.2022.3202796",
+    "url": "https://dblp.org/rec/journals/tnsm/RuiYCYG22",
+    "authors": [
+     "Lanlan Rui",
+     "Siqi Yang",
+     "Shiyou Chen",
+     "Yang Yang"
+    ]
+   },
+   "strict_best": null,
+   "n_loose": 7,
+   "n_strict": 0,
+   "published": null,
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": true,
+   "not_found": true,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 6,
+   "short": "Born Again Networks",
+   "query": "Born-Again Neural Networks",
+   "author": "Furlanello",
+   "loose_best": {
+    "title": "Born-Again Neural Networks",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/FurlanelloLTIA18",
+    "authors": [
+     "Tommaso Furlanello",
+     "Zachary Chase Lipton",
+     "Michael Tschannen",
+     "Laurent Itti"
+    ]
+   },
+   "strict_best": {
+    "title": "Born-Again Neural Networks",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/FurlanelloLTIA18",
+    "authors": [
+     "Tommaso Furlanello",
+     "Zachary Chase Lipton",
+     "Michael Tschannen",
+     "Laurent Itti"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Born-Again Neural Networks",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/FurlanelloLTIA18",
+    "authors": [
+     "Tommaso Furlanello",
+     "Zachary Chase Lipton",
+     "Michael Tschannen",
+     "Laurent Itti"
+    ]
+   },
+   "preprint": {
+    "title": "Born Again Neural Networks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1805-04770",
+    "authors": [
+     "Tommaso Furlanello",
+     "Zachary C. Lipton",
+     "Michael Tschannen",
+     "Laurent Itti"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 6,
+   "short": "Beyer 2022 (인내심)",
+   "query": "Knowledge distillation: A good teacher is patient and consistent",
+   "author": "Beyer",
+   "loose_best": {
+    "title": "Knowledge distillation: A good teacher is patient and consistent",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR52688.2022.01065",
+    "url": "https://dblp.org/rec/conf/cvpr/BeyerZRMA022",
+    "authors": [
+     "Lucas Beyer",
+     "Xiaohua Zhai",
+     "Amélie Royer",
+     "Larisa Markeeva"
+    ]
+   },
+   "strict_best": {
+    "title": "Knowledge distillation: A good teacher is patient and consistent",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR52688.2022.01065",
+    "url": "https://dblp.org/rec/conf/cvpr/BeyerZRMA022",
+    "authors": [
+     "Lucas Beyer",
+     "Xiaohua Zhai",
+     "Amélie Royer",
+     "Larisa Markeeva"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Knowledge distillation: A good teacher is patient and consistent",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR52688.2022.01065",
+    "url": "https://dblp.org/rec/conf/cvpr/BeyerZRMA022",
+    "authors": [
+     "Lucas Beyer",
+     "Xiaohua Zhai",
+     "Amélie Royer",
+     "Larisa Markeeva"
+    ]
+   },
+   "preprint": {
+    "title": "Knowledge distillation: A good teacher is patient and consistent",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2106-05237",
+    "authors": [
+     "Lucas Beyer",
+     "Xiaohua Zhai",
+     "Amélie Royer",
+     "Larisa Markeeva"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 6,
+   "short": "DistilBERT",
+   "query": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+   "author": "Sanh",
+   "loose_best": {
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1910-01108",
+    "authors": [
+     "Victor Sanh",
+     "Lysandre Debut",
+     "Julien Chaumond",
+     "Thomas Wolf"
+    ]
+   },
+   "strict_best": {
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1910-01108",
+    "authors": [
+     "Victor Sanh",
+     "Lysandre Debut",
+     "Julien Chaumond",
+     "Thomas Wolf"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1910-01108",
+    "authors": [
+     "Victor Sanh",
+     "Lysandre Debut",
+     "Julien Chaumond",
+     "Thomas Wolf"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 7,
+   "short": "Zoph & Le (NAS)",
+   "query": "Neural Architecture Search with Reinforcement Learning",
+   "author": "Zoph",
+   "loose_best": {
+    "title": "Neural Architecture Search with Reinforcement Learning",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/ZophL17",
+    "authors": [
+     "Barret Zoph",
+     "Quoc V. Le"
+    ]
+   },
+   "strict_best": {
+    "title": "Neural Architecture Search with Reinforcement Learning",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/ZophL17",
+    "authors": [
+     "Barret Zoph",
+     "Quoc V. Le"
+    ]
+   },
+   "n_loose": 4,
+   "n_strict": 2,
+   "published": {
+    "title": "Neural Architecture Search with Reinforcement Learning",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/ZophL17",
+    "authors": [
+     "Barret Zoph",
+     "Quoc V. Le"
+    ]
+   },
+   "preprint": {
+    "title": "Neural Architecture Search with Reinforcement Learning",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/ZophL16",
+    "authors": [
+     "Barret Zoph",
+     "Quoc V. Le"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 7,
+   "short": "MnasNet",
+   "query": "MnasNet: Platform-Aware Neural Architecture Search for Mobile",
+   "author": "Tan",
+   "loose_best": {
+    "title": "MnasNet: Platform-Aware Neural Architecture Search for Mobile",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2019.00293",
+    "url": "https://dblp.org/rec/conf/cvpr/TanCPVSHL19",
+    "authors": [
+     "Mingxing Tan",
+     "Bo Chen",
+     "Ruoming Pang",
+     "Vijay Vasudevan"
+    ]
+   },
+   "strict_best": {
+    "title": "MnasNet: Platform-Aware Neural Architecture Search for Mobile",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2019.00293",
+    "url": "https://dblp.org/rec/conf/cvpr/TanCPVSHL19",
+    "authors": [
+     "Mingxing Tan",
+     "Bo Chen",
+     "Ruoming Pang",
+     "Vijay Vasudevan"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "MnasNet: Platform-Aware Neural Architecture Search for Mobile",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2019.00293",
+    "url": "https://dblp.org/rec/conf/cvpr/TanCPVSHL19",
+    "authors": [
+     "Mingxing Tan",
+     "Bo Chen",
+     "Ruoming Pang",
+     "Vijay Vasudevan"
+    ]
+   },
+   "preprint": {
+    "title": "MnasNet: Platform-Aware Neural Architecture Search for Mobile",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1807-11626",
+    "authors": [
+     "Mingxing Tan",
+     "Bo Chen",
+     "Ruoming Pang",
+     "Vijay Vasudevan"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 7,
+   "short": "ShuffleNet V2",
+   "query": "ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design",
+   "author": "Ma",
+   "loose_best": {
+    "title": "ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design",
+    "kind": "conf",
+    "venue": "ECCV",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1007/978-3-030-01264-9_8",
+    "url": "https://dblp.org/rec/conf/eccv/MaZZS18",
+    "authors": [
+     "Ningning Ma",
+     "Xiangyu Zhang",
+     "Hai-Tao Zheng",
+     "Jian Sun"
+    ]
+   },
+   "strict_best": {
+    "title": "ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design",
+    "kind": "conf",
+    "venue": "ECCV",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1007/978-3-030-01264-9_8",
+    "url": "https://dblp.org/rec/conf/eccv/MaZZS18",
+    "authors": [
+     "Ningning Ma",
+     "Xiangyu Zhang",
+     "Hai-Tao Zheng",
+     "Jian Sun"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design",
+    "kind": "conf",
+    "venue": "ECCV",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1007/978-3-030-01264-9_8",
+    "url": "https://dblp.org/rec/conf/eccv/MaZZS18",
+    "authors": [
+     "Ningning Ma",
+     "Xiangyu Zhang",
+     "Hai-Tao Zheng",
+     "Jian Sun"
+    ]
+   },
+   "preprint": {
+    "title": "ShuffleNet V2: Practical Guidelines for Efficient CNN Architecture Design",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1807-11164",
+    "authors": [
+     "Ningning Ma",
+     "Xiangyu Zhang",
+     "Hai-Tao Zheng",
+     "Jian Sun"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 7,
+   "short": "EfficientNetV2",
+   "query": "EfficientNetV2: Smaller Models and Faster Training",
+   "author": "Tan",
+   "loose_best": {
+    "title": "EfficientNetV2: Smaller Models and Faster Training",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/TanL21",
+    "authors": [
+     "Mingxing Tan",
+     "Quoc V. Le"
+    ]
+   },
+   "strict_best": {
+    "title": "EfficientNetV2: Smaller Models and Faster Training",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/TanL21",
+    "authors": [
+     "Mingxing Tan",
+     "Quoc V. Le"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "EfficientNetV2: Smaller Models and Faster Training",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/TanL21",
+    "authors": [
+     "Mingxing Tan",
+     "Quoc V. Le"
+    ]
+   },
+   "preprint": {
+    "title": "EfficientNetV2: Smaller Models and Faster Training",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2104-00298",
+    "authors": [
+     "Mingxing Tan",
+     "Quoc V. Le"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 7,
+   "short": "MobileNets",
+   "query": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+   "author": "Howard",
+   "loose_best": {
+    "title": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/HowardZCKWWAA17",
+    "authors": [
+     "Andrew G. Howard",
+     "Menglong Zhu",
+     "Bo Chen",
+     "Dmitry Kalenichenko"
+    ]
+   },
+   "strict_best": {
+    "title": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/HowardZCKWWAA17",
+    "authors": [
+     "Andrew G. Howard",
+     "Menglong Zhu",
+     "Bo Chen",
+     "Dmitry Kalenichenko"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "MobileNets: Efficient Convolutional Neural Networks for Mobile Vision Applications",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/HowardZCKWWAA17",
+    "authors": [
+     "Andrew G. Howard",
+     "Menglong Zhu",
+     "Bo Chen",
+     "Dmitry Kalenichenko"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 7,
+   "short": "MobileNetV2",
+   "query": "MobileNetV2: Inverted Residuals and Linear Bottlenecks",
+   "author": "Sandler",
+   "loose_best": {
+    "title": "MobileNetV2: Inverted Residuals and Linear Bottlenecks",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2018.00474",
+    "url": "https://dblp.org/rec/conf/cvpr/SandlerHZZC18",
+    "authors": [
+     "Mark Sandler",
+     "Andrew G. Howard",
+     "Menglong Zhu",
+     "Andrey Zhmoginov"
+    ]
+   },
+   "strict_best": {
+    "title": "MobileNetV2: Inverted Residuals and Linear Bottlenecks",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2018.00474",
+    "url": "https://dblp.org/rec/conf/cvpr/SandlerHZZC18",
+    "authors": [
+     "Mark Sandler",
+     "Andrew G. Howard",
+     "Menglong Zhu",
+     "Andrey Zhmoginov"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": {
+    "title": "MobileNetV2: Inverted Residuals and Linear Bottlenecks",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2018.00474",
+    "url": "https://dblp.org/rec/conf/cvpr/SandlerHZZC18",
+    "authors": [
+     "Mark Sandler",
+     "Andrew G. Howard",
+     "Menglong Zhu",
+     "Andrey Zhmoginov"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 7,
+   "short": "MobileNetV3",
+   "query": "Searching for MobileNetV3",
+   "author": "Howard",
+   "loose_best": {
+    "title": "Searching for MobileNetV3",
+    "kind": "conf",
+    "venue": "ICCV",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": "10.1109/ICCV.2019.00140",
+    "url": "https://dblp.org/rec/conf/iccv/HowardPALSCWCTC19",
+    "authors": [
+     "Andrew Howard",
+     "Ruoming Pang",
+     "Hartwig Adam",
+     "Quoc V. Le"
+    ]
+   },
+   "strict_best": {
+    "title": "Searching for MobileNetV3",
+    "kind": "conf",
+    "venue": "ICCV",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": "10.1109/ICCV.2019.00140",
+    "url": "https://dblp.org/rec/conf/iccv/HowardPALSCWCTC19",
+    "authors": [
+     "Andrew Howard",
+     "Ruoming Pang",
+     "Hartwig Adam",
+     "Quoc V. Le"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Searching for MobileNetV3",
+    "kind": "conf",
+    "venue": "ICCV",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": "10.1109/ICCV.2019.00140",
+    "url": "https://dblp.org/rec/conf/iccv/HowardPALSCWCTC19",
+    "authors": [
+     "Andrew Howard",
+     "Ruoming Pang",
+     "Hartwig Adam",
+     "Quoc V. Le"
+    ]
+   },
+   "preprint": {
+    "title": "Searching for MobileNetV3",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1905-02244",
+    "authors": [
+     "Andrew Howard",
+     "Mark Sandler",
+     "Grace Chu",
+     "Liang-Chieh Chen"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 8,
+   "short": "MCUNet",
+   "query": "MCUNet: Tiny Deep Learning on IoT Devices",
+   "author": "Lin",
+   "loose_best": {
+    "title": "MCUNet: Tiny Deep Learning on IoT Devices",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/LinCLCG020",
+    "authors": [
+     "Ji Lin",
+     "Wei-Ming Chen",
+     "Yujun Lin",
+     "John Cohn"
+    ]
+   },
+   "strict_best": {
+    "title": "MCUNet: Tiny Deep Learning on IoT Devices",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/LinCLCG020",
+    "authors": [
+     "Ji Lin",
+     "Wei-Ming Chen",
+     "Yujun Lin",
+     "John Cohn"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "MCUNet: Tiny Deep Learning on IoT Devices",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/LinCLCG020",
+    "authors": [
+     "Ji Lin",
+     "Wei-Ming Chen",
+     "Yujun Lin",
+     "John Cohn"
+    ]
+   },
+   "preprint": {
+    "title": "MCUNet: Tiny Deep Learning on IoT Devices",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2007-10319",
+    "authors": [
+     "Ji Lin",
+     "Wei-Ming Chen",
+     "Yujun Lin",
+     "John Cohn"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 8,
+   "short": "MCUNetV2",
+   "query": "Memory-efficient Patch-based Inference for Tiny Deep Learning",
+   "author": "Lin",
+   "loose_best": {
+    "title": "Memory-efficient Patch-based Inference for Tiny Deep Learning",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/LinCCGH21",
+    "authors": [
+     "Ji Lin",
+     "Wei-Ming Chen",
+     "Han Cai",
+     "Chuang Gan"
+    ]
+   },
+   "strict_best": {
+    "title": "Memory-efficient Patch-based Inference for Tiny Deep Learning",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/LinCCGH21",
+    "authors": [
+     "Ji Lin",
+     "Wei-Ming Chen",
+     "Han Cai",
+     "Chuang Gan"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Memory-efficient Patch-based Inference for Tiny Deep Learning",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/LinCCGH21",
+    "authors": [
+     "Ji Lin",
+     "Wei-Ming Chen",
+     "Han Cai",
+     "Chuang Gan"
+    ]
+   },
+   "preprint": {
+    "title": "MCUNetV2: Memory-Efficient Patch-based Inference for Tiny Deep Learning",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2110-15352",
+    "authors": [
+     "Ji Lin",
+     "Wei-Ming Chen",
+     "Han Cai",
+     "Chuang Gan"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 8,
+   "short": "MLPerf Tiny",
+   "query": "MLPerf Tiny Benchmark",
+   "author": "Banbury",
+   "loose_best": {
+    "title": "MLPerf Tiny Benchmark",
+    "kind": "conf",
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/BanburyRTJ0HMKW21",
+    "authors": [
+     "Colby R. Banbury",
+     "Vijay Janapa Reddi",
+     "Peter Torelli",
+     "Nat Jeffries"
+    ]
+   },
+   "strict_best": {
+    "title": "MLPerf Tiny Benchmark",
+    "kind": "conf",
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/BanburyRTJ0HMKW21",
+    "authors": [
+     "Colby R. Banbury",
+     "Vijay Janapa Reddi",
+     "Peter Torelli",
+     "Nat Jeffries"
+    ]
+   },
+   "n_loose": 3,
+   "n_strict": 2,
+   "published": {
+    "title": "MLPerf Tiny Benchmark",
+    "kind": "conf",
+    "venue": "NeurIPS Datasets and Benchmarks",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/BanburyRTJ0HMKW21",
+    "authors": [
+     "Colby R. Banbury",
+     "Vijay Janapa Reddi",
+     "Peter Torelli",
+     "Nat Jeffries"
+    ]
+   },
+   "preprint": {
+    "title": "MLPerf Tiny Benchmark",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2106-07597",
+    "authors": [
+     "Colby R. Banbury",
+     "Vijay Janapa Reddi",
+     "Peter Torelli",
+     "Jeremy Holleman"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 8,
+   "short": "MicroNets",
+   "query": "MicroNets: Neural Network Architectures for Deploying TinyML Applications on Commodity Microcontrollers",
+   "author": "Banbury",
+   "loose_best": {
+    "title": "MicroNets: Neural Network Architectures for Deploying TinyML Applications on Commodity Microcontrollers",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/BanburyZFNTGRMW21",
+    "authors": [
+     "Colby R. Banbury",
+     "Chuteng Zhou",
+     "Igor Fedorov",
+     "Ramon Matas Navarro"
+    ]
+   },
+   "strict_best": {
+    "title": "MicroNets: Neural Network Architectures for Deploying TinyML Applications on Commodity Microcontrollers",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/BanburyZFNTGRMW21",
+    "authors": [
+     "Colby R. Banbury",
+     "Chuteng Zhou",
+     "Igor Fedorov",
+     "Ramon Matas Navarro"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "MicroNets: Neural Network Architectures for Deploying TinyML Applications on Commodity Microcontrollers",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/BanburyZFNTGRMW21",
+    "authors": [
+     "Colby R. Banbury",
+     "Chuteng Zhou",
+     "Igor Fedorov",
+     "Ramon Matas Navarro"
+    ]
+   },
+   "preprint": {
+    "title": "MicroNets: Neural Network Architectures for Deploying TinyML Applications on Commodity Microcontrollers",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2010-11267",
+    "authors": [
+     "Colby R. Banbury",
+     "Chuteng Zhou",
+     "Igor Fedorov",
+     "Ramon Matas Navarro"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 8,
+   "short": "CMSIS-NN",
+   "query": "CMSIS-NN: Efficient Neural Network Kernels for Arm Cortex-M CPUs",
+   "author": "Lai",
+   "loose_best": {
+    "title": "CMSIS-NN: Efficient Neural Network Kernels for Arm Cortex-M CPUs",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1801-06601",
+    "authors": [
+     "Liangzhen Lai",
+     "Naveen Suda",
+     "Vikas Chandra"
+    ]
+   },
+   "strict_best": {
+    "title": "CMSIS-NN: Efficient Neural Network Kernels for Arm Cortex-M CPUs",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1801-06601",
+    "authors": [
+     "Liangzhen Lai",
+     "Naveen Suda",
+     "Vikas Chandra"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "CMSIS-NN: Efficient Neural Network Kernels for Arm Cortex-M CPUs",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1801-06601",
+    "authors": [
+     "Liangzhen Lai",
+     "Naveen Suda",
+     "Vikas Chandra"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 8,
+   "short": "Hello Edge",
+   "query": "Hello Edge: Keyword Spotting on Microcontrollers",
+   "author": "Zhang",
+   "loose_best": {
+    "title": "Hello Edge: Keyword Spotting on Microcontrollers",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1711-07128",
+    "authors": [
+     "Yundong Zhang",
+     "Naveen Suda",
+     "Liangzhen Lai",
+     "Vikas Chandra"
+    ]
+   },
+   "strict_best": {
+    "title": "Hello Edge: Keyword Spotting on Microcontrollers",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1711-07128",
+    "authors": [
+     "Yundong Zhang",
+     "Naveen Suda",
+     "Liangzhen Lai",
+     "Vikas Chandra"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Hello Edge: Keyword Spotting on Microcontrollers",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1711-07128",
+    "authors": [
+     "Yundong Zhang",
+     "Naveen Suda",
+     "Liangzhen Lai",
+     "Vikas Chandra"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 9,
+   "short": "YOLO",
+   "query": "You Only Look Once: Unified, Real-Time Object Detection",
+   "author": "Redmon",
+   "loose_best": {
+    "title": "You Only Look Once: Unified, Real-Time Object Detection",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2016.91",
+    "url": "https://dblp.org/rec/conf/cvpr/RedmonDGF16",
+    "authors": [
+     "Joseph Redmon",
+     "Santosh Kumar Divvala",
+     "Ross B. Girshick",
+     "Ali Farhadi"
+    ]
+   },
+   "strict_best": {
+    "title": "You Only Look Once: Unified, Real-Time Object Detection",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2016.91",
+    "url": "https://dblp.org/rec/conf/cvpr/RedmonDGF16",
+    "authors": [
+     "Joseph Redmon",
+     "Santosh Kumar Divvala",
+     "Ross B. Girshick",
+     "Ali Farhadi"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "You Only Look Once: Unified, Real-Time Object Detection",
+    "kind": "conf",
+    "venue": "CVPR",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": "10.1109/CVPR.2016.91",
+    "url": "https://dblp.org/rec/conf/cvpr/RedmonDGF16",
+    "authors": [
+     "Joseph Redmon",
+     "Santosh Kumar Divvala",
+     "Ross B. Girshick",
+     "Ali Farhadi"
+    ]
+   },
+   "preprint": {
+    "title": "You Only Look Once: Unified, Real-Time Object Detection",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/RedmonDGF15",
+    "authors": [
+     "Joseph Redmon",
+     "Santosh Kumar Divvala",
+     "Ross B. Girshick",
+     "Ali Farhadi"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 9,
+   "short": "SSD",
+   "query": "SSD: Single Shot MultiBox Detector",
+   "author": "Liu",
+   "loose_best": {
+    "title": "SSD: Single Shot MultiBox Detector",
+    "kind": "conf",
+    "venue": "ECCV",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": "10.1007/978-3-319-46448-0_2",
+    "url": "https://dblp.org/rec/conf/eccv/LiuAESRFB16",
+    "authors": [
+     "Wei Liu",
+     "Dragomir Anguelov",
+     "Dumitru Erhan",
+     "Christian Szegedy"
+    ]
+   },
+   "strict_best": {
+    "title": "SSD: Single Shot MultiBox Detector",
+    "kind": "conf",
+    "venue": "ECCV",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": "10.1007/978-3-319-46448-0_2",
+    "url": "https://dblp.org/rec/conf/eccv/LiuAESRFB16",
+    "authors": [
+     "Wei Liu",
+     "Dragomir Anguelov",
+     "Dumitru Erhan",
+     "Christian Szegedy"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "SSD: Single Shot MultiBox Detector",
+    "kind": "conf",
+    "venue": "ECCV",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": "10.1007/978-3-319-46448-0_2",
+    "url": "https://dblp.org/rec/conf/eccv/LiuAESRFB16",
+    "authors": [
+     "Wei Liu",
+     "Dragomir Anguelov",
+     "Dumitru Erhan",
+     "Christian Szegedy"
+    ]
+   },
+   "preprint": {
+    "title": "SSD: Single Shot MultiBox Detector",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/LiuAESR15",
+    "authors": [
+     "Wei Liu",
+     "Dragomir Anguelov",
+     "Dumitru Erhan",
+     "Christian Szegedy"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 9,
+   "short": "Faster R-CNN",
+   "query": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+   "author": "Ren",
+   "loose_best": {
+    "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+    "kind": "conf",
+    "venue": "NIPS",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/RenHGS15",
+    "authors": [
+     "Shaoqing Ren",
+     "Kaiming He",
+     "Ross B. Girshick",
+     "Jian Sun"
+    ]
+   },
+   "strict_best": {
+    "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+    "kind": "conf",
+    "venue": "NIPS",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/RenHGS15",
+    "authors": [
+     "Shaoqing Ren",
+     "Kaiming He",
+     "Ross B. Girshick",
+     "Jian Sun"
+    ]
+   },
+   "n_loose": 3,
+   "n_strict": 3,
+   "published": {
+    "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+    "kind": "conf",
+    "venue": "NIPS",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/RenHGS15",
+    "authors": [
+     "Shaoqing Ren",
+     "Kaiming He",
+     "Ross B. Girshick",
+     "Jian Sun"
+    ]
+   },
+   "preprint": {
+    "title": "Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2015",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/RenHG015",
+    "authors": [
+     "Shaoqing Ren",
+     "Kaiming He",
+     "Ross B. Girshick",
+     "Jian Sun"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 9,
+   "short": "DETR",
+   "query": "End-to-End Object Detection with Transformers",
+   "author": "Carion",
+   "loose_best": {
+    "title": "End-to-End Object Detection with Transformers",
+    "kind": "conf",
+    "venue": "ECCV",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": "10.1007/978-3-030-58452-8_13",
+    "url": "https://dblp.org/rec/conf/eccv/CarionMSUKZ20",
+    "authors": [
+     "Nicolas Carion",
+     "Francisco Massa",
+     "Gabriel Synnaeve",
+     "Nicolas Usunier"
+    ]
+   },
+   "strict_best": {
+    "title": "End-to-End Object Detection with Transformers",
+    "kind": "conf",
+    "venue": "ECCV",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": "10.1007/978-3-030-58452-8_13",
+    "url": "https://dblp.org/rec/conf/eccv/CarionMSUKZ20",
+    "authors": [
+     "Nicolas Carion",
+     "Francisco Massa",
+     "Gabriel Synnaeve",
+     "Nicolas Usunier"
+    ]
+   },
+   "n_loose": 3,
+   "n_strict": 2,
+   "published": {
+    "title": "End-to-End Object Detection with Transformers",
+    "kind": "conf",
+    "venue": "ECCV",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": "10.1007/978-3-030-58452-8_13",
+    "url": "https://dblp.org/rec/conf/eccv/CarionMSUKZ20",
+    "authors": [
+     "Nicolas Carion",
+     "Francisco Massa",
+     "Gabriel Synnaeve",
+     "Nicolas Usunier"
+    ]
+   },
+   "preprint": {
+    "title": "End-to-End Object Detection with Transformers",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2005-12872",
+    "authors": [
+     "Nicolas Carion",
+     "Francisco Massa",
+     "Gabriel Synnaeve",
+     "Nicolas Usunier"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 9,
+   "short": "Amdahl 1967",
+   "query": "Validity of the single processor approach to achieving large scale computing capabilities",
+   "author": "Amdahl",
+   "loose_best": {
+    "title": "Validity of the single processor approach to achieving large scale computing capabilities",
+    "kind": "conf",
+    "venue": "AFIPS Spring Joint Computing Conference",
+    "year": "1967",
+    "sim": 1.0,
+    "doi": "10.1145/1465482.1465560",
+    "url": "https://dblp.org/rec/conf/afips/Amdahl67",
+    "authors": [
+     "Gene M. Amdahl"
+    ]
+   },
+   "strict_best": {
+    "title": "Validity of the single processor approach to achieving large scale computing capabilities",
+    "kind": "conf",
+    "venue": "AFIPS Spring Joint Computing Conference",
+    "year": "1967",
+    "sim": 1.0,
+    "doi": "10.1145/1465482.1465560",
+    "url": "https://dblp.org/rec/conf/afips/Amdahl67",
+    "authors": [
+     "Gene M. Amdahl"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": {
+    "title": "Validity of the single processor approach to achieving large scale computing capabilities",
+    "kind": "conf",
+    "venue": "AFIPS Spring Joint Computing Conference",
+    "year": "1967",
+    "sim": 1.0,
+    "doi": "10.1145/1465482.1465560",
+    "url": "https://dblp.org/rec/conf/afips/Amdahl67",
+    "authors": [
+     "Gene M. Amdahl"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 10,
+   "short": "Pope 2023 (스케일링)",
+   "query": "Efficiently Scaling Transformer Inference",
+   "author": "Pope",
+   "loose_best": {
+    "title": "Efficiently Scaling Transformer Inference",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/PopeDCDBHXAD23",
+    "authors": [
+     "Reiner Pope",
+     "Sholto Douglas",
+     "Aakanksha Chowdhery",
+     "Jacob Devlin"
+    ]
+   },
+   "strict_best": {
+    "title": "Efficiently Scaling Transformer Inference",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/PopeDCDBHXAD23",
+    "authors": [
+     "Reiner Pope",
+     "Sholto Douglas",
+     "Aakanksha Chowdhery",
+     "Jacob Devlin"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Efficiently Scaling Transformer Inference",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/PopeDCDBHXAD23",
+    "authors": [
+     "Reiner Pope",
+     "Sholto Douglas",
+     "Aakanksha Chowdhery",
+     "Jacob Devlin"
+    ]
+   },
+   "preprint": {
+    "title": "Efficiently Scaling Transformer Inference",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2211.05102",
+    "url": "https://dblp.org/rec/journals/corr/abs-2211-05102",
+    "authors": [
+     "Reiner Pope",
+     "Sholto Douglas",
+     "Aakanksha Chowdhery",
+     "Jacob Devlin"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 10,
+   "short": "AWQ",
+   "query": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+   "author": "Lin",
+   "loose_best": {
+    "title": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2024",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/0002TTYCWXDG024",
+    "authors": [
+     "Ji Lin",
+     "Jiaming Tang",
+     "Haotian Tang",
+     "Shang Yang"
+    ]
+   },
+   "strict_best": {
+    "title": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2024",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/0002TTYCWXDG024",
+    "authors": [
+     "Ji Lin",
+     "Jiaming Tang",
+     "Haotian Tang",
+     "Shang Yang"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "AWQ: Activation-aware Weight Quantization for On-Device LLM Compression and Acceleration",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2024",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/0002TTYCWXDG024",
+    "authors": [
+     "Ji Lin",
+     "Jiaming Tang",
+     "Haotian Tang",
+     "Shang Yang"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 10,
+   "short": "LLM.int8()",
+   "query": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+   "author": "Dettmers",
+   "loose_best": {
+    "title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2208.07339",
+    "url": "https://dblp.org/rec/journals/corr/abs-2208-07339",
+    "authors": [
+     "Tim Dettmers",
+     "Mike Lewis",
+     "Younes Belkada",
+     "Luke Zettlemoyer"
+    ]
+   },
+   "strict_best": {
+    "title": "GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/DettmersLBZ22",
+    "authors": [
+     "Tim Dettmers",
+     "Mike Lewis",
+     "Younes Belkada",
+     "Luke Zettlemoyer"
+    ],
+    "via_alias": true
+   },
+   "n_loose": 1,
+   "n_strict": 2,
+   "published": {
+    "title": "GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/DettmersLBZ22",
+    "authors": [
+     "Tim Dettmers",
+     "Mike Lewis",
+     "Younes Belkada",
+     "Luke Zettlemoyer"
+    ],
+    "via_alias": true
+   },
+   "preprint": {
+    "title": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2208.07339",
+    "url": "https://dblp.org/rec/journals/corr/abs-2208-07339",
+    "authors": [
+     "Tim Dettmers",
+     "Mike Lewis",
+     "Younes Belkada",
+     "Luke Zettlemoyer"
+    ]
+   },
+   "alias_used": "GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+   "retry_used": null,
+   "title_search_failed": true,
+   "naive_wrong": true,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": true,
+   "cited_differs": true,
+   "lag_years": 0
+  },
+  {
+   "week": 10,
+   "short": "GPTQ",
+   "query": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+   "author": "Frantar",
+   "loose_best": {
+    "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2210.17323",
+    "url": "https://dblp.org/rec/journals/corr/abs-2210-17323",
+    "authors": [
+     "Elias Frantar",
+     "Saleh Ashkboos",
+     "Torsten Hoefler",
+     "Dan Alistarh"
+    ]
+   },
+   "strict_best": {
+    "title": "OPTQ: Accurate Quantization for Generative Pre-trained Transformers",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/FrantarAHA23",
+    "authors": [
+     "Elias Frantar",
+     "Saleh Ashkboos",
+     "Torsten Hoefler",
+     "Dan Alistarh"
+    ],
+    "via_alias": true
+   },
+   "n_loose": 1,
+   "n_strict": 2,
+   "published": {
+    "title": "OPTQ: Accurate Quantization for Generative Pre-trained Transformers",
+    "kind": "conf",
+    "venue": "ICLR",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/iclr/FrantarAHA23",
+    "authors": [
+     "Elias Frantar",
+     "Saleh Ashkboos",
+     "Torsten Hoefler",
+     "Dan Alistarh"
+    ],
+    "via_alias": true
+   },
+   "preprint": {
+    "title": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2210.17323",
+    "url": "https://dblp.org/rec/journals/corr/abs-2210-17323",
+    "authors": [
+     "Elias Frantar",
+     "Saleh Ashkboos",
+     "Torsten Hoefler",
+     "Dan Alistarh"
+    ]
+   },
+   "alias_used": "OPTQ: Accurate Quantization for Generative Pre-trained Transformers",
+   "retry_used": null,
+   "title_search_failed": true,
+   "naive_wrong": true,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": true,
+   "cited_differs": true,
+   "lag_years": 1
+  },
+  {
+   "week": 10,
+   "short": "GQA",
+   "query": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+   "author": "Ainslie",
+   "loose_best": {
+    "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+    "kind": "conf",
+    "venue": "EMNLP",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.18653/V1/2023.EMNLP-MAIN.298",
+    "url": "https://dblp.org/rec/conf/emnlp/AinslieLJZLS23",
+    "authors": [
+     "Joshua Ainslie",
+     "James Lee-Thorp",
+     "Michiel de Jong",
+     "Yury Zemlyanskiy"
+    ]
+   },
+   "strict_best": {
+    "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+    "kind": "conf",
+    "venue": "EMNLP",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.18653/V1/2023.EMNLP-MAIN.298",
+    "url": "https://dblp.org/rec/conf/emnlp/AinslieLJZLS23",
+    "authors": [
+     "Joshua Ainslie",
+     "James Lee-Thorp",
+     "Michiel de Jong",
+     "Yury Zemlyanskiy"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+    "kind": "conf",
+    "venue": "EMNLP",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.18653/V1/2023.EMNLP-MAIN.298",
+    "url": "https://dblp.org/rec/conf/emnlp/AinslieLJZLS23",
+    "authors": [
+     "Joshua Ainslie",
+     "James Lee-Thorp",
+     "Michiel de Jong",
+     "Yury Zemlyanskiy"
+    ]
+   },
+   "preprint": {
+    "title": "GQA: Training Generalized Multi-Query Transformer Models from Multi-Head Checkpoints",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2305.13245",
+    "url": "https://dblp.org/rec/journals/corr/abs-2305-13245",
+    "authors": [
+     "Joshua Ainslie",
+     "James Lee-Thorp",
+     "Michiel de Jong",
+     "Yury Zemlyanskiy"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 10,
+   "short": "MQA (Shazeer)",
+   "query": "Fast Transformer Decoding: One Write-Head is All You Need",
+   "author": "Shazeer",
+   "loose_best": {
+    "title": "Fast Transformer Decoding: One Write-Head is All You Need",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1911-02150",
+    "authors": [
+     "Noam Shazeer"
+    ]
+   },
+   "strict_best": {
+    "title": "Fast Transformer Decoding: One Write-Head is All You Need",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1911-02150",
+    "authors": [
+     "Noam Shazeer"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Fast Transformer Decoding: One Write-Head is All You Need",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1911-02150",
+    "authors": [
+     "Noam Shazeer"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 10,
+   "short": "vLLM / PagedAttention",
+   "query": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+   "author": "Kwon",
+   "loose_best": {
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "kind": "conf",
+    "venue": "SOSP",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.1145/3600006.3613165",
+    "url": "https://dblp.org/rec/conf/sosp/KwonLZ0ZY0ZS23",
+    "authors": [
+     "Woosuk Kwon",
+     "Zhuohan Li",
+     "Siyuan Zhuang",
+     "Ying Sheng"
+    ]
+   },
+   "strict_best": {
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "kind": "conf",
+    "venue": "SOSP",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.1145/3600006.3613165",
+    "url": "https://dblp.org/rec/conf/sosp/KwonLZ0ZY0ZS23",
+    "authors": [
+     "Woosuk Kwon",
+     "Zhuohan Li",
+     "Siyuan Zhuang",
+     "Ying Sheng"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "kind": "conf",
+    "venue": "SOSP",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.1145/3600006.3613165",
+    "url": "https://dblp.org/rec/conf/sosp/KwonLZ0ZY0ZS23",
+    "authors": [
+     "Woosuk Kwon",
+     "Zhuohan Li",
+     "Siyuan Zhuang",
+     "Ying Sheng"
+    ]
+   },
+   "preprint": {
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2309.06180",
+    "url": "https://dblp.org/rec/journals/corr/abs-2309-06180",
+    "authors": [
+     "Woosuk Kwon",
+     "Zhuohan Li",
+     "Siyuan Zhuang",
+     "Ying Sheng"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 10,
+   "short": "Orca",
+   "query": "Orca: A Distributed Serving System for Transformer-Based Generative Models",
+   "author": "Yu",
+   "loose_best": {
+    "title": "Orca: A Distributed Serving System for Transformer-Based Generative Models",
+    "kind": "conf",
+    "venue": "OSDI",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/osdi/YuJKKC22",
+    "authors": [
+     "Gyeong-In Yu",
+     "Joo Seong Jeong",
+     "Geon-Woo Kim",
+     "Soojeong Kim"
+    ]
+   },
+   "strict_best": {
+    "title": "Orca: A Distributed Serving System for Transformer-Based Generative Models",
+    "kind": "conf",
+    "venue": "OSDI",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/osdi/YuJKKC22",
+    "authors": [
+     "Gyeong-In Yu",
+     "Joo Seong Jeong",
+     "Geon-Woo Kim",
+     "Soojeong Kim"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": {
+    "title": "Orca: A Distributed Serving System for Transformer-Based Generative Models",
+    "kind": "conf",
+    "venue": "OSDI",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/osdi/YuJKKC22",
+    "authors": [
+     "Gyeong-In Yu",
+     "Joo Seong Jeong",
+     "Geon-Woo Kim",
+     "Soojeong Kim"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 10,
+   "short": "추측 디코딩",
+   "query": "Fast Inference from Transformers via Speculative Decoding",
+   "author": "Leviathan",
+   "loose_best": {
+    "title": "Fast Inference from Transformers via Speculative Decoding",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/LeviathanKM23",
+    "authors": [
+     "Yaniv Leviathan",
+     "Matan Kalman",
+     "Yossi Matias"
+    ]
+   },
+   "strict_best": {
+    "title": "Fast Inference from Transformers via Speculative Decoding",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/LeviathanKM23",
+    "authors": [
+     "Yaniv Leviathan",
+     "Matan Kalman",
+     "Yossi Matias"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Fast Inference from Transformers via Speculative Decoding",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/LeviathanKM23",
+    "authors": [
+     "Yaniv Leviathan",
+     "Matan Kalman",
+     "Yossi Matias"
+    ]
+   },
+   "preprint": {
+    "title": "Fast Inference from Transformers via Speculative Decoding",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2211.17192",
+    "url": "https://dblp.org/rec/journals/corr/abs-2211-17192",
+    "authors": [
+     "Yaniv Leviathan",
+     "Matan Kalman",
+     "Yossi Matias"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 10,
+   "short": "추측 표집",
+   "query": "Accelerating Large Language Model Decoding with Speculative Sampling",
+   "author": "Chen",
+   "loose_best": {
+    "title": "Accelerating Large Language Model Decoding with Speculative Sampling",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2302.01318",
+    "url": "https://dblp.org/rec/journals/corr/abs-2302-01318",
+    "authors": [
+     "Charlie Chen",
+     "Sebastian Borgeaud",
+     "Geoffrey Irving",
+     "Jean-Baptiste Lespiau"
+    ]
+   },
+   "strict_best": {
+    "title": "Accelerating Large Language Model Decoding with Speculative Sampling",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2302.01318",
+    "url": "https://dblp.org/rec/journals/corr/abs-2302-01318",
+    "authors": [
+     "Charlie Chen",
+     "Sebastian Borgeaud",
+     "Geoffrey Irving",
+     "Jean-Baptiste Lespiau"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Accelerating Large Language Model Decoding with Speculative Sampling",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2302.01318",
+    "url": "https://dblp.org/rec/journals/corr/abs-2302-01318",
+    "authors": [
+     "Charlie Chen",
+     "Sebastian Borgeaud",
+     "Geoffrey Irving",
+     "Jean-Baptiste Lespiau"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 10,
+   "short": "Roofline",
+   "query": "Roofline: an insightful visual performance model for multicore architectures",
+   "author": "Williams",
+   "loose_best": {
+    "title": "Roofline: an insightful visual performance model for multicore architectures",
+    "kind": "journal",
+    "venue": "Commun. ACM",
+    "year": "2009",
+    "sim": 1.0,
+    "doi": "10.1145/1498765.1498785",
+    "url": "https://dblp.org/rec/journals/cacm/WilliamsWP09",
+    "authors": [
+     "Samuel Williams",
+     "Andrew Waterman",
+     "David A. Patterson"
+    ]
+   },
+   "strict_best": {
+    "title": "Roofline: an insightful visual performance model for multicore architectures",
+    "kind": "journal",
+    "venue": "Commun. ACM",
+    "year": "2009",
+    "sim": 1.0,
+    "doi": "10.1145/1498765.1498785",
+    "url": "https://dblp.org/rec/journals/cacm/WilliamsWP09",
+    "authors": [
+     "Samuel Williams",
+     "Andrew Waterman",
+     "David A. Patterson"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": {
+    "title": "Roofline: an insightful visual performance model for multicore architectures",
+    "kind": "journal",
+    "venue": "Commun. ACM",
+    "year": "2009",
+    "sim": 1.0,
+    "doi": "10.1145/1498765.1498785",
+    "url": "https://dblp.org/rec/journals/cacm/WilliamsWP09",
+    "authors": [
+     "Samuel Williams",
+     "Andrew Waterman",
+     "David A. Patterson"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 10,
+   "short": "Brysbaert 2019",
+   "query": "How many words do we read per minute? A review and meta-analysis of reading rate",
+   "author": "Brysbaert",
+   "out_of_scope": true,
+   "reason": "심리학 저널(J. Memory and Language) — DBLP 는 전산 분야만 색인한다",
+   "not_found": true,
+   "naive_wrong": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null,
+   "published": null,
+   "preprint": null,
+   "loose_best": null,
+   "strict_best": null
+  },
+  {
+   "week": 11,
+   "short": "TVM",
+   "query": "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning",
+   "author": "Chen",
+   "loose_best": {
+    "title": "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning",
+    "kind": "conf",
+    "venue": "OSDI",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/osdi/ChenMJZYSCWHCGK18",
+    "authors": [
+     "Tianqi Chen",
+     "Thierry Moreau",
+     "Ziheng Jiang",
+     "Lianmin Zheng"
+    ]
+   },
+   "strict_best": {
+    "title": "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning",
+    "kind": "conf",
+    "venue": "OSDI",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/osdi/ChenMJZYSCWHCGK18",
+    "authors": [
+     "Tianqi Chen",
+     "Thierry Moreau",
+     "Ziheng Jiang",
+     "Lianmin Zheng"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": {
+    "title": "TVM: An Automated End-to-End Optimizing Compiler for Deep Learning",
+    "kind": "conf",
+    "venue": "OSDI",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/osdi/ChenMJZYSCWHCGK18",
+    "authors": [
+     "Tianqi Chen",
+     "Thierry Moreau",
+     "Ziheng Jiang",
+     "Lianmin Zheng"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 11,
+   "short": "Halide",
+   "query": "Halide: a language and compiler for optimizing parallelism, locality, and recomputation in image processing pipelines",
+   "author": "Ragan-Kelley",
+   "loose_best": {
+    "title": "Halide: a language and compiler for optimizing parallelism, locality, and recomputation in image processing pipelines",
+    "kind": "conf",
+    "venue": "PLDI",
+    "year": "2013",
+    "sim": 1.0,
+    "doi": "10.1145/2491956.2462176",
+    "url": "https://dblp.org/rec/conf/pldi/Ragan-KelleyBAPDA13",
+    "authors": [
+     "Jonathan Ragan-Kelley",
+     "Connelly Barnes",
+     "Andrew Adams",
+     "Sylvain Paris"
+    ]
+   },
+   "strict_best": {
+    "title": "Halide: a language and compiler for optimizing parallelism, locality, and recomputation in image processing pipelines",
+    "kind": "conf",
+    "venue": "PLDI",
+    "year": "2013",
+    "sim": 1.0,
+    "doi": "10.1145/2491956.2462176",
+    "url": "https://dblp.org/rec/conf/pldi/Ragan-KelleyBAPDA13",
+    "authors": [
+     "Jonathan Ragan-Kelley",
+     "Connelly Barnes",
+     "Andrew Adams",
+     "Sylvain Paris"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": {
+    "title": "Halide: a language and compiler for optimizing parallelism, locality, and recomputation in image processing pipelines",
+    "kind": "conf",
+    "venue": "PLDI",
+    "year": "2013",
+    "sim": 1.0,
+    "doi": "10.1145/2491956.2462176",
+    "url": "https://dblp.org/rec/conf/pldi/Ragan-KelleyBAPDA13",
+    "authors": [
+     "Jonathan Ragan-Kelley",
+     "Connelly Barnes",
+     "Andrew Adams",
+     "Sylvain Paris"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 11,
+   "short": "Glow",
+   "query": "Glow: Graph Lowering Compiler Techniques for Neural Networks",
+   "author": "Rotem",
+   "loose_best": {
+    "title": "Glow: Graph Lowering Compiler Techniques for Neural Networks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1805-00907",
+    "authors": [
+     "Nadav Rotem",
+     "Jordan Fix",
+     "Saleem Abdulrasool",
+     "Summer Deng"
+    ]
+   },
+   "strict_best": {
+    "title": "Glow: Graph Lowering Compiler Techniques for Neural Networks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1805-00907",
+    "authors": [
+     "Nadav Rotem",
+     "Jordan Fix",
+     "Saleem Abdulrasool",
+     "Summer Deng"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Glow: Graph Lowering Compiler Techniques for Neural Networks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1805-00907",
+    "authors": [
+     "Nadav Rotem",
+     "Jordan Fix",
+     "Saleem Abdulrasool",
+     "Summer Deng"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 11,
+   "short": "Ansor",
+   "query": "Ansor: Generating High-Performance Tensor Programs for Deep Learning",
+   "author": "Zheng",
+   "loose_best": {
+    "title": "Ansor: Generating High-Performance Tensor Programs for Deep Learning",
+    "kind": "conf",
+    "venue": "OSDI",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/osdi/ZhengJSWYHWYZSG20",
+    "authors": [
+     "Lianmin Zheng",
+     "Chengfan Jia",
+     "Minmin Sun",
+     "Zhao Wu"
+    ]
+   },
+   "strict_best": {
+    "title": "Ansor: Generating High-Performance Tensor Programs for Deep Learning",
+    "kind": "conf",
+    "venue": "OSDI",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/osdi/ZhengJSWYHWYZSG20",
+    "authors": [
+     "Lianmin Zheng",
+     "Chengfan Jia",
+     "Minmin Sun",
+     "Zhao Wu"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Ansor: Generating High-Performance Tensor Programs for Deep Learning",
+    "kind": "conf",
+    "venue": "OSDI",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/osdi/ZhengJSWYHWYZSG20",
+    "authors": [
+     "Lianmin Zheng",
+     "Chengfan Jia",
+     "Minmin Sun",
+     "Zhao Wu"
+    ]
+   },
+   "preprint": {
+    "title": "Ansor : Generating High-Performance Tensor Programs for Deep Learning",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2006-06762",
+    "authors": [
+     "Lianmin Zheng",
+     "Chengfan Jia",
+     "Minmin Sun",
+     "Zhao Wu"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 11,
+   "short": "Triton",
+   "query": "Triton: an intermediate language and compiler for tiled neural network computations",
+   "author": "Tillet",
+   "loose_best": {
+    "title": "Triton: an intermediate language and compiler for tiled neural network computations",
+    "kind": "conf",
+    "venue": "MAPL@PLDI",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": "10.1145/3315508.3329973",
+    "url": "https://dblp.org/rec/conf/pldi/TilletKC19",
+    "authors": [
+     "Philippe Tillet",
+     "Hsiang-Tsung Kung",
+     "David D. Cox"
+    ]
+   },
+   "strict_best": {
+    "title": "Triton: an intermediate language and compiler for tiled neural network computations",
+    "kind": "conf",
+    "venue": "MAPL@PLDI",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": "10.1145/3315508.3329973",
+    "url": "https://dblp.org/rec/conf/pldi/TilletKC19",
+    "authors": [
+     "Philippe Tillet",
+     "Hsiang-Tsung Kung",
+     "David D. Cox"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": {
+    "title": "Triton: an intermediate language and compiler for tiled neural network computations",
+    "kind": "conf",
+    "venue": "MAPL@PLDI",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": "10.1145/3315508.3329973",
+    "url": "https://dblp.org/rec/conf/pldi/TilletKC19",
+    "authors": [
+     "Philippe Tillet",
+     "Hsiang-Tsung Kung",
+     "David D. Cox"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 11,
+   "short": "DL 컴파일러 서베이",
+   "query": "The Deep Learning Compiler: A Comprehensive Survey",
+   "author": "Li",
+   "loose_best": {
+    "title": "The Deep Learning Compiler: A Comprehensive Survey",
+    "kind": "journal",
+    "venue": "IEEE Trans. Parallel Distributed Syst.",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1109/TPDS.2020.3030548",
+    "url": "https://dblp.org/rec/journals/tpds/LiLLSYYLGYQ21",
+    "authors": [
+     "Mingzhen Li",
+     "Yi Liu",
+     "Xiaoyan Liu",
+     "Qingxiao Sun"
+    ]
+   },
+   "strict_best": {
+    "title": "The Deep Learning Compiler: A Comprehensive Survey",
+    "kind": "journal",
+    "venue": "IEEE Trans. Parallel Distributed Syst.",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1109/TPDS.2020.3030548",
+    "url": "https://dblp.org/rec/journals/tpds/LiLLSYYLGYQ21",
+    "authors": [
+     "Mingzhen Li",
+     "Yi Liu",
+     "Xiaoyan Liu",
+     "Qingxiao Sun"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "The Deep Learning Compiler: A Comprehensive Survey",
+    "kind": "journal",
+    "venue": "IEEE Trans. Parallel Distributed Syst.",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1109/TPDS.2020.3030548",
+    "url": "https://dblp.org/rec/journals/tpds/LiLLSYYLGYQ21",
+    "authors": [
+     "Mingzhen Li",
+     "Yi Liu",
+     "Xiaoyan Liu",
+     "Qingxiao Sun"
+    ]
+   },
+   "preprint": {
+    "title": "The Deep Learning Compiler: A Comprehensive Survey",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2002-03794",
+    "authors": [
+     "Mingzhen Li",
+     "Yi Liu",
+     "Xiaoyan Liu",
+     "Qingxiao Sun"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 11,
+   "short": "Edge TPU 병목",
+   "query": "Google Neural Network Models for Edge Devices: Analyzing and Mitigating Machine Learning Inference Bottlenecks",
+   "author": "Boroumand",
+   "loose_best": {
+    "title": "Google Neural Network Models for Edge Devices: Analyzing and Mitigating Machine Learning Inference Bottlenecks",
+    "kind": "conf",
+    "venue": "PACT",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1109/PACT52795.2021.00019",
+    "url": "https://dblp.org/rec/conf/IEEEpact/BoroumandGANOMS21",
+    "authors": [
+     "Amirali Boroumand",
+     "Saugata Ghose",
+     "Berkin Akin",
+     "Ravi Narayanaswami"
+    ]
+   },
+   "strict_best": {
+    "title": "Google Neural Network Models for Edge Devices: Analyzing and Mitigating Machine Learning Inference Bottlenecks",
+    "kind": "conf",
+    "venue": "PACT",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1109/PACT52795.2021.00019",
+    "url": "https://dblp.org/rec/conf/IEEEpact/BoroumandGANOMS21",
+    "authors": [
+     "Amirali Boroumand",
+     "Saugata Ghose",
+     "Berkin Akin",
+     "Ravi Narayanaswami"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Google Neural Network Models for Edge Devices: Analyzing and Mitigating Machine Learning Inference Bottlenecks",
+    "kind": "conf",
+    "venue": "PACT",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1109/PACT52795.2021.00019",
+    "url": "https://dblp.org/rec/conf/IEEEpact/BoroumandGANOMS21",
+    "authors": [
+     "Amirali Boroumand",
+     "Saugata Ghose",
+     "Berkin Akin",
+     "Ravi Narayanaswami"
+    ]
+   },
+   "preprint": {
+    "title": "Google Neural Network Models for Edge Devices: Analyzing and Mitigating Machine Learning Inference Bottlenecks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2109-14320",
+    "authors": [
+     "Amirali Boroumand",
+     "Saugata Ghose",
+     "Berkin Akin",
+     "Ravi Narayanaswami"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 11,
+   "short": "이종 모바일 추론",
+   "query": "Deep Learning Inference on Heterogeneous Mobile Processors: Potentials and Pitfalls",
+   "author": "Liu",
+   "loose_best": {
+    "title": "Deep Learning Inference on Heterogeneous Mobile Processors: Potentials and Pitfalls",
+    "kind": "conf",
+    "venue": "AdaAIoTSys@MobiSys",
+    "year": "2024",
+    "sim": 1.0,
+    "doi": "10.1145/3662007.3663881",
+    "url": "https://dblp.org/rec/conf/adaaiotsys/LiuZZ0WFL024",
+    "authors": [
+     "Sicong Liu",
+     "Wentao Zhou",
+     "Zimu Zhou",
+     "Bin Guo"
+    ]
+   },
+   "strict_best": {
+    "title": "Deep Learning Inference on Heterogeneous Mobile Processors: Potentials and Pitfalls",
+    "kind": "conf",
+    "venue": "AdaAIoTSys@MobiSys",
+    "year": "2024",
+    "sim": 1.0,
+    "doi": "10.1145/3662007.3663881",
+    "url": "https://dblp.org/rec/conf/adaaiotsys/LiuZZ0WFL024",
+    "authors": [
+     "Sicong Liu",
+     "Wentao Zhou",
+     "Zimu Zhou",
+     "Bin Guo"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Deep Learning Inference on Heterogeneous Mobile Processors: Potentials and Pitfalls",
+    "kind": "conf",
+    "venue": "AdaAIoTSys@MobiSys",
+    "year": "2024",
+    "sim": 1.0,
+    "doi": "10.1145/3662007.3663881",
+    "url": "https://dblp.org/rec/conf/adaaiotsys/LiuZZ0WFL024",
+    "authors": [
+     "Sicong Liu",
+     "Wentao Zhou",
+     "Zimu Zhou",
+     "Bin Guo"
+    ]
+   },
+   "preprint": {
+    "title": "Deep Learning Inference on Heterogeneous Mobile Processors: Potentials and Pitfalls",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2024",
+    "sim": 1.0,
+    "doi": "10.48550/ARXIV.2405.01851",
+    "url": "https://dblp.org/rec/journals/corr/abs-2405-01851",
+    "authors": [
+     "Sicong Liu",
+     "Wentao Zhou",
+     "Zimu Zhou",
+     "Bin Guo"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 12,
+   "short": "FedAvg",
+   "query": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+   "author": "McMahan",
+   "loose_best": {
+    "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+    "kind": "conf",
+    "venue": "AISTATS",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/aistats/McMahanMRHA17",
+    "authors": [
+     "Brendan McMahan",
+     "Eider Moore",
+     "Daniel Ramage",
+     "Seth Hampson"
+    ]
+   },
+   "strict_best": {
+    "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+    "kind": "conf",
+    "venue": "AISTATS",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/aistats/McMahanMRHA17",
+    "authors": [
+     "Brendan McMahan",
+     "Eider Moore",
+     "Daniel Ramage",
+     "Seth Hampson"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": {
+    "title": "Communication-Efficient Learning of Deep Networks from Decentralized Data",
+    "kind": "conf",
+    "venue": "AISTATS",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/aistats/McMahanMRHA17",
+    "authors": [
+     "Brendan McMahan",
+     "Eider Moore",
+     "Daniel Ramage",
+     "Seth Hampson"
+    ]
+   },
+   "preprint": null,
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 12,
+   "short": "Zhao 비-IID",
+   "query": "Federated Learning with Non-IID Data",
+   "author": "Zhao",
+   "loose_best": {
+    "title": "Enhancing Global Model Performance in Federated Learning With Non-IID Data Using a Data-Free Generative Diffusion Model",
+    "kind": "journal",
+    "venue": "IEEE Access",
+    "year": "2024",
+    "sim": 1.0,
+    "doi": "10.1109/ACCESS.2024.3474056",
+    "url": "https://dblp.org/rec/journals/access/MohammadrezaDLSS24",
+    "authors": [
+     "Najafi Mohammadreza",
+     "Masoud Daneshtalab",
+     "Jeong-A Lee",
+     "Ghazal Saadloonia"
+    ]
+   },
+   "strict_best": {
+    "title": "Federated Learning with Non-IID Data",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1806-00582",
+    "authors": [
+     "Yue Zhao",
+     "Meng Li",
+     "Liangzhen Lai",
+     "Naveen Suda"
+    ],
+    "via_retry": true
+   },
+   "n_loose": 6,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Federated Learning with Non-IID Data",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1806-00582",
+    "authors": [
+     "Yue Zhao",
+     "Meng Li",
+     "Liangzhen Lai",
+     "Naveen Suda"
+    ],
+    "via_retry": true
+   },
+   "alias_used": null,
+   "retry_used": "Zhao Li Lai Suda Civin Chandra Federated Learning with Non-IID Data",
+   "title_search_failed": true,
+   "naive_wrong": true,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 12,
+   "short": "Hsu 디리클레",
+   "query": "Measuring the Effects of Non-Identical Data Distribution for Federated Visual Classification",
+   "author": "Hsu",
+   "loose_best": {
+    "title": "Measuring the Effects of Non-Identical Data Distribution for Federated Visual Classification",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1909-06335",
+    "authors": [
+     "Tzu-Ming Harry Hsu",
+     "Hang Qi",
+     "Matthew Brown"
+    ]
+   },
+   "strict_best": {
+    "title": "Measuring the Effects of Non-Identical Data Distribution for Federated Visual Classification",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1909-06335",
+    "authors": [
+     "Tzu-Ming Harry Hsu",
+     "Hang Qi",
+     "Matthew Brown"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Measuring the Effects of Non-Identical Data Distribution for Federated Visual Classification",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1909-06335",
+    "authors": [
+     "Tzu-Ming Harry Hsu",
+     "Hang Qi",
+     "Matthew Brown"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 12,
+   "short": "Yurochkin (디리클레 최초)",
+   "query": "Bayesian Nonparametric Federated Learning of Neural Networks",
+   "author": "Yurochkin",
+   "loose_best": {
+    "title": "Bayesian Nonparametric Federated Learning of Neural Networks",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/YurochkinAGGHK19",
+    "authors": [
+     "Mikhail Yurochkin",
+     "Mayank Agarwal",
+     "Soumya Ghosh",
+     "Kristjan H. Greenewald"
+    ]
+   },
+   "strict_best": {
+    "title": "Bayesian Nonparametric Federated Learning of Neural Networks",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/YurochkinAGGHK19",
+    "authors": [
+     "Mikhail Yurochkin",
+     "Mayank Agarwal",
+     "Soumya Ghosh",
+     "Kristjan H. Greenewald"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Bayesian Nonparametric Federated Learning of Neural Networks",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/YurochkinAGGHK19",
+    "authors": [
+     "Mikhail Yurochkin",
+     "Mayank Agarwal",
+     "Soumya Ghosh",
+     "Kristjan H. Greenewald"
+    ]
+   },
+   "preprint": {
+    "title": "Bayesian Nonparametric Federated Learning of Neural Networks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1905-12022",
+    "authors": [
+     "Mikhail Yurochkin",
+     "Mayank Agarwal",
+     "Soumya Ghosh",
+     "Kristjan H. Greenewald"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 12,
+   "short": "FedProx",
+   "query": "Federated Optimization in Heterogeneous Networks",
+   "author": "Li",
+   "loose_best": {
+    "title": "Federated Optimization in Heterogeneous Networks",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/LiSZSTS20",
+    "authors": [
+     "Tian Li",
+     "Anit Kumar Sahu",
+     "Manzil Zaheer",
+     "Maziar Sanjabi"
+    ]
+   },
+   "strict_best": {
+    "title": "Federated Optimization in Heterogeneous Networks",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/LiSZSTS20",
+    "authors": [
+     "Tian Li",
+     "Anit Kumar Sahu",
+     "Manzil Zaheer",
+     "Maziar Sanjabi"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Federated Optimization in Heterogeneous Networks",
+    "kind": "conf",
+    "venue": "MLSys",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/mlsys/LiSZSTS20",
+    "authors": [
+     "Tian Li",
+     "Anit Kumar Sahu",
+     "Manzil Zaheer",
+     "Maziar Sanjabi"
+    ]
+   },
+   "preprint": {
+    "title": "On the Convergence of Federated Optimization in Heterogeneous Networks",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1812-06127",
+    "authors": [
+     "Anit Kumar Sahu",
+     "Tian Li",
+     "Maziar Sanjabi",
+     "Manzil Zaheer"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 2
+  },
+  {
+   "week": 12,
+   "short": "SCAFFOLD",
+   "query": "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning",
+   "author": "Karimireddy",
+   "loose_best": {
+    "title": "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/KarimireddyKMRS20",
+    "authors": [
+     "Sai Praneeth Karimireddy",
+     "Satyen Kale",
+     "Mehryar Mohri",
+     "Sashank J. Reddi"
+    ]
+   },
+   "strict_best": {
+    "title": "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/KarimireddyKMRS20",
+    "authors": [
+     "Sai Praneeth Karimireddy",
+     "Satyen Kale",
+     "Mehryar Mohri",
+     "Sashank J. Reddi"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/KarimireddyKMRS20",
+    "authors": [
+     "Sai Praneeth Karimireddy",
+     "Satyen Kale",
+     "Mehryar Mohri",
+     "Sashank J. Reddi"
+    ]
+   },
+   "preprint": {
+    "title": "SCAFFOLD: Stochastic Controlled Averaging for On-Device Federated Learning",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 0.81,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1910-06378",
+    "authors": [
+     "Sai Praneeth Karimireddy",
+     "Satyen Kale",
+     "Mehryar Mohri",
+     "Sashank J. Reddi"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": true,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 12,
+   "short": "Gboard",
+   "query": "Federated Learning for Mobile Keyboard Prediction",
+   "author": "Hard",
+   "loose_best": {
+    "title": "Federated Learning for Mobile Keyboard Prediction",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1811-03604",
+    "authors": [
+     "Andrew Hard",
+     "Kanishka Rao",
+     "Rajiv Mathews",
+     "Françoise Beaufays"
+    ]
+   },
+   "strict_best": {
+    "title": "Federated Learning for Mobile Keyboard Prediction",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1811-03604",
+    "authors": [
+     "Andrew Hard",
+     "Kanishka Rao",
+     "Rajiv Mathews",
+     "Françoise Beaufays"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Federated Learning for Mobile Keyboard Prediction",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1811-03604",
+    "authors": [
+     "Andrew Hard",
+     "Kanishka Rao",
+     "Rajiv Mathews",
+     "Françoise Beaufays"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 12,
+   "short": "DLG",
+   "query": "Deep Leakage from Gradients",
+   "author": "Zhu",
+   "loose_best": {
+    "title": "Deep Leakage from Gradients in Multiple-label Medical Image Classification",
+    "kind": "conf",
+    "venue": "ICHI",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1109/ICHI52183.2021.00078",
+    "url": "https://dblp.org/rec/conf/ichi/LiHZ21",
+    "authors": [
+     "Zheng Li",
+     "Mykola Hubchak",
+     "Yingying Zhu"
+    ]
+   },
+   "strict_best": {
+    "title": "Deep Leakage from Gradients in Multiple-label Medical Image Classification",
+    "kind": "conf",
+    "venue": "ICHI",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1109/ICHI52183.2021.00078",
+    "url": "https://dblp.org/rec/conf/ichi/LiHZ21",
+    "authors": [
+     "Zheng Li",
+     "Mykola Hubchak",
+     "Yingying Zhu"
+    ]
+   },
+   "n_loose": 13,
+   "n_strict": 4,
+   "published": {
+    "title": "Deep Leakage from Gradients in Multiple-label Medical Image Classification",
+    "kind": "conf",
+    "venue": "ICHI",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1109/ICHI52183.2021.00078",
+    "url": "https://dblp.org/rec/conf/ichi/LiHZ21",
+    "authors": [
+     "Zheng Li",
+     "Mykola Hubchak",
+     "Yingying Zhu"
+    ]
+   },
+   "preprint": {
+    "title": "Theory-Oriented Deep Leakage from Gradients via Linear Equation Solver",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2010-13356",
+    "authors": [
+     "Xudong Pan",
+     "Mi Zhang",
+     "Yifan Yan",
+     "Jiaming Zhu"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": true,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 12,
+   "short": "iDLG",
+   "query": "iDLG: Improved Deep Leakage from Gradients",
+   "author": "Zhao",
+   "loose_best": {
+    "title": "iDLG: Improved Deep Leakage from Gradients",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2001-02610",
+    "authors": [
+     "Bo Zhao",
+     "Konda Reddy Mopuri",
+     "Hakan Bilen"
+    ]
+   },
+   "strict_best": {
+    "title": "iDLG: Improved Deep Leakage from Gradients",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2001-02610",
+    "authors": [
+     "Bo Zhao",
+     "Konda Reddy Mopuri",
+     "Hakan Bilen"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "iDLG: Improved Deep Leakage from Gradients",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2001-02610",
+    "authors": [
+     "Bo Zhao",
+     "Konda Reddy Mopuri",
+     "Hakan Bilen"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  },
+  {
+   "week": 12,
+   "short": "Phong (해석적 역산)",
+   "query": "Privacy-Preserving Deep Learning via Additively Homomorphic Encryption",
+   "author": "Phong",
+   "loose_best": {
+    "title": "Privacy-Preserving Deep Learning via Additively Homomorphic Encryption",
+    "kind": "journal",
+    "venue": "IEEE Trans. Inf. Forensics Secur.",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1109/TIFS.2017.2787987",
+    "url": "https://dblp.org/rec/journals/tifs/PhongAHWM18",
+    "authors": [
+     "Le Trieu Phong",
+     "Yoshinori Aono",
+     "Takuya Hayashi",
+     "Lihua Wang"
+    ]
+   },
+   "strict_best": {
+    "title": "Privacy-Preserving Deep Learning via Additively Homomorphic Encryption",
+    "kind": "journal",
+    "venue": "IEEE Trans. Inf. Forensics Secur.",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1109/TIFS.2017.2787987",
+    "url": "https://dblp.org/rec/journals/tifs/PhongAHWM18",
+    "authors": [
+     "Le Trieu Phong",
+     "Yoshinori Aono",
+     "Takuya Hayashi",
+     "Lihua Wang"
+    ]
+   },
+   "n_loose": 3,
+   "n_strict": 2,
+   "published": {
+    "title": "Privacy-Preserving Deep Learning via Additively Homomorphic Encryption",
+    "kind": "journal",
+    "venue": "IEEE Trans. Inf. Forensics Secur.",
+    "year": "2018",
+    "sim": 1.0,
+    "doi": "10.1109/TIFS.2017.2787987",
+    "url": "https://dblp.org/rec/journals/tifs/PhongAHWM18",
+    "authors": [
+     "Le Trieu Phong",
+     "Yoshinori Aono",
+     "Takuya Hayashi",
+     "Lihua Wang"
+    ]
+   },
+   "preprint": {
+    "title": "Privacy-Preserving Deep Learning via Additively Homomorphic Encryption",
+    "kind": "preprint",
+    "venue": "IACR Cryptol. ePrint Arch.",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/iacr/PhongAHWM17",
+    "authors": [
+     "Le Trieu Phong",
+     "Yoshinori Aono",
+     "Takuya Hayashi",
+     "Lihua Wang"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 12,
+   "short": "Inverting Gradients",
+   "query": "Inverting Gradients - How easy is it to break privacy in federated learning?",
+   "author": "Geiping",
+   "loose_best": {
+    "title": "Inverting Gradients - How easy is it to break privacy in federated learning?",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/GeipingBD020",
+    "authors": [
+     "Jonas Geiping",
+     "Hartmut Bauermeister",
+     "Hannah Dröge",
+     "Michael Moeller"
+    ]
+   },
+   "strict_best": {
+    "title": "Inverting Gradients - How easy is it to break privacy in federated learning?",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/GeipingBD020",
+    "authors": [
+     "Jonas Geiping",
+     "Hartmut Bauermeister",
+     "Hannah Dröge",
+     "Michael Moeller"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Inverting Gradients - How easy is it to break privacy in federated learning?",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/GeipingBD020",
+    "authors": [
+     "Jonas Geiping",
+     "Hartmut Bauermeister",
+     "Hannah Dröge",
+     "Michael Moeller"
+    ]
+   },
+   "preprint": {
+    "title": "Inverting Gradients - How easy is it to break privacy in federated learning?",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2020",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2003-14053",
+    "authors": [
+     "Jonas Geiping",
+     "Hartmut Bauermeister",
+     "Hannah Dröge",
+     "Michael Moeller"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 12,
+   "short": "DP-SGD",
+   "query": "Deep Learning with Differential Privacy",
+   "author": "Abadi",
+   "loose_best": {
+    "title": "A Survey on Privacy-Preserving Deep Learning with Differential Privacy",
+    "kind": "conf",
+    "venue": "ICBDS",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1007/978-981-19-0852-1_2",
+    "url": "https://dblp.org/rec/conf/icbds/ZhangCZLF21",
+    "authors": [
+     "Yu Zhang",
+     "Ying Cai",
+     "Meng Zhang",
+     "Xin Li"
+    ]
+   },
+   "strict_best": {
+    "title": "Deep Learning with Differential Privacy",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": "10.1145/2976749.2978318",
+    "url": "https://dblp.org/rec/conf/ccs/AbadiCGMMT016",
+    "authors": [
+     "Martín Abadi",
+     "Andy Chu",
+     "Ian J. Goodfellow",
+     "H. Brendan McMahan"
+    ],
+    "via_retry": true
+   },
+   "n_loose": 5,
+   "n_strict": 2,
+   "published": {
+    "title": "Deep Learning with Differential Privacy",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": "10.1145/2976749.2978318",
+    "url": "https://dblp.org/rec/conf/ccs/AbadiCGMMT016",
+    "authors": [
+     "Martín Abadi",
+     "Andy Chu",
+     "Ian J. Goodfellow",
+     "H. Brendan McMahan"
+    ],
+    "via_retry": true
+   },
+   "preprint": {
+    "title": "Deep Learning with Differential Privacy",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2016",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/AbadiCGMMTZ16",
+    "authors": [
+     "Martín Abadi",
+     "Andy Chu",
+     "Ian J. Goodfellow",
+     "H. Brendan McMahan"
+    ],
+    "via_retry": true
+   },
+   "alias_used": null,
+   "retry_used": "Abadi Chu Goodfellow McMahan Mironov Talwar Zhang Deep Learning with Differential Privacy",
+   "title_search_failed": true,
+   "naive_wrong": true,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 12,
+   "short": "Secure Aggregation",
+   "query": "Practical Secure Aggregation for Privacy-Preserving Machine Learning",
+   "author": "Bonawitz",
+   "loose_best": {
+    "title": "Practical Secure Aggregation for Privacy-Preserving Machine Learning",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": "10.1145/3133956.3133982",
+    "url": "https://dblp.org/rec/conf/ccs/BonawitzIKMMPRS17",
+    "authors": [
+     "Kallista A. Bonawitz",
+     "Vladimir Ivanov",
+     "Ben Kreuter",
+     "Antonio Marcedone"
+    ]
+   },
+   "strict_best": {
+    "title": "Practical Secure Aggregation for Privacy-Preserving Machine Learning",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": "10.1145/3133956.3133982",
+    "url": "https://dblp.org/rec/conf/ccs/BonawitzIKMMPRS17",
+    "authors": [
+     "Kallista A. Bonawitz",
+     "Vladimir Ivanov",
+     "Ben Kreuter",
+     "Antonio Marcedone"
+    ]
+   },
+   "n_loose": 3,
+   "n_strict": 2,
+   "published": {
+    "title": "Practical Secure Aggregation for Privacy-Preserving Machine Learning",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": "10.1145/3133956.3133982",
+    "url": "https://dblp.org/rec/conf/ccs/BonawitzIKMMPRS17",
+    "authors": [
+     "Kallista A. Bonawitz",
+     "Vladimir Ivanov",
+     "Ben Kreuter",
+     "Antonio Marcedone"
+    ]
+   },
+   "preprint": {
+    "title": "Practical Secure Aggregation for Privacy Preserving Machine Learning",
+    "kind": "preprint",
+    "venue": "IACR Cryptol. ePrint Arch.",
+    "year": "2017",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/iacr/BonawitzIKMMPRS17",
+    "authors": [
+     "Kallista A. Bonawitz",
+     "Vladimir Ivanov",
+     "Ben Kreuter",
+     "Antonio Marcedone"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 12,
+   "short": "FL 서베이",
+   "query": "Advances and Open Problems in Federated Learning",
+   "author": "Kairouz",
+   "loose_best": {
+    "title": "Advances and Open Problems in Federated Learning",
+    "kind": "journal",
+    "venue": "Found. Trends Mach. Learn.",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1561/2200000083",
+    "url": "https://dblp.org/rec/journals/ftml/KairouzMABBBBCC21",
+    "authors": [
+     "Peter Kairouz",
+     "H. Brendan McMahan",
+     "Brendan Avent",
+     "Aurélien Bellet"
+    ]
+   },
+   "strict_best": {
+    "title": "Advances and Open Problems in Federated Learning",
+    "kind": "journal",
+    "venue": "Found. Trends Mach. Learn.",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1561/2200000083",
+    "url": "https://dblp.org/rec/journals/ftml/KairouzMABBBBCC21",
+    "authors": [
+     "Peter Kairouz",
+     "H. Brendan McMahan",
+     "Brendan Avent",
+     "Aurélien Bellet"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Advances and Open Problems in Federated Learning",
+    "kind": "journal",
+    "venue": "Found. Trends Mach. Learn.",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": "10.1561/2200000083",
+    "url": "https://dblp.org/rec/journals/ftml/KairouzMABBBBCC21",
+    "authors": [
+     "Peter Kairouz",
+     "H. Brendan McMahan",
+     "Brendan Avent",
+     "Aurélien Bellet"
+    ]
+   },
+   "preprint": {
+    "title": "Advances and Open Problems in Federated Learning",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2019",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1912-04977",
+    "authors": [
+     "Peter Kairouz",
+     "H. Brendan McMahan",
+     "Brendan Avent",
+     "Aurélien Bellet"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 2
+  },
+  {
+   "week": 12,
+   "short": "SA 우회",
+   "query": "Eluding Secure Aggregation in Federated Learning via Model Inconsistency",
+   "author": "Pasquini",
+   "loose_best": {
+    "title": "Eluding Secure Aggregation in Federated Learning via Model Inconsistency",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.1145/3548606.3560557",
+    "url": "https://dblp.org/rec/conf/ccs/PasquiniFA22",
+    "authors": [
+     "Dario Pasquini",
+     "Danilo Francati",
+     "Giuseppe Ateniese"
+    ]
+   },
+   "strict_best": {
+    "title": "Eluding Secure Aggregation in Federated Learning via Model Inconsistency",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.1145/3548606.3560557",
+    "url": "https://dblp.org/rec/conf/ccs/PasquiniFA22",
+    "authors": [
+     "Dario Pasquini",
+     "Danilo Francati",
+     "Giuseppe Ateniese"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Eluding Secure Aggregation in Federated Learning via Model Inconsistency",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2022",
+    "sim": 1.0,
+    "doi": "10.1145/3548606.3560557",
+    "url": "https://dblp.org/rec/conf/ccs/PasquiniFA22",
+    "authors": [
+     "Dario Pasquini",
+     "Danilo Francati",
+     "Giuseppe Ateniese"
+    ]
+   },
+   "preprint": {
+    "title": "Eluding Secure Aggregation in Federated Learning via Model Inconsistency",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2111-07380",
+    "authors": [
+     "Dario Pasquini",
+     "Danilo Francati",
+     "Giuseppe Ateniese"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 1
+  },
+  {
+   "week": 12,
+   "short": "Curious Abandon Honesty",
+   "query": "When the Curious Abandon Honesty: Federated Learning Is Not Private",
+   "author": "Boenisch",
+   "loose_best": {
+    "title": "When the Curious Abandon Honesty: Federated Learning Is Not Private",
+    "kind": "conf",
+    "venue": "EuroS&amp;P",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.1109/EUROSP57164.2023.00020",
+    "url": "https://dblp.org/rec/conf/eurosp/BoenischDSSSP23",
+    "authors": [
+     "Franziska Boenisch",
+     "Adam Dziedzic",
+     "Roei Schuster",
+     "Ali Shahin Shamsabadi"
+    ]
+   },
+   "strict_best": {
+    "title": "When the Curious Abandon Honesty: Federated Learning Is Not Private",
+    "kind": "conf",
+    "venue": "EuroS&amp;P",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.1109/EUROSP57164.2023.00020",
+    "url": "https://dblp.org/rec/conf/eurosp/BoenischDSSSP23",
+    "authors": [
+     "Franziska Boenisch",
+     "Adam Dziedzic",
+     "Roei Schuster",
+     "Ali Shahin Shamsabadi"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "When the Curious Abandon Honesty: Federated Learning Is Not Private",
+    "kind": "conf",
+    "venue": "EuroS&amp;P",
+    "year": "2023",
+    "sim": 1.0,
+    "doi": "10.1109/EUROSP57164.2023.00020",
+    "url": "https://dblp.org/rec/conf/eurosp/BoenischDSSSP23",
+    "authors": [
+     "Franziska Boenisch",
+     "Adam Dziedzic",
+     "Roei Schuster",
+     "Ali Shahin Shamsabadi"
+    ]
+   },
+   "preprint": {
+    "title": "When the Curious Abandon Honesty: Federated Learning Is Not Private",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2112-02918",
+    "authors": [
+     "Franziska Boenisch",
+     "Adam Dziedzic",
+     "Roei Schuster",
+     "Ali Shahin Shamsabadi"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 2
+  },
+  {
+   "week": 12,
+   "short": "Gradient Disaggregation",
+   "query": "Gradient Disaggregation: Breaking Privacy in Federated Learning by Reconstructing the User Participant Matrix",
+   "author": "Lam",
+   "loose_best": {
+    "title": "Gradient Disaggregation: Breaking Privacy in Federated Learning by Reconstructing the User Participant Matrix",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/LamW0RM21",
+    "authors": [
+     "Maximilian Lam",
+     "Gu-Yeon Wei",
+     "David Brooks",
+     "Vijay Janapa Reddi"
+    ]
+   },
+   "strict_best": {
+    "title": "Gradient Disaggregation: Breaking Privacy in Federated Learning by Reconstructing the User Participant Matrix",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/LamW0RM21",
+    "authors": [
+     "Maximilian Lam",
+     "Gu-Yeon Wei",
+     "David Brooks",
+     "Vijay Janapa Reddi"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Gradient Disaggregation: Breaking Privacy in Federated Learning by Reconstructing the User Participant Matrix",
+    "kind": "conf",
+    "venue": "ICML",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/icml/LamW0RM21",
+    "authors": [
+     "Maximilian Lam",
+     "Gu-Yeon Wei",
+     "David Brooks",
+     "Vijay Janapa Reddi"
+    ]
+   },
+   "preprint": {
+    "title": "Gradient Disaggregation: Breaking Privacy in Federated Learning by Reconstructing the User Participant Matrix",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2106-06089",
+    "authors": [
+     "Maximilian Lam",
+     "Gu-Yeon Wei",
+     "David Brooks",
+     "Vijay Janapa Reddi"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 12,
+   "short": "역전 공격 평가",
+   "query": "Evaluating Gradient Inversion Attacks and Defenses in Federated Learning",
+   "author": "Huang",
+   "loose_best": {
+    "title": "Evaluating Gradient Inversion Attacks and Defenses in Federated Learning",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/HuangGSLA21",
+    "authors": [
+     "Yangsibo Huang",
+     "Samyak Gupta",
+     "Zhao Song",
+     "Kai Li"
+    ]
+   },
+   "strict_best": {
+    "title": "Evaluating Gradient Inversion Attacks and Defenses in Federated Learning",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/HuangGSLA21",
+    "authors": [
+     "Yangsibo Huang",
+     "Samyak Gupta",
+     "Zhao Song",
+     "Kai Li"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "Evaluating Gradient Inversion Attacks and Defenses in Federated Learning",
+    "kind": "conf",
+    "venue": "NeurIPS",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/conf/nips/HuangGSLA21",
+    "authors": [
+     "Yangsibo Huang",
+     "Samyak Gupta",
+     "Zhao Song",
+     "Kai Li"
+    ]
+   },
+   "preprint": {
+    "title": "Evaluating Gradient Inversion Attacks and Defenses in Federated Learning",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2021",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-2112-00059",
+    "authors": [
+     "Yangsibo Huang",
+     "Samyak Gupta",
+     "Zhao Song",
+     "Kai Li"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 12,
+   "short": "RAPPOR",
+   "query": "RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response",
+   "author": "Erlingsson",
+   "loose_best": {
+    "title": "RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2014",
+    "sim": 1.0,
+    "doi": "10.1145/2660267.2660348",
+    "url": "https://dblp.org/rec/conf/ccs/ErlingssonPK14",
+    "authors": [
+     "Úlfar Erlingsson",
+     "Vasyl Pihur",
+     "Aleksandra Korolova"
+    ]
+   },
+   "strict_best": {
+    "title": "RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2014",
+    "sim": 1.0,
+    "doi": "10.1145/2660267.2660348",
+    "url": "https://dblp.org/rec/conf/ccs/ErlingssonPK14",
+    "authors": [
+     "Úlfar Erlingsson",
+     "Vasyl Pihur",
+     "Aleksandra Korolova"
+    ]
+   },
+   "n_loose": 2,
+   "n_strict": 2,
+   "published": {
+    "title": "RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response",
+    "kind": "conf",
+    "venue": "CCS",
+    "year": "2014",
+    "sim": 1.0,
+    "doi": "10.1145/2660267.2660348",
+    "url": "https://dblp.org/rec/conf/ccs/ErlingssonPK14",
+    "authors": [
+     "Úlfar Erlingsson",
+     "Vasyl Pihur",
+     "Aleksandra Korolova"
+    ]
+   },
+   "preprint": {
+    "title": "RAPPOR: Randomized Aggregatable Privacy-Preserving Ordinal Response",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2014",
+    "sim": 1.0,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/ErlingssonKP14",
+    "authors": [
+     "Úlfar Erlingsson",
+     "Aleksandra Korolova",
+     "Vasyl Pihur"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": false,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": 0
+  },
+  {
+   "week": 12,
+   "short": "Apple DP 분석",
+   "query": "Privacy Loss in Apple's Implementation of Differential Privacy on MacOS 10.12",
+   "author": "Tang",
+   "loose_best": {
+    "title": "Privacy Loss in Apple&apos;s Implementation of Differential Privacy on MacOS 10.12",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2017",
+    "sim": 0.9,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1709-02753",
+    "authors": [
+     "Jun Tang",
+     "Aleksandra Korolova",
+     "Xiaolong Bai",
+     "Xueqiang Wang"
+    ]
+   },
+   "strict_best": {
+    "title": "Privacy Loss in Apple&apos;s Implementation of Differential Privacy on MacOS 10.12",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2017",
+    "sim": 0.9,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1709-02753",
+    "authors": [
+     "Jun Tang",
+     "Aleksandra Korolova",
+     "Xiaolong Bai",
+     "Xueqiang Wang"
+    ]
+   },
+   "n_loose": 1,
+   "n_strict": 1,
+   "published": null,
+   "preprint": {
+    "title": "Privacy Loss in Apple&apos;s Implementation of Differential Privacy on MacOS 10.12",
+    "kind": "preprint",
+    "venue": "CoRR",
+    "year": "2017",
+    "sim": 0.9,
+    "doi": null,
+    "url": "https://dblp.org/rec/journals/corr/abs-1709-02753",
+    "authors": [
+     "Jun Tang",
+     "Aleksandra Korolova",
+     "Xiaolong Bai",
+     "Xueqiang Wang"
+    ]
+   },
+   "alias_used": null,
+   "retry_used": null,
+   "title_search_failed": false,
+   "naive_wrong": false,
+   "not_found": false,
+   "preprint_only": true,
+   "title_changed": false,
+   "cited_differs": false,
+   "lag_years": null
+  }
+ ],
+ "thresh": 0.62,
+ "summary": {
+  "n": 71,
+  "n_found": 68,
+  "n_failed": 0,
+  "kinds": {
+   "preprint": 16,
+   "conf": 48,
+   "journal": 4
+  },
+  "title_search_failed": 4,
+  "out_of_scope": 1,
+  "naive_wrong": 6,
+  "naive_wrong_pct": 8.5,
+  "not_found": 3,
+  "preprint_only": 16,
+  "preprint_only_pct": 23.5,
+  "title_changed": 4,
+  "cited_differs": 2,
+  "lag_mean": 0.54,
+  "lag_max": 2,
+  "lag_dist": {
+   "0": 22,
+   "1": 16,
+   "2": 3
+  },
+  "lists": {
+   "naive_wrong": [
+    {
+     "short": "Hinton 증류",
+     "got": "An efficient framework for counting pedestrians crossing a line using low-cost devices: the benefits of distilling the knowledge in a neural network",
+     "want": "Distilling the Knowledge in a Neural Network"
+    },
+    {
+     "short": "Model Compression",
+     "got": "Smart Network Maintenance in an Edge Cloud Computing Environment: An Adaptive Model Compression Algorithm Based on Model Pruning and Model Clustering",
+     "want": null
+    },
+    {
+     "short": "LLM.int8()",
+     "got": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+     "want": "GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale"
+    },
+    {
+     "short": "GPTQ",
+     "got": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+     "want": "OPTQ: Accurate Quantization for Generative Pre-trained Transformers"
+    },
+    {
+     "short": "Zhao 비-IID",
+     "got": "Enhancing Global Model Performance in Federated Learning With Non-IID Data Using a Data-Free Generative Diffusion Model",
+     "want": "Federated Learning with Non-IID Data"
+    },
+    {
+     "short": "DP-SGD",
+     "got": "A Survey on Privacy-Preserving Deep Learning with Differential Privacy",
+     "want": "Deep Learning with Differential Privacy"
+    }
+   ],
+   "preprint_only": [
+    {
+     "short": "Han 2015 (연결 학습)",
+     "week": 4,
+     "year": "2015"
+    },
+    {
+     "short": "Krishnamoorthi 백서",
+     "week": 5,
+     "year": "2018"
+    },
+    {
+     "short": "Nagel 백서",
+     "week": 5,
+     "year": "2021"
+    },
+    {
+     "short": "Hinton 증류",
+     "week": 6,
+     "year": "2015"
+    },
+    {
+     "short": "DistilBERT",
+     "week": 6,
+     "year": "2019"
+    },
+    {
+     "short": "MobileNets",
+     "week": 7,
+     "year": "2017"
+    },
+    {
+     "short": "CMSIS-NN",
+     "week": 8,
+     "year": "2018"
+    },
+    {
+     "short": "Hello Edge",
+     "week": 8,
+     "year": "2017"
+    },
+    {
+     "short": "MQA (Shazeer)",
+     "week": 10,
+     "year": "2019"
+    },
+    {
+     "short": "추측 표집",
+     "week": 10,
+     "year": "2023"
+    },
+    {
+     "short": "Glow",
+     "week": 11,
+     "year": "2018"
+    },
+    {
+     "short": "Zhao 비-IID",
+     "week": 12,
+     "year": "2018"
+    },
+    {
+     "short": "Hsu 디리클레",
+     "week": 12,
+     "year": "2019"
+    },
+    {
+     "short": "Gboard",
+     "week": 12,
+     "year": "2018"
+    },
+    {
+     "short": "iDLG",
+     "week": 12,
+     "year": "2020"
+    },
+    {
+     "short": "Apple DP 분석",
+     "week": 12,
+     "year": "2017"
+    }
+   ],
+   "title_changed": [
+    {
+     "short": "LLM.int8()",
+     "pre": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+     "pub": "GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+     "venue": "NeurIPS"
+    },
+    {
+     "short": "GPTQ",
+     "pre": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+     "pub": "OPTQ: Accurate Quantization for Generative Pre-trained Transformers",
+     "venue": "ICLR"
+    },
+    {
+     "short": "SCAFFOLD",
+     "pre": "SCAFFOLD: Stochastic Controlled Averaging for On-Device Federated Learning",
+     "pub": "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning",
+     "venue": "ICML"
+    },
+    {
+     "short": "DLG",
+     "pre": "Theory-Oriented Deep Leakage from Gradients via Linear Equation Solver",
+     "pub": "Deep Leakage from Gradients in Multiple-label Medical Image Classification",
+     "venue": "ICHI"
+    }
+   ],
+   "not_found": [
+    "Deep Compression",
+    "Model Compression"
+   ],
+   "out_of_scope": [
+    {
+     "short": "Brysbaert 2019",
+     "reason": "심리학 저널(J. Memory and Language) — DBLP 는 전산 분야만 색인한다"
+    }
+   ],
+   "title_search_failed": [
+    {
+     "short": "LLM.int8()",
+     "week": 10,
+     "found": "GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+     "venue": "NeurIPS"
+    },
+    {
+     "short": "GPTQ",
+     "week": 10,
+     "found": "OPTQ: Accurate Quantization for Generative Pre-trained Transformers",
+     "venue": "ICLR"
+    },
+    {
+     "short": "Zhao 비-IID",
+     "week": 12,
+     "found": "Federated Learning with Non-IID Data",
+     "venue": "CoRR"
+    },
+    {
+     "short": "DP-SGD",
+     "week": 12,
+     "found": "Deep Learning with Differential Privacy",
+     "venue": "CCS"
+    }
+   ]
+  }
+ }
+}

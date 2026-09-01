@@ -1,0 +1,630 @@
+{
+ "n_checked": 32,
+ "agree": 27,
+ "disagree": 2,
+ "missed": 3,
+ "accuracy": 84.4,
+ "error_rate": 15.6,
+ "rows": [
+  {
+   "short": "Deep Compression",
+   "week": 4,
+   "auto_kind": "없음",
+   "auto_venue": "-",
+   "auto_year": "-",
+   "true_kind": "conf",
+   "true_venue": "ICLR",
+   "true_year": "2016",
+   "verdict": "못 찾음",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "Han 2015 (연결 학습)",
+   "week": 4,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2015",
+   "true_kind": "conf",
+   "true_venue": "NIPS",
+   "true_year": "2015",
+   "verdict": "불일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "Model Compression",
+   "week": 6,
+   "auto_kind": "없음",
+   "auto_venue": "-",
+   "auto_year": "-",
+   "true_kind": "conf",
+   "true_venue": "KDD",
+   "true_year": "2006",
+   "verdict": "못 찾음",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "Hinton 증류",
+   "week": 6,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2015",
+   "true_kind": "preprint",
+   "true_venue": "NIPS 워크숍",
+   "true_year": "2015",
+   "verdict": "일치",
+   "note": "NIPS 2014 딥러닝 워크숍 발표 · 논문집 게재 없음",
+   "title_search_failed": false
+  },
+  {
+   "short": "DistilBERT",
+   "week": 6,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2019",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2019",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "MobileNets",
+   "week": 7,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2017",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2017",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "CMSIS-NN",
+   "week": 8,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2018",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2018",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "Hello Edge",
+   "week": 8,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2017",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2017",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "MCUNetV2",
+   "week": 8,
+   "auto_kind": "conf",
+   "auto_venue": "NeurIPS",
+   "auto_year": "2021",
+   "true_kind": "conf",
+   "true_venue": "NeurIPS",
+   "true_year": "2021",
+   "verdict": "일치",
+   "note": "게재 제목에 \"MCUNetV2:\" 접두어가 없다",
+   "title_search_failed": false
+  },
+  {
+   "short": "Amdahl 1967",
+   "week": 9,
+   "auto_kind": "conf",
+   "auto_venue": "AFIPS Spring Joint Computing Conference",
+   "auto_year": "1967",
+   "true_kind": "conf",
+   "true_venue": "AFIPS",
+   "true_year": "1967",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "LLM.int8()",
+   "week": 10,
+   "auto_kind": "conf",
+   "auto_venue": "NeurIPS",
+   "auto_year": "2022",
+   "true_kind": "conf",
+   "true_venue": "NeurIPS",
+   "true_year": "2022",
+   "verdict": "일치",
+   "note": "게재 제목은 \"GPT3.int8()\"",
+   "title_search_failed": true
+  },
+  {
+   "short": "GPTQ",
+   "week": 10,
+   "auto_kind": "conf",
+   "auto_venue": "ICLR",
+   "auto_year": "2023",
+   "true_kind": "conf",
+   "true_venue": "ICLR",
+   "true_year": "2023",
+   "verdict": "일치",
+   "note": "게재 제목은 \"OPTQ\"",
+   "title_search_failed": true
+  },
+  {
+   "short": "MQA (Shazeer)",
+   "week": 10,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2019",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2019",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "추측 표집",
+   "week": 10,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2023",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2023",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "Brysbaert 2019",
+   "week": 10,
+   "auto_kind": "없음",
+   "auto_venue": "-",
+   "auto_year": "-",
+   "true_kind": "journal",
+   "true_venue": "J. Memory and Language",
+   "true_year": "2019",
+   "verdict": "못 찾음",
+   "note": "심리학 저널 — DBLP 색인 범위 밖",
+   "title_search_failed": false
+  },
+  {
+   "short": "Glow",
+   "week": 11,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2018",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2018",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "Krishnamoorthi 백서",
+   "week": 5,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2018",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2018",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "Nagel 백서",
+   "week": 5,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2021",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2021",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "DP-SGD",
+   "week": 12,
+   "auto_kind": "conf",
+   "auto_venue": "CCS",
+   "auto_year": "2016",
+   "true_kind": "conf",
+   "true_venue": "CCS",
+   "true_year": "2016",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": true
+  },
+  {
+   "short": "DLG",
+   "week": 12,
+   "auto_kind": "conf",
+   "auto_venue": "ICHI",
+   "auto_year": "2021",
+   "true_kind": "conf",
+   "true_venue": "NeurIPS",
+   "true_year": "2019",
+   "verdict": "불일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "iDLG",
+   "week": 12,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2020",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2020",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "Zhao 비-IID",
+   "week": 12,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2018",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2018",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": true
+  },
+  {
+   "short": "Hsu 디리클레",
+   "week": 12,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2019",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2019",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "Gboard",
+   "week": 12,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2018",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2018",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "Apple DP 분석",
+   "week": 12,
+   "auto_kind": "preprint",
+   "auto_venue": "CoRR",
+   "auto_year": "2017",
+   "true_kind": "preprint",
+   "true_venue": "CoRR",
+   "true_year": "2017",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "역전 공격 평가",
+   "week": 12,
+   "auto_kind": "conf",
+   "auto_venue": "NeurIPS",
+   "auto_year": "2021",
+   "true_kind": "conf",
+   "true_venue": "NeurIPS",
+   "true_year": "2021",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "FL 서베이",
+   "week": 12,
+   "auto_kind": "journal",
+   "auto_venue": "Found. Trends Mach. Learn.",
+   "auto_year": "2021",
+   "true_kind": "journal",
+   "true_venue": "Found. Trends Mach. Learn.",
+   "true_year": "2021",
+   "verdict": "일치",
+   "note": "프리프린트가 아니라 정식 출판 monograph",
+   "title_search_failed": false
+  },
+  {
+   "short": "SA 우회",
+   "week": 12,
+   "auto_kind": "conf",
+   "auto_venue": "CCS",
+   "auto_year": "2022",
+   "true_kind": "conf",
+   "true_venue": "CCS",
+   "true_year": "2022",
+   "verdict": "일치",
+   "note": "제목은 \"…via Model Inconsistency\"",
+   "title_search_failed": false
+  },
+  {
+   "short": "Phong (해석적 역산)",
+   "week": 12,
+   "auto_kind": "journal",
+   "auto_venue": "IEEE Trans. Inf. Forensics Secur.",
+   "auto_year": "2018",
+   "true_kind": "journal",
+   "true_venue": "IEEE TIFS",
+   "true_year": "2018",
+   "verdict": "일치",
+   "note": "",
+   "title_search_failed": false
+  },
+  {
+   "short": "SCAFFOLD",
+   "week": 12,
+   "auto_kind": "conf",
+   "auto_venue": "ICML",
+   "auto_year": "2020",
+   "true_kind": "conf",
+   "true_venue": "ICML",
+   "true_year": "2020",
+   "verdict": "일치",
+   "note": "arXiv v1 제목에 \"On-Device\" 가 있었다",
+   "title_search_failed": false
+  },
+  {
+   "short": "FedProx",
+   "week": 12,
+   "auto_kind": "conf",
+   "auto_venue": "MLSys",
+   "auto_year": "2020",
+   "true_kind": "conf",
+   "true_venue": "MLSys",
+   "true_year": "2020",
+   "verdict": "일치",
+   "note": "arXiv v1 제목은 \"On the Convergence of…\"",
+   "title_search_failed": false
+  },
+  {
+   "short": "Triton",
+   "week": 11,
+   "auto_kind": "conf",
+   "auto_venue": "MAPL@PLDI",
+   "auto_year": "2019",
+   "true_kind": "conf",
+   "true_venue": "MAPL@PLDI",
+   "true_year": "2019",
+   "verdict": "일치",
+   "note": "본회의가 아니라 워크숍",
+   "title_search_failed": false
+  }
+ ],
+ "biblio_summary": {
+  "n": 71,
+  "n_found": 68,
+  "n_failed": 0,
+  "kinds": {
+   "preprint": 16,
+   "conf": 48,
+   "journal": 4
+  },
+  "title_search_failed": 4,
+  "out_of_scope": 1,
+  "naive_wrong": 6,
+  "naive_wrong_pct": 8.5,
+  "not_found": 3,
+  "preprint_only": 16,
+  "preprint_only_pct": 23.5,
+  "title_changed": 4,
+  "cited_differs": 2,
+  "lag_mean": 0.54,
+  "lag_max": 2,
+  "lag_dist": {
+   "0": 22,
+   "1": 16,
+   "2": 3
+  },
+  "lists": {
+   "naive_wrong": [
+    {
+     "short": "Hinton 증류",
+     "got": "An efficient framework for counting pedestrians crossing a line using low-cost devices: the benefits of distilling the knowledge in a neural network",
+     "want": "Distilling the Knowledge in a Neural Network"
+    },
+    {
+     "short": "Model Compression",
+     "got": "Smart Network Maintenance in an Edge Cloud Computing Environment: An Adaptive Model Compression Algorithm Based on Model Pruning and Model Clustering",
+     "want": null
+    },
+    {
+     "short": "LLM.int8()",
+     "got": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+     "want": "GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale"
+    },
+    {
+     "short": "GPTQ",
+     "got": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+     "want": "OPTQ: Accurate Quantization for Generative Pre-trained Transformers"
+    },
+    {
+     "short": "Zhao 비-IID",
+     "got": "Enhancing Global Model Performance in Federated Learning With Non-IID Data Using a Data-Free Generative Diffusion Model",
+     "want": "Federated Learning with Non-IID Data"
+    },
+    {
+     "short": "DP-SGD",
+     "got": "A Survey on Privacy-Preserving Deep Learning with Differential Privacy",
+     "want": "Deep Learning with Differential Privacy"
+    }
+   ],
+   "preprint_only": [
+    {
+     "short": "Han 2015 (연결 학습)",
+     "week": 4,
+     "year": "2015"
+    },
+    {
+     "short": "Krishnamoorthi 백서",
+     "week": 5,
+     "year": "2018"
+    },
+    {
+     "short": "Nagel 백서",
+     "week": 5,
+     "year": "2021"
+    },
+    {
+     "short": "Hinton 증류",
+     "week": 6,
+     "year": "2015"
+    },
+    {
+     "short": "DistilBERT",
+     "week": 6,
+     "year": "2019"
+    },
+    {
+     "short": "MobileNets",
+     "week": 7,
+     "year": "2017"
+    },
+    {
+     "short": "CMSIS-NN",
+     "week": 8,
+     "year": "2018"
+    },
+    {
+     "short": "Hello Edge",
+     "week": 8,
+     "year": "2017"
+    },
+    {
+     "short": "MQA (Shazeer)",
+     "week": 10,
+     "year": "2019"
+    },
+    {
+     "short": "추측 표집",
+     "week": 10,
+     "year": "2023"
+    },
+    {
+     "short": "Glow",
+     "week": 11,
+     "year": "2018"
+    },
+    {
+     "short": "Zhao 비-IID",
+     "week": 12,
+     "year": "2018"
+    },
+    {
+     "short": "Hsu 디리클레",
+     "week": 12,
+     "year": "2019"
+    },
+    {
+     "short": "Gboard",
+     "week": 12,
+     "year": "2018"
+    },
+    {
+     "short": "iDLG",
+     "week": 12,
+     "year": "2020"
+    },
+    {
+     "short": "Apple DP 분석",
+     "week": 12,
+     "year": "2017"
+    }
+   ],
+   "title_changed": [
+    {
+     "short": "LLM.int8()",
+     "pre": "LLM.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+     "pub": "GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+     "venue": "NeurIPS"
+    },
+    {
+     "short": "GPTQ",
+     "pre": "GPTQ: Accurate Post-Training Quantization for Generative Pre-trained Transformers",
+     "pub": "OPTQ: Accurate Quantization for Generative Pre-trained Transformers",
+     "venue": "ICLR"
+    },
+    {
+     "short": "SCAFFOLD",
+     "pre": "SCAFFOLD: Stochastic Controlled Averaging for On-Device Federated Learning",
+     "pub": "SCAFFOLD: Stochastic Controlled Averaging for Federated Learning",
+     "venue": "ICML"
+    },
+    {
+     "short": "DLG",
+     "pre": "Theory-Oriented Deep Leakage from Gradients via Linear Equation Solver",
+     "pub": "Deep Leakage from Gradients in Multiple-label Medical Image Classification",
+     "venue": "ICHI"
+    }
+   ],
+   "not_found": [
+    "Deep Compression",
+    "Model Compression"
+   ],
+   "out_of_scope": [
+    {
+     "short": "Brysbaert 2019",
+     "reason": "심리학 저널(J. Memory and Language) — DBLP 는 전산 분야만 색인한다"
+    }
+   ],
+   "title_search_failed": [
+    {
+     "short": "LLM.int8()",
+     "week": 10,
+     "found": "GPT3.int8(): 8-bit Matrix Multiplication for Transformers at Scale",
+     "venue": "NeurIPS"
+    },
+    {
+     "short": "GPTQ",
+     "week": 10,
+     "found": "OPTQ: Accurate Quantization for Generative Pre-trained Transformers",
+     "venue": "ICLR"
+    },
+    {
+     "short": "Zhao 비-IID",
+     "week": 12,
+     "found": "Federated Learning with Non-IID Data",
+     "venue": "CoRR"
+    },
+    {
+     "short": "DP-SGD",
+     "week": 12,
+     "found": "Deep Learning with Differential Privacy",
+     "venue": "CCS"
+    }
+   ]
+  }
+ }
+}
