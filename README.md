@@ -60,7 +60,7 @@ python3 sync_toc.py --write   # TOC 제목을 본문 H1로 자동 갱신
 | 06 | 모델 경량화 III — 지식 증류 | |
 | **07** | **NAS & Hardware-aware Design + 중간고사** | 1교시 강의 + 2·3교시 시험 · 범위 1~6주차 |
 | 08 | TinyML 및 초저전력 온디바이스AI | 3교시 실습은 **MCU 보드 불필요** |
-| 09 | 엣지 기반 시각 지능 (Computer Vision on the Edge) | |
+| 09 | 엣지 기반 시각 지능 (Computer Vision on the Edge) | 3교시 실습은 **카메라·GPU 불필요** |
 | 10 | 엣지 기반 언어 지능 및 On-Device LLM | |
 | 11 | 실무 하드웨어 가속기 프로그래밍 | |
 | 12 | 연합 학습 및 프라이버시 보호형 AIoT | |
@@ -82,7 +82,8 @@ python3 sync_toc.py --write   # TOC 제목을 본문 H1로 자동 갱신
 | 06 | ✅ | ✅ | ✅ |
 | 07 | ✅ | ✅ | ✅ |
 | 08 | ✅ | ✅ | ✅ |
-| 09–14 | 예정 | 예정 | 예정 |
+| 09 | ✅ | ✅ | ✅ |
+| 10–14 | 예정 | 예정 | 예정 |
 
 ---
 
