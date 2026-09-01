@@ -1,0 +1,442 @@
+{
+ "models": [
+  {
+   "name": "ResNet-18",
+   "levels": {
+    "none": {
+     "build_ms": 26.12259099998937,
+     "first_ms": 23.530581999921196,
+     "steady_ms": 23.193785499984187,
+     "nodes": 49,
+     "hist": {
+      "Conv": 20,
+      "Relu": 17,
+      "Add": 8,
+      "MaxPool": 1,
+      "GlobalAveragePool": 1,
+      "Flatten": 1,
+      "Gemm": 1
+     }
+    },
+    "basic": {
+     "build_ms": 30.60503400001835,
+     "first_ms": 26.711628999919412,
+     "steady_ms": 24.147991500001353,
+     "nodes": 49,
+     "hist": {
+      "Conv": 20,
+      "Relu": 17,
+      "Add": 8,
+      "MaxPool": 1,
+      "GlobalAveragePool": 1,
+      "Flatten": 1,
+      "Gemm": 1
+     }
+    },
+    "ext": {
+     "build_ms": 30.09503299995231,
+     "first_ms": 26.266296000017064,
+     "steady_ms": 25.014572999964457,
+     "nodes": 40,
+     "hist": {
+      "Conv": 11,
+      "FusedConv": 9,
+      "Add": 8,
+      "Relu": 8,
+      "MaxPool": 1,
+      "GlobalAveragePool": 1,
+      "Flatten": 1,
+      "Gemm": 1
+     }
+    },
+    "all": {
+     "build_ms": 93.3512100000371,
+     "first_ms": 15.602249000039592,
+     "steady_ms": 14.164614000037545,
+     "nodes": 25,
+     "hist": {
+      "Conv": 20,
+      "MaxPool": 1,
+      "GlobalAveragePool": 1,
+      "ReorderOutput": 1,
+      "Flatten": 1,
+      "Gemm": 1
+     }
+    }
+   },
+   "orig_nodes": 49,
+   "orig_hist": {
+    "Conv": 20,
+    "Relu": 17,
+    "Add": 8,
+    "MaxPool": 1,
+    "GlobalAveragePool": 1,
+    "Flatten": 1,
+    "Gemm": 1
+   },
+   "fuse_ratio": 1.96,
+   "speedup": 1.637445644471689,
+   "build_ratio": 3.573581579257398,
+   "amortize_runs": 7.445712931739641,
+   "gone": {
+    "Relu": 17,
+    "Add": 8
+   },
+   "new": {
+    "ReorderOutput": 1
+   }
+  },
+  {
+   "name": "MobileNetV2",
+   "levels": {
+    "none": {
+     "build_ms": 11.610863999976573,
+     "first_ms": 12.729546999935337,
+     "steady_ms": 11.841857499973685,
+     "nodes": 100,
+     "hist": {
+      "Conv": 52,
+      "Clip": 35,
+      "Add": 10,
+      "GlobalAveragePool": 1,
+      "Flatten": 1,
+      "Gemm": 1
+     }
+    },
+    "basic": {
+     "build_ms": 12.559847000034097,
+     "first_ms": 12.338153999962742,
+     "steady_ms": 11.03716200003646,
+     "nodes": 100,
+     "hist": {
+      "Conv": 52,
+      "Clip": 35,
+      "Add": 10,
+      "GlobalAveragePool": 1,
+      "Flatten": 1,
+      "Gemm": 1
+     }
+    },
+    "ext": {
+     "build_ms": 13.444409000044288,
+     "first_ms": 11.196905000019797,
+     "steady_ms": 10.910303000002841,
+     "nodes": 65,
+     "hist": {
+      "FusedConv": 35,
+      "Conv": 17,
+      "Add": 10,
+      "GlobalAveragePool": 1,
+      "Flatten": 1,
+      "Gemm": 1
+     }
+    },
+    "all": {
+     "build_ms": 21.427343000027577,
+     "first_ms": 5.6515139999646635,
+     "steady_ms": 5.251792000024125,
+     "nodes": 56,
+     "hist": {
+      "Conv": 52,
+      "GlobalAveragePool": 1,
+      "ReorderOutput": 1,
+      "Flatten": 1,
+      "Gemm": 1
+     }
+    }
+   },
+   "orig_nodes": 100,
+   "orig_hist": {
+    "Conv": 52,
+    "Clip": 35,
+    "Add": 10,
+    "GlobalAveragePool": 1,
+    "Flatten": 1,
+    "Gemm": 1
+   },
+   "fuse_ratio": 1.7857142857142858,
+   "speedup": 2.254822258748878,
+   "build_ratio": 1.845456376034618,
+   "amortize_runs": 1.4895874707354788,
+   "gone": {
+    "Clip": 35,
+    "Add": 10
+   },
+   "new": {
+    "ReorderOutput": 1
+   }
+  },
+  {
+   "name": "YOLO11n @320",
+   "levels": {
+    "none": {
+     "build_ms": 15.09714899998471,
+     "first_ms": 19.58198900001662,
+     "steady_ms": 18.660936000060246,
+     "nodes": 320,
+     "hist": {
+      "Conv": 88,
+      "Mul": 79,
+      "Sigmoid": 78,
+      "Concat": 21,
+      "Add": 16,
+      "Reshape": 11,
+      "Split": 10,
+      "MaxPool": 3,
+      "Transpose": 3,
+      "MatMul": 2,
+      "Softmax": 2,
+      "Resize": 2,
+      "Slice": 2,
+      "Sub": 2
+     }
+    },
+    "basic": {
+     "build_ms": 17.869457000074362,
+     "first_ms": 20.27381300001707,
+     "steady_ms": 20.468069999992622,
+     "nodes": 320,
+     "hist": {
+      "Conv": 88,
+      "Mul": 79,
+      "Sigmoid": 78,
+      "Concat": 21,
+      "Add": 16,
+      "Reshape": 11,
+      "Split": 10,
+      "MaxPool": 3,
+      "Transpose": 3,
+      "MatMul": 2,
+      "Softmax": 2,
+      "Resize": 2,
+      "Slice": 2,
+      "Sub": 2
+     }
+    },
+    "ext": {
+     "build_ms": 23.35859300001175,
+     "first_ms": 20.12051999997766,
+     "steady_ms": 19.69467299994676,
+     "nodes": 239,
+     "hist": {
+      "Conv": 88,
+      "QuickGelu": 77,
+      "Concat": 21,
+      "Add": 16,
+      "Split": 11,
+      "Reshape": 11,
+      "MaxPool": 3,
+      "FusedMatMul": 2,
+      "Softmax": 2,
+      "Resize": 2,
+      "Sub": 2,
+      "Transpose": 1,
+      "Div": 1,
+      "Mul": 1
+     }
+    },
+    "all": {
+     "build_ms": 33.45159799994235,
+     "first_ms": 13.828690999957871,
+     "steady_ms": 12.97759050004288,
+     "nodes": 290,
+     "hist": {
+      "Conv": 88,
+      "QuickGelu": 77,
+      "ReorderOutput": 29,
+      "ReorderInput": 22,
+      "Concat": 21,
+      "Add": 16,
+      "Split": 11,
+      "Reshape": 11,
+      "MaxPool": 3,
+      "FusedMatMul": 2,
+      "Softmax": 2,
+      "Upsample": 2,
+      "Sub": 2,
+      "Transpose": 1
+     }
+    }
+   },
+   "orig_nodes": 320,
+   "orig_hist": {
+    "Conv": 88,
+    "Mul": 79,
+    "Sigmoid": 78,
+    "Concat": 21,
+    "Add": 16,
+    "Reshape": 11,
+    "Split": 10,
+    "MaxPool": 3,
+    "Transpose": 3,
+    "MatMul": 2,
+    "Softmax": 2,
+    "Resize": 2,
+    "Slice": 2,
+    "Sub": 2,
+    "Div": 1
+   },
+   "fuse_ratio": 1.103448275862069,
+   "speedup": 1.4379353393835772,
+   "build_ratio": 2.2157559682279238,
+   "amortize_runs": 3.2295149045402134,
+   "gone": {
+    "Mul": 79,
+    "Sigmoid": 78,
+    "Transpose": 3,
+    "MatMul": 2,
+    "Resize": 2,
+    "Slice": 2
+   },
+   "new": {
+    "QuickGelu": 77,
+    "ReorderOutput": 29,
+    "ReorderInput": 22,
+    "Split": 11,
+    "FusedMatMul": 2,
+    "Upsample": 2
+   }
+  },
+  {
+   "name": "Transformer 인코더",
+   "levels": {
+    "none": {
+     "build_ms": 10.716653000031329,
+     "first_ms": 7.702988999994886,
+     "steady_ms": 7.436267499997484,
+     "nodes": 238,
+     "hist": {
+      "Reshape": 44,
+      "Transpose": 32,
+      "Add": 29,
+      "MatMul": 21,
+      "Mul": 16,
+      "Slice": 12,
+      "Gather": 12,
+      "Sqrt": 12,
+      "LayerNormalization": 8,
+      "Shape": 8,
+      "Cast": 8,
+      "Div": 8,
+      "Mod": 4,
+      "Concat": 4
+     }
+    },
+    "basic": {
+     "build_ms": 19.788987999959318,
+     "first_ms": 7.014555999944605,
+     "steady_ms": 6.612413499965442,
+     "nodes": 179,
+     "hist": {
+      "Reshape": 58,
+      "Transpose": 32,
+      "Gemm": 17,
+      "Mul": 16,
+      "Gather": 12,
+      "Add": 12,
+      "LayerNormalization": 8,
+      "MatMul": 8,
+      "Squeeze": 4,
+      "Softmax": 4,
+      "Div": 4,
+      "Erf": 4
+     }
+    },
+    "ext": {
+     "build_ms": 26.770558999942295,
+     "first_ms": 8.29649000002064,
+     "steady_ms": 6.5410299999939525,
+     "nodes": 155,
+     "hist": {
+      "Reshape": 58,
+      "Transpose": 28,
+      "Gemm": 17,
+      "Squeeze": 16,
+      "LayerNormalization": 8,
+      "Add": 8,
+      "Split": 4,
+      "FusedMatMul": 4,
+      "Softmax": 4,
+      "MatMul": 4,
+      "Gelu": 4
+     }
+    },
+    "all": {
+     "build_ms": 24.663002000011147,
+     "first_ms": 6.867811000006441,
+     "steady_ms": 6.964484999969045,
+     "nodes": 155,
+     "hist": {
+      "Reshape": 58,
+      "Transpose": 28,
+      "Gemm": 17,
+      "Squeeze": 16,
+      "LayerNormalization": 8,
+      "Add": 8,
+      "Split": 4,
+      "FusedMatMul": 4,
+      "Softmax": 4,
+      "MatMul": 4,
+      "Gelu": 4
+     }
+    }
+   },
+   "orig_nodes": 238,
+   "orig_hist": {
+    "Reshape": 44,
+    "Transpose": 32,
+    "Add": 29,
+    "MatMul": 21,
+    "Mul": 16,
+    "Slice": 12,
+    "Gather": 12,
+    "Sqrt": 12,
+    "LayerNormalization": 8,
+    "Shape": 8,
+    "Cast": 8,
+    "Div": 8,
+    "Mod": 4,
+    "Concat": 4,
+    "Unsqueeze": 4,
+    "Squeeze": 4,
+    "Softmax": 4,
+    "Gemm": 4,
+    "Erf": 4
+   },
+   "fuse_ratio": 1.5354838709677419,
+   "speedup": 1.0677411897693134,
+   "build_ratio": 2.30137170625372,
+   "amortize_runs": 29.56097142038784,
+   "gone": {
+    "Transpose": 32,
+    "Add": 29,
+    "MatMul": 21,
+    "Mul": 16,
+    "Slice": 12,
+    "Gather": 12,
+    "Sqrt": 12,
+    "Shape": 8,
+    "Cast": 8,
+    "Div": 8,
+    "Mod": 4,
+    "Concat": 4,
+    "Unsqueeze": 4,
+    "Erf": 4
+   },
+   "new": {
+    "Reshape": 58,
+    "Gemm": 17,
+    "Squeeze": 16,
+    "Split": 4,
+    "FusedMatMul": 4,
+    "Gelu": 4
+   }
+  }
+ ],
+ "levels": [
+  "none",
+  "basic",
+  "ext",
+  "all"
+ ]
+}

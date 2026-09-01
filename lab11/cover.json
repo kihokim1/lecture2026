@@ -1,0 +1,986 @@
+{
+ "models": [
+  {
+   "name": "ResNet-18",
+   "path": "resnet18.onnx",
+   "n_all": 65,
+   "n_real": 49,
+   "hist": {
+    "Conv": 20,
+    "Relu": 17,
+    "Add": 8,
+    "MaxPool": 1,
+    "GlobalAveragePool": 1,
+    "Flatten": 1,
+    "Gemm": 1
+   },
+   "times": {
+    "Conv": 17.2339,
+    "Relu": 0.3714,
+    "Add": 0.2704,
+    "MaxPool": 0.1636,
+    "Identity": 0.0618,
+    "Gemm": 0.0477,
+    "GlobalAveragePool": 0.0174,
+    "Flatten": 0.0039
+   },
+   "total_ms": 18.17,
+   "profiles": {
+    "A": {
+     "n_nodes": 49,
+     "n_acc": 49,
+     "node_cov": 1.0,
+     "switches": 0,
+     "n_blocks": 1,
+     "acc_blocks": 1,
+     "xtensors": 0,
+     "xbytes": 0,
+     "xunknown": 0,
+     "time_excluded_ms": 0.06175000000000005,
+     "time_total_ms": 18.108250000000012,
+     "time_acc_ms": 18.108250000000012,
+     "time_cov": 1.0,
+     "unsupported": [],
+     "switches_sticky": 0,
+     "xbytes_sticky": 0,
+     "ceiling": Infinity
+    },
+    "B": {
+     "n_nodes": 49,
+     "n_acc": 49,
+     "node_cov": 1.0,
+     "switches": 0,
+     "n_blocks": 1,
+     "acc_blocks": 1,
+     "xtensors": 0,
+     "xbytes": 0,
+     "xunknown": 0,
+     "time_excluded_ms": 0.06175000000000005,
+     "time_total_ms": 18.108250000000012,
+     "time_acc_ms": 18.108250000000012,
+     "time_cov": 1.0,
+     "unsupported": [],
+     "switches_sticky": 0,
+     "xbytes_sticky": 0,
+     "ceiling": Infinity
+    },
+    "C": {
+     "n_nodes": 49,
+     "n_acc": 49,
+     "node_cov": 1.0,
+     "switches": 0,
+     "n_blocks": 1,
+     "acc_blocks": 1,
+     "xtensors": 0,
+     "xbytes": 0,
+     "xunknown": 0,
+     "time_excluded_ms": 0.06175000000000005,
+     "time_total_ms": 18.108250000000012,
+     "time_acc_ms": 18.108250000000012,
+     "time_cov": 1.0,
+     "unsupported": [],
+     "switches_sticky": 0,
+     "xbytes_sticky": 0,
+     "ceiling": Infinity
+    }
+   },
+   "curve": [
+    {
+     "op": "Conv",
+     "k": 1,
+     "node_cov": 0.40816,
+     "time_cov": 0.95171,
+     "switches": 33,
+     "xmb": 15.887
+    },
+    {
+     "op": "Relu",
+     "k": 2,
+     "node_cov": 0.7551,
+     "time_cov": 0.97222,
+     "switches": 19,
+     "xmb": 11.771
+    },
+    {
+     "op": "Add",
+     "k": 3,
+     "node_cov": 0.91837,
+     "time_cov": 0.98715,
+     "switches": 3,
+     "xmb": 3.924
+    },
+    {
+     "op": "MaxPool",
+     "k": 4,
+     "node_cov": 0.93878,
+     "time_cov": 0.99619,
+     "switches": 1,
+     "xmb": 0.096
+    },
+    {
+     "op": "Gemm",
+     "k": 5,
+     "node_cov": 0.95918,
+     "time_cov": 0.99883,
+     "switches": 2,
+     "xmb": 0.098
+    },
+    {
+     "op": "GlobalAveragePool",
+     "k": 6,
+     "node_cov": 0.97959,
+     "time_cov": 0.99979,
+     "switches": 2,
+     "xmb": 0.004
+    },
+    {
+     "op": "Flatten",
+     "k": 7,
+     "node_cov": 1.0,
+     "time_cov": 1.0,
+     "switches": 0,
+     "xmb": 0.0
+    }
+   ]
+  },
+  {
+   "name": "MobileNetV2",
+   "path": "/root/lab08/mbv2.onnx",
+   "n_all": 209,
+   "n_real": 100,
+   "hist": {
+    "Conv": 52,
+    "Clip": 35,
+    "Add": 10,
+    "GlobalAveragePool": 1,
+    "Flatten": 1,
+    "Gemm": 1
+   },
+   "times": {
+    "Conv": 8.9503,
+    "Clip": 1.0364,
+    "Add": 0.1341,
+    "Identity": 0.1284,
+    "Gemm": 0.1094,
+    "GlobalAveragePool": 0.0125,
+    "Flatten": 0.0035
+   },
+   "total_ms": 10.3745,
+   "profiles": {
+    "A": {
+     "n_nodes": 100,
+     "n_acc": 65,
+     "node_cov": 0.65,
+     "switches": 70,
+     "n_blocks": 71,
+     "acc_blocks": 36,
+     "xtensors": 70,
+     "xbytes": 48846336,
+     "xunknown": 0,
+     "time_excluded_ms": 0.12837500000000004,
+     "time_total_ms": 10.246125000000006,
+     "time_acc_ms": 9.209750000000007,
+     "time_cov": 0.8988520050262905,
+     "unsupported": [
+      [
+       "Clip",
+       35,
+       1.036
+      ]
+     ],
+     "switches_sticky": 70,
+     "xbytes_sticky": 48846336,
+     "ceiling": 9.886503437462313
+    },
+    "B": {
+     "n_nodes": 100,
+     "n_acc": 100,
+     "node_cov": 1.0,
+     "switches": 0,
+     "n_blocks": 1,
+     "acc_blocks": 1,
+     "xtensors": 0,
+     "xbytes": 0,
+     "xunknown": 0,
+     "time_excluded_ms": 0.12837500000000004,
+     "time_total_ms": 10.246125000000006,
+     "time_acc_ms": 10.246125000000006,
+     "time_cov": 1.0,
+     "unsupported": [],
+     "switches_sticky": 0,
+     "xbytes_sticky": 0,
+     "ceiling": Infinity
+    },
+    "C": {
+     "n_nodes": 100,
+     "n_acc": 100,
+     "node_cov": 1.0,
+     "switches": 0,
+     "n_blocks": 1,
+     "acc_blocks": 1,
+     "xtensors": 0,
+     "xbytes": 0,
+     "xunknown": 0,
+     "time_excluded_ms": 0.12837500000000004,
+     "time_total_ms": 10.246125000000006,
+     "time_acc_ms": 10.246125000000006,
+     "time_cov": 1.0,
+     "unsupported": [],
+     "switches_sticky": 0,
+     "xbytes_sticky": 0,
+     "ceiling": Infinity
+    }
+   },
+   "curve": [
+    {
+     "op": "Conv",
+     "k": 1,
+     "node_cov": 0.52,
+     "time_cov": 0.87353,
+     "switches": 89,
+     "xmb": 48.527
+    },
+    {
+     "op": "Clip",
+     "k": 2,
+     "node_cov": 0.87,
+     "time_cov": 0.97467,
+     "switches": 21,
+     "xmb": 2.422
+    },
+    {
+     "op": "Add",
+     "k": 3,
+     "node_cov": 0.97,
+     "time_cov": 0.98776,
+     "switches": 1,
+     "xmb": 0.239
+    },
+    {
+     "op": "Gemm",
+     "k": 4,
+     "node_cov": 0.98,
+     "time_cov": 0.99844,
+     "switches": 2,
+     "xmb": 0.244
+    },
+    {
+     "op": "GlobalAveragePool",
+     "k": 5,
+     "node_cov": 0.99,
+     "time_cov": 0.99966,
+     "switches": 2,
+     "xmb": 0.01
+    },
+    {
+     "op": "Flatten",
+     "k": 6,
+     "node_cov": 1.0,
+     "time_cov": 1.0,
+     "switches": 0,
+     "xmb": 0.0
+    }
+   ]
+  },
+  {
+   "name": "YOLO11n @320",
+   "path": "/root/lab09/yolo11n_320.onnx",
+   "n_all": 320,
+   "n_real": 320,
+   "hist": {
+    "Conv": 88,
+    "Mul": 79,
+    "Sigmoid": 78,
+    "Concat": 21,
+    "Add": 16,
+    "Reshape": 11,
+    "Split": 10,
+    "MaxPool": 3,
+    "Transpose": 3,
+    "MatMul": 2,
+    "Softmax": 2,
+    "Resize": 2,
+    "Slice": 2,
+    "Sub": 2,
+    "Div": 1
+   },
+   "times": {
+    "Conv": 14.6268,
+    "Sigmoid": 1.776,
+    "Mul": 1.3425,
+    "Softmax": 1.0781,
+    "Concat": 0.6419,
+    "Split": 0.1934,
+    "Add": 0.1605,
+    "Resize": 0.1227,
+    "MaxPool": 0.0758,
+    "Transpose": 0.067,
+    "MatMul": 0.0435,
+    "Reshape": 0.043,
+    "Slice": 0.0146,
+    "Sub": 0.0071,
+    "Div": 0.0052
+   },
+   "total_ms": 20.1981,
+   "profiles": {
+    "A": {
+     "n_nodes": 320,
+     "n_acc": 120,
+     "node_cov": 0.375,
+     "switches": 165,
+     "n_blocks": 166,
+     "acc_blocks": 83,
+     "xtensors": 193,
+     "xbytes": 41675200,
+     "xunknown": 0,
+     "time_excluded_ms": 0,
+     "time_total_ms": 20.198124999999994,
+     "time_acc_ms": 14.949500000000002,
+     "time_cov": 0.7401429588142467,
+     "unsupported": [
+      [
+       "Sigmoid",
+       78,
+       1.776
+      ],
+      [
+       "Mul",
+       79,
+       1.342
+      ],
+      [
+       "Softmax",
+       2,
+       1.078
+      ],
+      [
+       "Concat",
+       21,
+       0.642
+      ],
+      [
+       "Split",
+       10,
+       0.193
+      ],
+      [
+       "Resize",
+       2,
+       0.123
+      ],
+      [
+       "Transpose",
+       3,
+       0.067
+      ],
+      [
+       "Slice",
+       2,
+       0.015
+      ],
+      [
+       "Sub",
+       2,
+       0.007
+      ],
+      [
+       "Div",
+       1,
+       0.005
+      ]
+     ],
+     "switches_sticky": 147,
+     "xbytes_sticky": 41675200,
+     "ceiling": 3.8482697849436813
+    },
+    "B": {
+     "n_nodes": 320,
+     "n_acc": 313,
+     "node_cov": 0.978125,
+     "switches": 10,
+     "n_blocks": 11,
+     "acc_blocks": 6,
+     "xtensors": 9,
+     "xbytes": 1353600,
+     "xunknown": 0,
+     "time_excluded_ms": 0,
+     "time_total_ms": 20.198124999999994,
+     "time_acc_ms": 19.038374999999995,
+     "time_cov": 0.9425813039576694,
+     "unsupported": [
+      [
+       "Softmax",
+       2,
+       1.078
+      ],
+      [
+       "Transpose",
+       3,
+       0.067
+      ],
+      [
+       "Slice",
+       2,
+       0.015
+      ]
+     ],
+     "switches_sticky": 8,
+     "xbytes_sticky": 1353600,
+     "ceiling": 17.415930157361508
+    },
+    "C": {
+     "n_nodes": 320,
+     "n_acc": 320,
+     "node_cov": 1.0,
+     "switches": 0,
+     "n_blocks": 1,
+     "acc_blocks": 1,
+     "xtensors": 0,
+     "xbytes": 0,
+     "xunknown": 0,
+     "time_excluded_ms": 0,
+     "time_total_ms": 20.198124999999994,
+     "time_acc_ms": 20.198124999999994,
+     "time_cov": 1.0,
+     "unsupported": [],
+     "switches_sticky": 0,
+     "xbytes_sticky": 0,
+     "ceiling": Infinity
+    }
+   },
+   "curve": [
+    {
+     "op": "Conv",
+     "k": 1,
+     "node_cov": 0.275,
+     "time_cov": 0.72416,
+     "switches": 141,
+     "xmb": 36.305
+    },
+    {
+     "op": "Sigmoid",
+     "k": 2,
+     "node_cov": 0.51875,
+     "time_cov": 0.81209,
+     "switches": 147,
+     "xmb": 52.937
+    },
+    {
+     "op": "Mul",
+     "k": 3,
+     "node_cov": 0.76562,
+     "time_cov": 0.87856,
+     "switches": 83,
+     "xmb": 16.862
+    },
+    {
+     "op": "Softmax",
+     "k": 4,
+     "node_cov": 0.77187,
+     "time_cov": 0.93194,
+     "switches": 83,
+     "xmb": 17.015
+    },
+    {
+     "op": "Concat",
+     "k": 5,
+     "node_cov": 0.8375,
+     "time_cov": 0.96372,
+     "switches": 72,
+     "xmb": 13.022
+    },
+    {
+     "op": "Split",
+     "k": 6,
+     "node_cov": 0.86875,
+     "time_cov": 0.97329,
+     "switches": 58,
+     "xmb": 9.311
+    },
+    {
+     "op": "Add",
+     "k": 7,
+     "node_cov": 0.91875,
+     "time_cov": 0.98124,
+     "switches": 36,
+     "xmb": 5.664
+    },
+    {
+     "op": "Resize",
+     "k": 8,
+     "node_cov": 0.925,
+     "time_cov": 0.98731,
+     "switches": 32,
+     "xmb": 4.199
+    },
+    {
+     "op": "MaxPool",
+     "k": 9,
+     "node_cov": 0.93437,
+     "time_cov": 0.99106,
+     "switches": 30,
+     "xmb": 4.004
+    },
+    {
+     "op": "Transpose",
+     "k": 10,
+     "node_cov": 0.94375,
+     "time_cov": 0.99438,
+     "switches": 28,
+     "xmb": 4.004
+    },
+    {
+     "op": "MatMul",
+     "k": 11,
+     "node_cov": 0.95,
+     "time_cov": 0.99653,
+     "switches": 26,
+     "xmb": 3.851
+    },
+    {
+     "op": "Reshape",
+     "k": 12,
+     "node_cov": 0.98438,
+     "time_cov": 0.99866,
+     "switches": 6,
+     "xmb": 0.128
+    },
+    {
+     "op": "Slice",
+     "k": 13,
+     "node_cov": 0.99062,
+     "time_cov": 0.99939,
+     "switches": 4,
+     "xmb": 0.096
+    },
+    {
+     "op": "Sub",
+     "k": 14,
+     "node_cov": 0.99687,
+     "time_cov": 0.99974,
+     "switches": 2,
+     "xmb": 0.032
+    },
+    {
+     "op": "Div",
+     "k": 15,
+     "node_cov": 1.0,
+     "time_cov": 1.0,
+     "switches": 0,
+     "xmb": 0.0
+    }
+   ]
+  },
+  {
+   "name": "Transformer 인코더",
+   "path": "tinyenc.onnx",
+   "n_all": 376,
+   "n_real": 238,
+   "hist": {
+    "Reshape": 44,
+    "Transpose": 32,
+    "Add": 29,
+    "MatMul": 21,
+    "Mul": 16,
+    "Slice": 12,
+    "Gather": 12,
+    "Sqrt": 12,
+    "LayerNormalization": 8,
+    "Shape": 8,
+    "Cast": 8,
+    "Div": 8,
+    "Mod": 4,
+    "Concat": 4,
+    "Unsqueeze": 4,
+    "Squeeze": 4,
+    "Softmax": 4,
+    "Gemm": 4,
+    "Erf": 4
+   },
+   "times": {
+    "MatMul": 4.2714,
+    "Add": 0.6112,
+    "Transpose": 0.5844,
+    "Gemm": 0.4156,
+    "LayerNormalization": 0.2956,
+    "Erf": 0.275,
+    "Mul": 0.274,
+    "Reshape": 0.1496,
+    "Identity": 0.1436,
+    "Div": 0.1396,
+    "Gather": 0.1269,
+    "Softmax": 0.0924,
+    "Slice": 0.0629,
+    "Shape": 0.0286,
+    "Mod": 0.0281,
+    "Sqrt": 0.028,
+    "Concat": 0.0261,
+    "Cast": 0.025,
+    "Unsqueeze": 0.0193,
+    "Squeeze": 0.0161
+   },
+   "total_ms": 7.6135,
+   "profiles": {
+    "A": {
+     "n_nodes": 238,
+     "n_acc": 98,
+     "node_cov": 0.4117647058823529,
+     "switches": 119,
+     "n_blocks": 120,
+     "acc_blocks": 60,
+     "xtensors": 131,
+     "xbytes": 21364896,
+     "xunknown": 4,
+     "time_excluded_ms": 0.1436249999999999,
+     "time_total_ms": 7.469875,
+     "time_acc_ms": 5.447875000000001,
+     "time_cov": 0.7293127395036731,
+     "unsupported": [
+      [
+       "Transpose",
+       32,
+       0.584
+      ],
+      [
+       "LayerNormalization",
+       8,
+       0.296
+      ],
+      [
+       "Erf",
+       4,
+       0.275
+      ],
+      [
+       "Mul",
+       16,
+       0.274
+      ],
+      [
+       "Div",
+       8,
+       0.14
+      ],
+      [
+       "Gather",
+       12,
+       0.127
+      ],
+      [
+       "Softmax",
+       4,
+       0.092
+      ],
+      [
+       "Slice",
+       12,
+       0.063
+      ],
+      [
+       "Shape",
+       8,
+       0.029
+      ],
+      [
+       "Mod",
+       4,
+       0.028
+      ],
+      [
+       "Sqrt",
+       12,
+       0.028
+      ],
+      [
+       "Concat",
+       4,
+       0.026
+      ],
+      [
+       "Cast",
+       8,
+       0.025
+      ],
+      [
+       "Unsqueeze",
+       4,
+       0.019
+      ],
+      [
+       "Squeeze",
+       4,
+       0.016
+      ]
+     ],
+     "switches_sticky": 87,
+     "xbytes_sticky": 21364896,
+     "ceiling": 3.6943001978239374
+    },
+    "B": {
+     "n_nodes": 238,
+     "n_acc": 126,
+     "node_cov": 0.5294117647058824,
+     "switches": 127,
+     "n_blocks": 128,
+     "acc_blocks": 64,
+     "xtensors": 139,
+     "xbytes": 16646368,
+     "xunknown": 8,
+     "time_excluded_ms": 0.1436249999999999,
+     "time_total_ms": 7.469875,
+     "time_acc_ms": 5.887625000000001,
+     "time_cov": 0.7881825331749194,
+     "unsupported": [
+      [
+       "Transpose",
+       32,
+       0.584
+      ],
+      [
+       "LayerNormalization",
+       8,
+       0.296
+      ],
+      [
+       "Erf",
+       4,
+       0.275
+      ],
+      [
+       "Gather",
+       12,
+       0.127
+      ],
+      [
+       "Softmax",
+       4,
+       0.092
+      ],
+      [
+       "Slice",
+       12,
+       0.063
+      ],
+      [
+       "Shape",
+       8,
+       0.029
+      ],
+      [
+       "Mod",
+       4,
+       0.028
+      ],
+      [
+       "Sqrt",
+       12,
+       0.028
+      ],
+      [
+       "Cast",
+       8,
+       0.025
+      ],
+      [
+       "Unsqueeze",
+       4,
+       0.019
+      ],
+      [
+       "Squeeze",
+       4,
+       0.016
+      ]
+     ],
+     "switches_sticky": 87,
+     "xbytes_sticky": 16646368,
+     "ceiling": 4.721045978827622
+    },
+    "C": {
+     "n_nodes": 238,
+     "n_acc": 226,
+     "node_cov": 0.9495798319327731,
+     "switches": 23,
+     "n_blocks": 24,
+     "acc_blocks": 12,
+     "xtensors": 19,
+     "xbytes": 1966112,
+     "xunknown": 0,
+     "time_excluded_ms": 0.1436249999999999,
+     "time_total_ms": 7.469875,
+     "time_acc_ms": 7.146125,
+     "time_cov": 0.9566592479793838,
+     "unsupported": [
+      [
+       "LayerNormalization",
+       8,
+       0.296
+      ],
+      [
+       "Mod",
+       4,
+       0.028
+      ]
+     ],
+     "switches_sticky": 15,
+     "xbytes_sticky": 1966112,
+     "ceiling": 23.072972972972963
+    }
+   },
+   "curve": [
+    {
+     "op": "MatMul",
+     "k": 1,
+     "node_cov": 0.08824,
+     "time_cov": 0.57181,
+     "switches": 42,
+     "xmb": 11.613
+    },
+    {
+     "op": "Add",
+     "k": 2,
+     "node_cov": 0.21008,
+     "time_cov": 0.65364,
+     "switches": 63,
+     "xmb": 15.875
+    },
+    {
+     "op": "Transpose",
+     "k": 3,
+     "node_cov": 0.34454,
+     "time_cov": 0.73187,
+     "switches": 103,
+     "xmb": 19.875
+    },
+    {
+     "op": "Gemm",
+     "k": 4,
+     "node_cov": 0.36134,
+     "time_cov": 0.78751,
+     "switches": 111,
+     "xmb": 20.875
+    },
+    {
+     "op": "LayerNormalization",
+     "k": 5,
+     "node_cov": 0.39496,
+     "time_cov": 0.82709,
+     "switches": 96,
+     "xmb": 19.0
+    },
+    {
+     "op": "Erf",
+     "k": 6,
+     "node_cov": 0.41176,
+     "time_cov": 0.8639,
+     "switches": 96,
+     "xmb": 19.0
+    },
+    {
+     "op": "Mul",
+     "k": 7,
+     "node_cov": 0.47899,
+     "time_cov": 0.90058,
+     "switches": 96,
+     "xmb": 14.0
+    },
+    {
+     "op": "Reshape",
+     "k": 8,
+     "node_cov": 0.66387,
+     "time_cov": 0.92061,
+     "switches": 80,
+     "xmb": 8.0
+    },
+    {
+     "op": "Div",
+     "k": 9,
+     "node_cov": 0.69748,
+     "time_cov": 0.93931,
+     "switches": 80,
+     "xmb": 4.0
+    },
+    {
+     "op": "Gather",
+     "k": 10,
+     "node_cov": 0.7479,
+     "time_cov": 0.95629,
+     "switches": 80,
+     "xmb": 4.0
+    },
+    {
+     "op": "Softmax",
+     "k": 11,
+     "node_cov": 0.76471,
+     "time_cov": 0.96866,
+     "switches": 72,
+     "xmb": 2.0
+    },
+    {
+     "op": "Slice",
+     "k": 12,
+     "node_cov": 0.81513,
+     "time_cov": 0.97707,
+     "switches": 72,
+     "xmb": 2.0
+    },
+    {
+     "op": "Shape",
+     "k": 13,
+     "node_cov": 0.84874,
+     "time_cov": 0.98091,
+     "switches": 64,
+     "xmb": 0.0
+    },
+    {
+     "op": "Mod",
+     "k": 14,
+     "node_cov": 0.86555,
+     "time_cov": 0.98467,
+     "switches": 56,
+     "xmb": 0.0
+    },
+    {
+     "op": "Sqrt",
+     "k": 15,
+     "node_cov": 0.91597,
+     "time_cov": 0.98842,
+     "switches": 40,
+     "xmb": 0.0
+    },
+    {
+     "op": "Concat",
+     "k": 16,
+     "node_cov": 0.93277,
+     "time_cov": 0.99192,
+     "switches": 32,
+     "xmb": 0.0
+    },
+    {
+     "op": "Cast",
+     "k": 17,
+     "node_cov": 0.96639,
+     "time_cov": 0.99526,
+     "switches": 16,
+     "xmb": 0.0
+    },
+    {
+     "op": "Unsqueeze",
+     "k": 18,
+     "node_cov": 0.98319,
+     "time_cov": 0.99784,
+     "switches": 8,
+     "xmb": 0.0
+    },
+    {
+     "op": "Squeeze",
+     "k": 19,
+     "node_cov": 1.0,
+     "time_cov": 1.0,
+     "switches": 0,
+     "xmb": 0.0
+    }
+   ]
+  }
+ ]
+}

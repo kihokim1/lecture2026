@@ -1,0 +1,377 @@
+{
+ "copy": [
+  {
+   "mb": 1,
+   "ms": 0.0452,
+   "gbps": 21.61
+  },
+  {
+   "mb": 4,
+   "ms": 0.3427,
+   "gbps": 11.4
+  },
+  {
+   "mb": 16,
+   "ms": 1.3912,
+   "gbps": 11.23
+  },
+  {
+   "mb": 64,
+   "ms": 6.1494,
+   "gbps": 10.16
+  }
+ ],
+ "copy_gbps": 11.315,
+ "layout": [
+  {
+   "shape": [
+    1,
+    16,
+    160,
+    160
+   ],
+   "mb": 1.5625,
+   "ms": 0.2477,
+   "gbps": 6.16
+  },
+  {
+   "shape": [
+    1,
+    32,
+    80,
+    80
+   ],
+   "mb": 0.7812,
+   "ms": 0.0812,
+   "gbps": 9.39
+  },
+  {
+   "shape": [
+    1,
+    64,
+    40,
+    40
+   ],
+   "mb": 0.3906,
+   "ms": 0.033,
+   "gbps": 11.56
+  },
+  {
+   "shape": [
+    1,
+    128,
+    20,
+    20
+   ],
+   "mb": 0.1953,
+   "ms": 0.0148,
+   "gbps": 12.85
+  },
+  {
+   "shape": [
+    1,
+    256,
+    10,
+    10
+   ],
+   "mb": 0.0977,
+   "ms": 0.0084,
+   "gbps": 11.42
+  },
+  {
+   "shape": [
+    1,
+    3,
+    320,
+    320
+   ],
+   "mb": 1.1719,
+   "ms": 0.4055,
+   "gbps": 2.82
+  }
+ ],
+ "layout_gbps": 10.405,
+ "layout_penalty": 1.09,
+ "reorder": [
+  {
+   "name": "MobileNetV2",
+   "total_ms": 4.6306,
+   "reorder_ms": 0.0079,
+   "share": 0.00171,
+   "nodes": {
+    "ReorderOutput": 0.0079
+   }
+  },
+  {
+   "name": "YOLO11n @320",
+   "total_ms": 16.6172,
+   "reorder_ms": 1.6132,
+   "share": 0.09708,
+   "nodes": {
+    "ReorderOutput": 0.9372,
+    "ReorderInput": 0.6382,
+    "Transpose": 0.0378
+   }
+  },
+  {
+   "name": "ResNet-18",
+   "total_ms": 15.8564,
+   "reorder_ms": 0.0056,
+   "share": 0.00035,
+   "nodes": {
+    "ReorderOutput": 0.0056
+   }
+  }
+ ],
+ "qdq": {
+  "fp32_nodes": 320,
+  "int8_nodes": 838,
+  "qdq_nodes": 256,
+  "qdq_share_nodes": 0.3055,
+  "qdq_ms": 13.4711,
+  "total_ms": 100.7693,
+  "qdq_share_time": 0.13368,
+  "hist": {
+   "Mul": 255,
+   "Add": 103,
+   "Reshape": 98,
+   "ConvInteger": 88,
+   "Cast": 88,
+   "DynamicQuantizeLinear": 80,
+   "Sigmoid": 78,
+   "Concat": 21,
+   "Split": 10,
+   "MaxPool": 3,
+   "Transpose": 3,
+   "MatMul": 2,
+   "Softmax": 2,
+   "Resize": 2
+  },
+  "fp32_hist": {
+   "Conv": 88,
+   "Mul": 79,
+   "Sigmoid": 78,
+   "Concat": 21,
+   "Add": 16,
+   "Reshape": 11,
+   "Split": 10,
+   "MaxPool": 3,
+   "Transpose": 3,
+   "MatMul": 2,
+   "Softmax": 2,
+   "Resize": 2,
+   "Slice": 2,
+   "Sub": 2
+  },
+  "added_nodes": 518,
+  "node_ratio": 2.619,
+  "qtimes": {
+   "ConvInteger": 52.3584,
+   "Mul": 11.8433,
+   "Softmax": 7.8286,
+   "DynamicQuantizeLinear": 7.5433,
+   "Cast": 5.9279,
+   "Sigmoid": 4.8044,
+   "Add": 4.2888,
+   "Concat": 3.0831,
+   "Split": 0.7696,
+   "Reshape": 0.7135,
+   "MatMul": 0.5024,
+   "Transpose": 0.4593
+  }
+ },
+ "breakeven": [
+  {
+   "model": "ResNet-18",
+   "profile": "A",
+   "T_ms": 18.17,
+   "time_cov": 1.0,
+   "switches": 0,
+   "xmb": 0.0,
+   "cost_per_switch_ms": 0.0,
+   "boundary_ms": 0.0,
+   "sp2": 2.0,
+   "sp5": 5.0,
+   "sp10": 10.0,
+   "spinf": null,
+   "amdahl_only": null,
+   "k_max": null
+  },
+  {
+   "model": "ResNet-18",
+   "profile": "B",
+   "T_ms": 18.17,
+   "time_cov": 1.0,
+   "switches": 0,
+   "xmb": 0.0,
+   "cost_per_switch_ms": 0.0,
+   "boundary_ms": 0.0,
+   "sp2": 2.0,
+   "sp5": 5.0,
+   "sp10": 10.0,
+   "spinf": null,
+   "amdahl_only": null,
+   "k_max": null
+  },
+  {
+   "model": "ResNet-18",
+   "profile": "C",
+   "T_ms": 18.17,
+   "time_cov": 1.0,
+   "switches": 0,
+   "xmb": 0.0,
+   "cost_per_switch_ms": 0.0,
+   "boundary_ms": 0.0,
+   "sp2": 2.0,
+   "sp5": 5.0,
+   "sp10": 10.0,
+   "spinf": null,
+   "amdahl_only": null,
+   "k_max": null
+  },
+  {
+   "model": "MobileNetV2",
+   "profile": "A",
+   "T_ms": 10.374,
+   "time_cov": 0.8989,
+   "switches": 70,
+   "xmb": 46.583,
+   "cost_per_switch_ms": 0.06246,
+   "boundary_ms": 4.372,
+   "sp2": 1.029,
+   "sp5": 1.424,
+   "sp10": 1.633,
+   "spinf": 1.914,
+   "amdahl_only": 9.887,
+   "k_max": 149
+  },
+  {
+   "model": "MobileNetV2",
+   "profile": "B",
+   "T_ms": 10.374,
+   "time_cov": 1.0,
+   "switches": 0,
+   "xmb": 0.0,
+   "cost_per_switch_ms": 0.0,
+   "boundary_ms": 0.0,
+   "sp2": 2.0,
+   "sp5": 5.0,
+   "sp10": 10.0,
+   "spinf": null,
+   "amdahl_only": null,
+   "k_max": null
+  },
+  {
+   "model": "MobileNetV2",
+   "profile": "C",
+   "T_ms": 10.374,
+   "time_cov": 1.0,
+   "switches": 0,
+   "xmb": 0.0,
+   "cost_per_switch_ms": 0.0,
+   "boundary_ms": 0.0,
+   "sp2": 2.0,
+   "sp5": 5.0,
+   "sp10": 10.0,
+   "spinf": null,
+   "amdahl_only": null,
+   "k_max": null
+  },
+  {
+   "model": "YOLO11n @320",
+   "profile": "A",
+   "T_ms": 20.198,
+   "time_cov": 0.7401,
+   "switches": 165,
+   "xmb": 39.745,
+   "cost_per_switch_ms": 0.02261,
+   "boundary_ms": 3.73,
+   "sp2": 1.228,
+   "sp5": 1.688,
+   "sp10": 1.928,
+   "spinf": 2.25,
+   "amdahl_only": 3.848,
+   "k_max": 661
+  },
+  {
+   "model": "YOLO11n @320",
+   "profile": "B",
+   "T_ms": 20.198,
+   "time_cov": 0.9426,
+   "switches": 10,
+   "xmb": 1.291,
+   "cost_per_switch_ms": 0.01212,
+   "boundary_ms": 0.121,
+   "sp2": 1.87,
+   "sp5": 3.969,
+   "sp10": 6.342,
+   "spinf": 15.769,
+   "amdahl_only": 17.416,
+   "k_max": 1571
+  },
+  {
+   "model": "YOLO11n @320",
+   "profile": "C",
+   "T_ms": 20.198,
+   "time_cov": 1.0,
+   "switches": 0,
+   "xmb": 0.0,
+   "cost_per_switch_ms": 0.0,
+   "boundary_ms": 0.0,
+   "sp2": 2.0,
+   "sp5": 5.0,
+   "sp10": 10.0,
+   "spinf": null,
+   "amdahl_only": null,
+   "k_max": null
+  },
+  {
+   "model": "Transformer 인코더",
+   "profile": "A",
+   "T_ms": 7.614,
+   "time_cov": 0.7293,
+   "switches": 119,
+   "xmb": 20.375,
+   "cost_per_switch_ms": 0.01607,
+   "boundary_ms": 1.912,
+   "sp2": 1.128,
+   "sp5": 1.498,
+   "sp10": 1.681,
+   "spinf": 1.916,
+   "amdahl_only": 3.694,
+   "k_max": 346
+  },
+  {
+   "model": "Transformer 인코더",
+   "profile": "B",
+   "T_ms": 7.614,
+   "time_cov": 0.7882,
+   "switches": 127,
+   "xmb": 15.875,
+   "cost_per_switch_ms": 0.01173,
+   "boundary_ms": 1.49,
+   "sp2": 1.247,
+   "sp5": 1.769,
+   "sp10": 2.056,
+   "spinf": 2.454,
+   "amdahl_only": 4.721,
+   "k_max": 511
+  },
+  {
+   "model": "Transformer 인코더",
+   "profile": "C",
+   "T_ms": 7.614,
+   "time_cov": 0.9567,
+   "switches": 23,
+   "xmb": 1.875,
+   "cost_per_switch_ms": 0.00765,
+   "boundary_ms": 0.176,
+   "sp2": 1.836,
+   "sp5": 3.879,
+   "sp10": 6.168,
+   "spinf": 15.048,
+   "amdahl_only": 23.073,
+   "k_max": 952
+  }
+ ]
+}
