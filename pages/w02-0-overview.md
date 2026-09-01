@@ -38,18 +38,6 @@
 - **128배** — 같은 값을 DRAM 대신 SRAM에서 읽을 때 아끼는 에너지. 타일링이 노리는 것이 이 차이다.
 - **2배** — MobileNetV2 추론 1회에서, 가중치를 DRAM에서 **한 번씩만** 읽어도 곱셈 전체보다 2배 더 드는 에너지.
 
-## 그림 목록
-- `w02_p1_energy_ladder_07.png` — 32비트 하나를 다루는 에너지 사다리 *(1교시)*
-- `w02_p1_memory_wall_01.png` — 연산 성능 vs 메모리 대역폭 격차 *(1교시)*
-- `w02_p1_accelerators_02.png` — CPU·GPU·DSP·NPU 특성 비교 *(1교시)*
-- `w02_p1_division_of_labor_08.png` — 사진 한 장을 찍을 때의 칩 내부 분업 *(1교시)*
-- `w02_p1_mac_grid_09.png` — 범용 코어 vs NPU의 MAC 격자 *(1교시)*
-- `w02_p2_systolic_array_03.png` — Systolic Array 데이터 흐름 *(2교시)*
-- `w02_p2_memory_hierarchy_04.png` — 임베디드 메모리 계층 + 타일링 *(2교시)*
-- `w02_p2_dvfs_curve_10.png` — 주파수-전력 곡선과 thermal throttling *(2교시)*
-- `w02_p2_edge_devices_05.png` — 주요 엣지 디바이스 전성비 비교 *(2교시)*
-- `w02_p3_threads_bench_06.png` — 스레드 수에 따른 추론 지연(실습 관찰) *(3교시)*
-
 ## 선수·후속 연결
 - **1주차에서 이어짐** — 과제였던 `get_available_providers()` 캡처를 3.1에서 하드웨어 매핑으로 해석한다. 1주차 4계층 스택 중 **Hardware Level**이 이번 주의 무대다.
 - **3주차로 이어짐** — 오늘 본 공급자에게 연산을 실제로 위임하는 소프트웨어, 즉 추론 엔진과 Delegate.
